@@ -24,7 +24,7 @@ jobs:
           DATE: ${{ github.event.inputs.DATE }}
           JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
-          PUPPETEER_UA: ${{ github.event.inputs.PUPPETEER_UA }}
+          PUPPETEER_UA: ${{ secrets.PUPPETEER_UA }}
       - uses: actions/upload-artifact@v2
         if: ${{ cancelled() || failure() }}
         with:
