@@ -1,6 +1,6 @@
 # Sling Release Info
 
-Aggregates each month's Apache Sling Releases and release notes and creates a page in a Sling CMS instance with the release information.
+Aggregates each month's Apache Sling Releases and release notes and sends an email with the releases.
 
 ## Use
 
@@ -11,8 +11,11 @@ To run:
  1. Set the following in your .env file or Environment variables: 
   - JIRA_USERNAME
   - JIRA_PASSWORD
-  - CMS_USERNAME
-  - CMS_PASSWORD
   - DATE (optional, override date)
   - PUPPETEER_HEADLESS (optional, controls pupeteers headless mode)
+  - MAIL_HOST
+  - MAIL_USERNAME
+  - MAIL_SENDER
+  - MAIL_PASSWORD
+  - MAIL_RECIPIENT
  2. run: `node .`

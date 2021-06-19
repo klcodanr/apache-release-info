@@ -4,65 +4,19 @@ const Handlebars = require("handlebars");
 const puppeteer = require("puppeteer");
 
 // Get ENV Variables
-const {
-  CMS_HOST,
-  CMS_USERNAME,
-  CMS_PASSWORD,
-  CMS_PAGE_TEMPLATE,
-  CMS_SITE_PATH,
-  DATE,
-  JIRA_USERNAME,
-  JIRA_PASSWORD,
-  PUPPETEER_HEADLESS,
-  PUPPETEER_UA,
-} = process.env;
+const { DATE, JIRA_USERNAME, JIRA_PASSWORD, PUPPETEER_HEADLESS } = process.env;
 
 // Calculate Date
 const lastMonth = DATE ? new Date(Date.parse(DATE)) : new Date();
 lastMonth.setMonth(lastMonth.getMonth() - 1);
 const year = lastMonth.getFullYear();
 const month = lastMonth.toLocaleString("default", { month: "long" });
-const monthCode = lastMonth.toLocaleDateString("en-US", {
-  month: "2-digit",
-});
 console.log(`Gathering releases for ${month} ${year}`);
 
 let page;
 process.on("unhandledRejection", (up) => {
   throw up;
 });
-
-async function createPost() {
-  console.log("Creating post...");
-  await page.goto(
-    `${CMS_HOST}/cms/site/content.html${CMS_SITE_PATH}/posts/${year}/${monthCode}`,
-    {
-      waitUntil: "load",
-    }
-  );
-
-  await page.click(
-    `.button[href="/cms/page/create.html${CMS_SITE_PATH}/posts/${year}/${monthCode}"]`
-  );
-  await page.waitForSelector(".modal form");
-
-  await page.select("#pageTemplate", CMS_PAGE_TEMPLATE);
-
-  await page.waitForSelector("input[name=title]");
-
-  await page.type(
-    "input[name=title]",
-    `This Month in Apache Sling: ${month} ${year}`
-  );
-  await page.type('input[name=":name"]', "this-month-apache-sling");
-  await page.click(".modal button[type=submit]");
-
-  await page.waitForResponse(
-    `${CMS_HOST}${CMS_SITE_PATH}/posts/${year}/${monthCode}`
-  );
-  await removeModals(page);
-  console.log("Post created successfully!");
-}
 
 function generateHtml(releases = []) {
   const data = {
@@ -124,77 +78,6 @@ async function loginJira() {
   await page.waitForTimeout(2000);
 }
 
-async function loginCms() {
-  console.log(`Logging in to Sling CMS at ${CMS_HOST}...`);
-  await page.goto(`${CMS_HOST}/system/sling/form/login`, {
-    waitUntil: "load",
-  });
-
-  console.log("Entering credentials...");
-  await page.waitForSelector("input[name=j_username]");
-  await page.type("input[name=j_username]", CMS_USERNAME);
-  await page.type("input[name=j_password]", CMS_PASSWORD);
-
-  console.log("Submitting form...");
-  await page.keyboard.press("Enter");
-
-  const loggedInUrl = `${CMS_HOST}/cms/start.html`;
-  const currentUrl = await page.url();
-  if (currentUrl !== loggedInUrl) {
-    console.log("Waiting for start page...");
-    await page.waitForResponse(loggedInUrl);
-  }
-  console.log("Signed in to Sling CMS!");
-}
-
-async function navigatePostMonth() {
-  console.log("Navigating to post year...");
-  await page.goto(`${CMS_HOST}/cms/site/content.html${CMS_SITE_PATH}/posts`, {
-    waitUntil: "load",
-  });
-  if (!(await page.$(`.card[title="${year}"]`))) {
-    console.log(`Creating folder for year ${year}`);
-    await page.click(`a[href="/cms/folder/create.html${CMS_SITE_PATH}/posts"]`);
-    await page.waitForSelector(".modal form");
-
-    await page.type('input[name="jcr:content/jcr:title"]', `${year}`);
-    await page.type('input[name=":name"]', `${year}`);
-    await page.click(".modal button[type=submit]");
-
-    await page.waitForResponse(`${CMS_HOST}${CMS_SITE_PATH}/posts/*`);
-    console.log("Folder created successfully!");
-    await removeModals(page);
-  } else {
-    console.log("Year folder already exists!");
-  }
-
-  console.log("Navigating to post month...");
-  await page.goto(
-    `${CMS_HOST}/cms/site/content.html${CMS_SITE_PATH}/posts/${year}`,
-    {
-      waitUntil: "load",
-    }
-  );
-
-  if (!(await page.$(`.card[title="${monthCode}"]`))) {
-    console.log(`Creating folder for month ${month}`);
-    await page.click(
-      `a[href="/cms/folder/create.html${CMS_SITE_PATH}/posts/${year}"]`
-    );
-    await page.waitForSelector(".modal form");
-
-    await page.type('input[name="jcr:content/jcr:title"]', `${month} ${year}`);
-    await page.type('input[name=":name"]', monthCode);
-    await page.click(".modal button[type=submit]");
-
-    await page.waitForResponse(`${CMS_HOST}${CMS_SITE_PATH}/posts/${year}/*`);
-    await removeModals(page);
-    console.log("Folder created successfully!");
-  } else {
-    console.log("Month folder already exists!");
-  }
-}
-
 function parseReleaseNotes(notesStr = "") {
   const notes = {};
   let currentType = "Misc";
@@ -222,41 +105,6 @@ function parseTicket(ticket = "") {
   return { issue, title };
 }
 
-async function removeModals() {
-  // Removes all modals on the page to avoid navigation denied errors
-  await page.evaluate(() => {
-    document.querySelectorAll(".modal").forEach((modal) => {
-      modal.parentNode.removeChild(modal);
-    });
-  });
-}
-
-async function updatePostContent(html) {
-  console.log("Updating post content...");
-  await page.goto(
-    `${CMS_HOST}/cms/editor/edit.html${CMS_SITE_PATH}/posts/${year}/${monthCode}/this-month-apache-sling/jcr:content/container/richtext?editor=/libs/sling-cms/components/general/richtext/edit`,
-    {
-      waitUntil: "load",
-    }
-  );
-
-  console.log("Switching to source view...");
-  await page.click('.button[data-wysihtml-action="change_view"]');
-
-  console.log("Setting content...");
-  await page.$eval(
-    "textarea.rte-editor",
-    (el, _html) => (el.value = _html),
-    html
-  );
-
-  console.log("Saving changes...");
-  await page.click("button[type=submit]");
-  await page.waitForSelector(".modal");
-  await removeModals(page);
-  console.log("Post content updated successfully!");
-}
-
 async function run() {
   let browser;
   try {
@@ -264,7 +112,6 @@ async function run() {
       headless: PUPPETEER_HEADLESS !== "false",
     });
     page = await browser.newPage();
-    await page.setUserAgent(PUPPETEER_UA);
 
     page.on("dialog", async (dialog) => {
       console.log(dialog.message());
@@ -285,13 +132,13 @@ async function run() {
 
     const html = generateHtml(releases);
 
-    await loginCms();
-
-    await navigatePostMonth();
-
-    await createPost();
-
-    await updatePostContent(html);
+    console.log("Writing HTML to dist...");
+    if (!fs.existsSync("./dist")) {
+      console.log("Creating dist...");
+      fs.mkdirSync("./dist");
+    }
+    fs.writeFileSync("./dist/releases.html", html);
+    console.log("Releases processed successfully!");
   } catch (e) {
     if (page) {
       if (!fs.existsSync("./dist")) {
