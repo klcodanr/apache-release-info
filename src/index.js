@@ -26,6 +26,11 @@ const monthCode = lastMonth.toLocaleDateString("en-US", {
 });
 console.log(`Gathering releases for ${month} ${year}`);
 
+// fail on unhandled rejection
+process.on("unhandledRejection", (up) => {
+  throw up;
+});
+
 async function createPost(page) {
   console.log("Creating post...");
   await page.goto(
