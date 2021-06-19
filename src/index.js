@@ -252,7 +252,7 @@ async function updatePostContent(html) {
   console.log("Post content updated successfully!");
 }
 
-(async () => {
+async function run() {
   let browser;
   try {
     browser = await puppeteer.launch({
@@ -263,7 +263,6 @@ async function updatePostContent(html) {
     page.on("dialog", async (dialog) => {
       console.log(dialog.message());
       await dialog.dismiss();
-      await browser.close();
     });
 
     await loginJira();
@@ -288,13 +287,28 @@ async function updatePostContent(html) {
 
     await updatePostContent(html);
   } catch (e) {
-    console.log("Failed to get sling release info", e);
     if (page) {
       console.log("Taking screenshot...");
-      fs.mkdirSync("dist");
+      if (!fs.existsSync("dist")) {
+        fs.mkdirSync("dist");
+      }
       await page.screenshot({ path: "dist/error.png" });
+      console.log("Screenshot taken...");
+    }
+
+    if (browser) {
+      console.log("Closing browser...");
       await browser.close();
     }
     throw e;
+  }
+}
+
+(async () => {
+  try {
+    await run();
+  } catch (e) {
+    console.log("Failed to get sling release info", e);
+    return;
   }
 })();
