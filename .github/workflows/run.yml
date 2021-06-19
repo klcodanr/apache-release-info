@@ -1,11 +1,15 @@
 name: Run
 on:
   workflow_dispatch:
+    inputs:
+      DATE:
+        description: "Override Date"
   schedule:
-    - cron:  '0 1 1 * *'
+    - cron: "0 1 1 * *"
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -16,6 +20,7 @@ jobs:
         env:
           JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+          DATE: ${{ github.event.inputs.DATE }}
           CMS_HOST: ${{ secrets.CMS_HOST }}
           CMS_USERNAME: ${{ secrets.CMS_USERNAME }}
           CMS_PASSWORD: ${{ secrets.CMS_PASSWORD }}
