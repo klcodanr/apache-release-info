@@ -1,0 +1,21 @@
+<h2>Releases for {{month}} {{year}}</h2>
+{{#each releases}}
+    <div class="my-4">
+        <h3>
+            <a href="https://issues.apache.org{{url}}" target="_blank" rel="noopener noreferrer">{{name}}</a>
+        </h3>
+        <p>
+            Release Date: {{releaseDate.formatted}}
+        </p>
+        {{#each notes}}
+            <h4>{{@key}}</h4>
+            <ul>
+                {{#each this}}
+                    <li>
+                        [<a href="https://issues.apache.org/jira/browse/{{issue}}" target="_blank" rel="noopener noreferrer">{{issue}}</a>] &mdash; {{title}}
+                    </li>
+                {{/each}}
+            </ul>
+        {{/each}}
+    </div>
+{{/each}}
