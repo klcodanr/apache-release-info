@@ -121,7 +121,7 @@ async function loginJira(page) {
 async function loginCms(page) {
   console.log("Logging in to Sling CMS...");
   await page.goto(`${CMS_HOST}/system/sling/form/login`);
-  await page.waitForTimeout(1000);
+  await page.waitForSelector("input[name=j_username]");
   await page.type("input[name=j_username]", CMS_USERNAME);
   await page.type("input[name=j_password]", CMS_PASSWORD);
 
