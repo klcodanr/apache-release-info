@@ -27,11 +27,17 @@ const monthCode = lastMonth.toLocaleDateString("en-US", {
 console.log(`Gathering releases for ${month} ${year}`);
 
 // fail on unhandled rejection
+let page;
 process.on("unhandledRejection", (up) => {
+  if (page) {
+    await page.screenshot({
+      path: "error.png",
+    });
+  }
   throw up;
 });
 
-async function createPost(page) {
+async function createPost() {
   console.log("Creating post...");
   await page.goto(
     `${CMS_HOST}/cms/site/content.html${CMS_SITE_PATH}/posts/${year}/${monthCode}`,
@@ -76,7 +82,7 @@ function generateHtml(releases = []) {
   return template(data);
 }
 
-async function getReleaseNotes(page, release = {}) {
+async function getReleaseNotes(release = {}) {
   console.log(`Getting release notes for ${release.name}`);
   await page.goto(
     `https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=${release.id}&styleName=Text&projectId=12310710`,
@@ -91,7 +97,7 @@ async function getReleaseNotes(page, release = {}) {
   return parseReleaseNotes(noteStr);
 }
 
-async function getReleases(page) {
+async function getReleases() {
   console.log("Loading releases...");
   await page.goto(
     `https://issues.apache.org/jira/rest/projects/1.0/project/SLING/release/allversions?_=${new Date().toISOString()}`,
@@ -112,7 +118,7 @@ async function getReleases(page) {
   return releases;
 }
 
-async function loginJira(page) {
+async function loginJira() {
   console.log("Logging in to JIRA...");
   await page.goto("https://issues.apache.org/jira/secure/Dashboard.jspa", {
     waitUntil: "load",
@@ -123,9 +129,13 @@ async function loginJira(page) {
   await page.waitForTimeout(2000);
 }
 
-async function loginCms(page) {
+async function loginCms() {
   console.log("Logging in to Sling CMS...");
-  await page.goto(`${CMS_HOST}/system/sling/form/login`);
+  await page.goto(`${CMS_HOST}/system/sling/form/login`, {
+    waitUntil: "load",
+  });
+
+  await page.screenshot({ path: "cms-login.png" });
   await page.waitForSelector("input[name=j_username]");
   await page.type("input[name=j_username]", CMS_USERNAME);
   await page.type("input[name=j_password]", CMS_PASSWORD);
@@ -139,7 +149,7 @@ async function loginCms(page) {
   }
 }
 
-async function navigatePostMonth(page) {
+async function navigatePostMonth() {
   console.log("Navigating to post year...");
   await page.goto(`${CMS_HOST}/cms/site/content.html${CMS_SITE_PATH}/posts`, {
     waitUntil: "load",
@@ -214,7 +224,7 @@ function parseTicket(ticket = "") {
   return { issue, title };
 }
 
-async function removeModals(page) {
+async function removeModals() {
   // Removes all modals on the page to avoid navigation denied errors
   await page.evaluate(() => {
     document.querySelectorAll(".modal").forEach((modal) => {
@@ -223,7 +233,7 @@ async function removeModals(page) {
   });
 }
 
-async function updatePostContent(page, html) {
+async function updatePostContent(html) {
   console.log("Updating post content...");
   await page.goto(
     `${CMS_HOST}/cms/editor/edit.html${CMS_SITE_PATH}/posts/${year}/${monthCode}/this-month-apache-sling/jcr:content/container/richtext?editor=/libs/sling-cms/components/general/richtext/edit`,
@@ -253,7 +263,7 @@ async function updatePostContent(page, html) {
   const browser = await puppeteer.launch({
     headless: PUPPETEER_HEADLESS !== "false",
   });
-  const page = await browser.newPage();
+  page = await browser.newPage();
 
   page.on("dialog", async (dialog) => {
     console.log(dialog.message());
@@ -261,27 +271,27 @@ async function updatePostContent(page, html) {
     await browser.close();
   });
 
-  await loginJira(page);
+  await loginJira();
 
-  const releases = (await getReleases(page)).sort((a, b) =>
+  const releases = (await getReleases()).sort((a, b) =>
     a.releaseDate.iso.localeCompare(b.releaseDate.iso)
   );
 
   console.log(`Releases this month: ${releases.length}`);
 
   for (const release of releases) {
-    release.notes = await getReleaseNotes(page, release);
+    release.notes = await getReleaseNotes(release);
   }
 
   const html = generateHtml(releases);
 
-  await loginCms(page);
+  await loginCms();
 
-  await navigatePostMonth(page);
+  await navigatePostMonth();
 
-  await createPost(page);
+  await createPost();
 
-  await updatePostContent(page, html);
+  await updatePostContent(html);
 
   await browser.close();
 })();
