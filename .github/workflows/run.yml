@@ -9,7 +9,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -25,7 +25,7 @@ jobs:
           CMS_USERNAME: ${{ secrets.CMS_USERNAME }}
           CMS_PASSWORD: ${{ secrets.CMS_PASSWORD }}
       - uses: actions/upload-artifact@v2
-        if: failure()
+        if: ${{ cancelled() || failure() }}
         with:
           name: error.png
           path: dist/error.png
