@@ -124,22 +124,26 @@ async function loginJira() {
 }
 
 async function loginCms() {
-  console.log("Logging in to Sling CMS...");
+  console.log(`Logging in to Sling CMS at ${CMS_HOST}...`);
   await page.goto(`${CMS_HOST}/system/sling/form/login`, {
     waitUntil: "load",
   });
 
+  console.log("Entering credentials...");
   await page.waitForSelector("input[name=j_username]");
   await page.type("input[name=j_username]", CMS_USERNAME);
   await page.type("input[name=j_password]", CMS_PASSWORD);
 
+  console.log("Submitting form...");
   await page.keyboard.press("Enter");
 
   const loggedInUrl = `${CMS_HOST}/cms/start.html`;
   const currentUrl = await page.url();
   if (currentUrl !== loggedInUrl) {
+    console.log("Waiting for start page...");
     await page.waitForResponse(loggedInUrl);
   }
+  console.log("Signed in to Sling CMS!");
 }
 
 async function navigatePostMonth() {
@@ -293,7 +297,7 @@ async function run() {
         fs.mkdirSync("./dist");
       }
       console.log("Taking screenshot...");
-      await page.screenshot({ path: "dist/error.png" });
+      await page.screenshot({ path: "./dist/error.png" });
       console.log("Screenshot taken...");
     }
 
