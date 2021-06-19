@@ -309,6 +309,5 @@ async function run() {
     await run();
   } catch (e) {
     console.log("Failed to get sling release info", e);
-    return;
   }
 })();
