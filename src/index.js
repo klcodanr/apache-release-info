@@ -14,6 +14,7 @@ const {
   JIRA_USERNAME,
   JIRA_PASSWORD,
   PUPPETEER_HEADLESS,
+  PUPPETEER_UA,
 } = process.env;
 
 // Calculate Date
@@ -263,6 +264,7 @@ async function run() {
       headless: PUPPETEER_HEADLESS !== "false",
     });
     page = await browser.newPage();
+    await page.setUserAgent(PUPPETEER_UA);
 
     page.on("dialog", async (dialog) => {
       console.log(dialog.message());
@@ -297,7 +299,7 @@ async function run() {
         fs.mkdirSync("./dist");
       }
       console.log("Taking screenshot...");
-      await page.emulateMedia("screen");
+      await page.emulateMediaType("screen");
       await page.pdf({ path: "./dist/error.pdf" });
       console.log("Screenshot taken...");
     }
@@ -316,4 +318,7 @@ async function run() {
   } catch (e) {
     console.log("Failed to get sling release info", e);
   }
-})();
+})().then(
+  () => process.exit(0),
+  () => process.exit(1)
+);
