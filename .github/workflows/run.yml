@@ -27,8 +27,8 @@ jobs:
       - uses: actions/upload-artifact@v2
         if: ${{ cancelled() || failure() }}
         with:
-          name: error.png
-          path: dist/error.png
+          name: error.pdf
+          path: dist/error.pdf
       - uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{secrets.MAIL_HOST}}

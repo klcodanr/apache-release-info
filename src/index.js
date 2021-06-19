@@ -297,7 +297,8 @@ async function run() {
         fs.mkdirSync("./dist");
       }
       console.log("Taking screenshot...");
-      await page.screenshot({ path: "./dist/error.png" });
+      await page.emulateMedia("screen");
+      await page.pdf({ path: "./dist/error.pdf" });
       console.log("Screenshot taken...");
     }
 
