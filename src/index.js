@@ -288,9 +288,9 @@ async function run() {
     await updatePostContent(html);
   } catch (e) {
     if (page) {
-      if (!fs.existsSync("dist")) {
+      if (!fs.existsSync("./dist")) {
         console.log("Creating dist...");
-        fs.mkdirSync("dist");
+        fs.mkdirSync("./dist");
       }
       console.log("Taking screenshot...");
       await page.screenshot({ path: "dist/error.png" });
