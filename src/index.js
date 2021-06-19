@@ -295,6 +295,6 @@ async function updatePostContent(html) {
       await page.screenshot({ path: "dist/error.png" });
       await browser.close();
     }
-    process.exit(1);
+    throw e;
   }
 })();
