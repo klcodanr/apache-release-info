@@ -1,6 +1,6 @@
 # Sling Release Info
 
-Aggregates each months Sling Releases and release notes and creates a page in a Sling CMS instance with the release information.
+Aggregates each month's Apache Sling Releases and release notes and creates a page in a Sling CMS instance with the release information.
 
 ## Use
 
