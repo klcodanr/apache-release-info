@@ -27,7 +27,7 @@ const monthCode = lastMonth.toLocaleDateString("en-US", {
 console.log(`Gathering releases for ${month} ${year}`);
 
 let page;
-process.on("unhandledRejection", async (up) => {
+process.on("unhandledRejection", (up) => {
   throw up;
 });
 
