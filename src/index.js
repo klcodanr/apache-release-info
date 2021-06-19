@@ -26,16 +26,7 @@ const monthCode = lastMonth.toLocaleDateString("en-US", {
 });
 console.log(`Gathering releases for ${month} ${year}`);
 
-// fail on unhandled rejection
 let page;
-process.on("unhandledRejection", (up) => {
-  if (page) {
-    await page.screenshot({
-      path: "error.png",
-    });
-  }
-  throw up;
-});
 
 async function createPost() {
   console.log("Creating post...");
@@ -135,7 +126,6 @@ async function loginCms() {
     waitUntil: "load",
   });
 
-  await page.screenshot({ path: "cms-login.png" });
   await page.waitForSelector("input[name=j_username]");
   await page.type("input[name=j_username]", CMS_USERNAME);
   await page.type("input[name=j_password]", CMS_PASSWORD);
@@ -260,38 +250,47 @@ async function updatePostContent(html) {
 }
 
 (async () => {
-  const browser = await puppeteer.launch({
-    headless: PUPPETEER_HEADLESS !== "false",
-  });
-  page = await browser.newPage();
+  let browser;
+  try {
+    browser = await puppeteer.launch({
+      headless: PUPPETEER_HEADLESS !== "false",
+    });
+    page = await browser.newPage();
 
-  page.on("dialog", async (dialog) => {
-    console.log(dialog.message());
-    await dialog.dismiss();
-    await browser.close();
-  });
+    page.on("dialog", async (dialog) => {
+      console.log(dialog.message());
+      await dialog.dismiss();
+      await browser.close();
+    });
 
-  await loginJira();
+    await loginJira();
 
-  const releases = (await getReleases()).sort((a, b) =>
-    a.releaseDate.iso.localeCompare(b.releaseDate.iso)
-  );
+    const releases = (await getReleases()).sort((a, b) =>
+      a.releaseDate.iso.localeCompare(b.releaseDate.iso)
+    );
 
-  console.log(`Releases this month: ${releases.length}`);
+    console.log(`Releases this month: ${releases.length}`);
 
-  for (const release of releases) {
-    release.notes = await getReleaseNotes(release);
+    for (const release of releases) {
+      release.notes = await getReleaseNotes(release);
+    }
+
+    const html = generateHtml(releases);
+
+    await loginCms();
+
+    await navigatePostMonth();
+
+    await createPost();
+
+    await updatePostContent(html);
+  } catch (e) {
+    console.log("Failed to get sling release info", e);
+    if (page) {
+      fs.mkdirSync('dist');
+      await page.screenshot({ path: "dist/error.png" });
+      await browser.close();
+    }
+    process.exit(1);
   }
-
-  const html = generateHtml(releases);
-
-  await loginCms();
-
-  await navigatePostMonth();
-
-  await createPost();
-
-  await updatePostContent(html);
-
-  await browser.close();
 })();

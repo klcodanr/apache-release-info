@@ -23,7 +23,7 @@ jobs:
         if: failure()
         with:
           name: error.png
-          path: error.png
+          path: dist/error.png
       - uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{secrets.MAIL_HOST}}
