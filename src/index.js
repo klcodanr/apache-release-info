@@ -288,10 +288,11 @@ async function run() {
     await updatePostContent(html);
   } catch (e) {
     if (page) {
-      console.log("Taking screenshot...");
       if (!fs.existsSync("dist")) {
+        console.log("Creating dist...");
         fs.mkdirSync("dist");
       }
+      console.log("Taking screenshot...");
       await page.screenshot({ path: "dist/error.png" });
       console.log("Screenshot taken...");
     }
