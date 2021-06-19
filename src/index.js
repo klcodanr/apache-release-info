@@ -27,6 +27,9 @@ const monthCode = lastMonth.toLocaleDateString("en-US", {
 console.log(`Gathering releases for ${month} ${year}`);
 
 let page;
+process.on("unhandledRejection", async (up) => {
+  throw up;
+});
 
 async function createPost() {
   console.log("Creating post...");
@@ -287,7 +290,8 @@ async function updatePostContent(html) {
   } catch (e) {
     console.log("Failed to get sling release info", e);
     if (page) {
-      fs.mkdirSync('dist');
+      console.log("Taking screenshot...");
+      fs.mkdirSync("dist");
       await page.screenshot({ path: "dist/error.png" });
       await browser.close();
     }
