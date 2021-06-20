@@ -4,7 +4,14 @@ const Handlebars = require("handlebars");
 const puppeteer = require("puppeteer");
 
 // Get ENV Variables
-const { DATE, JIRA_USERNAME, JIRA_PASSWORD, PUPPETEER_HEADLESS } = process.env;
+const {
+  DATE,
+  JIRA_USERNAME,
+  JIRA_PASSWORD,
+  PROJECT_ID,
+  PROJECT_NAME,
+  PUPPETEER_HEADLESS,
+} = process.env;
 
 // Calculate Date
 const lastMonth = DATE ? new Date(Date.parse(DATE)) : new Date();
@@ -23,6 +30,7 @@ function generateHtml(releases = []) {
     month,
     year,
     releases,
+    PROJECT_NAME,
   };
 
   const template = Handlebars.compile(
@@ -34,7 +42,7 @@ function generateHtml(releases = []) {
 async function getReleaseNotes(release = {}) {
   console.log(`Getting release notes for ${release.name}`);
   await page.goto(
-    `https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=${release.id}&styleName=Text&projectId=12310710`,
+    `https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=${release.id}&styleName=Text&projectId=${PROJECT_ID}`,
     {
       waitUntil: "load",
     }
@@ -49,7 +57,7 @@ async function getReleaseNotes(release = {}) {
 async function getReleases() {
   console.log("Loading releases...");
   await page.goto(
-    `https://issues.apache.org/jira/rest/projects/1.0/project/SLING/release/allversions?_=${new Date().toISOString()}`,
+    `https://issues.apache.org/jira/rest/projects/1.0/project/${PROJECT_NAME}/release/allversions?_=${new Date().toISOString()}`,
     {
       waitUntil: "load",
     }

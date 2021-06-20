@@ -7,9 +7,12 @@ on:
   schedule:
     - cron: "0 1 1 * *"
 jobs:
-  run:
+  sling:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    env:
+      PROJECT_ID: 12310710
+      PROJECT_NAME: SLING
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -18,13 +21,9 @@ jobs:
       - run: npm install
       - run: node .
         env:
-          CMS_HOST: ${{ secrets.CMS_HOST }}
-          CMS_USERNAME: ${{ secrets.CMS_USERNAME }}
-          CMS_PASSWORD: ${{ secrets.CMS_PASSWORD }}
           DATE: ${{ github.event.inputs.DATE }}
           JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
-          PUPPETEER_UA: ${{ secrets.PUPPETEER_UA }}
       - uses: actions/upload-artifact@v2
         if: ${{ cancelled() || failure() }}
         with:
@@ -37,8 +36,76 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           from: ${{secrets.MAIL_SENDER}}
           password: ${{secrets.MAIL_PASSWORD}}
-          subject: Sling Relase Info Posted
-          to: ${{secrets.MAIL_RECIPIENT}}
           secure: true
+          html_body: ./dist/releases.html
+          subject: Apache Sling Releases Last Month
+          bcc: daniel.klco@gmail.com
           body: Latest Sling Release information generated!
-          attachments: ./dist/releases.html
+  felix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PROJECT_ID: 12310100
+      PROJECT_NAME: FELIX
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run: npm install
+      - run: node .
+        env:
+          DATE: ${{ github.event.inputs.DATE }}
+          JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+      - uses: actions/upload-artifact@v2
+        if: ${{ cancelled() || failure() }}
+        with:
+          name: error.pdf
+          path: dist/error.pdf
+      - uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{secrets.MAIL_HOST}}
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          from: ${{secrets.MAIL_SENDER}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          secure: true
+          htmlBody: ./dist/releases.html
+          subject: Apache Felix Releases Last Month
+          bcc: daniel.klco@gmail.com
+          body: Latest Felix Release information generated!
+  oak:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PROJECT_ID: 12313221
+      PROJECT_NAME: OAK
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run: npm install
+      - run: node .
+        env:
+          DATE: ${{ github.event.inputs.DATE }}
+          JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+      - uses: actions/upload-artifact@v2
+        if: ${{ cancelled() || failure() }}
+        with:
+          name: error.pdf
+          path: dist/error.pdf
+      - uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{secrets.MAIL_HOST}}
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          from: ${{secrets.MAIL_SENDER}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          secure: true
+          htmlBody: ./dist/releases.html
+          subject: Apache Felix Releases Last Month
+          bcc: daniel.klco@gmail.com
+          body: Latest Felix Release information generated!
