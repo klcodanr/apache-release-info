@@ -38,7 +38,7 @@ jobs:
           to: ${{secrets.MAIL_SENDER}}
           password: ${{secrets.MAIL_PASSWORD}}
           secure: true
-          html_body: ./dist/releases.html
+          html_body: file://./dist/releases.html
           subject: Apache Sling Releases Last Month
           bcc: daniel.klco@gmail.com
           body: Latest Sling Release information generated!
@@ -73,7 +73,7 @@ jobs:
           to: ${{secrets.MAIL_SENDER}}
           password: ${{secrets.MAIL_PASSWORD}}
           secure: true
-          html_body: ./dist/releases.html
+          html_body: file://./dist/releases.html
           subject: Apache Felix Releases Last Month
           bcc: daniel.klco@gmail.com
           body: Latest Felix Release information generated!
@@ -108,7 +108,7 @@ jobs:
           to: ${{secrets.MAIL_SENDER}}
           password: ${{secrets.MAIL_PASSWORD}}
           secure: true
-          html_body: ./dist/releases.html
+          html_body: file://./dist/releases.html
           subject: Apache Felix Releases Last Month
           bcc: daniel.klco@gmail.com
           body: Latest Felix Release information generated!
