@@ -77,13 +77,13 @@ async function getReleases() {
 
 async function loginJira() {
   console.log("Logging in to JIRA...");
-  await page.goto("https://issues.apache.org/jira/secure/Dashboard.jspa", {
+  await page.goto("https://issues.apache.org/jira/login.jsp?os_destination=%2Fsecure%2FDashboard.jspa", {
     waitUntil: "load",
   });
   await page.type("#login-form-username", JIRA_USERNAME);
   await page.type("#login-form-password", JIRA_PASSWORD);
   await page.keyboard.press("Enter");
-  await page.waitForTimeout(2000);
+  await page.waitForNavigation();
 }
 
 function parseReleaseNotes(notesStr = "") {
