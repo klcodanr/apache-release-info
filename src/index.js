@@ -1,7 +1,8 @@
 require("dotenv").config();
+const fetch = require("node-fetch");
 const fs = require("fs");
 const Handlebars = require("handlebars");
-const puppeteer = require("puppeteer");
+const { parse } = require("node-html-parser");
 
 // Get ENV Variables
 const {
@@ -10,7 +11,6 @@ const {
   JIRA_PASSWORD,
   PROJECT_ID,
   PROJECT_NAME,
-  PUPPETEER_HEADLESS,
 } = process.env;
 
 // Calculate Date
@@ -20,7 +20,6 @@ const year = lastMonth.getFullYear();
 const month = lastMonth.toLocaleString("default", { month: "long" });
 console.log(`Gathering releases for ${month} ${year}`);
 
-let page;
 process.on("unhandledRejection", (up) => {
   throw up;
 });
@@ -41,49 +40,51 @@ function generateHtml(releases = []) {
 
 async function getReleaseNotes(release = {}) {
   console.log(`Getting release notes for ${release.name}`);
-  await page.goto(
+  const res = await fetch(
     `https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=${release.id}&styleName=Text&projectId=${PROJECT_ID}`,
     {
-      waitUntil: "load",
+      headers: {
+        Authorization: `Basic ${Buffer.from(
+          JIRA_USERNAME + ":" + JIRA_PASSWORD
+        ).toString("base64")}`,
+      },
     }
   );
-  await page.content();
-  let noteStr = await page.evaluate(() => {
-    return document.querySelector("textarea").value;
-  });
-  return parseReleaseNotes(noteStr);
+  if (res.ok) {
+    const html = await res.text();
+    const noteStr = parse(html).querySelector("textarea").text;
+    return parseReleaseNotes(noteStr);
+  }
+  throw new Error(
+    `Recieved invalid response from JIRA: ${JSON.stringify(res)}`
+  );
 }
 
 async function getReleases() {
   console.log("Loading releases...");
-  await page.goto(
+  const res = await fetch(
     `https://issues.apache.org/jira/rest/projects/1.0/project/${PROJECT_NAME}/release/allversions?_=${new Date().toISOString()}`,
     {
-      waitUntil: "load",
+      headers: {
+        Authorization: `Basic ${Buffer.from(
+          JIRA_USERNAME + ":" + JIRA_PASSWORD
+        ).toString("base64")}`,
+      },
     }
   );
-  await page.content();
-  let releases = await page.evaluate(() => {
-    return JSON.parse(document.querySelector("body").innerText);
-  });
 
-  console.log(`Loaded ${releases.length} releases`);
-  const currentMonth = `${lastMonth.toISOString().substr(0, 7)}`;
-  releases = releases.filter(
-    (r) => r.released && r.releaseDate.iso.indexOf(currentMonth) === 0
+  if (res.ok) {
+    let releases = await res.json();
+    console.log(`Loaded ${releases.length} releases`);
+    const currentMonth = `${lastMonth.toISOString().substr(0, 7)}`;
+    releases = releases.filter(
+      (r) => r.released && r.releaseDate.iso.indexOf(currentMonth) === 0
+    );
+    return releases;
+  }
+  throw new Error(
+    `Recieved invalid response from JIRA: ${JSON.stringify(res)}`
   );
-  return releases;
-}
-
-async function loginJira() {
-  console.log("Logging in to JIRA...");
-  await page.goto("https://issues.apache.org/jira/login.jsp?os_destination=%2Fsecure%2FDashboard.jspa", {
-    waitUntil: "load",
-  });
-  await page.type("#login-form-username", JIRA_USERNAME);
-  await page.type("#login-form-password", JIRA_PASSWORD);
-  await page.keyboard.press("Enter");
-  await page.waitForNavigation();
 }
 
 function parseReleaseNotes(notesStr = "") {
@@ -92,7 +93,7 @@ function parseReleaseNotes(notesStr = "") {
   notesStr
     .split(/\n/)
     .map((n) => n.trim())
-    .filter((n) => n !== "" && n.substr(0, 1) === "*")
+    .filter((n) => n !== "" && n.substring(0, 1) === "*")
     .forEach((n) => {
       if (n.substr(0, 2) === "**") {
         currentType = n.substr(2).trim();
@@ -108,63 +109,31 @@ function parseReleaseNotes(notesStr = "") {
 
 function parseTicket(ticket = "") {
   const idx = ticket.indexOf(" - ");
-  const issue = ticket.substr(3, idx - 4);
-  const title = ticket.substr(idx + 3);
+  const issue = ticket.substring(3, idx - 4);
+  const title = ticket.substring(idx + 3);
   return { issue, title };
 }
 
 async function run() {
-  let browser;
-  try {
-    browser = await puppeteer.launch({
-      headless: PUPPETEER_HEADLESS !== "false",
-    });
-    page = await browser.newPage();
+  const releases = (await getReleases()).sort((a, b) =>
+    a.releaseDate.iso.localeCompare(b.releaseDate.iso)
+  );
 
-    page.on("dialog", async (dialog) => {
-      console.log(dialog.message());
-      await dialog.dismiss();
-    });
+  console.log(`Releases this month: ${releases.length}`);
 
-    await loginJira();
-
-    const releases = (await getReleases()).sort((a, b) =>
-      a.releaseDate.iso.localeCompare(b.releaseDate.iso)
-    );
-
-    console.log(`Releases this month: ${releases.length}`);
-
-    for (const release of releases) {
-      release.notes = await getReleaseNotes(release);
-    }
-
-    const html = generateHtml(releases);
-
-    console.log("Writing HTML to dist...");
-    if (!fs.existsSync("./dist")) {
-      console.log("Creating dist...");
-      fs.mkdirSync("./dist");
-    }
-    fs.writeFileSync("./dist/releases.html", html);
-    console.log("Releases processed successfully!");
-  } catch (e) {
-    if (page) {
-      if (!fs.existsSync("./dist")) {
-        console.log("Creating dist...");
-        fs.mkdirSync("./dist");
-      }
-      console.log("Taking screenshot...");
-      await page.emulateMediaType("screen");
-      await page.pdf({ path: "./dist/error.pdf" });
-      console.log("Screenshot taken...");
-    }
-
-    if (browser) {
-      console.log("Closing browser...");
-      await browser.close();
-    }
-    throw e;
+  for (const release of releases) {
+    release.notes = await getReleaseNotes(release);
   }
+
+  const html = generateHtml(releases);
+
+  console.log("Writing HTML to dist...");
+  if (!fs.existsSync("./dist")) {
+    console.log("Creating dist...");
+    fs.mkdirSync("./dist");
+  }
+  fs.writeFileSync("./dist/releases.html", html);
+  console.log("Releases processed successfully!");
 }
 
 (async () => {
