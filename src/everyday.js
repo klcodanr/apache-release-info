@@ -9,6 +9,7 @@ const curies = [
     templated: true,
   },
 ];
+const API_BASE = "https://klcodanr.github.io/apache-release-info/api/";
 
 /**
  * Runs the daily update to grab all public releases and store them to JSON.
@@ -27,8 +28,9 @@ async function run(jira) {
     },
     _embedded: [],
   };
-  if (fs.existsSync("site/api/index.json")) {
-    indexData = JSON.parse(fs.readFileSync("site/api/index.json"));
+  fs.mkdirSync("docs/api/", { recursive: true });
+  if (fs.existsSync("docs/api/index.json")) {
+    indexData = JSON.parse(fs.readFileSync("docs/api/index.json"));
   }
   const projectName = process.env.PROJECT_NAME;
   if (
@@ -40,14 +42,14 @@ async function run(jira) {
       id: process.env.PROJECT_ID,
       _links: {
         curies,
-        self: { href: `/api/${projectName}` },
+        self: { href: `${API_BASE}${projectName}` },
         "api:jira": {
           href: `https://issues.apache.org/jira/projects/${projectName}`,
         },
       },
     });
   }
-  fs.writeFileSync("site/api/index.json", JSON.stringify(indexData, null, 2));
+  fs.writeFileSync("docs/api/index.json", JSON.stringify(indexData, null, 2));
 
   const projectData = {
     name: projectName,
@@ -57,7 +59,7 @@ async function run(jira) {
     },
     _links: {
       curies,
-      self: { href: `/api/${projectName}` },
+      self: { href: `${API_BASE}${projectName}` },
       "api:jira": {
         href: `https://issues.apache.org/jira/projects/${projectName}`,
       },
@@ -75,15 +77,15 @@ async function run(jira) {
       module: release.module,
       _links: {
         curies,
-        self: { href: `/api/${projectName}/${release.id}` },
+        self: { href: `${API_BASE}${projectName}/${release.id}` },
         "api:jira": { href: `https://issues.apache.org/jira${release.url}` },
-        "api:project": { href: `/api/${projectName}` },
+        "api:project": { href: `${API_BASE}${projectName}` },
       },
     };
     releaseNames.push(release.name);
 
-    fs.mkdirSync(`site/api/${projectName}`, { recursive: true });
-    if (!fs.existsSync(`site/api/${projectName}/${release.id}/index.json`)) {
+    fs.mkdirSync(`docs/api/${projectName}`, { recursive: true });
+    if (!fs.existsSync(`docs/api/${projectName}/${release.id}/index.json`)) {
       const releaseNote = await jira.getReleaseNotes(release);
 
       Object.keys(releaseNote.issues).forEach((type) => {
@@ -91,7 +93,7 @@ async function run(jira) {
           issue._links = {
             curies,
             "api:release": {
-              href: `/api/${projectName}/${release.id}`,
+              href: `${API_BASE}${projectName}/${release.id}`,
             },
             "api:jira": {
               href: `https://issues.apache.org/jira/browse/${issue.issue}`,
@@ -102,21 +104,21 @@ async function run(jira) {
       releaseData._embedded = {
         releaseNote,
       };
-      fs.mkdirSync(`site/api/${projectName}/${release.id}`, {
+      fs.mkdirSync(`docs/api/${projectName}/${release.id}`, {
         recursive: true,
       });
       fs.writeFileSync(
-        `site/api/${projectName}/${release.id}/index.json`,
+        `docs/api/${projectName}/${release.id}/index.json`,
         JSON.stringify(releaseData, null, 2)
       );
     }
     projectData._embedded.releases.push(releaseData);
   }
-  fs.mkdirSync(`site/api/${projectName}`, {
+  fs.mkdirSync(`docs/api/${projectName}`, {
     recursive: true,
   });
   fs.writeFileSync(
-    `site/api/${projectName}/index.json`,
+    `docs/api/${projectName}/index.json`,
     JSON.stringify(projectData, null, 2)
   );
 
