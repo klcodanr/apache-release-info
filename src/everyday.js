@@ -26,7 +26,7 @@ async function run(jira) {
       curies,
       self: API_BASE,
     },
-    _embedded: [],
+    _embedded: { "api:projects": [] },
   };
   fs.mkdirSync("docs/api/", { recursive: true });
   if (fs.existsSync("docs/api/index.json")) {
@@ -34,10 +34,11 @@ async function run(jira) {
   }
   const projectName = process.env.PROJECT_NAME;
   if (
-    indexData._embedded.filter((proj) => proj.id === process.env.PROJECT_ID)
-      .length === 0
+    indexData._embedded["api:projects"].filter(
+      (proj) => proj.id === process.env.PROJECT_ID
+    ).length === 0
   ) {
-    indexData._embedded.push({
+    indexData._embedded["api:projects"].push({
       name: projectName,
       id: process.env.PROJECT_ID,
       _links: {
@@ -55,7 +56,7 @@ async function run(jira) {
     name: projectName,
     id: process.env.PROJECT_ID,
     _embedded: {
-      releases: [],
+      "api:releases": [],
     },
     _links: {
       curies,
@@ -102,7 +103,7 @@ async function run(jira) {
         });
       });
       releaseData._embedded = {
-        releaseNote,
+        "api:releaseNote": releaseNote,
       };
       fs.mkdirSync(`docs/api/${projectName}/${release.id}`, {
         recursive: true,
@@ -112,7 +113,7 @@ async function run(jira) {
         JSON.stringify(releaseData, null, 2)
       );
     }
-    projectData._embedded.releases.push(releaseData);
+    projectData._embedded["api:releases"].push(releaseData);
   }
   fs.mkdirSync(`docs/api/${projectName}`, {
     recursive: true,
@@ -121,8 +122,6 @@ async function run(jira) {
     `docs/api/${projectName}/index.json`,
     JSON.stringify(projectData, null, 2)
   );
-
-  fs.writeFileSync("dist/releases.txt", releaseNames.join("\n"));
 }
 
 (async () => {
