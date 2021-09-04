@@ -80,9 +80,9 @@ class JiraClient {
       }
       releases.forEach((r, idx) => {
         const match = r.name.match(/[0-9\.\-]+$/);
-        if (match.length === 1) {
+        if (match && match.length === 1) {
           releases[idx].module = r.name.replace(match[0], "").trim();
-          releases[idx].version = match[0].trim();
+          releases[idx].version = match[0].trim().replace(/^-/, "");
         }
       });
       return releases;

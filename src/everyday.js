@@ -24,7 +24,7 @@ async function run(jira) {
   let indexData = {
     _links: {
       curies,
-      self: "/api",
+      self: API_BASE,
     },
     _embedded: [],
   };
