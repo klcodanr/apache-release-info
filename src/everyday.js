@@ -1,54 +1,119 @@
+const log = require("./lib/log")();
 const JiraClient = require("./lib/jira");
 const fs = require("fs");
 require("dotenv").config();
 
-const curies = [
-  {
-    name: "api",
-    href: "http://apis.danklco.com/docs/apache-release-info/rels/{rel}",
-    templated: true,
-  },
-];
-const API_BASE = "https://apis.danklco.com/apache-release-info/";
+const API_BASE = "https://apis.danklco.com/apache-release-info/api/";
+const JIRA_BASE_URL = process.env.JIRA_BASE_URL;
 
 /**
  * Runs the daily update to grab all public releases and store them to JSON.
  * @param {JiraClient} jira the jira client
  */
 async function run(jira) {
-  const releases = (await jira.getReleases()).sort((a, b) =>
+  const projects = await jira.getProjects();
+  for (let project of projects) {
+    log.info(`Processing project: ${project.name}`);
+    project = await jira.getProjectDetails(project.id);
+
+    await updateProject(jira, project);
+  }
+}
+
+/**
+ * Handles creating a release if the release JSON does not already exist
+ *
+ * @param {JiraClient} jira the jira client
+ * @param {*} project the project for the release
+ * @param {*} release the release to handle
+ */
+async function handleRelease(jira, project, release) {
+  const releaseData = {
+    id: release.id,
+    name: release.name,
+    description: release.description,
+    date: release.releaseDate.iso,
+    version: release.version,
+    module: release.module,
+    lastUpdated: Date.now(),
+    _links: {
+      self: { href: `${API_BASE}${project.key}/${release.id}` },
+      jira: { href: `${JIRA_BASE_URL}${release.url}` },
+      project: { href: `${API_BASE}${project.key}` },
+    },
+  };
+
+  fs.mkdirSync(`docs/api/${project.key}`, { recursive: true });
+  if (!fs.existsSync(`docs/api/${project.key}/${release.id}/index.json`)) {
+    log.debug("Creating release document");
+    const releaseNote = await jira.getReleaseNotes(project.id, release);
+
+    releaseNote.issues.forEach((issue) => {
+      issue._links = {
+        release: {
+          href: `${API_BASE}${project.key}/${release.id}`,
+        },
+        jira: {
+          href: `${JIRA_BASE_URL}/browse/${issue.issue}`,
+        },
+      };
+    });
+    releaseData.releaseNotes = releaseNote.description;
+    releaseData._embedded = {
+      issues: releaseNote.issues,
+    };
+    fs.mkdirSync(`docs/api/${project.key}/${release.id}`, {
+      recursive: true,
+    });
+    fs.writeFileSync(
+      `docs/api/${project.key}/${release.id}/index.json`,
+      JSON.stringify(releaseData, null, 2)
+    );
+  }
+  return releaseData;
+}
+
+/**
+ * Runs the daily update to grab all public releases and store them to JSON.
+ * @param {JiraClient} jira the jira client
+ * @param {*} project the project to update
+ */
+async function updateProject(jira, project) {
+  const releases = (await jira.getReleases(project)).sort((a, b) =>
     a.releaseDate.iso.localeCompare(b.releaseDate.iso)
   );
-  console.log(`Found releases: ${releases.length}`);
+  log.debug(`Found releases: ${releases.length}`);
 
   let indexData = {
+    lastUpdated: Date.now(),
     _links: {
-      curies,
       self: API_BASE,
     },
-    _embedded: { "api:projects": [] },
+    _embedded: { projects: [] },
   };
   fs.mkdirSync("docs/api/", { recursive: true });
   if (fs.existsSync("docs/api/index.json")) {
     indexData = JSON.parse(fs.readFileSync("docs/api/index.json"));
   }
-  const projectName = process.env.PROJECT_NAME;
   if (
-    indexData._embedded["api:projects"].filter(
+    indexData._embedded.projects.filter(
       (proj) => proj.id === process.env.PROJECT_ID
     ).length === 0
   ) {
-    indexData._embedded["api:projects"].push({
-      name: projectName,
-      id: process.env.PROJECT_ID,
+    indexData._embedded.projects.push({
+      name: project.name,
+      id: project.id,
+      description: project.description,
       _links: {
-        curies,
-        self: { href: `${API_BASE}${projectName}` },
-        "api:jira": {
-          href: `https://issues.apache.org/jira/projects/${projectName}`,
+        self: { href: `${API_BASE}${project.key}` },
+        jira: {
+          href: `${JIRA_BASE_URL}/projects/${project.key}`,
         },
-        "api:root": {
+        root: {
           href: API_BASE,
+        },
+        avatar: {
+          href: project.avatarUrls["48x48"],
         },
       },
     });
@@ -56,73 +121,40 @@ async function run(jira) {
   fs.writeFileSync("docs/api/index.json", JSON.stringify(indexData, null, 2));
 
   const projectData = {
-    name: projectName,
-    id: process.env.PROJECT_ID,
+    name: project.name,
+    id: project.id,
+    description: project.description,
+    lastUpdated: Date.now(),
     _embedded: {
-      "api:releases": [],
+      releases: [],
     },
     _links: {
-      curies,
-      self: { href: `${API_BASE}${projectName}` },
-      "api:jira": {
-        href: `https://issues.apache.org/jira/projects/${projectName}`,
+      self: { href: `${API_BASE}${project.key}` },
+      jira: {
+        href: `${JIRA_BASE_URL}/projects/${project.key}`,
+      },
+      avatar: {
+        href: project.avatarUrls["48x48"],
+      },
+      root: {
+        href: API_BASE,
+      },
+      homepage: {
+        href: project.url,
       },
     },
   };
 
-  const releaseNames = [];
   for (const release of releases) {
-    const releaseData = {
-      id: release.id,
-      name: release.name,
-      description: release.description,
-      date: release.releaseDate.iso,
-      version: release.version,
-      module: release.module,
-      _links: {
-        curies,
-        self: { href: `${API_BASE}${projectName}/${release.id}` },
-        "api:jira": { href: `https://issues.apache.org/jira${release.url}` },
-        "api:project": { href: `${API_BASE}${projectName}` },
-      },
-    };
-    releaseNames.push(release.name);
-
-    fs.mkdirSync(`docs/api/${projectName}`, { recursive: true });
-    if (!fs.existsSync(`docs/api/${projectName}/${release.id}/index.json`)) {
-      const releaseNote = await jira.getReleaseNotes(release);
-
-      Object.keys(releaseNote.issues).forEach((type) => {
-        releaseNote.issues[type].forEach((issue) => {
-          issue._links = {
-            curies,
-            "api:release": {
-              href: `${API_BASE}${projectName}/${release.id}`,
-            },
-            "api:jira": {
-              href: `https://issues.apache.org/jira/browse/${issue.issue}`,
-            },
-          };
-        });
-      });
-      releaseData._embedded = {
-        "api:releaseNote": releaseNote,
-      };
-      fs.mkdirSync(`docs/api/${projectName}/${release.id}`, {
-        recursive: true,
-      });
-      fs.writeFileSync(
-        `docs/api/${projectName}/${release.id}/index.json`,
-        JSON.stringify(releaseData, null, 2)
-      );
-    }
-    projectData._embedded["api:releases"].push(releaseData);
+    const releaseData = await handleRelease(jira, project, release);
+    delete releaseData._embedded;
+    projectData._embedded.releases.push(releaseData);
   }
-  fs.mkdirSync(`docs/api/${projectName}`, {
+  fs.mkdirSync(`docs/api/${project.key}`, {
     recursive: true,
   });
   fs.writeFileSync(
-    `docs/api/${projectName}/index.json`,
+    `docs/api/${project.key}/index.json`,
     JSON.stringify(projectData, null, 2)
   );
 }
@@ -131,7 +163,8 @@ async function run(jira) {
   try {
     await run(new JiraClient(process.env));
   } catch (e) {
-    console.log("Failed to get sling release info", e);
+    log.error("Failed to get sling release info", e);
+    console.error(e);
   }
 })().then(
   () => process.exit(0),
