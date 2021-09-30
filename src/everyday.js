@@ -36,6 +36,7 @@ async function handleRelease(jira, project, release) {
     version: release.version,
     module: release.module,
     lastUpdated: Date.now(),
+    type: "release",
     _links: {
       self: { href: `${API_BASE}${project.key}/${release.id}` },
       jira: { href: `${JIRA_BASE_URL}${release.url}` },
@@ -86,6 +87,8 @@ async function updateProject(jira, project) {
 
   let indexData = {
     title: "Apache Release Information API",
+    lastUpdated: Date.now(),
+    type: "index",
     _links: {
       self: { href: `${API_BASE}` },
       documentation: {
@@ -108,6 +111,7 @@ async function updateProject(jira, project) {
     id: project.id,
     description: project.description,
     lastUpdated: Date.now(),
+    type: "project",
     _links: {
       self: { href: `${API_BASE}${project.key}` },
       jira: {
