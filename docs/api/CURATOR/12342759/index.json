@@ -1,0 +1,363 @@
+{
+  "id": "12342759",
+  "name": "4.1.0",
+  "description": "Move to Java 8, bug fixes, etc.",
+  "date": "2018-12-19",
+  "version": "4.1.0",
+  "module": "",
+  "lastUpdated": 1633036790873,
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/CURATOR/fixforversion/12342759"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/CURATOR"
+    }
+  },
+  "releaseNotes": "Release Notes - Apache Curator - Version 4.1.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "CURATOR-405",
+        "title": "Connection loss not leading to ConnectionState.LOST and causing logs to fill",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-405"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-452",
+        "title": "ChildData.getData() can be null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-452"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-455",
+        "title": "Curator's EnsembleProvider.getConnectionString() is not re-called once the session expiration has been injected",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-455"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-460",
+        "title": "Timed tolerance for connection suspended leads to simultaneous leaders",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-460"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-462",
+        "title": "InterProcessSemaphoreV2 leaves orphaned lease node if acquiring the semaphore is interrupted at the wrong time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-462"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-472",
+        "title": "Test-only code started to be called in prod",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-472"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-475",
+        "title": "Cannot effectively set connectionTimeout < 1000ms",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-475"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-476",
+        "title": "PathChildrenCache never gets initialized if a child dies even before a data watch is registered for it",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-476"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-479",
+        "title": "org.apache.curator.x.async.modeled.details.CachedModeledFrameworkImpl.children() does not work",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-479"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-480",
+        "title": "org.apache.curator.x.async.modeled.details.ModeledFrameworkImpl.delete(int) is not using version parameter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-480"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-483",
+        "title": "Sequential PersistentNodes with protection don't resync after reconnection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-483"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-489",
+        "title": "CreateOption.doProtected uses null protectedId when applied via AsyncCreateBuilderImpl",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-489"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-491",
+        "title": "PathChildrenCache can process background jobs after being closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-491"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-495",
+        "title": "Race and possible dead locks with RetryPolicies and several Curator Recipes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-495"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-447",
+        "title": "TreeCache: Improve memory usage and concurrent update logic",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-447"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-448",
+        "title": "Include curator framework state in error messages",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-448"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-450",
+        "title": "Dead link in \"Getting Started\" documentation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-450"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-468",
+        "title": "Closing an active leader selector always logs spurious error",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-468"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-471",
+        "title": "ZooKeeper 3.5.4-beta is Java 8 minimum - Curator should follow",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-471"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-477",
+        "title": "Ability to turn off Zk Watches in Curator Framework",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-477"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-487",
+        "title": "GzipCompressionProvider produces a lot of finalizable objects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-487"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-492",
+        "title": "Time to upgrade the Apache parent pom again",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-492"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-494",
+        "title": "Make ZKPaths.makePath() methods to allocate less garbage",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-494"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-490",
+        "title": "Make the tests more resilient",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-490"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-493",
+        "title": "Fix test case with testDeleteChildrenConcurrently",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-493"
+          }
+        }
+      },
+      {
+        "issue": "CURATOR-461",
+        "title": "Update release artifact production to match new guidelines",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CURATOR/12342759"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CURATOR-461"
+          }
+        }
+      }
+    ]
+  }
+}
