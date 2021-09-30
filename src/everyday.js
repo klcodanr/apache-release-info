@@ -47,6 +47,9 @@ async function run(jira) {
         "api:jira": {
           href: `https://issues.apache.org/jira/projects/${projectName}`,
         },
+        "api:root": {
+          href: API_BASE,
+        },
       },
     });
   }
