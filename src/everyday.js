@@ -5,11 +5,11 @@ require("dotenv").config();
 const curies = [
   {
     name: "api",
-    href: "http://klcodanr.github.io/apache-release-info/docs/rels/{rel}",
+    href: "http://apis.danklco.com/docs/apache-release-info/rels/{rel}",
     templated: true,
   },
 ];
-const API_BASE = "https://klcodanr.github.io/apache-release-info/api/";
+const API_BASE = "https://apis.danklco.com/apache-release-info/";
 
 /**
  * Runs the daily update to grab all public releases and store them to JSON.
