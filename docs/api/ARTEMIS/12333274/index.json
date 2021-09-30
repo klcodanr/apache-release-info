@@ -1,0 +1,1169 @@
+{
+  "id": "12333274",
+  "name": "1.2.0",
+  "description": "This version includes significant improvements to performance, particularly around the persistence layer.  New features include LDAP and OSGi support.",
+  "date": "2016-01-04",
+  "version": "1.2.0",
+  "module": "",
+  "lastUpdated": 1633035990781,
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/ARTEMIS/fixforversion/12333274"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/ARTEMIS"
+    }
+  },
+  "releaseNotes": "Release Notes - ActiveMQ Artemis - Version 1.2.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "ARTEMIS-151",
+        "title": "TransportConfiguration does not check the name in equals",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-151"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-168",
+        "title": "Pluggable ACL Hierarchies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-168"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-224",
+        "title": "java.lang.ClassNotFoundException: org.jboss.logmanager.LogManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-224"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-226",
+        "title": "Fix typo in Netty TransportConstants",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-226"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-231",
+        "title": "STOMP error when not unsubscribing from topic",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-231"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-232",
+        "title": "STOMP error when closing connection without DISCONNECT",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-232"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-236",
+        "title": "Improve Legacy support on older migrating clients",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-236"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-237",
+        "title": "Artemis won't run using IBM JDK 1.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-237"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-239",
+        "title": "Verify Stomp Heart-beating against StompJMS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-239"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-242",
+        "title": "IllegalStateException thrown during producer.send()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-242"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-243",
+        "title": "possible null pointer in Replicated/ReplicaPolicy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-243"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-244",
+        "title": "wrong property name used in ColocatedHAManager server-id",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-244"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-249",
+        "title": "Failure of multiple tests with SIGSEGV - problematic frame  C  [libaio.so.1+0x625]  io_getevents+0x5",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-249"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-250",
+        "title": "Scale down fails with ActiveMQSecurityException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-250"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-254",
+        "title": "Don't throw IllegalStateException from JMS producer implementation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-254"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-256",
+        "title": "Orchestrate fail-back deterministically",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-256"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-257",
+        "title": "artemis-core-client artifact depends on artemis-journal",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-257"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-259",
+        "title": "ClientCrashTest: tests fail on slower machines",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-259"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-262",
+        "title": "Core Bridge throws OutOfMemory exception when transferring large messages.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-262"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-263",
+        "title": "etc folder not included at runtime",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-263"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-269",
+        "title": "restart-backup attribute should be true by default",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-269"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-273",
+        "title": "Server moveData does not support relative paths",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-273"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-274",
+        "title": "Make ActiveMQThreadFactory instantiation running within doPrivileged block",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-274"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-276",
+        "title": "JMSBridge should be TCCL aware",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-276"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-278",
+        "title": "[Artemis Testsuite] SessionCloseOnGCTest#testCloseOneSessiononGC fails on slower machines",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-278"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-279",
+        "title": "Incorrect name of the artemis service",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-279"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-280",
+        "title": "Resource Adapter hangs on shutdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-280"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-282",
+        "title": "Server lock file creation throws exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-282"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-287",
+        "title": "[Artemis Testsuite] PagingTest#testDeleteQueueRestart fails on slower machines",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-287"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-288",
+        "title": "Disconnecting client results in log warnings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-288"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-289",
+        "title": "Potential ConcurrentModificationException when closing connections",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-289"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-291",
+        "title": "Allow multiple acceptor configurations with same host/port parameters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-291"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-292",
+        "title": "isSameHost doesn't work",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-292"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-294",
+        "title": "Make ServiceUtils loads its services within doPrivileged block",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-294"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-295",
+        "title": "Reword log messages that use the word \"yet\".",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-295"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-296",
+        "title": "Do not print stack trace on BridgeDisconnect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-296"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-297",
+        "title": "Handle exceptions during server stop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-297"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-298",
+        "title": "IPv6 escape doesn't always work",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-298"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-299",
+        "title": "Improve performance of TextFileCertificateLoginModule when many entries in user file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-299"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-300",
+        "title": "Make JAAS properties login module default and deprecate \"basic\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-300"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-301",
+        "title": "ServerConsumerImpl::cancelRefs is not thread safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-301"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-303",
+        "title": "listDurableSubscriptionsAsJson fails if there is a durable subscription on a JMS topic",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-303"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-304",
+        "title": "Prompt for role when creating instance",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-304"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-315",
+        "title": "NullPointerException when trying to list prepared transactions as JSON",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-315"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-321",
+        "title": "if no more files can be created the journal should stop with a critical IO error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-321"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-323",
+        "title": "Documentation - Using Server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-323"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-324",
+        "title": "Redelivery policy on the client side",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-324"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-326",
+        "title": "Artemis cannot be built if its path contains spaces",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-326"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-327",
+        "title": "Remove binaries from source distribution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-327"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-328",
+        "title": "Bridge could eventually delete messages without sendings during acks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-328"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-341",
+        "title": "[Artemis Testsuite] ConsumerTest.testAcksWithSmallSendWindow[isNetty=false||true] fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-341"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-343",
+        "title": "[Artemis Testsuite] DivertTest.testSingleNonExclusiveDivert3 fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-343"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-348",
+        "title": "Error Message: bin/artemis: line 109: [: too many arguments",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-348"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-363",
+        "title": "[Artemis Testsuite] PagingTest#testDropMessages fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-363"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-364",
+        "title": "[Artemis Testsuite] PagingTest#testPagingDifferentSizes fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-364"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-365",
+        "title": "[Artemis Testsuite] AddressControlTest#testGetNumberOfPages fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-365"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-377",
+        "title": "[Artemis Testsuite] NettySecurityClientTest#testProducerConsumerClientWithSecurityManager fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-377"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-379",
+        "title": "[Artemis Testsuite] BackupSyncLargeMessageTest.testReserveFileIdValuesOnBackup fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-379"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-381",
+        "title": "[Artemis Testsuite] LargeMessageOverBridgeTest.testSendBytesAsLargeOnBridgeOnly fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-381"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-392",
+        "title": "Artemis NettyConnetor doesn't set Allocators after HTTP socket upgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-392"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-421",
+        "title": "wrong XA_RETRY XAException error code returned on crash for 1PC",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-421"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-423",
+        "title": "Multiple failbacks do not work using co-located shared store",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-423"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-93",
+        "title": "OSGI support",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-93"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-201",
+        "title": "Log warning if server can crash on OutOfMemory due to \"misconfiguration\"",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-201"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-252",
+        "title": "Retry message on DLQ - feature in JMX",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-252"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-293",
+        "title": "Rebalance JCA RA inflow connections when cluster topology changes",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-293"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-227",
+        "title": "Allow adding StompFrameInterceptor instances",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-227"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-228",
+        "title": "Accept BinaryWebSocketFrame in STOMP WebSocketServerHandler",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-228"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-229",
+        "title": "Additional address argument for validateUserAndRole",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-229"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-230",
+        "title": "Allow setting STOMP content-type header via JMS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-230"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-238",
+        "title": "Expand legacy support to clients and improve existing ClientProtocolManager",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-238"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-240",
+        "title": "Expanding Maven Plugins on Artemis to possibly explore dependencies during create",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-240"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-261",
+        "title": "Allow certificate based JAAS security",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-261"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-270",
+        "title": "Pass RemotingConnection to validateUserAndRole",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-270"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-271",
+        "title": "Expose HttpRequest in WebSocketServerHandler",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-271"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-275",
+        "title": "Artemis creating instance request for switch which disables persistance",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-275"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-314",
+        "title": "Support JCA inflow connection rebalancing when reconnectAttempts == -1",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-314"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-319",
+        "title": "Improve file creation and reuse process on the Journal",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-319"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-320",
+        "title": "Implementing TCP Back Pressure delivery flow control",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-320"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-329",
+        "title": "Log configuration improvement",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-329"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-74",
+        "title": "import ActiveMQ 5 JAAS security",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-74"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-197",
+        "title": "Fix the following list of examples (failover, etc)",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-197"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-286",
+        "title": "Upgrade Netty to version 4.0.32.Final",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-286"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-302",
+        "title": "Improve resilience of XA Transactions during failover and reconnection",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-302"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-308",
+        "title": "Add example using LDAP for authentication",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-308"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-309",
+        "title": "Upgrade commons-collections",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-309"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-310",
+        "title": "Upgrade jolokia to 1.3.2",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-310"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-378",
+        "title": "expose some Network info via the management interfaces",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12333274"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-378"
+          }
+        }
+      }
+    ]
+  }
+}

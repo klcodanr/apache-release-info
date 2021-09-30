@@ -93,9 +93,18 @@ async function updateProject(jira, project) {
   };
   fs.mkdirSync("docs/api/", { recursive: true });
   if (fs.existsSync("docs/api/index.json")) {
-    indexData = JSON.parse(fs.readFileSync("docs/api/index.json")).filter(
-      (proj) => proj.id === project.id
-    );
+    indexData = {
+      title: "Apache Release Information API",
+      _links: {
+        self: { href: `${API_BASE}` },
+        documentation: { href: `https://www.danklco.com/api-docs/apache-release-info.html` },
+      },
+      _embedded: {
+        projects: JSON.parse(
+          fs.readFileSync("docs/api/index.json")
+        )._embedded.projects.filter((proj) => proj.id === project.id),
+      },
+    };
   }
 
   const projectData = {

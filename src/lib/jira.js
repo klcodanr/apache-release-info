@@ -21,13 +21,24 @@ class JiraClient {
    */
   getProjects = async function () {
     //https://issues.apache.org/jira/rest/api/2/project
-    return [
+    
+    log.debug(`Getting projects`);
+    const res = await fetch(
+      `${this.config.JIRA_BASE_URL}/rest/api/2/project`,
       {
-        id: 12311310,
-        key: "APLO",
-        name: "ActiveMQ Apollo",
-      },
-    ];
+        headers: {
+          Authorization: `Basic ${Buffer.from(
+            this.config.JIRA_USERNAME + ":" + this.config.JIRA_PASSWORD
+          ).toString("base64")}`,
+        },
+      }
+    );
+    if (res.ok) {
+      return res.json();
+    }
+    throw new Error(
+      `Recieved invalid response from JIRA: ${JSON.stringify(res)}`
+    );
   };
 
   /**

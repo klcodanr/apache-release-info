@@ -1,0 +1,1468 @@
+{
+  "id": "12339963",
+  "name": "2.1.0",
+  "description": "Maturity on AMQP, Fixes, Plugin",
+  "date": "",
+  "version": "2.1.0",
+  "module": "",
+  "lastUpdated": 1633035981174,
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/ARTEMIS/fixforversion/12339963"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/ARTEMIS"
+    }
+  },
+  "releaseNotes": "Release Notes - ActiveMQ Artemis - Version 2.1.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "ARTEMIS-56",
+        "title": "the message-id of AMQP messages gets cleared within the broker",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-56"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-57",
+        "title": "the 'to' field of AMQP messages gets cleared within the broker",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-57"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-59",
+        "title": "AMQP messages published transactionally should be accepted using a TransactionalState",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-59"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-60",
+        "title": "Transactionally consumed AMQP messages are settled without any disposition state.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-60"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-267",
+        "title": "AMQP messages without a Header section get persisted despite being non-durable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-267"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-457",
+        "title": "Scale down with live-only ha policy failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-457"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-547",
+        "title": "Authorize AMQP sender/receive on link attach",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-547"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-688",
+        "title": "java.util.ConcurrentModificationException when sending message to JMS client",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-688"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-712",
+        "title": "Artemis does not support local transactions properly over AMQP",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-712"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-775",
+        "title": "AMQP: Message seems to be delivered twice when receiver close with pending messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-775"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-826",
+        "title": "MQTT with a long password field causes NPE exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-826"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-834",
+        "title": "Management over AMQP throws exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-834"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-861",
+        "title": "Artemis 1.5 compilation fails with IBM JDK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-861"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-864",
+        "title": "Sending to a destroyed temp queue didn't get exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-864"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-874",
+        "title": "ThreadGroup memory leak",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-874"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-908",
+        "title": "AMQP flow control misses unblock during heavy load",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-908"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-925",
+        "title": "broker logs connection failure warning when client closes AMQP connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-925"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-956",
+        "title": "exception when messages are settled separately",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-956"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1012",
+        "title": "AMQP TX is redelivering message that are still aquired",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1012"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1013",
+        "title": "AMQP Release does not redelivery message if flow or new message does not arrive",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1013"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1024",
+        "title": "Management operation causes ClassNotFoundException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1024"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1031",
+        "title": "Prefixes no longer working with Core Client",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1031"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1033",
+        "title": "NPE on PageTransactions during startup in case of previous TX Failures",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1033"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1034",
+        "title": "[AMQP] non-durable subscription queue not ended on link close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1034"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1039",
+        "title": "AMQP: Broker does not replenish the credit for the receiver link of it transaction coordinator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1039"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1041",
+        "title": "AMQP: Broker not respecting absolute expiry time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1041"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1043",
+        "title": "NettyConnector not working with IPv6 address",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1043"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1044",
+        "title": "Stackoverflow on AMQP sends",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1044"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1046",
+        "title": "Transaction issues over AMQP",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1046"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1048",
+        "title": "Filter is not working with AMQP Unsigned Types",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1048"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1050",
+        "title": "AMQP Connections are not cleaned up properly when client fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1050"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1051",
+        "title": "Server Session is not thread safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1051"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1053",
+        "title": "Use credentials when checking for active server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1053"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1057",
+        "title": "Lower log level of AMQ214023",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1057"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1063",
+        "title": "Unknown constructor: org.apache.qpid.proton.codec.DecodeException with AMQP client and diverts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1063"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1064",
+        "title": "Getting \"deliveryModes\" of an Address from a client via management causes AMQ119034",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1064"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1065",
+        "title": "Bring back in v2.0.x the API that allows clients to get the list of JMS Topics and Queue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1065"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1067",
+        "title": "Wrong format string specifiers in exception messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1067"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1068",
+        "title": "Routing for JMS over AMQP is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1068"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1069",
+        "title": "AMQP: Thread unsafe proton usage found",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1069"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1072",
+        "title": "./artemis create --java-opts will have options on bin instead of etc",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1072"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1074",
+        "title": "Acceptors and Connectors that enable SSL don’t start up while using a password codec",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1074"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1076",
+        "title": "Broken links in User Manual",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1076"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1078",
+        "title": "Thread pool executor occasionally misses to create a new thread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1078"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1079",
+        "title": "CLI option for paging/blocking",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1079"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1082",
+        "title": "OpenWire protocol race condition on create queue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1082"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1083",
+        "title": "WARNS are printed on start when no native persister is found for certain protocols",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1083"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1085",
+        "title": "JDBC store does handle store lineup properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1085"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1086",
+        "title": "Incorrect addition of SimpleString object to ApplicationProperties",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1086"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1089",
+        "title": "Backup sync-up is slow when paging",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1089"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1090",
+        "title": "Message not expired if absolute expiry time is 0 and ttl is set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1090"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1092",
+        "title": "Validated user + AMQP throwing exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1092"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1093",
+        "title": "Full qualified queue name support",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1093"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1094",
+        "title": "Replica can't connect to live via group-name when group size > 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1094"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1097",
+        "title": "Message priority ordering not being respected",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1097"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1100",
+        "title": "AMQPMessage doesn't store header",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1100"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1101",
+        "title": "Get of UserID and Timestamp incorrect in AMQPMessage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1101"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1105",
+        "title": "Null pointer when replicating paged messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1105"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1107",
+        "title": "fix and Test AddressControl.sendMessage()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1107"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1108",
+        "title": "Shared-store with AIO fails to lock lockfile on NFS shares",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1108"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1111",
+        "title": "Broker thread hangs if an AMQP consumer is closed during delivery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1111"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1113",
+        "title": "Stomp doesn't deal with management address appropriately",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1113"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1114",
+        "title": "Journal Compactor possibly losing records",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1114"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1121",
+        "title": "Expiry scanner under load might break queue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1121"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1122",
+        "title": "ActiveMQJAASSecurityManager class loading issue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1122"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1123",
+        "title": "Cleanup and add new AMQP protocol handling tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1123"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1128",
+        "title": "QueueControlImpl.sendMessage() fixes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1128"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1130",
+        "title": "Log disallowed SSL protocols just once",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1130"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1132",
+        "title": "Creating an AMQP resources when security is configured can hang or return wrong error type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1132"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1134",
+        "title": "Internal errors in AMQP protocol handler can lead to stalled connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1134"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1135",
+        "title": "Overflows during integer addition or multiplication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1135"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1137",
+        "title": "Address configured without routing type causes exception on broker restart",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1137"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1138",
+        "title": "OSGI Netty Epoll Fix",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1138"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1140",
+        "title": "Avoid Queue lock on queueQuery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1140"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1150",
+        "title": "Logging config won't work when server has spaces",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1150"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-639",
+        "title": "Make credit refresh size and refresh threshold configurable on AMQP protocol",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-639"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-898",
+        "title": "Artemis Plugin Support",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-898"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-994",
+        "title": "Support Netty Native Epoll on Linux",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-994"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1080",
+        "title": "Implement AMQP::reject",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1080"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1081",
+        "title": "Implement AMQP:undeliverableHere",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1081"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1087",
+        "title": "Allow Buffer Pooling to be configurable for InVM Transport",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1087"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1116",
+        "title": "map external roles to local artemis roles",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1116"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-590",
+        "title": "Allow NettyConnector to use the default SSL Context",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-590"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-904",
+        "title": "Remove cyclic dependencies from artemis-cli",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-904"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1037",
+        "title": "Doc for the MAPPED journalType",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1037"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1038",
+        "title": "Make use of Proton/Delivery.available and upgrade proton",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1038"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1042",
+        "title": "Support AMQP failover lists",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1042"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1045",
+        "title": "Performance improvement on AMQP",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1045"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1047",
+        "title": "Improve GC Settings",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1047"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1052",
+        "title": "Dealing with Expires and DLQ properly over AMQP",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1052"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1054",
+        "title": "JVM Monitoring pauses logs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1054"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1056",
+        "title": "Performance improvements over AMQP",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1056"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1059",
+        "title": "DEBUG option on Paging counters",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1059"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1073",
+        "title": "Exposing AMQP Credits, and setting the default credits to 1000",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1073"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1075",
+        "title": "Add Routing Type to QueueControl management API",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1075"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1077",
+        "title": "Improving InVM and Buffer usage",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1077"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1084",
+        "title": "Oracle12C has table name size limit of 30 chars.  When using paging and a table name of >10 chars.  Artemis will work fine, until it's Page UUID size goes above 20 chars.  Then start failing to page.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1084"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1096",
+        "title": "Load tests exhaust memory if global-max-size is not set",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1096"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1102",
+        "title": "Implement cert-based auth for OpenWire",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1102"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1110",
+        "title": "AMQP Transaction controller can reuse a single buffer for decoding commands",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1110"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1117",
+        "title": "Improve IO Resilience to failures",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1117"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1118",
+        "title": "AMQP is missing OperationContext callbacks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1118"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1119",
+        "title": "Flow control on ProtonHandler",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1119"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1124",
+        "title": "JDBC Network Timeout configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1124"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1127",
+        "title": "AMQP: Match client SenderSettleMode instead of always defaulting to MIXED",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1127"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1136",
+        "title": "Improve UnpooledUnsafeDirectByteBufWrapper",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1136"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1141",
+        "title": "Validate Karaf features using the karaf plugin",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1141"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1144",
+        "title": "Include SL4J->JUL logger bridge",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1144"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-1139",
+        "title": "Add some tests for AMQP over websockets",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-1139"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-794",
+        "title": "AMQP: Modified and Rjected Outcomes are not being handled correctly",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-794"
+          }
+        }
+      },
+      {
+        "issue": "ARTEMIS-795",
+        "title": "AMQP: Dynamic Node handling does not respect lifetime policies",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/ARTEMIS/12339963"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/ARTEMIS-795"
+          }
+        }
+      }
+    ]
+  }
+}
