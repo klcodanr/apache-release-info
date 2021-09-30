@@ -3,7 +3,7 @@ const JiraClient = require("./lib/jira");
 const fs = require("fs");
 require("dotenv").config();
 
-const API_BASE = "https://apis.danklco.com/apache-release-info/api/";
+const API_BASE = "https://apis.danklco.com/apache-release-info/";
 const JIRA_BASE_URL = process.env.JIRA_BASE_URL;
 
 /**
@@ -93,41 +93,16 @@ async function updateProject(jira, project) {
   };
   fs.mkdirSync("docs/api/", { recursive: true });
   if (fs.existsSync("docs/api/index.json")) {
-    indexData = JSON.parse(fs.readFileSync("docs/api/index.json"));
+    indexData = JSON.parse(fs.readFileSync("docs/api/index.json")).filter(
+      (proj) => proj.id === project.id
+    );
   }
-  if (
-    indexData._embedded.projects.filter(
-      (proj) => proj.id === process.env.PROJECT_ID
-    ).length === 0
-  ) {
-    indexData._embedded.projects.push({
-      name: project.name,
-      id: project.id,
-      description: project.description,
-      _links: {
-        self: { href: `${API_BASE}${project.key}` },
-        jira: {
-          href: `${JIRA_BASE_URL}/projects/${project.key}`,
-        },
-        root: {
-          href: API_BASE,
-        },
-        avatar: {
-          href: project.avatarUrls["48x48"],
-        },
-      },
-    });
-  }
-  fs.writeFileSync("docs/api/index.json", JSON.stringify(indexData, null, 2));
 
   const projectData = {
     name: project.name,
     id: project.id,
     description: project.description,
     lastUpdated: Date.now(),
-    _embedded: {
-      releases: [],
-    },
     _links: {
       self: { href: `${API_BASE}${project.key}` },
       jira: {
@@ -145,6 +120,12 @@ async function updateProject(jira, project) {
     },
   };
 
+  indexData._embedded.projects.push(projectData);
+  fs.writeFileSync("docs/api/index.json", JSON.stringify(indexData, null, 2));
+
+  projectData._embedded = {
+    releases: [],
+  };
   for (const release of releases) {
     const releaseData = await handleRelease(jira, project, release);
     delete releaseData._embedded;
