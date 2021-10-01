@@ -1,0 +1,611 @@
+{
+  "id": "12333622",
+  "name": "v1.9",
+  "description": "SVM, path functions, matrix ops (phase 2), covariance matrix, other utilities",
+  "date": "2016-04-06",
+  "version": "1.9",
+  "module": "v",
+  "lastUpdated": 1633052639135,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/MADLIB/fixforversion/12333622"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/MADLIB"
+    }
+  },
+  "releaseNotes": "Release Notes - Apache MADlib - Version v1.9",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "MADLIB-368",
+        "title": "Doc Review for SVM",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-368"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-583",
+        "title": "SVM: Document error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-583"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-584",
+        "title": "SVM: Training on small table will lead support vector failure in parallel mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-584"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-604",
+        "title": "SVM Regression Performance : Several data sets handling is much slower than libsvm",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-604"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-605",
+        "title": "SVM Regression: Accurancy should be improved for some data sets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-605"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-641",
+        "title": "SVM Classification: MADlib has worse score than libsvm on data set splice",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-641"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-642",
+        "title": "SVM Classfication Performance: Classification with Kernel function can improve performance on below datasets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-642"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-777",
+        "title": "SVM Regression produces different predictions on multiple runs of the same training and test sets.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-777"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-826",
+        "title": "Issue in SVM with svm_gaussian kernel function",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-826"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-895",
+        "title": "Incorrect examples in hypothesis tests documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-895"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-932",
+        "title": "Matrix operations bugs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-932"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-933",
+        "title": "MADlib LDA term_frequency function bugs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-933"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-934",
+        "title": "MADlib LDA should allow users to supply names of input columns",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-934"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-946",
+        "title": "Null handling in kmeans",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-946"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-952",
+        "title": "Type error in elastic net",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-952"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-954",
+        "title": "Check input handling of SUMMARY function",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-954"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-975",
+        "title": "Random Forest training error message",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-975"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-901",
+        "title": "Implement new SVM module",
+        "type": "Epic",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-901"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-903",
+        "title": "Path functions (phase 1)",
+        "type": "Epic",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-903"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-902",
+        "title": "Stemming",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-902"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-906",
+        "title": "Matrix operations (phase 2)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-906"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-912",
+        "title": "Catchup JIRA for transition period to Apache",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-912"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-913",
+        "title": "Linear SVM - grouping support for regression",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-913"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-914",
+        "title": "Linear SVM - regression",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-914"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-915",
+        "title": "SVM cross validation",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-915"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-916",
+        "title": "Path - pattern match (1 match per partition, 1 window per match)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-916"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-917",
+        "title": "Path - window functions (multiple matches per partition, 1 window per match)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-917"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-931",
+        "title": "Path - window functions (output matched rows)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-931"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-937",
+        "title": "Non-linear SVM - gaussian kernel",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-937"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-938",
+        "title": "Non-linear SVM - polynomial kernel",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-938"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-941",
+        "title": "Covariance matrix",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-941"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-948",
+        "title": "Proportion of variance for PCA training function",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-948"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-958",
+        "title": "Non-linear SVM - gaussian kernel in-mem",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-958"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-973",
+        "title": "Path - make aggregate computation per pattern match (not per partition)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-973"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-919",
+        "title": "Implement skipping of arrays-with-NULL for elastic net predict",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-919"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-982",
+        "title": "Misc doc updates on http://madlib.incubator.apache.org/ site for 1.9 release",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-982"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-921",
+        "title": "Define and document contribution process for MADlib developers",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-921"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-955",
+        "title": "SVM - performance testing",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-955"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-963",
+        "title": "Release audit for licenses",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-963"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-979",
+        "title": "Misc license and notice tasks identified in 1.9alpha release review by IPMC",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-979"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-985",
+        "title": "Release tasks for 1.9",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-985"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-420",
+        "title": "Support for parameter Selection for SVM",
+        "type": "Request",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-420"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-872",
+        "title": "document error",
+        "type": "Request",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-872"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-904",
+        "title": "Migrate legacy MADlib wiki to Apache wiki",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-904"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-956",
+        "title": "SVM - online help",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12333622"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-956"
+          }
+        }
+      }
+    ]
+  }
+}

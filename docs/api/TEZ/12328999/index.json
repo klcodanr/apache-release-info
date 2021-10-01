@@ -1,0 +1,2431 @@
+{
+  "id": "12328999",
+  "name": "0.7.0",
+  "description": "0.7 release. Performance/Scalability enhancements.",
+  "date": "2015-05-18",
+  "version": "0.7.0",
+  "module": "",
+  "lastUpdated": 1633053254189,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/TEZ/fixforversion/12328999"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/TEZ"
+    }
+  },
+  "releaseNotes": "Release Notes - Apache Tez - Version 0.7.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "TEZ-485",
+        "title": "Get rid of TezTaskStatus",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-485"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-776",
+        "title": "Reduce AM mem usage caused by storing TezEvents",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-776"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1482",
+        "title": "Fix memory issues for Local Mode running concurrent tasks",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1482"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1521",
+        "title": "VertexDataMovementEventsGeneratedEvent may be logged twice in recovery log",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1521"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1879",
+        "title": "Create local UGI instances for each task and the AM, when running in LocalMode",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1879"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1898",
+        "title": "Fix findbugs warnings in tez-api module",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1898"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1899",
+        "title": "Fix findbugs warnings in tez-common",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1899"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1901",
+        "title": "Fix findbugs warnings in tez-examples",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1901"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1902",
+        "title": "Fix findbugs warnings in tez-mapreduce",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1902"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1903",
+        "title": "Fix findbugs warnings in tez-runtime-internals",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1903"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1904",
+        "title": "Fix findbugs warnings in tez-runtime-library",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1904"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1905",
+        "title": "Fix findbugs warnings in tez-tests",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1905"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1906",
+        "title": "Fix findbugs warnings in tez-yarn-timeline-history-with-acls",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1906"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1941",
+        "title": "Memory provided by *Context.getAvailableMemory needs to be setup explicitly",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1941"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1951",
+        "title": "Fix general findbugs warnings in tez-dag",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1951"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1969",
+        "title": "Stop the DAGAppMaster when a local mode client is stopped",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1969"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1980",
+        "title": "Suppress tez-dag findbugs warnings until addressed",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1980"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2023",
+        "title": "Refactor logIndividualFetchComplete() to be common for both shuffle-schedulers",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2023"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2234",
+        "title": "Add API for statistics information - allow vertex managers to get output size per source vertex",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2234"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2236",
+        "title": "Tez UI: Support loading of all tasks in the dag tasks page",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2236"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2273",
+        "title": "Tez UI: Support client side searching & sorting for dag tasks page",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2273"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2274",
+        "title": "Tez UI: full data loading, client side search and sort for other pages",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2274"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2275",
+        "title": "Tez UI: enable faster loading and caching of data in tables",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2275"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2308",
+        "title": "Add set/get of record counts in task/vertex statistics",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2308"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2344",
+        "title": "TEZ-UI: Equip basic-ember-table's cell level loading for all use cases in all DAGs table",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2344"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2345",
+        "title": "TEZ-UI: Enable cell level loading in all DAGs table",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2345"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2517",
+        "title": "CLONE - Tez UI: Support loading of all tasks in the dag tasks page",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2517"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2518",
+        "title": "CLONE - Tez UI: Support client side searching & sorting for dag tasks page",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2518"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2520",
+        "title": "CLONE - Tez UI: enable faster loading and caching of data in tables",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2520"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2961",
+        "title": "ShuffleVertexManager assumption of 1 vmEvent per task broken by pipelining",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2961"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-167",
+        "title": "Create tests for MR Combiner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-167"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1560",
+        "title": "Invalid state machine handling for V_SOURCE_VERTEX_RECOVERED in recovery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1560"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1593",
+        "title": "Refactor PipelinedSorter to remove all MMAP based ByteBuffer references",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1593"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1661",
+        "title": "LocalTaskScheduler hangs when shutdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1661"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1803",
+        "title": "Support > 2gb sort buffer in pipelinedsorter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1803"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1827",
+        "title": "MiniTezCluster takes 10 minutes to shut down",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1827"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1844",
+        "title": "Shouldn't invoke system.exit in local mode when AM is failed to start",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1844"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1881",
+        "title": "Setup initial test-patch script for TEZ-1313",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1881"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1889",
+        "title": "Fix test-patch to provide correct findbugs report",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1889"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1912",
+        "title": "Merge exceptions are thrown when enabling tez.runtime.shuffle.memory-to-memory.enable && tez.runtime.shuffle.memory-to-memory.segments",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1912"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1913",
+        "title": "Reduce deserialize cost in ValuesIterator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1913"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1935",
+        "title": "Organization should be removed from http://tez.apache.org/team-list.html",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1935"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1945",
+        "title": "Remove 2 GB memlimit restriction in MergeManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1945"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1949",
+        "title": "Whitelist TEZ_RUNTIME_OPTIMIZE_SHARED_FETCH for broadcast edges",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1949"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1963",
+        "title": "Fix post memory merge to be > 2 GB",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1963"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1982",
+        "title": "TezChild setupUgi should not be using environment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1982"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1988",
+        "title": "Tez UI: does not work when using file:// in a browser",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1988"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1993",
+        "title": "Implement a pluggable InputSizeEstimator for grouping fairly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1993"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1995",
+        "title": "Build failure against hadoop 2.2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1995"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1996",
+        "title": "Update Website after 0.6.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1996"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1997",
+        "title": "Remove synchronization DefaultSorter::isRLENeeded() (Causes sorter to hang indefinitely in large jobs)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1997"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1999",
+        "title": "IndexOutOfBoundsException during merge",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1999"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2000",
+        "title": "Source vertex exists error during DAG submission",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2000"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2009",
+        "title": "Change license/copyright headers to 2015",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2009"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2033",
+        "title": "Update TestOrderedWordCount to add processor configs as history text and use MR configs correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2033"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2057",
+        "title": "tez-dag/pom.xml contains versions for dependencies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2057"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2059",
+        "title": "Remove TaskEventHandler in TestDAGImpl",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2059"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2070",
+        "title": "Controller class of output should be committer rather than initializer in DAG's dot file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2070"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2072",
+        "title": "Add missing Private annotation to createDAG in the DAG API class",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2072"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2075",
+        "title": "Incompatible issue caused by TEZ-1233 that TezConfiguration.TEZ_SITE_XML is made private",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2075"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2080",
+        "title": "Localclient should be using tezconf in init instead of yarnconf",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2080"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2082",
+        "title": "Race condition in TaskAttemptListenerImpTezDag.getTask()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2082"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2084",
+        "title": "Tez UI: Stacktrace format info is lost in diagnostics",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2084"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2085",
+        "title": "PipelinedSorter should bail out (on BufferOverflowException) instead of retrying continuously",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2085"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2095",
+        "title": "master branch fails to compile against hadoop-2.4",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2095"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2133",
+        "title": "Secured Impersonation: Failed to delete tez scratch data dir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2133"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2170",
+        "title": "Incorrect its in README.md",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2170"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2171",
+        "title": "Remove unused metrics code",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2171"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2178",
+        "title": "YARN-3122 breaks tez compilation with hadoop 2.7.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2178"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2186",
+        "title": "OOM with a simple scatter gather job with re-use",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2186"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2195",
+        "title": "TestTezJobs::testInvalidQueueSubmission/testInvalidQueueSubmissionToSession fail with hadoop branch-2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2195"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2202",
+        "title": "Fix LocalTaskExecutionThread ID to the standard thread numbering",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2202"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2204",
+        "title": "TestAMRecovery increasingly flaky on jenkins builds.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2204"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2221",
+        "title": "VertexGroup name should be unqiue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2221"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2223",
+        "title": "TestMockDAGAppMaster fails due to TEZ-2210 on mac",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2223"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2224",
+        "title": "EventQueue empty doesn't mean events are consumed in RecoveryService",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2224"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2232",
+        "title": "Allow setParallelism to be called multiple times before tasks get scheduled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2232"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2233",
+        "title": "Allow EdgeProperty of an edge to be changed by VertexManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2233"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2237",
+        "title": "Valid events should be sent out when an Output is not started",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2237"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2248",
+        "title": "VertexImpl/DAGImpl.checkForCompletion have too many termination cause checks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2248"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2251",
+        "title": "Race condition in VertexImpl & Edge causes DAG to hang",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2251"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2252",
+        "title": "Tez UI: in graphical view some of the sinks are hidden as they overlap",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2252"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2261",
+        "title": "Should add diagnostics in DAGAppMaster when recovery error happens",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2261"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2265",
+        "title": "All inputs/outputs in a task share the same counter object",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2265"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2269",
+        "title": "DAGAppMaster becomes unresponsive",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2269"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2290",
+        "title": "Scale memory for Default Sorter down to a max of 2047 MB if configured higher",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2290"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2293",
+        "title": "When running in \"mr\" mode, always use MR config settings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2293"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2298",
+        "title": "Ignore sending failure message, when TaskReporter$HeartbeatCallable is shutdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2298"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2299",
+        "title": "Invalid dag creation in MRRSleepJob post TEZ-2293",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2299"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2305",
+        "title": "MR compatibility sleep job fails with IOException: Undefined job output-path",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2305"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2310",
+        "title": "Deadlock caused by StateChangeNotifier sending notifications on thread holding locks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2310"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2313",
+        "title": "Regression in handling obsolete events in ShuffleScheduler",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2313"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2314",
+        "title": "Tez task attempt failures due to bad event serialization",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2314"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2318",
+        "title": "Tez UI: source and sink page is broken as they are not populated.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2318"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2323",
+        "title": "Fix TestOrderedWordcount to use MR memory configs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2323"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2325",
+        "title": "Route status update event directly to the attempt",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2325"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2328",
+        "title": "Add tez.runtime.sorter.class & rename tez.runtime.sort.threads to tez.runtime.pipelined.sorter.sort.threads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2328"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2340",
+        "title": "TestRecoveryParser fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2340"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2341",
+        "title": "TestMockDAGAppMaster.testBasicCounters fails on windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2341"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2342",
+        "title": "TestFaultTolerance.testRandomFailingTasks fails due to timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2342"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2357",
+        "title": "Tez UI: misc.js.orig is committed by accident",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2357"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2358",
+        "title": "Pipelined Shuffle: MergeManager assumptions about 1 merge per source-task",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2358"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2360",
+        "title": "per-io counters flag should generate both overall and per-edge counters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2360"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2362",
+        "title": "State Change Notifier Thread should be stopped when dag is completed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2362"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2363",
+        "title": "Counters: off by 1 error for REDUCE_INPUT_GROUPS counter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2363"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2364",
+        "title": "'joindatagen' AM picks wrong staging dir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2364"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2366",
+        "title": "Pig tez MiniTezCluster unit tests fail intermittently after TEZ-2333",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2366"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2369",
+        "title": "Add a few unit tests for RootInputInitializerManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2369"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2374",
+        "title": "Fix build break against hadoop-2.2 due to TEZ-2325",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2374"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2377",
+        "title": "RandomWriter ends up using TextOutputFormat instead of SequenceFileOutputFormat",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2377"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2379",
+        "title": "org.apache.hadoop.yarn.state.InvalidStateTransitonException: Invalid event: T_ATTEMPT_KILLED at KILLED",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2379"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2383",
+        "title": "Cleanup input/output/processor contexts in LogicalIOProcessorRuntimeTask",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2383"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2386",
+        "title": "Tez UI: Inconsistent usage of icon colors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2386"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2389",
+        "title": "Tez UI: Sort by attempt-no is incorrect in attempts pages.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2389"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2394",
+        "title": "Issues when there is an error in VertexManager callbacks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2394"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2395",
+        "title": "Tez UI: Minimum/Maximum Duration show a empty bracket next to 0 secs when you purposefully failed a job.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2395"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2396",
+        "title": "pig-tez-tfile-parser pom is hard coded to depend on 0.6.0-SNAPSHOT version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2396"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2397",
+        "title": "Translation of LocalResources via Tez plan serialization can be lossy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2397"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2401",
+        "title": "Tez UI: All-dag page has duration keep counting for KILLED dag.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2401"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2404",
+        "title": "Handle DataMovementEvent before its TaskAttemptCompletedEvent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2404"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2405",
+        "title": "PipelinedSorter can throw NPE with custom compartor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2405"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2406",
+        "title": "Tez UI: Display per-io counter columns in task and attempt pages under vertex",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2406"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2408",
+        "title": "TestTaskAttempt fails to compile against hadoop-2.4 and hadoop-2.2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2408"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2410",
+        "title": "VertexGroupCommitFinishedEvent & VertexCommitStartedEvent is not logged correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2410"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2412",
+        "title": "Should kill vertex in DAGImpl#VertexRerunWhileCommitting",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2412"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2415",
+        "title": "PMC RDF needs to use asfext:pmc, not asfext:PMC",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2415"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2416",
+        "title": "Tez UI: Make tooltips display faster.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2416"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2417",
+        "title": "Tez UI: Counters are blank in the Attempts page if all attempts failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2417"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2423",
+        "title": "Tez UI: Remove Attempt Index column from task->attempts page",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2423"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2424",
+        "title": "Bump up max counter group name length limit to account for per_io counters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2424"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2426",
+        "title": "Ensure the eventRouter thread completes before switching to a new task and thread safety fixes in IPOContexts.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2426"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2432",
+        "title": "Syntax error in DOAP file release section",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2432"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2437",
+        "title": "FilterLinesByWord NPEs when run in Localmode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2437"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2445",
+        "title": "Disable the object cleanup in local mode in LogicalIOProcessorRuntimeTask",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2445"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2752",
+        "title": "logUnsuccessful completion in Attempt should write original finish time to ATS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2752"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-3030",
+        "title": "java.lang.NoClassDefFoundError: org/apache/hadoop/mapred/MRVersion",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-3030"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-3031",
+        "title": "java.lang.NoSuchMethodError",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-3031"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-714",
+        "title": "OutputCommitters should not run in the main AM dispatcher thread",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-714"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1233",
+        "title": "Allow configuration of framework parameters per vertex",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1233"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1274",
+        "title": "Remove Key/Value type checks in IFile",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1274"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1518",
+        "title": "Clean up ID caches on DAG completion",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1518"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1767",
+        "title": "Enable RLE in reducer side merge codepath",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1767"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1826",
+        "title": "Add option to disable split grouping and local mode option for tez-examples",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1826"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1837",
+        "title": "Restrict usage of Environment variables to main methods",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1837"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1855",
+        "title": "Avoid scanning for previously written files within Inputs / Outputs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1855"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1867",
+        "title": "Create new central dispatcher for Tez AM",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1867"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1917",
+        "title": "Examples should extend TezExampleBase",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1917"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1967",
+        "title": "Add a monitoring API on DAGClient which returns after a time interval or on DAG state change",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1967"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2001",
+        "title": "Support pipelined data transfer for ordered output",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2001"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2016",
+        "title": "Tez UI: Dag View Fit and Finish",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2016"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2083",
+        "title": "Make PipelinedSorter as the default sorter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2083"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2149",
+        "title": "Optimizations for the timed version of DAGClient.getStatus",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2149"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2159",
+        "title": "Tez UI: download timeline data for offline use.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2159"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2169",
+        "title": "Add NDC context to various threads and pools",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2169"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2176",
+        "title": "Move all logging to slf4j",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2176"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2196",
+        "title": "Consider reusing UnorderedPartitionedKVWriter with single output in UnorderedKVOutput",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2196"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2209",
+        "title": "Fix pipelined shuffle to fetch data from any one attempt",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2209"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2212",
+        "title": "Notify components on DAG completion",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2212"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2213",
+        "title": "For the ordered case, enabling pipelined shuffle should automatically disable final merge",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2213"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2288",
+        "title": "Remove unnecessary contention on locks by getDag, getTask, getVertex etc",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2288"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2368",
+        "title": "Make a dag identifier available in Context classes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2368"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2384",
+        "title": "Add warning message in the case of prewarn under non-session mode",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2384"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2392",
+        "title": "Have all readers throw an Exception on incorrect next() usage",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2392"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2435",
+        "title": "Add public key to KEYS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2435"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2446",
+        "title": "Tez UI: Add tezVersion details when downloading timeline data for offline use",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2446"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1313",
+        "title": "Setup pre-commit build to test submitted patches",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1313"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1856",
+        "title": "Remove LocalOnFileSortedOutput, LocalMergedInput, LocalTaskOutputFiles",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1856"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1897",
+        "title": "Create a concurrent version of AsyncDispatcher",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1897"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1914",
+        "title": "VertexManager logic should not run on the central dispatcher",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1914"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-1933",
+        "title": "Move TezChild and related classes into tez-runtime-internals",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-1933"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2008",
+        "title": "Add methods to SecureShuffleUtils to verify a reply based on a provided Key",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2008"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2045",
+        "title": "TaskAttemptListener should not pull Tasks from AMContainer",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2045"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2093",
+        "title": "Add events to MockDAGAppMaster and add e2e test for event routing",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2093"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2130",
+        "title": "Send the sessionToken as part of the AM CLC",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2130"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2174",
+        "title": "Make task priority available to TaskAttemptListener",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2174"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2191",
+        "title": "Simulation improvements to MockDAGAppMaster",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2191"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2203",
+        "title": "Intern strings in tez counters",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2203"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2210",
+        "title": "Record DAG AM CPU usage stats",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2210"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2231",
+        "title": "Create project by-laws",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2231"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2243",
+        "title": "documentation should explicitly specify protobuf 2.5.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2243"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2264",
+        "title": "Remove unused taskUmbilical reference in TezTaskRunner, register as running late",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2264"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2292",
+        "title": "Add e2e test for error reporting when vertex manager invokes plugin APIs",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2292"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2330",
+        "title": "Create reconfigureVertex() API for input based initialization",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2330"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2333",
+        "title": "Enable local fetch optimization by default.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2333"
+          }
+        }
+      },
+      {
+        "issue": "TEZ-2352",
+        "title": "Move getTaskStatistics into the RuntimeTask class",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TEZ/12328999"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TEZ-2352"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1209 @@
+{
+  "id": "12332350",
+  "name": "2.3",
+  "description": "CLI Improvements, Support for multiple expressions and and union queries, More descriptive error codes, Zeppelin integration, Code cleanup",
+  "date": "2015-08-28",
+  "version": "2.3",
+  "module": "",
+  "lastUpdated": 1633052569294,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/LENS/fixforversion/12332350"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/LENS"
+    }
+  },
+  "releaseNotes": "Release Notes - Apache Lens (Retired) - Version 2.3",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "LENS-628",
+        "title": "Bump version in master to 2.3",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-628"
+          }
+        }
+      },
+      {
+        "issue": "LENS-665",
+        "title": "Change logger in lens-cube module",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-665"
+          }
+        }
+      },
+      {
+        "issue": "LENS-666",
+        "title": "Replace log4j.properties with logback.xml",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-666"
+          }
+        }
+      },
+      {
+        "issue": "LENS-667",
+        "title": "Change logger in driver modules",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-667"
+          }
+        }
+      },
+      {
+        "issue": "LENS-668",
+        "title": "Change logger in lens-server module",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-668"
+          }
+        }
+      },
+      {
+        "issue": "LENS-669",
+        "title": "Add queryId to LogSegregationContext",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-669"
+          }
+        }
+      },
+      {
+        "issue": "LENS-670",
+        "title": "Add api for serving logs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-670"
+          }
+        }
+      },
+      {
+        "issue": "LENS-679",
+        "title": "Change logger in other modules",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-679"
+          }
+        }
+      },
+      {
+        "issue": "LENS-680",
+        "title": "Remove commons logging dependency",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-680"
+          }
+        }
+      },
+      {
+        "issue": "LENS-681",
+        "title": "Add XML validation on server side and error propagation to client",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-681"
+          }
+        }
+      },
+      {
+        "issue": "LENS-684",
+        "title": "Assertion on phase 1 rewritten query will fail intermittently",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-684"
+          }
+        }
+      },
+      {
+        "issue": "LENS-687",
+        "title": "LauchTime is intermittently set to 0 in response of getStatus API for a successful finished query",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-687"
+          }
+        }
+      },
+      {
+        "issue": "LENS-688",
+        "title": "Assert on driverQuery fails intermittently",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-688"
+          }
+        }
+      },
+      {
+        "issue": "LENS-700",
+        "title": "Execute Async shall do semantic validation, rewrite, select driver and estimate cost before accepting a query for asynchronous execution",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-700"
+          }
+        }
+      },
+      {
+        "issue": "LENS-701",
+        "title": "Add cli command to fetch query logs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-701"
+          }
+        }
+      },
+      {
+        "issue": "LENS-723",
+        "title": "Merge master with current-release-line for 2.3",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-723"
+          }
+        }
+      },
+      {
+        "issue": "LENS-725",
+        "title": "Verify Lens 2.3 issues",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-725"
+          }
+        }
+      },
+      {
+        "issue": "LENS-726",
+        "title": "Update 2.3 snapshot documentation on site",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-726"
+          }
+        }
+      },
+      {
+        "issue": "LENS-727",
+        "title": "Update gpg keys in dist repo for 2.3 release",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-727"
+          }
+        }
+      },
+      {
+        "issue": "LENS-747",
+        "title": "remove incubating/incubator/... from source files",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-747"
+          }
+        }
+      },
+      {
+        "issue": "LENS-749",
+        "title": "Change version number to 2.3.0-beta-SNAPSHOT in current-release-line",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-749"
+          }
+        }
+      },
+      {
+        "issue": "LENS-751",
+        "title": "Remove DISCLAIMER file",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-751"
+          }
+        }
+      },
+      {
+        "issue": "LENS-754",
+        "title": "Remove DISCLAIMER file from install and run docs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-754"
+          }
+        }
+      },
+      {
+        "issue": "LENS-764",
+        "title": "Update 2.3 release documentation",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-764"
+          }
+        }
+      },
+      {
+        "issue": "LENS-210",
+        "title": "cli command fact drop partitions is accessing array index 3 when the length of array is 3",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-210"
+          }
+        }
+      },
+      {
+        "issue": "LENS-320",
+        "title": "Lombok Javadoc issue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-320"
+          }
+        }
+      },
+      {
+        "issue": "LENS-438",
+        "title": "Persisted query result shows -1 rows on cli some times",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-438"
+          }
+        }
+      },
+      {
+        "issue": "LENS-476",
+        "title": "MalformedURLException while adding session jars",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-476"
+          }
+        }
+      },
+      {
+        "issue": "LENS-574",
+        "title": "NPE in TestLensDAO",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-574"
+          }
+        }
+      },
+      {
+        "issue": "LENS-593",
+        "title": "Lens-cli depends on lens-server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-593"
+          }
+        }
+      },
+      {
+        "issue": "LENS-632",
+        "title": "Proper alias name in sql rewriter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-632"
+          }
+        }
+      },
+      {
+        "issue": "LENS-639",
+        "title": "Error creating table finished_queries in MySQL when autocommit=true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-639"
+          }
+        }
+      },
+      {
+        "issue": "LENS-645",
+        "title": "Server state persistence error when any query fails with conflicting fields exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-645"
+          }
+        }
+      },
+      {
+        "issue": "LENS-646",
+        "title": "timeline cli command doesn't work for some time after server restart",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-646"
+          }
+        }
+      },
+      {
+        "issue": "LENS-647",
+        "title": "Query involving multi fact query with expression fails in some cases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-647"
+          }
+        }
+      },
+      {
+        "issue": "LENS-648",
+        "title": "NPE in CandidateTableResolver",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-648"
+          }
+        }
+      },
+      {
+        "issue": "LENS-678",
+        "title": "Comment in lens-site.xml in src/test/resources is not correct with conf value",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-678"
+          }
+        }
+      },
+      {
+        "issue": "LENS-682",
+        "title": "XML marshalling errors not descriptive enough on CLI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-682"
+          }
+        }
+      },
+      {
+        "issue": "LENS-686",
+        "title": "Repetitive add partition with same specs should fail after first time.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-686"
+          }
+        }
+      },
+      {
+        "issue": "LENS-698",
+        "title": "Findbug error in PopulateSampleMetastore",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-698"
+          }
+        }
+      },
+      {
+        "issue": "LENS-703",
+        "title": "ClassNotFound while doing \"list partition\" after \"update partition\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-703"
+          }
+        }
+      },
+      {
+        "issue": "LENS-706",
+        "title": "Intermittent failure in QueryAPIErrorResponseTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-706"
+          }
+        }
+      },
+      {
+        "issue": "LENS-712",
+        "title": "Seeing Exception while initializing PathScanner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-712"
+          }
+        }
+      },
+      {
+        "issue": "LENS-715",
+        "title": "Update Code compliance section to use slf4j logging",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-715"
+          }
+        }
+      },
+      {
+        "issue": "LENS-717",
+        "title": "Incorrect data type assigned for LensResultSetMetaData for elastic search driver",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-717"
+          }
+        }
+      },
+      {
+        "issue": "LENS-721",
+        "title": "Test addLocalStorageToFact1 failing due to data created in tmp dir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-721"
+          }
+        }
+      },
+      {
+        "issue": "LENS-24",
+        "title": "Add support for User Query Rewriter chain  before Cube Rewrites",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-24"
+          }
+        }
+      },
+      {
+        "issue": "LENS-251",
+        "title": "Support to query streaming data sources",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-251"
+          }
+        }
+      },
+      {
+        "issue": "LENS-252",
+        "title": "Add Elastic Search Driver",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-252"
+          }
+        }
+      },
+      {
+        "issue": "LENS-541",
+        "title": "Lens patch-review tool",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-541"
+          }
+        }
+      },
+      {
+        "issue": "LENS-602",
+        "title": "Easy access to per-query lens server logs",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-602"
+          }
+        }
+      },
+      {
+        "issue": "LENS-619",
+        "title": "Applying Query Launching Constraints before allowing a query to be launched",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-619"
+          }
+        }
+      },
+      {
+        "issue": "LENS-16",
+        "title": "Add command to show current sessionId from lens-cli",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-16"
+          }
+        }
+      },
+      {
+        "issue": "LENS-177",
+        "title": "Setup jenkins job for pre-commit builds for patch available jiras",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-177"
+          }
+        }
+      },
+      {
+        "issue": "LENS-260",
+        "title": "All tests should use project workspace for test data and clean up all the test data even in case of failures",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-260"
+          }
+        }
+      },
+      {
+        "issue": "LENS-426",
+        "title": "Review logging in estimate path",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-426"
+          }
+        }
+      },
+      {
+        "issue": "LENS-459",
+        "title": "Consistent use of logging frameworks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-459"
+          }
+        }
+      },
+      {
+        "issue": "LENS-477",
+        "title": "Lens service health status",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-477"
+          }
+        }
+      },
+      {
+        "issue": "LENS-569",
+        "title": "Too many \"set param key\" on session restoration upon restart",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-569"
+          }
+        }
+      },
+      {
+        "issue": "LENS-630",
+        "title": "Using Duration and Fact Weight Based Query Cost Calculator for Hive Driver",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-630"
+          }
+        }
+      },
+      {
+        "issue": "LENS-631",
+        "title": "Using Query Cost instead of priority field for comparing queries in priority blocking queue",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-631"
+          }
+        }
+      },
+      {
+        "issue": "LENS-634",
+        "title": "File name suggestions in cli when path is expected",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-634"
+          }
+        }
+      },
+      {
+        "issue": "LENS-641",
+        "title": "skipCheck should skip all checks for fast builds",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-641"
+          }
+        }
+      },
+      {
+        "issue": "LENS-649",
+        "title": "Descriptive errors in User Config loaders",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-649"
+          }
+        }
+      },
+      {
+        "issue": "LENS-650",
+        "title": "Move pre-submit hook out of User Config Loader",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-650"
+          }
+        }
+      },
+      {
+        "issue": "LENS-651",
+        "title": "result file size in the /resultset api response in case of persistent resultset",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-651"
+          }
+        }
+      },
+      {
+        "issue": "LENS-652",
+        "title": "Update partition command in lens",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-652"
+          }
+        }
+      },
+      {
+        "issue": "LENS-655",
+        "title": "Explain Lens Examples",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-655"
+          }
+        }
+      },
+      {
+        "issue": "LENS-671",
+        "title": "Remove full_partition_spec from partition definition in cube xsd",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-671"
+          }
+        }
+      },
+      {
+        "issue": "LENS-672",
+        "title": "Add incubator disclaimer in downloads page",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-672"
+          }
+        }
+      },
+      {
+        "issue": "LENS-673",
+        "title": "Lens website doc fix - committer's page",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-673"
+          }
+        }
+      },
+      {
+        "issue": "LENS-674",
+        "title": "Doc fix : Highlight the website/doc update part",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-674"
+          }
+        }
+      },
+      {
+        "issue": "LENS-676",
+        "title": "pass cli's extra arguments to Bootstrap",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-676"
+          }
+        }
+      },
+      {
+        "issue": "LENS-689",
+        "title": "Add doc for code module structure",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-689"
+          }
+        }
+      },
+      {
+        "issue": "LENS-690",
+        "title": "Add video demo to the website",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-690"
+          }
+        }
+      },
+      {
+        "issue": "LENS-692",
+        "title": "getJoinChains() on AbstractBaseTable should return from cached value",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-692"
+          }
+        }
+      },
+      {
+        "issue": "LENS-699",
+        "title": "Check for service to be up instead of using sleep in docker bootstrap",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-699"
+          }
+        }
+      },
+      {
+        "issue": "LENS-702",
+        "title": "Ability to inspect GET and POST request that are to be submitted to Lens Server",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-702"
+          }
+        }
+      },
+      {
+        "issue": "LENS-705",
+        "title": "Update README with proper MAVEN_OPTS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-705"
+          }
+        }
+      },
+      {
+        "issue": "LENS-708",
+        "title": "Improve \"how to commit\" doc.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-708"
+          }
+        }
+      },
+      {
+        "issue": "LENS-709",
+        "title": "Remove code which is only present for java6 compatibility",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-709"
+          }
+        }
+      },
+      {
+        "issue": "LENS-711",
+        "title": "Allow chain ref columns to have multiple chain destinations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-711"
+          }
+        }
+      },
+      {
+        "issue": "LENS-714",
+        "title": "Replace dimension tables with subquery in Columnar Rewriter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-714"
+          }
+        }
+      },
+      {
+        "issue": "LENS-720",
+        "title": "DB resources should also be able to handle regex paths",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-720"
+          }
+        }
+      },
+      {
+        "issue": "LENS-722",
+        "title": "Release Apache Lens 2.3.0-beta",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-722"
+          }
+        }
+      },
+      {
+        "issue": "LENS-744",
+        "title": "Improve documentation - Server Component",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-744"
+          }
+        }
+      },
+      {
+        "issue": "LENS-351",
+        "title": "Document db resources feature in user guide",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-351"
+          }
+        }
+      },
+      {
+        "issue": "LENS-490",
+        "title": "Document partition timeline in user guide",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-490"
+          }
+        }
+      },
+      {
+        "issue": "LENS-583",
+        "title": "Lens CLI demo video",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-583"
+          }
+        }
+      },
+      {
+        "issue": "LENS-729",
+        "title": "Add apache license header in es driver's json files",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-729"
+          }
+        }
+      },
+      {
+        "issue": "LENS-738",
+        "title": "Graduation Tasks",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LENS/12332350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LENS-738"
+          }
+        }
+      }
+    ]
+  }
+}

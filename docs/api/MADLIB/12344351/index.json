@@ -1,0 +1,793 @@
+{
+  "id": "12344351",
+  "name": "v1.16",
+  "description": "Initial deep learning release, PostgreSQL 11 support, add Kd tree to KNN, mini-batch preprocessor for images",
+  "date": "2019-07-08",
+  "version": "1.16",
+  "module": "v",
+  "lastUpdated": 1633052657854,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/MADLIB/fixforversion/12344351"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/MADLIB"
+    }
+  },
+  "releaseNotes": "Release Notes - Apache MADlib - Version v1.16",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "MADLIB-1284",
+        "title": "linregr_train fails when dependent variable is a JSONB element",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1284"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1286",
+        "title": "Mean and std_dev from standardization not used in predict",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1286"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1287",
+        "title": "MADLib 1.15 does not recognize Postgres 10 declarative partitioned table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1287"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1291",
+        "title": "madlib.dist_jaccard abnormal for not releasing the memory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1291"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1295",
+        "title": "Encoding module is not handling bigint properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1295"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1298",
+        "title": "MADLIB doesn't work with gp_distribution_policy changes in Greenplum 6",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1298"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1302",
+        "title": "MLP with minibatching fails on postgres",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1302"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1310",
+        "title": "Change the merge code to factor in the no of samples/images per buffer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1310"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1311",
+        "title": "Postgres is not supported for Deep Learning",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1311"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1322",
+        "title": "MLP with minibatch fails for integer dependent variable on PostgreSQL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1322"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1323",
+        "title": "MLP - fix column name in output table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1323"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1325",
+        "title": "MLP does not stop even after tolerance reached",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1325"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1326",
+        "title": "DL: Dev-check fails when keras_fit is called after array_scalar_mult",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1326"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1329",
+        "title": "MLP warm start not working",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1329"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1334",
+        "title": "Mini-batch preprocessor for DL running very slowly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1334"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1336",
+        "title": "Some compile and fit parameters not being passed properly to Keras",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1336"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1346",
+        "title": "SVM class_weight param not working properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1346"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1357",
+        "title": "Predict for deep learning not handling NULL class values properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1357"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1361",
+        "title": "Pivot: Fix array_agg + distinct scaling issue on gpdb",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1361"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1410",
+        "title": "MADlib cannot be built on PowerPC machines with Linux",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1410"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1061",
+        "title": "Additional computation methods for k-NN - kd tree",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1061"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1268",
+        "title": "Spike - CNN convergence, data parallel with merge",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1268"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1290",
+        "title": "Minibatch pre-processor for deep learning",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1290"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1293",
+        "title": "Additional computation methods for k-NN - kd tree v2",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1293"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1306",
+        "title": "Helper function to load and manage Keras models",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1306"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1313",
+        "title": "Add 1-hot encoding support for dependent var in fit",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1313"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1314",
+        "title": "Add optional num_classes param for minibatch preprocessor for DL",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1314"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1315",
+        "title": "Define the output of madlib_keras_predict",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1315"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1335",
+        "title": "Add new param metrics_compute_frequency to madlib_keras_fit()",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1335"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1338",
+        "title": "DL: Add support for reporting various metrics in fit/evaluate",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1338"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1347",
+        "title": "DL: Add model architecture column in model table",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1347"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1349",
+        "title": "DL: Add metric_type and fix model_size in model summary table",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1349"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-983",
+        "title": "SVD minor messaging improvements",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-983"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1281",
+        "title": "Create SQL scripts to get lists of changed UDOs and UDOCs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1281"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1283",
+        "title": "Postgres 11 support",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1283"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1288",
+        "title": "Set max itemset size to 10 by default in assoc rules",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1288"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1300",
+        "title": "Clarify dep and indep var column names in output table for deep learning minibatch preprocessor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1300"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1303",
+        "title": "Add 1-hot encoding to dependent variable in mini-batch preprocessor for images",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1303"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1304",
+        "title": "Figure out image input shapes allowed for keras_fit()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1304"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1305",
+        "title": "MADlib keras fit() function",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1305"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1307",
+        "title": "Deep Learning: Add user and online docs for fit and predict functions",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1307"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1308",
+        "title": "Change GPU related hardcoded things in madlib_keras.py_in",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1308"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1309",
+        "title": "Change the way we pass compile_params and fit_params to madlib_keras.fit and madlib_keras.predict",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1309"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1316",
+        "title": "Simplify madlib_keras_predict interface",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1316"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1319",
+        "title": "DL: Update fit output summary table content",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1319"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1320",
+        "title": "Improve performance for weakly connected components module",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1320"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1321",
+        "title": "Add and refactor input validation for madlib_keras_predict",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1321"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1324",
+        "title": "DL naming improvements for `dependent_varname` and `independent_varname`",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1324"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1330",
+        "title": "DL: Do not compile model for predict and add GPU support",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1330"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1332",
+        "title": "DL: Support mini-batched validation data for fit/evaluate",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1332"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1337",
+        "title": "DL: Better warning and default for gpu memory fraction when no of gpus < no of segments",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1337"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1343",
+        "title": "DL: Improve performance for predict",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1343"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1348",
+        "title": "Weight initialization/transfer learning madlib_keras_fit()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1348"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1350",
+        "title": "Warm start with madlib_keras_fit()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1350"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1356",
+        "title": "DL: Fix keras session creation logic for postgres",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1356"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1358",
+        "title": "DL: make types consistent",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1358"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1363",
+        "title": "Reduce verbose output to console with fit()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1363"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1364",
+        "title": "Misc message for 1.16 release",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1364"
+          }
+        }
+      },
+      {
+        "issue": "MADLIB-1362",
+        "title": "Madlib 1.16 release tasks",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MADLIB/12344351"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MADLIB-1362"
+          }
+        }
+      }
+    ]
+  }
+}

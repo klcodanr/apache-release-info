@@ -1,0 +1,1573 @@
+{
+  "id": "12340528",
+  "name": "2.1.0",
+  "description": "",
+  "date": "2017-08-22",
+  "version": "2.1.0",
+  "module": "",
+  "lastUpdated": 1633054216131,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/BEAM/fixforversion/12340528"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/BEAM"
+    }
+  },
+  "releaseNotes": "Release Notes - Beam - Version 2.1.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "BEAM-2175",
+        "title": "Support state API in Spark batch mode.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2175"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2410",
+        "title": "Remove TransportClient from ElasticSearchIO to decouple IO and ES versions",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2410"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-163",
+        "title": "When a PCollection (via Window.into) has smaller allowedLateness than upstream, might lose data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-163"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-190",
+        "title": "Dead-letter drop for bad BigQuery records",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-190"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-318",
+        "title": "AvroCoder may be affected by AVRO-607",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-318"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-567",
+        "title": "FlinkRunner pollutes beam-examples-java[8] modules with SLF4J backend dependencies which are not optional (e.g. test/provided/system scoped, or marked optional)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-567"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-659",
+        "title": "WindowFn#isCompatible should provide a meaningful reason",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-659"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-975",
+        "title": "Issue with MongoDBIO",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-975"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-991",
+        "title": "DatastoreIO Write should flush early for large batches",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-991"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1151",
+        "title": "BigQueryIO.Write has no way of handling failures",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1151"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1231",
+        "title": "Use well known coder types in Java for WindowedValue, GlobalWindow, and LengthPrefix",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1231"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1282",
+        "title": "DoFnTester should allow output() calls in start/finishBundle",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1282"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1938",
+        "title": "Side Inputs should be part of the expanded inputs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1938"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2153",
+        "title": "Move connection management in JmsIO to setup/teardown methods",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2153"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2179",
+        "title": "Archetype generate-sources.sh should delete old files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2179"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2246",
+        "title": "JmsIO should use CLIENT_ACK instead of AUTO_ACK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2246"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2290",
+        "title": "CompressedSource doesn't forward timestamps from the underlying Source's output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2290"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2300",
+        "title": "Upgrade python sdk dependencies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2300"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2301",
+        "title": "Standard expansion of SDF should be in runners-core-construction",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2301"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2302",
+        "title": "WriteFiles with runner-determined sharding and large numbers of windows causes OOM errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2302"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2316",
+        "title": "GcsUtil matches GCS glob * as though it is **",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2316"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2317",
+        "title": "Incorrect Javadoc for GroupAlsoByWindowEvaluatorFactory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2317"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2318",
+        "title": "Flake in HBaseIOTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2318"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2319",
+        "title": "HBaseIO Source is not correct when read multiple times",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2319"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2334",
+        "title": "OutOfMemoryError in RandomAccessData.java:350",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2334"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2338",
+        "title": "GCS filepattern wildcard broken in Python SDK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2338"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2344",
+        "title": "Re-rename fat jar in archetypes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2344"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2359",
+        "title": "SparkTimerInternals inputWatermarkTime does not get updated in cluster mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2359"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2364",
+        "title": "PCollectionView should not be a PValue, it should expand to its underlying PCollection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2364"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2365",
+        "title": "Use highest protocol for pickle coder.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2365"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2366",
+        "title": "Post commit failure: import not found gen_protos",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2366"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2369",
+        "title": "HadoopFileSystem: NullPointerException on match of non existing resource",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2369"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2373",
+        "title": "AvroSource: Premature End of stream Exception on SnappyCompressorInputStream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2373"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2379",
+        "title": "SpannerIO tests are failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2379"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2380",
+        "title": "Flink Batch Runner does not forward additional outputs to operator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2380"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2389",
+        "title": "GcpCoreApiSurfaceTest isn't testing right module",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2389"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2398",
+        "title": "Increasing latency within DirectRunner caused by cumulated TransformWatermarks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2398"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2405",
+        "title": "Create a BigQuery sink for streaming using PTransform",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2405"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2406",
+        "title": "NullPointerException when writing an empty table to BigQuery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2406"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2407",
+        "title": "Flink CoderTypeSerializer ConfigSnapshot cannot be deserialised",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2407"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2408",
+        "title": "Flink unbounded source does not emit watermarks when there are multiple Readers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2408"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2437",
+        "title": "quickstart.py docs is missing the path to MANIFEST.in",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2437"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2439",
+        "title": "Datastore writer can fail to progress if Datastore is slow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2439"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2485",
+        "title": "Reject stateful ParDo / DoFn in merging windows at construction time in Dataflow runner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2485"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2488",
+        "title": "Elasticsearch IO should read also in replica shards",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2488"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2490",
+        "title": "ReadFromText function is not taking all data with glob operator (*)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2490"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2497",
+        "title": "TextIO can't read concatenated gzip files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2497"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2502",
+        "title": "Processing time timers for expired windows are not ignored",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2502"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2504",
+        "title": "Processing time timers with timestamp past GC time are interpreted as GC timers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2504"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2505",
+        "title": "When EOW != GC and the timers fire in together, the output is not marked as the final pane",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2505"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2508",
+        "title": "Fix javaDoc of Stateful DoFn",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2508"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2509",
+        "title": "Fn API Runner hangs in grpc controller mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2509"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2521",
+        "title": "Simplify packaging for python distributions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2521"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2529",
+        "title": "SpannerWriteIT failing in postcommit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2529"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2533",
+        "title": "GCP IO: Use new bigtable client version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2533"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2534",
+        "title": "KafkaIO should allow gaps in message offsets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2534"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2537",
+        "title": "Can't run IO ITs - conflicting project vs projectId pipeline options",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2537"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2551",
+        "title": "KafkaIO reader blocks indefinitely if servers are not reachable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2551"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2557",
+        "title": "DirectRunner should not have a hard dependency on Hamcrest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2557"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2570",
+        "title": "Python Post commit tests are failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2570"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2571",
+        "title": "Flink ValidatesRunner failing CombineTest.testSlidingWindowsCombineWithContext",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2571"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2575",
+        "title": "ApexRunner doesn't emit watermarks for additional outputs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2575"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2587",
+        "title": "Build fails due to python sdk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2587"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2595",
+        "title": "WriteToBigQuery does not work with nested json schema",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2595"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2636",
+        "title": "user_score on DataflowRunner is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2636"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2642",
+        "title": "Upgrade to Google Auth 0.7.1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2642"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2662",
+        "title": "Quickstart for Spark Java not working",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2662"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2670",
+        "title": "ParDoTest.testPipelineOptionsParameter* validatesRunner tests fail on Spark runner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2670"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2690",
+        "title": "Make hadoop and hive dependencies provided for HCatalogIO",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2690"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2703",
+        "title": "KafkaIO: watermark outside the bounds of BoundedWindow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2703"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2708",
+        "title": "Decompressing bzip2 files with multiple \"streams\" only reads the first stream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2708"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2726",
+        "title": "Typo in programming guide",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2726"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-3390",
+        "title": "unable to serialize org.apache.beam.sdk.io.jdbc.JdbcIO$Read$ReadFn",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-3390"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-3687",
+        "title": "Reject stateful ParDo / DoFn in merging windows at construction time in Java Direct runner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-3687"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-210",
+        "title": "Allow control of empty ON_TIME panes analogous to final panes",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-210"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-245",
+        "title": "Create Cassandra IO",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-245"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1237",
+        "title": "Create AmqpIO",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1237"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1377",
+        "title": "Support Splittable DoFn in Dataflow streaming runner",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1377"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1472",
+        "title": "Use cross-language serialization schema for triggers in Python SDK",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1472"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1476",
+        "title": "Support MapState in Flink runner",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1476"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1483",
+        "title": "Support SetState in Flink runner",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1483"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1542",
+        "title": "Need Source/Sink for Spanner",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1542"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1702",
+        "title": "Add support for local execution to BigtableIO using the google cloud emulator",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1702"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2059",
+        "title": "Implement Metrics support for streaming Dataflow runner",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2059"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2150",
+        "title": "Support for recursive wildcards in GcsPath",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2150"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2248",
+        "title": "KafkaIO support to use start read time to set start offset",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2248"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2276",
+        "title": "make it easier to specify windowed filename policy",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2276"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2333",
+        "title": "Rehydrate Pipeline from Runner API proto",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2333"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2357",
+        "title": "Add HCatalogIO (Hive)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2357"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-3615",
+        "title": "Dynamic/Default Coder For Data",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-3615"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-788",
+        "title": "Execute ReduceFn directly, not via OldDoFn wrapper",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-788"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1347",
+        "title": "Basic Java harness capable of understanding process bundle tasks and sending data over the Fn Api",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1347"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1348",
+        "title": "Model the Fn Api",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1348"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1498",
+        "title": "Use Flink-native side outputs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1498"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1663",
+        "title": "Generated package names should be deterministic and consistent across runs.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1663"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1779",
+        "title": "Port UnboundedSourceWrapperTest to use Flink operator test harness",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1779"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1925",
+        "title": "Make DoFn invocation logic of Python SDK more extensible",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1925"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2134",
+        "title": "expose AUTO_COMMIT to KafkaIO.read()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2134"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2252",
+        "title": "maven-shade-plugin should be defined in pluginManagement instead of plugins so that the plugin execution order defined by the root pom.xml is used",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2252"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2253",
+        "title": "maven archetype poms should have versions controlled automatically based upon root pom.xml versions",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2253"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2258",
+        "title": "BigtableIO should use AutoValue for read and write",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2258"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2293",
+        "title": "Top.Largest and Top.Smallest naming is counter-intuitive",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2293"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2343",
+        "title": "ExecutionContext and StepContext have a lot of unused cruft that obscures their use",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2343"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2392",
+        "title": "Avoid use of proto builder clone",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2392"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2401",
+        "title": "Update Flink Runner to Flink 1.3.0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2401"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2411",
+        "title": "Make the write transform of HBaseIO simpler",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2411"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2412",
+        "title": "Update HBaseIO to use HBase client 1.2.6",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2412"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2423",
+        "title": "Abstract StateInternalsTest for the different state internals/Runners",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2423"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2473",
+        "title": "Dataflow runner should reject unsupported state & timers (MapState, SetState) at construction time, and documentation should be more prominent",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2473"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2481",
+        "title": "Update commons-lang3 dependency to version 3.6",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2481"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2486",
+        "title": "Should throws some useful messages when statefulParDo use non-KV input",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2486"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2494",
+        "title": "Remove 'GroupedShuffleRangeTracker' which is unused in the SDK",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2494"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2514",
+        "title": "Improve error message for missing required options of Beam pipeline",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2514"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-1268",
+        "title": "Add integration tests for CassandraIO",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-1268"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2489",
+        "title": "Use dynamic ES port in HIFIOWithElasticTest in module IO :: Hadoop :: jdk1.8-tests",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2489"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2284",
+        "title": "Completely remove OldDoFn from Beam",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2284"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2361",
+        "title": "Add TikaIO to the list of in-progress transforms",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2361"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2522",
+        "title": "upgrading jackson",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2522"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2552",
+        "title": "Update Dataflow container version for 2.1.0 release",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12340528"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2552"
+          }
+        }
+      }
+    ]
+  }
+}

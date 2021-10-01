@@ -1,0 +1,936 @@
+{
+  "id": "12347147",
+  "name": "2.25.0",
+  "description": "",
+  "date": "2020-10-23",
+  "version": "2.25.0",
+  "module": "",
+  "lastUpdated": 1633054263992,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/BEAM/fixforversion/12347147"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/BEAM"
+    }
+  },
+  "releaseNotes": "Release Notes - Beam - Version 2.25.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "BEAM-8106",
+        "title": "Publish Java 11 SDK Harness docker image",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-8106"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-9372",
+        "title": "Drop support for Python 3.5",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-9372"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10873",
+        "title": "Stronger testing of dataframes partitioning declartions.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10873"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-9399",
+        "title": "Possible deadlock between DataflowWorkerLoggingHandler and overridden System.err PrintStream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-9399"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-9979",
+        "title": "Fix race condition where the read index maybe reported from the last executed bundle",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-9979"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10292",
+        "title": "DefaultFilenamePolicy.ParamsCoder loses information whether Params's resource ID is file/directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10292"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10524",
+        "title": "Default decoder for ReadFromBigQuery does not support repeatable fields",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10524"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10532",
+        "title": "BigQueryUtils.fromTableSchema breaks when field in TableSchema has a NUMERIC data type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10532"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10586",
+        "title": "Sunset Python 2 in Dataflow runner.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10586"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10624",
+        "title": "tests fails on windows - pyarrow stores int always as 32 bit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10624"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10673",
+        "title": "DynamoDBIO.RetryConfiguration in AWS v2 is not correctly exposed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10673"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10691",
+        "title": "FlinkRunner: pipeline slows down due to expensive output timestamp queue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10691"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10694",
+        "title": "HCatalogIO.Read transform does not survive multiple serialization round trips",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10694"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10760",
+        "title": "Cleanup timers lead to unbounded state accumulation in global window",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10760"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10762",
+        "title": "Beam Python on Flink fails when no artifacts staged",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10762"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10769",
+        "title": "Fix Avro IO documentation: when fastavro is used, do not pass schema parsed by avro-python3.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10769"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10773",
+        "title": "worker_harness_container_image flag has no effect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10773"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10783",
+        "title": "ZetaSQL failed on WITH queries because wrong ref column index calculated in JoinScanWithRefConverter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10783"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10808",
+        "title": "StreamingDataflowWorker streaming rpcs due not always observe stream failures, until timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10808"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10816",
+        "title": "Not possible to implement own RateLimitPolicy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10816"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10829",
+        "title": "Support Kafka Headers in KafkaWriter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10829"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10833",
+        "title": "Error inferring type of tuple output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10833"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10847",
+        "title": "NPE in BeamUnnestRel",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10847"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10868",
+        "title": "XVR flake: :release:go-licenses:py:dockerRun container is already in use",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10868"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10915",
+        "title": "AVG(INT64) suggests using DOUBLE, which isn't a supported type.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10915"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10941",
+        "title": "Use standard sharding conventions for fileio writes.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10941"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10972",
+        "title": ":sdks:python:container:py37:docker failed to execute",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10972"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10973",
+        "title": "Samza ValidatesRunner tests failed: ParDoTest$MultipleInputsAndOutputTests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10973"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10975",
+        "title": "Test failure: apache_beam.examples.wordcount_it_test.WordCountIT.test_wordcount_it_with_prebuilt_sdk_container",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10975"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10978",
+        "title": "Bug in inference of map types.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10978"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10986",
+        "title": ":build task doesn't build shaded jar with shadow >5.0.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10986"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10991",
+        "title": "Timers don't release watermark holds in dataflow on 2.24",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10991"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10997",
+        "title": "Make sure SDF unbounded wrapper close reader properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10997"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-11034",
+        "title": "State garbage collection timers set by Dataflow SimpleParDoFn pile up for the GlobalWindow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-11034"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-12500",
+        "title": "Dataflow SocketException (SSLException) error while trying to send message from Cloud Pub/Sub to BigQuery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-12500"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-2546",
+        "title": "Add InfluxDbIO",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-2546"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-5757",
+        "title": "Elasticsearch IO provide delete function",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-5757"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-9898",
+        "title": "Add cross-language support to SnowflakeIO.Write",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-9898"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10597",
+        "title": "Propagate BigQuery streaming insert throttled time to Dataflow worker",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10597"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10645",
+        "title": "Warn when user requests a non-parallel pandas operation.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10645"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10844",
+        "title": "Add a way to prebuild python sdk container with dependencies",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10844"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10895",
+        "title": "Support UNNEST an (possibly nested) array field of an struct column",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10895"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-4379",
+        "title": "Make ParquetIO Read splittable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-4379"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-4833",
+        "title": "Add support for users specifying a requirements.txt for their Python portable container",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-4833"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-5715",
+        "title": "Depending on grpc-all pulls in more dependencies than necessary",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-5715"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-9850",
+        "title": " Key should be available in @OnTimer methods (Spark Runner)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-9850"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10009",
+        "title": "Support for date times in Python schemas",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10009"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10049",
+        "title": "Add licenses to Go SDK containers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10049"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10258",
+        "title": "Support type hint annotations on PTransform's expand()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10258"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10523",
+        "title": "Add support for custom DatumWriters to AvroIO.Write",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10523"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10654",
+        "title": "Implement ExternalSchemaIOTransformRegistrar, implement for jdbc",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10654"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10669",
+        "title": "Add support for Dataflow Templates",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10669"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10770",
+        "title": "Remove DataflowPortabilityApiUnsupported annotation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10770"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10814",
+        "title": "DataframeTransform: when input is element-wise produce element-wise output",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10814"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10849",
+        "title": "Test that default Dataflow region option is set.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10849"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10864",
+        "title": "Update Snowflake JDBC dependency",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10864"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10869",
+        "title": "Pubsub native write should be supported over fnapi",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10869"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10870",
+        "title": "Add raw private key param to snowflake cross-language python wrapper",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10870"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10950",
+        "title": "Override Dataflow-native implementation of BQSource with a Beam source",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10950"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-11068",
+        "title": "beam-sdks-java-bom.pom cannot be signed after upgrade to Gradle 6",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-11068"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-9899",
+        "title": "Add integration tests for cross-language SnowflakeIO Read and Write",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-9899"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10570",
+        "title": "Consider making a logical type for generic Python types in Rows.",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10570"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10685",
+        "title": "Add SnowflakeIO Streaming integration test",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10685"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-11028",
+        "title": "NullPointerException when running Flink Nexmark tests on Streaming after switch to SDF based translation",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-11028"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-8862",
+        "title": "Dependency on io.grpc-all allows test-only dependencies on runtimeClasspath",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-8862"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10612",
+        "title": "Add support for Flink 1.11.0",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10612"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-8371",
+        "title": "Sunset Beam Python 2 support in new releases in 2020.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-8371"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-9456",
+        "title": "Upgrade to gradle 6.6.1",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-9456"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10463",
+        "title": "Twister2 Beam Runner Documentation",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10463"
+          }
+        }
+      },
+      {
+        "issue": "BEAM-10830",
+        "title": "Twister2 quickstarts and the runner maven archetypes",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/BEAM/12347147"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/BEAM-10830"
+          }
+        }
+      }
+    ]
+  }
+}

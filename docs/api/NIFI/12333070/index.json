@@ -1,0 +1,2223 @@
+{
+  "id": "12333070",
+  "name": "0.4.0",
+  "description": "",
+  "date": "2015-12-11",
+  "version": "0.4.0",
+  "module": "",
+  "lastUpdated": 1633052760194,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/NIFI/fixforversion/12333070"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/NIFI"
+    }
+  },
+  "releaseNotes": "Release Notes - Apache NiFi - Version 0.4.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "NIFI-1083",
+        "title": "Create Route Individual Lines of Text Processor",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1083"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-20",
+        "title": "Allow Processors to indicate that they do not allow for incoming connections",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-20"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-122",
+        "title": "FlowFileQueue should block if queue is too full",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-122"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-516",
+        "title": "MergeContent when merging 10,000s or more objects can cause too many open files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-516"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-604",
+        "title": "ExecuteStreamCommand does not support arguments with semicolons",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-604"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-696",
+        "title": "Deprecate FlowFile.getId()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-696"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-697",
+        "title": "MergeContent and queue swapping",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-697"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-732",
+        "title": "GetKafka if stopped then started doesn't resume pulling messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-732"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-752",
+        "title": "Swapping and out of FlowFiles should be driven by FlowFileQueue, rather than in background thread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-752"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-797",
+        "title": "PutS3Object logs the URL as HTTP when the URL is HTTPS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-797"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-869",
+        "title": "The logger used by processors, controller services, etc. produces odd message when logging exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-869"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-883",
+        "title": "HandleHttpRequest starts a web server in the OnScheduled method but should start it in onTrigger",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-883"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-956",
+        "title": "Occasionally the New Processor Dialog is rendered with no types",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-956"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-959",
+        "title": "PutSolrContentStream not handling expression correctly for Collection property",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-959"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-965",
+        "title": "PutS3 should penalize the flowfile in presence of failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-965"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-972",
+        "title": "ExecuteSQL bug in createSchema() create Arvo Schema method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-972"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-975",
+        "title": "MergeContent with Text Delimiter Strategy produces exception when not using all three delimiters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-975"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-977",
+        "title": "PutSQL - attribute type cannot be negative",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-977"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-980",
+        "title": "Add support for HTTP Digest authentication to InvokeHttp",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-980"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-995",
+        "title": "TestGetFile fails in case of NTFS mount in Linux",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-995"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-997",
+        "title": "Kerberos tickets are not being renewed by Hadoop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-997"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1000",
+        "title": "GetJMSQueue adds wrong value for jms.JMSDestination attribute",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1000"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1010",
+        "title": "When using MSSqlServer Driver with ExecuteSQL always recieve Avro parse error: Empty: Name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1010"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1025",
+        "title": "PutS3Object fails if running with Java 8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1025"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1030",
+        "title": "InvokeHttp basic auth password property is not marked as sensitive",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1030"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1031",
+        "title": "Reporting Tasks cause error messages in bootstrap.log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1031"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1035",
+        "title": "AbstractKiteProcessor.getSchema leaks file handles",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1035"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1038",
+        "title": "FetchS3Object emits wrong Provenance Event",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1038"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1049",
+        "title": "ExecuteSQL generates NPE on any null valued column",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1049"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1051",
+        "title": "lost+found causes org.apache.nifi.controller.repository.FileSystemRepository  to fail",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1051"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1055",
+        "title": "Build of master branch fails due to contrib-check violations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1055"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1056",
+        "title": "ExecuteSQL fails when trying to pull a NUMERIC value from Oracle database",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1056"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1058",
+        "title": "Update documentation for switch from nifi.content.repository.archive.enabled defaulting to true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1058"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1059",
+        "title": "NiFi cluster node commands timeout.  Must manually kill process.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1059"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1061",
+        "title": "DBConnectionPool service unable to terminate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1061"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1062",
+        "title": "PutHDFS will pass files to success when they were not successfully written with hadoop client misconfiguration",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1062"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1068",
+        "title": "Site-to-Site Client creates memory leak when errors occur",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1068"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1073",
+        "title": "Fix  issues found by coverity static analysis",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1073"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1088",
+        "title": "PutKafka does not penalize when routing to failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1088"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1090",
+        "title": "Constant log messages about Cleanup Archive are logged at INFO level instead of DEBUG",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1090"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1097",
+        "title": "PutKafka should be changed to use the new 0.8.2 Producer API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1097"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1098",
+        "title": "\"Copy from existing rule (optional)\" not working in Advanced tab of UpdateAttribute processor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1098"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1105",
+        "title": "Framework is triggering Processors to run when they don't need to, resulting in many tasks with little work done",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1105"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1109",
+        "title": "GetCouchbaseKey throws NPE if no FlowFile is available",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1109"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1110",
+        "title": "Exception coming from FlowFileQueueSize",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1110"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1111",
+        "title": "NiFi uses quite a bit of CPU even when it has nothing to do",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1111"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1112",
+        "title": "Fix erroneous annotation in ReportingTaskResource",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1112"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1117",
+        "title": "ConvertAvroToJson does not handle the case of 0 Avro records well",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1117"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1124",
+        "title": "PutHDFS will rollback session if perms are bad - should route to failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1124"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1126",
+        "title": "DeleteS3Object unit test is wrong, or processor behavior is wrong",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1126"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1132",
+        "title": "FlowFile and Provenance Events hold an unbounded number of \"lineage identifiers\" which causes OutOfMemoryError when merging many objects",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1132"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1133",
+        "title": "InvokeHTTP Processor does not save Location header for 3xx responses",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1133"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1138",
+        "title": "Expression Language Editor does not display correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1138"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1141",
+        "title": "Cannot view/download/replay data from a REPLAY Provenance Event",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1141"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1142",
+        "title": "Expression Language provides error saying that the wrong number of arguments are used for isNull function when it means isEmpty function",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1142"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1143",
+        "title": "Race condition during initialization of ControllerServices",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1143"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1153",
+        "title": "ExecuteSQL logs errors about FlowFileHandlingException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1153"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1155",
+        "title": "Processor stops running if its destination applies backpressure and expiration occurs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1155"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1160",
+        "title": "Empty Queue modal dialog blocks the UI on a new empty connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1160"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1163",
+        "title": "GetHTTP throws an NPE if a context service is used with only a truststore and no keystore",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1163"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1165",
+        "title": "Master Build Fails on Windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1165"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1168",
+        "title": "@TriggerWhenEmpty docs and developer guide incompatible onTrigger definitions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1168"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1171",
+        "title": "If a file rolls over multiple times between invocations of TailFile, Processor doesn't pick up all changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1171"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1173",
+        "title": "Unable to DELETE flow file drop request when queue is already empty",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1173"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1176",
+        "title": "GetTwitter can cause OOME with small heaps if backpressure applied",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1176"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1181",
+        "title": "Core attributes should be guarded",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1181"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1187",
+        "title": "Fix Concurrency problems in FlowFileEvent in flume util and CouchbaseClusterControllerService",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1187"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1192",
+        "title": "Rework Get/PutKafka for dynamic properties and improve performance under certain conditions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1192"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1196",
+        "title": "FETCH Events are not properly handled in the framework and UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1196"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1198",
+        "title": "Processor InputRequirement indicating invalid when it should be valid",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1198"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1203",
+        "title": "Processors that require input still show as valid with only self-looping connections",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1203"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1208",
+        "title": "ListenSyslog spin-loops CPU, spikes load to 150%",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1208"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1216",
+        "title": "NiFi framework spends resources formatting log messages for Processor Loggers even when log level disabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1216"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1220",
+        "title": "MockProcessSession#penalize does not update FlowFile version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1220"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1222",
+        "title": "NiFi shows double the correct amount for 'Counters' in the UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1222"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1236",
+        "title": "In certain environments the build gets stuck on FileBasedClusterNodeFirewallTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1236"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1237",
+        "title": "TestListenSyslog has a race condition?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1237"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1238",
+        "title": "If \"nifi.sh stop\" is run and the connection times out, nifi is restarted instead of stopped",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1238"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1239",
+        "title": "ConvertJSONToSQL should cache results from database resultset metadata",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1239"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1240",
+        "title": "SecureRandom is improperly seeded with current time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1240"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1241",
+        "title": "PutSQL does not support Boolean, Numeric, or Decimal data types",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1241"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1242",
+        "title": "Password-based encryption is not compatible with OpenSSL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1242"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1243",
+        "title": "StandardProcessSession throws NPE when it attempts to close \"currentReadClaimStream\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1243"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1244",
+        "title": "ConvertJSONToSQL does not allow a Schema to be configured",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1244"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1246",
+        "title": "ListFiles fails when using a relative path",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1246"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1247",
+        "title": "ConvertJSONToSQL incorrectly handles UnmatchedFieldBehaviour for Update case",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1247"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1248",
+        "title": "UI does not show progress when emptying queue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1248"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1250",
+        "title": "Admin Guide and nifi.properties references ContentType as an indexable property.  This is not valid.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1250"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1254",
+        "title": "GetJMSQueue and GetJMSTopic have unnecessary Destination Type property",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1254"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1260",
+        "title": "Centos 6.7 and Fedora 23 NiFi build fails to start",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1260"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1261",
+        "title": "TestListFile fails on windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1261"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1263",
+        "title": "TestTailFile fails on windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1263"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1267",
+        "title": "TestPutHDFS testPutFileWithException assumes permission changes will matter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1267"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1268",
+        "title": "New Processor icon stays on graph",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1268"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1269",
+        "title": "DistributeLoad throws FlowFileHandlingExceptions when a relationshp has backpressure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1269"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-274",
+        "title": "Syslog processors",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-274"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-641",
+        "title": "create delete attributes processor",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-641"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-655",
+        "title": "Provide support for multiple authentication mechanisms",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-655"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-673",
+        "title": "Create ListSFTP, FetchSFTP Processors",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-673"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-817",
+        "title": "Create Processors to interact with HBase",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-817"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-900",
+        "title": "Add support for sending/receiving data with Azure Event Hub",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-900"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-908",
+        "title": "Add Support for SSL in JMS Processors",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-908"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-919",
+        "title": "Support Splitting Avro Files",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-919"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-934",
+        "title": "Image content viewer",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-934"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-988",
+        "title": "PutDistributedMapCache processor",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-988"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-992",
+        "title": "Couchbase Server Processors",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-992"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-994",
+        "title": "Processor to tail files",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-994"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1079",
+        "title": "Support AttributesToJSON processor",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1079"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-10",
+        "title": "Add new Provenance Event types",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-10"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-61",
+        "title": "Multiple improvements for InvokeHTTP",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-61"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-442",
+        "title": "New processor search box should auto-select first entry",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-442"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-447",
+        "title": "Add \"Replacement Strategy\" property to ReplaceText",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-447"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-521",
+        "title": "Add support to allow anonymous user when running securely",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-521"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-612",
+        "title": "Remove FlowUnmarshaller",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-612"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-631",
+        "title": "Create ListFile and FetchFile processors",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-631"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-713",
+        "title": "Infer Hadoop compression codec via filename extension",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-713"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-727",
+        "title": "TestJdbcHugeStream takes too long",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-727"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-730",
+        "title": "Purge Queue from UI",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-730"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-747",
+        "title": "ListenHTTP should expose property for the URL path to accept data on",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-747"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-748",
+        "title": "If unable to find a specific Provenance event, should not fail entire search",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-748"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-810",
+        "title": "Create Annotation that indicates that a Processor cannot be scheduled to run without an incoming connection",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-810"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-812",
+        "title": "InvokeHTTP should optionally store response body as a flowfile attribute",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-812"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-820",
+        "title": "Provide improved provenance search functions for a component ID",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-820"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-828",
+        "title": "Update default filter in new Processor Dialog",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-828"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-891",
+        "title": "Provide mechanisms to handle processors that do not take input connections",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-891"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-912",
+        "title": "Support extracting metadata from Avro file headers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-912"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-932",
+        "title": "Allow ExecuteSQL to run periodically without any input FlowFile",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-932"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-945",
+        "title": "New property (wrap as array) in avro2json converter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-945"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-976",
+        "title": "Archetypes have a default nifiVersion that does not get updated on releases",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-976"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-986",
+        "title": "Expose audit information on flow design changes to reporting tasks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-986"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-993",
+        "title": "GetHTTP should allow the Expression Language to be used for the URL property",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-993"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1009",
+        "title": "InvokeHTTP should be able to be scheduled without any incoming connection for GET operations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1009"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1016",
+        "title": "Use centralized priority attribute name in PriorityAttributePrioritizer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1016"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1020",
+        "title": "Upgrade to Kafka 0.8.2 client library to alleviate partition stickiness",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1020"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1029",
+        "title": "Need to add a new attriibute to ExecuteSQL to indicate how many rows were selected",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1029"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1042",
+        "title": "ListenHTTP should add property with the remote IP submitting data",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1042"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1043",
+        "title": "merge pull request for whitespace in processor prototype",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1043"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1046",
+        "title": "clean up shell scripts and fix nifi.sh whitespace bugs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1046"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1070",
+        "title": "Add additional logging to FileSystemRepository to better understand how/when it is expiring archived data",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1070"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1077",
+        "title": "Allow ConvertCharacterSet to accept expression language",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1077"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1081",
+        "title": "Add option to ExecuteStreamCommand to put value of execution to an attribute",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1081"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1085",
+        "title": "WebClusterManager starves immutable API requests under heavy load conditions",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1085"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1086",
+        "title": "Refactor InvokeHttp",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1086"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1100",
+        "title": "Add proper signed release tag for releases",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1100"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1103",
+        "title": "Add support for long polling in GetSQS processor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1103"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1123",
+        "title": "Extend the \"Delete Attributes Expression\" to support Expression Language",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1123"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1127",
+        "title": "List and Fetch HDFS must support Kerberized clusters like Get/Put HDFS do",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1127"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1146",
+        "title": "Allow GetKafka to be configured with auto.offset.reset to \"largest\" or \"smallest\"",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1146"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1158",
+        "title": "PutSyslog should have a default message timestamp",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1158"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1174",
+        "title": "Create a Put HBase processor that can put multiple cells",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1174"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1175",
+        "title": "Allow HBaseClientService to optionally be configured without hbase-site.xml",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1175"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1221",
+        "title": "ListenSyslog should support batching",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1221"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1224",
+        "title": "streamline TestHugeJDBCStream",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1224"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1225",
+        "title": "Add support for SSL context and alternate endpoints for PutS3",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1225"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1227",
+        "title": "ListenSyslog should support TLS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1227"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1249",
+        "title": "Allow ReplaceText expression language functions to access matching group values",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1249"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1271",
+        "title": "Output Port of an inner process group has high CPU utilization when there is backpressure",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1271"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1080",
+        "title": "Flesh out InvokeHttp unit tests",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1080"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1106",
+        "title": "Fix TestConvertAvroToJson#",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1106"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-774",
+        "title": "Create a DeleteS3Object Processor",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-774"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-922",
+        "title": "Upgrade to ActiveMQ 5.12.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-922"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-925",
+        "title": "Upgrade to Hadoop 2.6.2",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-925"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-973",
+        "title": "Create a Getting Started Guide",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-973"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1054",
+        "title": "correct inconstent line ending characters",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1054"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1108",
+        "title": "Ensure processors are consistently using the new @InputRequirement annotation",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1108"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1122",
+        "title": "Conduct 0.4.0 release.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1122"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1178",
+        "title": "Update Admin Guide with Recent Changes",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1178"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1210",
+        "title": "Updates to User Guide for version 0.4.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1210"
+          }
+        }
+      },
+      {
+        "issue": "NIFI-1266",
+        "title": "Add NOTICE file to LDAP provider NAR",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/NIFI/12333070"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/NIFI-1266"
+          }
+        }
+      }
+    ]
+  }
+}
