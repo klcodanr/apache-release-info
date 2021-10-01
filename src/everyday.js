@@ -6,6 +6,28 @@ require("dotenv").config();
 
 const API_BASE = "https://apis.danklco.com/apache-release-info/";
 const JIRA_BASE_URL = process.env.JIRA_BASE_URL;
+const SKIP_PROJECTS = [
+  "AAR",
+  "ASFSITE",
+  "ATTIC",
+  "COMDEV",
+  "CS",
+  "DI",
+  "DORMANT",
+  "INCUBATOR",
+  "INFRA",
+  "IMFRACLOUD1",
+  "IMFRATEST3",
+  "LABS",
+  "PETRI",
+  "PODLINGNAMESEARCH",
+  "PRC",
+  "STEVE",
+  "TESTTTTT",
+  "TM",
+  "TRAINING",
+  "TST",
+];
 
 let asfProjects;
 
@@ -17,6 +39,10 @@ async function run(jira) {
   const projects = await jira.getProjects();
   asfProjects = await getAsfProjects();
   for (const project of projects) {
+    if (SKIP_PROJECTS.indexOf(project.key) !== -1) {
+      log.debug(`Skipping project: ${project.key}`);
+      continue;
+    }
     log.info(`Processing project: ${project.name}`);
 
     await updateProject(jira, await jira.getProjectDetails(project.id));
@@ -46,12 +72,13 @@ async function handleRelease(jira, project, release) {
       project: { href: `${API_BASE}${project.key}` },
     },
   };
-
   fs.mkdirSync(`docs/api/${project.key}`, { recursive: true });
   if (!fs.existsSync(`docs/api/${project.key}/${release.id}/index.json`)) {
     log.debug("Creating release document");
+
     const releaseNote = await jira.getReleaseNotes(project.id, release);
 
+    log.debug("Adding issues");
     releaseNote.issues.forEach((issue) => {
       issue._links = {
         release: {
@@ -66,6 +93,8 @@ async function handleRelease(jira, project, release) {
     releaseData._embedded = {
       issues: releaseNote.issues,
     };
+
+    log.debug("Saving release");
     fs.mkdirSync(`docs/api/${project.key}/${release.id}`, {
       recursive: true,
     });
@@ -73,6 +102,8 @@ async function handleRelease(jira, project, release) {
       `docs/api/${project.key}/${release.id}/index.json`,
       JSON.stringify(releaseData, null, 2)
     );
+  } else {
+    log.debug("Reusing existing release file");
   }
   return releaseData;
 }
@@ -88,6 +119,7 @@ async function updateProject(jira, project) {
   );
   log.debug(`Found releases: ${releases.length}`);
 
+  log.debug("Loading index...");
   let indexData = {
     title: "Apache Release Information API",
     lastUpdated: Date.now(),
@@ -109,8 +141,9 @@ async function updateProject(jira, project) {
     )._embedded.projects.filter((proj) => proj.id !== project.id);
   }
 
+  log.debug("Generating project data");
   const projectData = {
-    name: project.name,
+    name: project.name.replace(/^A[ap]{2}che\s/, ""),
     id: project.id,
     key: project.key,
     description: project.description,
@@ -146,26 +179,44 @@ async function updateProject(jira, project) {
     ["category", "programming-language"].forEach((k) => {
       projectData[k] = asfProjectData[k].split(/,\s*/);
     });
-  }
-  if (
-    project.description.toLowerCase().indexOf("retired") !== -1 ||
-    (projectData.description.toLowerCase().indexOf("retired") !== -1 &&
-      project.category.indexOf("retired") !== -1)
-  ) {
-    project.category.push("retired");
+    if (asfProjectData.implements) {
+      asfProjectData.implements.forEach((impl) => {
+        projectData.category.push(`${impl.body}: ${impl.id}`);
+      });
+    }
   }
 
+  const projectStr = JSON.stringify(projectData).toLowerCase();
+  if (
+    (projectStr.indexOf("retired") !== -1 ||
+      projectStr.indexOf("attic") !== -1) &&
+    projectData.category.indexOf("retired") === -1
+  ) {
+    projectData.category.push("retired");
+  }
+  if (
+    projectStr.indexOf("incubator") !== -1 &&
+    projectData.category.indexOf("incubator") !== -1
+  ) {
+    projectData.category.push("incubator");
+  }
+
+  log.debug("Updating index");
   indexData._embedded.projects.push(projectData);
   fs.writeFileSync("docs/api/index.json", JSON.stringify(indexData, null, 2));
 
+  log.debug("Processing releases");
   projectData._embedded = {
     releases: [],
   };
   for (const release of releases) {
     const releaseData = await handleRelease(jira, project, release);
     delete releaseData._embedded;
+    delete releaseData.releaseNote;
     projectData._embedded.releases.push(releaseData);
   }
+
+  log.debug("Updating project");
   fs.mkdirSync(`docs/api/${project.key}`, {
     recursive: true,
   });
