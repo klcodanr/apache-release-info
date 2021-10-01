@@ -1,0 +1,1534 @@
+{
+  "id": "12329029",
+  "name": "1.2.1",
+  "description": "",
+  "date": "2015-02-09",
+  "version": "1.2.1",
+  "module": "",
+  "lastUpdated": 1633104417222,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/SPARK/fixforversion/12329029"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/SPARK"
+    }
+  },
+  "releaseNotes": "Release Notes - Spark - Version 1.2.1",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "SPARK-4787",
+        "title": "Clean up SparkContext after DAGScheduler initialization errors",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4787"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5147",
+        "title": "write ahead logs from streaming receiver are not purged because cleanupOldBlocks in WriteAheadLogBasedBlockHandler is never called",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5147"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5233",
+        "title": "Error replay of WAL when recovered from driver failue",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5233"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-733",
+        "title": "Add documentation on use of accumulators in lazy transformation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-733"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-785",
+        "title": "ClosureCleaner not invoked on most PairRDDFunctions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-785"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-2075",
+        "title": "Anonymous classes are missing from Spark distribution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-2075"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-2823",
+        "title": "GraphX jobs throw IllegalArgumentException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-2823"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-2892",
+        "title": "Socket Receiver does not stop when streaming context is stopped",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-2892"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-3787",
+        "title": "Assembly jar name is wrong when we build with sbt omitting -Dhadoop.version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-3787"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-3926",
+        "title": "result of JavaRDD collectAsMap() is not serializable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-3926"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4161",
+        "title": "Spark shell class path is not correctly set if \"spark.driver.extraClassPath\" is set in defaults.conf",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4161"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4296",
+        "title": "Throw \"Expression not in GROUP BY\" when using same expression in group by clause and  select clause",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4296"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4298",
+        "title": "The spark-submit cannot read Main-Class from Manifest.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4298"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4421",
+        "title": "Wrong link in spark-standalone.html",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4421"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4459",
+        "title": "JavaRDDLike.groupBy[K](f: JFunction[T, K]) may fail with typechecking errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4459"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4464",
+        "title": "Description about configuration options need to be modified in docs.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4464"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4465",
+        "title": "runAsSparkUser doesn't affect TaskRunner in Mesos environment at all.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4465"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4504",
+        "title": "run-example fails if multiple example jars present in target folder",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4504"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4569",
+        "title": "Rename \"externalSorting\" in Aggregator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4569"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4595",
+        "title": "Spark MetricsServlet is not worked because of initialization ordering",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4595"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4597",
+        "title": "Use proper exception and reset variable in Utils.createTempDir() method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4597"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4606",
+        "title": "SparkSubmitDriverBootstrapper does not propagate EOF to child JVM",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4606"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4656",
+        "title": "Typo in Programming Guide markdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4656"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4660",
+        "title": "JavaSerializer uses wrong classloader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4660"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4671",
+        "title": "Streaming block need not to replicate 2 copies when WAL is enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4671"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4691",
+        "title": "Restructure a few lines in shuffle code",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4691"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4730",
+        "title": "Warn against deprecated YARN settings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4730"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4745",
+        "title": "get_existing_cluster() doesn't work with additional security groups",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4745"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4750",
+        "title": "Dynamic allocation - we need to synchronize kills",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4750"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4759",
+        "title": "Deadlock in complex spark job in local mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4759"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4770",
+        "title": "spark.scheduler.minRegisteredResourcesRatio documented default is incorrect for YARN",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4770"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4771",
+        "title": "Document standalone --supervise feature",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4771"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4772",
+        "title": "Accumulators leak memory, both temporarily and permanently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4772"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4790",
+        "title": "Flaky test in ReceivedBlockTrackerSuite: \"block addition, block to batch allocation, and cleanup with write ahead log\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4790"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4802",
+        "title": "ReceiverInfo removal at ReceiverTracker upon deregistering receiver",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4802"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4803",
+        "title": "Duplicate RegisterReceiver messages sent from ReceiverSupervisor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4803"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4813",
+        "title": "ContextWaiter didn't handle 'spurious wakeup'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4813"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4818",
+        "title": "Join operation should use iterator/lazy evaluation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4818"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4821",
+        "title": "pyspark.mllib.rand docs not generated correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4821"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4825",
+        "title": "CTAS fails to resolve when created using saveAsTable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4825"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4826",
+        "title": "Possible flaky tests in WriteAheadLogBackedBlockRDDSuite: \"java.lang.IllegalStateException: File exists and there is no append support!\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4826"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4834",
+        "title": "Spark fails to clean up cache / lock files in local dirs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4834"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4835",
+        "title": "Streaming saveAs*HadoopFiles() methods may throw FileAlreadyExistsException during checkpoint recovery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4835"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4837",
+        "title": "NettyBlockTransferService does not abide by spark.blockManager.port config option",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4837"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4841",
+        "title": "Batch serializer bug in PySpark's RDD.zip",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4841"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4847",
+        "title": "extraStrategies cannot take effect in SQLContext",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4847"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4864",
+        "title": "Add documentation to Netty-based configs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4864"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4882",
+        "title": "PySpark broadcast breaks when using KryoSerializer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4882"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4908",
+        "title": "Spark SQL built for Hive 13 fails under concurrent metadata queries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4908"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4914",
+        "title": "Two sets of datanucleus versions left in lib_managed after running dev/run-tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4914"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4929",
+        "title": "Yarn Client mode can not support the HA after the exitcode change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4929"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4943",
+        "title": "Parsing error for query with table name having dot",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4943"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4951",
+        "title": "A busy executor may be killed when dynamicAllocation is enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4951"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4952",
+        "title": "Handle ConcurrentModificationExceptions in SparkEnv.environmentDetails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4952"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4959",
+        "title": "Attributes are case sensitive when using a select query from a projection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4959"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4966",
+        "title": "The MemoryOverhead value is not correct",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4966"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4968",
+        "title": "[SparkSQL] java.lang.UnsupportedOperationException when hive partition doesn't exist and order by and limit are used",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4968"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4973",
+        "title": "Local directory in the driver of client-mode continues remaining even if application finished when external shuffle is enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4973"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4989",
+        "title": "wrong application configuration cause cluster down in standalone mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4989"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4999",
+        "title": "No need to put WAL-backed block into block manager by default",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4999"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5006",
+        "title": "spark.port.maxRetries doesn't work",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5006"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5035",
+        "title": "Streaming ReceiverMessage trait should extend Serializable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5035"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5049",
+        "title": "ParquetTableScan always prepends the values of partition columns in output rows irrespective of the order of the partition columns in the original SELECT query",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5049"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5064",
+        "title": "GraphX rmatGraph hangs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5064"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5089",
+        "title": "Vector conversion broken for non-float64 arrays",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5089"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5102",
+        "title": "CompressedMapStatus needs to be registered with Kryo",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5102"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5130",
+        "title": "yarn-cluster mode should not be considered as client mode in spark-submit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5130"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5131",
+        "title": "A typo in configuration doc",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5131"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5132",
+        "title": "The name for get stage info atempt ID from Json was wrong",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5132"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5181",
+        "title": "inaccurate log when WAL is disabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5181"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5187",
+        "title": "CACHE TABLE AS SELECT fails with Hive UDFs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5187"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5201",
+        "title": "ParallelCollectionRDD.slice(seq, numSlices) has int overflow when dealing with inclusive range",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5201"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5223",
+        "title": "Use pickle instead of MapConvert and ListConvert in MLlib Python API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5223"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5224",
+        "title": "parallelize list/ndarray is really slow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5224"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5275",
+        "title": "pyspark.streaming is not included in assembly jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5275"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5282",
+        "title": "RowMatrix easily gets int overflow in the memory size warning",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5282"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5308",
+        "title": "MD5 / SHA1 hash format doesn't match standard Maven output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5308"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5351",
+        "title": "Can't zip RDDs with unequal numbers of partitions in ReplicatedVertexView.upgrade()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5351"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5355",
+        "title": "SparkConf is not thread-safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5355"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5382",
+        "title": "Scripts do not use SPARK_CONF_DIR where they should",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5382"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5401",
+        "title": "Executor ID should be set before MetricsSystem is created",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5401"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-6456",
+        "title": "Spark Sql throwing exception on large partitioned data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-6456"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-8595",
+        "title": "CLONE - Spark Sql throwing exception on large partitioned data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-8595"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-1010",
+        "title": "Update all unit tests to use SparkConf instead of system properties",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-1010"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-3428",
+        "title": "TaskMetrics for running tasks is missing GC time metrics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-3428"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4140",
+        "title": "Document the dynamic allocation feature",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4140"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4537",
+        "title": "Add 'processing delay' and 'totalDelay' to the metrics reported by the Spark Streaming subsystem",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4537"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4642",
+        "title": "Documents about running-on-YARN needs update",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4642"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4714",
+        "title": "BlockManager should check whether blocks have already been removed Checking block is null or not after having gotten info.lock in remove block method",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4714"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4754",
+        "title": "ExecutorAllocationManager should not take in SparkContext",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4754"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4764",
+        "title": "Ensure that files are fetched atomically",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4764"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4873",
+        "title": "Use `Future.zip` instead of `Future.flatMap`(for-loop) in WriteAheadLogBasedBlockHandler",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4873"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4880",
+        "title": "remove spark.locality.wait setting in examples/graphx/Analytics.scala",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4880"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4883",
+        "title": "Add a name to the directoryCleaner thread",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4883"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4896",
+        "title": "Don't redundantly copy executor dependencies in Utils.fetchFile",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4896"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4920",
+        "title": "current spark version in UI is not striking",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4920"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4932",
+        "title": "Add help comments in Analytics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4932"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5011",
+        "title": "Add support for WITH SERDEPROPERTIES, TBLPROPERTIES in CREATE TEMPORARY TABLE",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5011"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5063",
+        "title": "Display more helpful error messages for several invalid operations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5063"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5078",
+        "title": "Allow setting Akka host name from env vars",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5078"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5136",
+        "title": "Improve documentation around setting up Spark IntelliJ project",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5136"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5200",
+        "title": "Disable web UI in Hive Thriftserver tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5200"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5234",
+        "title": "examples for ml don't have sparkContext.stop",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5234"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5289",
+        "title": "Backport publishing of repl, yarn into branch-1.2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5289"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5402",
+        "title": "Log executor ID at executor-construction time",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5402"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-18391",
+        "title": "Openstack deployment scenarios",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-18391"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-6864",
+        "title": "Spark's Multilabel Classifier runs out of memory on small datasets",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-6864"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4147",
+        "title": "Reduce log4j dependency",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4147"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4652",
+        "title": "Add docs about spark-git-repo option",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4652"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4884",
+        "title": "Improve documentation for Partition.scala",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4884"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4889",
+        "title": "HistoryServer documentation refers to non-existent spark-history-server.sh script",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4889"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4915",
+        "title": "Wrong classname of external shuffle service in the doc for dynamic allocation",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4915"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-4931",
+        "title": "Fix the messy format about log4j in running-on-yarn.md",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-4931"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5026",
+        "title": "PySpark rdd.randomSpit() is not documented",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5026"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5058",
+        "title": "Typos and broken URL",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5058"
+          }
+        }
+      },
+      {
+        "issue": "SPARK-5254",
+        "title": "Update the user guide to make clear that spark.mllib is not being deprecated",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SPARK/12329029"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SPARK-5254"
+          }
+        }
+      }
+    ]
+  }
+}

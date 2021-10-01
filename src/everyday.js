@@ -42,7 +42,7 @@ async function handleRelease(jira, project, release) {
     type: "release",
     _links: {
       self: { href: `${API_BASE}${project.key}/${release.id}` },
-      jira: { href: `${JIRA_BASE_URL}${release.url}` },
+      jira: { href: `${JIRA_BASE_URL}${release.url.replace("jira/", "")}` },
       project: { href: `${API_BASE}${project.key}` },
     },
   };
@@ -112,12 +112,14 @@ async function updateProject(jira, project) {
   const projectData = {
     name: project.name,
     id: project.id,
+    key: project.key,
     description: project.description,
     lastUpdated: Date.now(),
     type: "project",
-    category: "",
+    category: [],
     created: "",
-    "programming-language": "",
+    releaseCount: releases.length,
+    programmingLanguage: [],
     _links: {
       self: { href: `${API_BASE}${project.key}` },
       jira: {
@@ -138,11 +140,19 @@ async function updateProject(jira, project) {
   const asfProjectData = asfProjects[project.key];
   if (asfProjectData) {
     log.debug("Adding ASF Project data");
-    ["description", "category", "created", "programming-language"].forEach(
-      (k) => {
-        projectData[k] = asfProjectData[k];
-      }
-    );
+    ["description", "created"].forEach((k) => {
+      projectData[k] = asfProjectData[k];
+    });
+    ["category", "programming-language"].forEach((k) => {
+      projectData[k] = asfProjectData[k].split(/,\s*/);
+    });
+  }
+  if (
+    project.description.toLowerCase().indexOf("retired") !== -1 ||
+    (projectData.description.toLowerCase().indexOf("retired") !== -1 &&
+      project.category.indexOf("retired") !== -1)
+  ) {
+    project.category.push("retired");
   }
 
   indexData._embedded.projects.push(projectData);

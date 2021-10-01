@@ -1,0 +1,2535 @@
+{
+  "id": "12329657",
+  "name": "6.2.0",
+  "description": "Minor release, and LTS",
+  "date": "2016-07-25",
+  "version": "6.2.0",
+  "module": "",
+  "lastUpdated": 1633105368052,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/TS/fixforversion/12329657"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/TS"
+    }
+  },
+  "releaseNotes": "Release Notes - Traffic Server - Version 6.2.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "TS-1007",
+        "title": "SSN Close called before TXN Close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-1007"
+          }
+        }
+      },
+      {
+        "issue": "TS-3235",
+        "title": "PluginVC crashed with unrecognized event",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3235"
+          }
+        }
+      },
+      {
+        "issue": "TS-3429",
+        "title": "TSContScheduleEvery does not increment event count correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3429"
+          }
+        }
+      },
+      {
+        "issue": "TS-3485",
+        "title": "We should honor ip_allow.config ACLs for HTTP/2 streams",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3485"
+          }
+        }
+      },
+      {
+        "issue": "TS-3645",
+        "title": "After TS-3033, some traffic_line commands result in \"requested command failed\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3645"
+          }
+        }
+      },
+      {
+        "issue": "TS-3857",
+        "title": "Suppress a logging related error message to Note to avoid flooding.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3857"
+          }
+        }
+      },
+      {
+        "issue": "TS-3909",
+        "title": "SSLNextProtocolTrampoline heap-use-after-free",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3909"
+          }
+        }
+      },
+      {
+        "issue": "TS-3917",
+        "title": "Sending only SETTINGS_INITIAL_WINDOW_SIZE in SETTINGS Frame",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3917"
+          }
+        }
+      },
+      {
+        "issue": "TS-3949",
+        "title": "Ignore timeout event on PluginVC after it's already closed.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3949"
+          }
+        }
+      },
+      {
+        "issue": "TS-3959",
+        "title": "Dropped keep-alive connections not being re-established",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3959"
+          }
+        }
+      },
+      {
+        "issue": "TS-4043",
+        "title": "Prevent bogus FQDN characters in host header",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4043"
+          }
+        }
+      },
+      {
+        "issue": "TS-4046",
+        "title": "HdrHeap and HdrStrHeap leak in HttpTransact::EndRemapRequest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4046"
+          }
+        }
+      },
+      {
+        "issue": "TS-4048",
+        "title": "Broken Vagrantfile in a lot of ways",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4048"
+          }
+        }
+      },
+      {
+        "issue": "TS-4056",
+        "title": "MemLeak: ～NetAccept() do not free alloc_cache(vc)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4056"
+          }
+        }
+      },
+      {
+        "issue": "TS-4065",
+        "title": "Change metrics to counters where appropriate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4065"
+          }
+        }
+      },
+      {
+        "issue": "TS-4067",
+        "title": "Memory leaks in parent selection regression tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4067"
+          }
+        }
+      },
+      {
+        "issue": "TS-4074",
+        "title": "build_* variables need to be escaped",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4074"
+          }
+        }
+      },
+      {
+        "issue": "TS-4075",
+        "title": "Segmentation fault due to reenable in SNI Hook for a closed ssl connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4075"
+          }
+        }
+      },
+      {
+        "issue": "TS-4083",
+        "title": "CID 1343347:  Error handling issues in ts_lua_http.c",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4083"
+          }
+        }
+      },
+      {
+        "issue": "TS-4096",
+        "title": "ts_lua - ts.now() should return subsecond information",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4096"
+          }
+        }
+      },
+      {
+        "issue": "TS-4101",
+        "title": "Remove proxy.config.stats.config_file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4101"
+          }
+        }
+      },
+      {
+        "issue": "TS-4104",
+        "title": "Wrong return value while create a new ticket on ssl_callback_session_ticket()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4104"
+          }
+        }
+      },
+      {
+        "issue": "TS-4105",
+        "title": "RecDumpRecords passes the wrong record type to its callback",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4105"
+          }
+        }
+      },
+      {
+        "issue": "TS-4107",
+        "title": "proxy.process.ssl.total_success_handshake_count_in has wrong record type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4107"
+          }
+        }
+      },
+      {
+        "issue": "TS-4108",
+        "title": "SSL metrics have wrong data type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4108"
+          }
+        }
+      },
+      {
+        "issue": "TS-4109",
+        "title": "ts_lua plugin - ts.debug/ts.error problem with long string",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4109"
+          }
+        }
+      },
+      {
+        "issue": "TS-4135",
+        "title": "C++ api coredumps when used with other plugins using TSHttpTxnRedirectUrlSet.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4135"
+          }
+        }
+      },
+      {
+        "issue": "TS-4142",
+        "title": "Compile errors on OmniOS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4142"
+          }
+        }
+      },
+      {
+        "issue": "TS-4143",
+        "title": "Validate host in GET URL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4143"
+          }
+        }
+      },
+      {
+        "issue": "TS-4145",
+        "title": "ATS 6.0.0 - Address cross-site scripting exploits in error messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4145"
+          }
+        }
+      },
+      {
+        "issue": "TS-4153",
+        "title": "Incorrect sphinx version check",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4153"
+          }
+        }
+      },
+      {
+        "issue": "TS-4154",
+        "title": "Missing Cryptohash.h file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4154"
+          }
+        }
+      },
+      {
+        "issue": "TS-4157",
+        "title": "traffic_via uses files names in it tests that are illegal on shared drives",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4157"
+          }
+        }
+      },
+      {
+        "issue": "TS-4158",
+        "title": "Fix a few plugins missing to release URL MLocs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4158"
+          }
+        }
+      },
+      {
+        "issue": "TS-4160",
+        "title": "MLocRelease for txn buffers called too late in CPP API resulting buffer corruption",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4160"
+          }
+        }
+      },
+      {
+        "issue": "TS-4161",
+        "title": "ProcessManager prone to stack-overflow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4161"
+          }
+        }
+      },
+      {
+        "issue": "TS-4162",
+        "title": "Http2ClientSession close connection by INACTIVITY_TIMEOUT event, even if the connection is still active",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4162"
+          }
+        }
+      },
+      {
+        "issue": "TS-4165",
+        "title": "Logging breaks if changing log format",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4165"
+          }
+        }
+      },
+      {
+        "issue": "TS-4166",
+        "title": "Memory leak in traffic_top",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4166"
+          }
+        }
+      },
+      {
+        "issue": "TS-4168",
+        "title": "Only close inactive and active connections that have a non-zero timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4168"
+          }
+        }
+      },
+      {
+        "issue": "TS-4170",
+        "title": "Error receiving data frame on closed connection for HTTP/2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4170"
+          }
+        }
+      },
+      {
+        "issue": "TS-4175",
+        "title": "Unset INSTALL_BASE when installing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4175"
+          }
+        }
+      },
+      {
+        "issue": "TS-4177",
+        "title": "Memory leak in LogFieldAliasTable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4177"
+          }
+        }
+      },
+      {
+        "issue": "TS-4178",
+        "title": "Memory leak in SplitDNSConfig when shutting down",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4178"
+          }
+        }
+      },
+      {
+        "issue": "TS-4181",
+        "title": "Memory leak in aio threads when shutting down",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4181"
+          }
+        }
+      },
+      {
+        "issue": "TS-4185",
+        "title": "Request::getMethod does not return HTTP_METHOD_PUSH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4185"
+          }
+        }
+      },
+      {
+        "issue": "TS-4187",
+        "title": "connections_currently_open stat not accurate with global server session pools",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4187"
+          }
+        }
+      },
+      {
+        "issue": "TS-4188",
+        "title": "Client initial window size is set incorrectly in HTTP/2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4188"
+          }
+        }
+      },
+      {
+        "issue": "TS-4190",
+        "title": "Disabling LuaJIT in configure still builds portions with Lua",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4190"
+          }
+        }
+      },
+      {
+        "issue": "TS-4191",
+        "title": "Typo of debug tags setting name in Developer Guide",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4191"
+          }
+        }
+      },
+      {
+        "issue": "TS-4196",
+        "title": "Memory leak from main_thread on shutdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4196"
+          }
+        }
+      },
+      {
+        "issue": "TS-4198",
+        "title": "Excessive memory allocations from HostDB with huge tables enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4198"
+          }
+        }
+      },
+      {
+        "issue": "TS-4199",
+        "title": "Parent Selection - parents not marked down due to race",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4199"
+          }
+        }
+      },
+      {
+        "issue": "TS-4200",
+        "title": "Wrong return value for TSHashTable::ExpansionPolicy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4200"
+          }
+        }
+      },
+      {
+        "issue": "TS-4201",
+        "title": "OneWayTunnel::connection_closed callback handleEvent with wrong continuation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4201"
+          }
+        }
+      },
+      {
+        "issue": "TS-4202",
+        "title": "Missing define _HTTP_CONNECTION_COUNT_H_",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4202"
+          }
+        }
+      },
+      {
+        "issue": "TS-4203",
+        "title": "Multiple PD init/alloc in PollCont",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4203"
+          }
+        }
+      },
+      {
+        "issue": "TS-4207",
+        "title": "Crash in HostDB, likely a regression from 5.x",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4207"
+          }
+        }
+      },
+      {
+        "issue": "TS-4208",
+        "title": "The TOTAL from freelist memory debug dump is wrong",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4208"
+          }
+        }
+      },
+      {
+        "issue": "TS-4209",
+        "title": "Limit concurrent streams correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4209"
+          }
+        }
+      },
+      {
+        "issue": "TS-4211",
+        "title": "Allocate only what we need for debugging",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4211"
+          }
+        }
+      },
+      {
+        "issue": "TS-4214",
+        "title": "Fix incorrect HttpSM debug message",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4214"
+          }
+        }
+      },
+      {
+        "issue": "TS-4222",
+        "title": "Seg faults while processing ssl_multicert.config",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4222"
+          }
+        }
+      },
+      {
+        "issue": "TS-4228",
+        "title": "traffic_manager can hang in a tight read() loop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4228"
+          }
+        }
+      },
+      {
+        "issue": "TS-4231",
+        "title": "Coverity issues in inlined plugin: CID 1352204 and CID 1352203",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4231"
+          }
+        }
+      },
+      {
+        "issue": "TS-4248",
+        "title": "Assertions triggered by metric type changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4248"
+          }
+        }
+      },
+      {
+        "issue": "TS-4250",
+        "title": "clang-format breaks on Centos 6",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4250"
+          }
+        }
+      },
+      {
+        "issue": "TS-4256",
+        "title": "Fix abort with ats-inliner plug-in",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4256"
+          }
+        }
+      },
+      {
+        "issue": "TS-4257",
+        "title": "Handle unset client request scheme in log field",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4257"
+          }
+        }
+      },
+      {
+        "issue": "TS-4258",
+        "title": "server_session should be NULL'd out after being closed.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4258"
+          }
+        }
+      },
+      {
+        "issue": "TS-4259",
+        "title": "ua_session should not be NULL'd out if not closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4259"
+          }
+        }
+      },
+      {
+        "issue": "TS-4266",
+        "title": "ATS memory statistics shows that memory utilization is doubled after “traffic_ctl config reload”",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4266"
+          }
+        }
+      },
+      {
+        "issue": "TS-4271",
+        "title": "Metrics fail to clear",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4271"
+          }
+        }
+      },
+      {
+        "issue": "TS-4272",
+        "title": "HostDB not clearing HostDBInfos for hosts file entries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4272"
+          }
+        }
+      },
+      {
+        "issue": "TS-4280",
+        "title": "Refactor gzip plugin to eliminate memory leak and reduce global hooks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4280"
+          }
+        }
+      },
+      {
+        "issue": "TS-4282",
+        "title": "Socket read failure isn't handled in AdminClient.pm",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4282"
+          }
+        }
+      },
+      {
+        "issue": "TS-4299",
+        "title": "FetchSM / H2 streams can hang if e.g. a plugin adds a Connection: close header",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4299"
+          }
+        }
+      },
+      {
+        "issue": "TS-4302",
+        "title": "Compiler warnings on OmniOS w. gcc 5.1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4302"
+          }
+        }
+      },
+      {
+        "issue": "TS-4305",
+        "title": "Coverity issues in geoip_acl plugin: 1353618, 1353617, 1353616, 1353615",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4305"
+          }
+        }
+      },
+      {
+        "issue": "TS-4307",
+        "title": "Check for existence of alloca.h consistently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4307"
+          }
+        }
+      },
+      {
+        "issue": "TS-4308",
+        "title": "Coverity issues 1353631, 1353632, 1353633, 1353634",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4308"
+          }
+        }
+      },
+      {
+        "issue": "TS-4310",
+        "title": "Coverity issues 1353635, 1353636 and 1353637",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4310"
+          }
+        }
+      },
+      {
+        "issue": "TS-4313",
+        "title": "MIMEHdr fails to find header fields",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4313"
+          }
+        }
+      },
+      {
+        "issue": "TS-4315",
+        "title": "Mistype Conditional ? : Operator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4315"
+          }
+        }
+      },
+      {
+        "issue": "TS-4317",
+        "title": "Cache recovery can stall, prevent disk from becoming ready.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4317"
+          }
+        }
+      },
+      {
+        "issue": "TS-4318",
+        "title": "geoip_acl: regressions introduced with refactoring in acd06a7d230e7c8a",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4318"
+          }
+        }
+      },
+      {
+        "issue": "TS-4321",
+        "title": "H2 truncates certain contents on master",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4321"
+          }
+        }
+      },
+      {
+        "issue": "TS-4327",
+        "title": "Fix bug introduced with the addition of multi-site origin to parent selection.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4327"
+          }
+        }
+      },
+      {
+        "issue": "TS-4328",
+        "title": "Connect_retries re-connects even if request made it to origin (TS-3440 repeat)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4328"
+          }
+        }
+      },
+      {
+        "issue": "TS-4329",
+        "title": "Off-by-one error in NULL terminator for aname in hostdb",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4329"
+          }
+        }
+      },
+      {
+        "issue": "TS-4340",
+        "title": "`proxy.config.http.origin_max_connections` only matches on IP",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4340"
+          }
+        }
+      },
+      {
+        "issue": "TS-4355",
+        "title": "Assert in HttpTunnel fails when access with HTTP/2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4355"
+          }
+        }
+      },
+      {
+        "issue": "TS-4378",
+        "title": "Periodic warning from TSContInternal::destroy()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4378"
+          }
+        }
+      },
+      {
+        "issue": "TS-4387",
+        "title": "Add enforcement of TSCont having MUTEX when passed to TSContSchedule()/TSContScheduleEvery()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4387"
+          }
+        }
+      },
+      {
+        "issue": "TS-4388",
+        "title": "parent proxy crashes with TSHttpTxnParentProxySet",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4388"
+          }
+        }
+      },
+      {
+        "issue": "TS-4397",
+        "title": "Build on i386 fails due to lua_Integer type mismatch in traffic_manager metrics",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4397"
+          }
+        }
+      },
+      {
+        "issue": "TS-4403",
+        "title": "HostDB's \"stale while revalidate\" doesn't span failed DNS lookups",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4403"
+          }
+        }
+      },
+      {
+        "issue": "TS-4406",
+        "title": "The %<cqpv> log tag now always shows http/1.1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4406"
+          }
+        }
+      },
+      {
+        "issue": "TS-4410",
+        "title": "Fix i386 compiler warning - unsigned-vs-signed comparison in hostdb.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4410"
+          }
+        }
+      },
+      {
+        "issue": "TS-4413",
+        "title": "Fix potential consistent hash iterator race.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4413"
+          }
+        }
+      },
+      {
+        "issue": "TS-4420",
+        "title": "Crash on downed API parent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4420"
+          }
+        }
+      },
+      {
+        "issue": "TS-4427",
+        "title": "traffic_logstats: Count TCP_MEM_HIT as a \"normal\" hit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4427"
+          }
+        }
+      },
+      {
+        "issue": "TS-4431",
+        "title": "Atscppapi needs a mutex with intercept plugins",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4431"
+          }
+        }
+      },
+      {
+        "issue": "TS-4436",
+        "title": "ATS' tracking of host failures is broken for entries acquired through the hosts file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4436"
+          }
+        }
+      },
+      {
+        "issue": "TS-4440",
+        "title": "ATS' missing StatsPages have incorrect content-type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4440"
+          }
+        }
+      },
+      {
+        "issue": "TS-4444",
+        "title": "Segfault accessing NULL connection buffer reader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4444"
+          }
+        }
+      },
+      {
+        "issue": "TS-4445",
+        "title": "HttpSM disables read eventing twice before settup up a tunnel binding",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4445"
+          }
+        }
+      },
+      {
+        "issue": "TS-4461",
+        "title": "Not closing client connections",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4461"
+          }
+        }
+      },
+      {
+        "issue": "TS-4469",
+        "title": "TS-3612 changes cause crashes with some plugins",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4469"
+          }
+        }
+      },
+      {
+        "issue": "TS-4470",
+        "title": "ASAN stack-buffer-overflow when slow log is enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4470"
+          }
+        }
+      },
+      {
+        "issue": "TS-4472",
+        "title": "Number of active connections is incorrect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4472"
+          }
+        }
+      },
+      {
+        "issue": "TS-4473",
+        "title": "Parent proxy test configuration race.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4473"
+          }
+        }
+      },
+      {
+        "issue": "TS-4477",
+        "title": "Decrement proxy.process.http.current_client_transactions in HTTP/2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4477"
+          }
+        }
+      },
+      {
+        "issue": "TS-4478",
+        "title": "AsyncHttpFetch hangs forever after ProxyClientSession changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4478"
+          }
+        }
+      },
+      {
+        "issue": "TS-4485",
+        "title": "MultiCache sync causes significant stalls to various in-flight requests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4485"
+          }
+        }
+      },
+      {
+        "issue": "TS-4489",
+        "title": "Assert fails at Http2ConnectionState::delete_stream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4489"
+          }
+        }
+      },
+      {
+        "issue": "TS-4494",
+        "title": "Assert fails at ink_code_md5_stringify with origin_max_connections",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4494"
+          }
+        }
+      },
+      {
+        "issue": "TS-4527",
+        "title": "vc error messages in 6.2.0 release",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4527"
+          }
+        }
+      },
+      {
+        "issue": "TS-4529",
+        "title": "HttpSM doesn't assign the right continuation when adjusting threads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4529"
+          }
+        }
+      },
+      {
+        "issue": "TS-4534",
+        "title": "hostdb `showall` endpoint with format=json is invalid json",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4534"
+          }
+        }
+      },
+      {
+        "issue": "TS-4542",
+        "title": "ASAN error with HTTP/2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4542"
+          }
+        }
+      },
+      {
+        "issue": "TS-4543",
+        "title": "Crash due to shutdown race in HttpSM::tunnel_handler_post",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4543"
+          }
+        }
+      },
+      {
+        "issue": "TS-4560",
+        "title": "C++ API should not depend on ink_autoconf.h",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4560"
+          }
+        }
+      },
+      {
+        "issue": "TS-4568",
+        "title": "Milestones where changed from seconds to milliseconds",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4568"
+          }
+        }
+      },
+      {
+        "issue": "TS-4571",
+        "title": "Fix \"pointer to local outside scope\" (CID 1356978)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4571"
+          }
+        }
+      },
+      {
+        "issue": "TS-4608",
+        "title": "Memory leak in ProxyAllocator.cc",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4608"
+          }
+        }
+      },
+      {
+        "issue": "TS-4610",
+        "title": "Fix HTTP and HTTP2 stats",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4610"
+          }
+        }
+      },
+      {
+        "issue": "TS-4625",
+        "title": "6.2 RC2 crashes immediately with Epic plugin installed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4625"
+          }
+        }
+      },
+      {
+        "issue": "TS-4632",
+        "title": "Fix ParentSelection regressions on 6.2.x",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4632"
+          }
+        }
+      },
+      {
+        "issue": "TS-4633",
+        "title": "Fix an erroneous warning message when reading the parent.config file.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4633"
+          }
+        }
+      },
+      {
+        "issue": "TS-2642",
+        "title": "header_rewrite time based Rules",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-2642"
+          }
+        }
+      },
+      {
+        "issue": "TS-3123",
+        "title": "Make proxy.config.http.transaction_active_timeout_in overridable",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3123"
+          }
+        }
+      },
+      {
+        "issue": "TS-3639",
+        "title": "Add GeoIP info to header_rewrite plugin",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3639"
+          }
+        }
+      },
+      {
+        "issue": "TS-4087",
+        "title": "H2 flexible resource limitation",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4087"
+          }
+        }
+      },
+      {
+        "issue": "TS-4095",
+        "title": "New cppapi plugin for converting image formats to wepb",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4095"
+          }
+        }
+      },
+      {
+        "issue": "TS-4099",
+        "title": "Replace XML statistics with Lua",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4099"
+          }
+        }
+      },
+      {
+        "issue": "TS-4115",
+        "title": "Add a multi origin hierarchy to parent selection.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4115"
+          }
+        }
+      },
+      {
+        "issue": "TS-4117",
+        "title": "Write tool to compare changes in configs/metrics between ATS versions",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4117"
+          }
+        }
+      },
+      {
+        "issue": "TS-4129",
+        "title": "Support TSContSchedule in ts_lua plugin",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4129"
+          }
+        }
+      },
+      {
+        "issue": "TS-4132",
+        "title": "Open source Yahoo's ats-inliner plug-in",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4132"
+          }
+        }
+      },
+      {
+        "issue": "TS-4147",
+        "title": "Allow gzip plugin to be a remap plugin",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4147"
+          }
+        }
+      },
+      {
+        "issue": "TS-4183",
+        "title": "cachekey: URI and URI path capture/replacement",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4183"
+          }
+        }
+      },
+      {
+        "issue": "TS-4212",
+        "title": "Add option to track memory allocation with OpenSSL",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4212"
+          }
+        }
+      },
+      {
+        "issue": "TS-4243",
+        "title": "Collapsed Forwarding Plugin",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4243"
+          }
+        }
+      },
+      {
+        "issue": "TS-4287",
+        "title": "Add a simple and unavailable server retry feature to Parent Selection.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4287"
+          }
+        }
+      },
+      {
+        "issue": "TS-4297",
+        "title": "A script to compare two memory/freelist dumps",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4297"
+          }
+        }
+      },
+      {
+        "issue": "TS-4320",
+        "title": "Implement a letsencrypt / ACME plugin for ATS",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4320"
+          }
+        }
+      },
+      {
+        "issue": "TS-1775",
+        "title": "Cleanup of ink_hrtime.{cc,h}",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-1775"
+          }
+        }
+      },
+      {
+        "issue": "TS-3535",
+        "title": "Add priority feature to the HTTP/2 implementation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3535"
+          }
+        }
+      },
+      {
+        "issue": "TS-3612",
+        "title": "Restructure Proxy Client Sessions to support transaction oriented Sessions execute transaction hooks and connection oriented Sessions execute session hooks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3612"
+          }
+        }
+      },
+      {
+        "issue": "TS-3863",
+        "title": "Add support for ASAN leak detection",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3863"
+          }
+        }
+      },
+      {
+        "issue": "TS-3922",
+        "title": "Add independent WebSocket timeouts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3922"
+          }
+        }
+      },
+      {
+        "issue": "TS-3977",
+        "title": "Merge cache-key-gen-id plugin",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3977"
+          }
+        }
+      },
+      {
+        "issue": "TS-3979",
+        "title": "Deprecate allow empty doc cache setting.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-3979"
+          }
+        }
+      },
+      {
+        "issue": "TS-4020",
+        "title": "Cache_promote/background_fetch plugin LRU should use cachekey instead of url",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4020"
+          }
+        }
+      },
+      {
+        "issue": "TS-4024",
+        "title": "Wire tracing enhancements",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4024"
+          }
+        }
+      },
+      {
+        "issue": "TS-4064",
+        "title": "Customizable congestion control algorithms",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4064"
+          }
+        }
+      },
+      {
+        "issue": "TS-4092",
+        "title": "Decouple HPACK from HTTP/2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4092"
+          }
+        }
+      },
+      {
+        "issue": "TS-4094",
+        "title": "Clean up RD type junk in ControlMatcher",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4094"
+          }
+        }
+      },
+      {
+        "issue": "TS-4133",
+        "title": "Update url_sig plugin to pass application query parameters",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4133"
+          }
+        }
+      },
+      {
+        "issue": "TS-4137",
+        "title": "Improve stripe inspector diagnostic output",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4137"
+          }
+        }
+      },
+      {
+        "issue": "TS-4144",
+        "title": "Add custom error response support in RemapPlugin of cppapi",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4144"
+          }
+        }
+      },
+      {
+        "issue": "TS-4148",
+        "title": "Add a log field for connection attempts made to origin",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4148"
+          }
+        }
+      },
+      {
+        "issue": "TS-4164",
+        "title": "Update clang-format binaries and configs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4164"
+          }
+        }
+      },
+      {
+        "issue": "TS-4169",
+        "title": "tsxs utility and .lo files on input",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4169"
+          }
+        }
+      },
+      {
+        "issue": "TS-4172",
+        "title": "Cleanup debug logs of Http2ConnectionState",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4172"
+          }
+        }
+      },
+      {
+        "issue": "TS-4176",
+        "title": "s3_auth plugin matrix parameters support",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4176"
+          }
+        }
+      },
+      {
+        "issue": "TS-4180",
+        "title": "Support for serving multiple intermediate cert chains",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4180"
+          }
+        }
+      },
+      {
+        "issue": "TS-4197",
+        "title": "Add memory debugging",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4197"
+          }
+        }
+      },
+      {
+        "issue": "TS-4230",
+        "title": "Support matrix style parameters in ts_lua plugin",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4230"
+          }
+        }
+      },
+      {
+        "issue": "TS-4235",
+        "title": "Deprecate fuzzy cache revalidation ?",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4235"
+          }
+        }
+      },
+      {
+        "issue": "TS-4253",
+        "title": "Better debug messages in ssl_read_from_net()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4253"
+          }
+        }
+      },
+      {
+        "issue": "TS-4255",
+        "title": "Remove StatSystem metrics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4255"
+          }
+        }
+      },
+      {
+        "issue": "TS-4261",
+        "title": "Split statistic update logic from process handling.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4261"
+          }
+        }
+      },
+      {
+        "issue": "TS-4267",
+        "title": "HTTP/2 Updates to debugging",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4267"
+          }
+        }
+      },
+      {
+        "issue": "TS-4283",
+        "title": "Remove some remnant comments and code from 64-bit conversion",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4283"
+          }
+        }
+      },
+      {
+        "issue": "TS-4284",
+        "title": "Modernize the geoip_acl plugin",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4284"
+          }
+        }
+      },
+      {
+        "issue": "TS-4285",
+        "title": "Add support for overriding proxy.config.http.attach_server_session_to_client",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4285"
+          }
+        }
+      },
+      {
+        "issue": "TS-4290",
+        "title": "Cleanup header_rewrite, such that we don't pollute the statement base class",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4290"
+          }
+        }
+      },
+      {
+        "issue": "TS-4295",
+        "title": "Add Priority Queue in lib/ts/",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4295"
+          }
+        }
+      },
+      {
+        "issue": "TS-4298",
+        "title": "Breakdown parameter checks in Http2::init()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4298"
+          }
+        }
+      },
+      {
+        "issue": "TS-4323",
+        "title": "Should the H2 DATA frame default to 16KB?",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4323"
+          }
+        }
+      },
+      {
+        "issue": "TS-4339",
+        "title": "Remove .pr file",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4339"
+          }
+        }
+      },
+      {
+        "issue": "TS-4356",
+        "title": "Deprecate cacheurl plugin",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4356"
+          }
+        }
+      },
+      {
+        "issue": "TS-4359",
+        "title": "Deprecate the SPDY protocol",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4359"
+          }
+        }
+      },
+      {
+        "issue": "TS-4361",
+        "title": "Remove TS_FETCH_EVENT_* handlers from Http2ClientSession",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4361"
+          }
+        }
+      },
+      {
+        "issue": "TS-4364",
+        "title": "Remove some remnants from http/2 refactoring",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4364"
+          }
+        }
+      },
+      {
+        "issue": "TS-4369",
+        "title": "Add VIA_ERROR_MOVED_TEMPORARILY to deal with redirect by remapping correctly for instrumentation (logging, metrics)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4369"
+          }
+        }
+      },
+      {
+        "issue": "TS-4401",
+        "title": "Make some more configurations overridable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4401"
+          }
+        }
+      },
+      {
+        "issue": "TS-4418",
+        "title": "Change .clang-format to allow ConstructorInitializerAllOnOneLineOrOnePerLine",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4418"
+          }
+        }
+      },
+      {
+        "issue": "TS-4486",
+        "title": "Add release method to MutexLock",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4486"
+          }
+        }
+      },
+      {
+        "issue": "TS-4512",
+        "title": "Error when building with gcc 6.1.1",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4512"
+          }
+        }
+      },
+      {
+        "issue": "TS-4565",
+        "title": "clang-format: Align assignment on the =",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/TS/12329657"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/TS-4565"
+          }
+        }
+      }
+    ]
+  }
+}
