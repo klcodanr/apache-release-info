@@ -1,0 +1,936 @@
+{
+  "id": "12316288",
+  "name": "0.7.5",
+  "description": "",
+  "date": "2011-04-27",
+  "version": "0.7.5",
+  "module": "",
+  "lastUpdated": 1633054983302,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/CASSANDRA/fixforversion/12316288"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA"
+    }
+  },
+  "releaseNotes": "Release Notes - Cassandra - Version 0.7.5",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "CASSANDRA-1761",
+        "title": "Indexes: Auto-generating the CFname may collide with user-generated names",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-1761"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2088",
+        "title": "Clean up after failed (repair) streaming operation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2088"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2258",
+        "title": "service.SerializationsTest failes under cobertura",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2258"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2269",
+        "title": "OOM in the Thrift thread doesn't shut down server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2269"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2279",
+        "title": "Tombstones not collected post-repair",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2279"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2283",
+        "title": "Streaming Old Format Data Fails in 0.7.3 after upgrade from 0.6.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2283"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2290",
+        "title": "Repair hangs if one of the neighbor is dead",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2290"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2305",
+        "title": "Tombstoned rows not purged from cache after gcgraceseconds",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2305"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2316",
+        "title": "NoSuchElement exception on node which is streaming a repair",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2316"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2320",
+        "title": "Dropping an index leaves index in Built state in system table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2320"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2323",
+        "title": "stress.java should not allow arbitrary arguments",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2323"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2326",
+        "title": "stress.java indexed range slicing is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2326"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2327",
+        "title": "Table.flusherLock is static final.. remove static.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2327"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2328",
+        "title": "Index predicate values used in get_indexed_slice() are not validated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2328"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2333",
+        "title": "Clean up thread pool and queue sizes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2333"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2337",
+        "title": "Windows: CliTest broken because of /r/n",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2337"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2347",
+        "title": "index scan uses incorrect comparator on non-indexed expressions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2347"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2349",
+        "title": "Expring columns can expire between the two phase of LazilyCompactedRow.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2349"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2350",
+        "title": "Races between schema changes and StorageService operations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2350"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2358",
+        "title": "CLI doesn't handle inserting negative integers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2358"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2360",
+        "title": "help in schema-sample uses wrong file name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2360"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2365",
+        "title": "ByteBufferUtil.read(byte[]) returns 0 when the end of the stream has been reached.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2365"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2367",
+        "title": "Cleanup conversions between bytes and strings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2367"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2371",
+        "title": "Removed/Dead Node keeps reappearing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2371"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2376",
+        "title": "Both name an index iterators cast block offset to int",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2376"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2377",
+        "title": "NPE During Repair In StreamReplyVerbHandler",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2377"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2381",
+        "title": "orphaned data files may be created during migration race",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2381"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2382",
+        "title": "statistics component not fsynced",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2382"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2390",
+        "title": "MarshalException is thrown when cassandra-cli creates the example Keyspace specified by conf/schema-sample.txt",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2390"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2406",
+        "title": "Secondary index and index expression problems",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2406"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2413",
+        "title": "Reduce default memtable size",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2413"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2416",
+        "title": "NullPointerException in CacheWriter.saveCache()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2416"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2417",
+        "title": "convert mmap assertion to if/throw",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2417"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2418",
+        "title": "default gc log settings overwrite previous log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2418"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2420",
+        "title": "row cache / streaming aren't aware of each other",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2420"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2426",
+        "title": "Running truncate on the CLI doesn't truncate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2426"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2428",
+        "title": "Running cleanup on a node with join_ring=false removes all data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2428"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2431",
+        "title": "Try harder to close scanners after a failed compaction",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2431"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2435",
+        "title": "auto bootstrap happened on already bootstrapped nodes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2435"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2463",
+        "title": "Flush and Compaction Unnecessarily Allocate 256MB Contiguous Buffers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2463"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2465",
+        "title": "Pig load/storefunc loads only one schema and BytesType validation class needs fix",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2465"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2484",
+        "title": "CassandraStorage LoadPushDown implementation causes heisenbugs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2484"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2490",
+        "title": "DatabaseDescriptor.defsVersion should be volatile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2490"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2492",
+        "title": "add an escapeSQLString function and fix unescapeSQLString",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2492"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2512",
+        "title": "Updating a column's validation class from AsciiType to UTF8Type does not actually work",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2512"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2514",
+        "title": "batch_mutate operations with CL=LOCAL_QUORUM throw TimeOutException when there aren't sufficient live nodes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2514"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2516",
+        "title": "Allow LOCAL_QUORUM, EACH_QUORUM CLs to work w/ any Strategy class",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2516"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2519",
+        "title": "row deletions do not add to memtable op count",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2519"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2343",
+        "title": "Allow configured ports to be overridden with system properties",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2343"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2354",
+        "title": "CLI should allow users to chose consistency level",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2354"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-1618",
+        "title": "Allow specifying a slice predicate for pig queries to filter out columns",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-1618"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-1851",
+        "title": "Publish cassandra artifacts to the maven central repository",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-1851"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2080",
+        "title": "Upgrade to release of Whirr 0.3.0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2080"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2227",
+        "title": "add cache loading to row/key cache tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2227"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2318",
+        "title": "Avoid seeking when sstable2json exports the entire file",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2318"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2329",
+        "title": "comment topology file about ipv6 configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2329"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2330",
+        "title": "Queue indexes for flush before the parent",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2330"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2331",
+        "title": "Allow a Job Configuration to control the consistency level with which reads and writes occur for mapreduce jobs.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2331"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2345",
+        "title": "CLI: Units on show keyspaces output",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2345"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2361",
+        "title": "AES depends on java serialization",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2361"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2387",
+        "title": "Make it possible for pig to understand packed data",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2387"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2403",
+        "title": "Backport AbstractType.compose from trunk",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2403"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2414",
+        "title": "IntegerType isn't noted in cli",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2414"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2425",
+        "title": "Avoid unnecessary copies in range/index scans",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2425"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2429",
+        "title": "Silence non-errors while reconnecting",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2429"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2442",
+        "title": "For 'describe keyspace ks' - it should output the default_validation_class for each column family",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2442"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2451",
+        "title": "Make clean compactions cleanup the row cache",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2451"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2460",
+        "title": "Make scrub validate deserialized columns",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2460"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2502",
+        "title": "disable cache saving on system CFs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2502"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2513",
+        "title": "r/m unnecessary AbstractType getInstance methods",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12316288"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2513"
+          }
+        }
+      }
+    ]
+  }
+}

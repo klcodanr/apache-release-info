@@ -1,0 +1,2808 @@
+{
+  "id": "12349532",
+  "name": "4.0-rc1",
+  "description": "",
+  "date": "2021-04-21",
+  "version": "1",
+  "module": "4.0-rc",
+  "lastUpdated": 1633055362127,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/CASSANDRA/fixforversion/12349532"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA"
+    }
+  },
+  "releaseNotes": "Release Notes - Cassandra - Version 4.0-rc1",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "CASSANDRA-14764",
+        "title": "Test Messaging Refactor with: 12 Node Breaking Point, compression=none, encryption=none, coalescing=off",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14764"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15181",
+        "title": "Ensure Nodes can Start and Stop",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15181"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16344",
+        "title": "Check all SSTables are correctly placed in tablestats",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16344"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16345",
+        "title": "Test SSTables are in the correct location after range movement with 1/5/20 data directories",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16345"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-11174",
+        "title": "org.apache.cassandra.metrics:type=Streaming,name=ActiveOutboundStreams is always zero",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-11174"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-12949",
+        "title": "CFS.setCompressionParameters() method can affect schema globally",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-12949"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13191",
+        "title": "test failure in org.apache.cassandra.hints.HintsBufferPoolTest.testBackpressure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13191"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13196",
+        "title": "test failure in snitch_test.TestGossipingPropertyFileSnitch.test_prefer_local_reconnect_on_listen_address",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13196"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13517",
+        "title": "dtest failure in paxos_tests.TestPaxos.contention_test_many_threads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13517"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14793",
+        "title": "Improve system table handling when losing a disk when using JBOD",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14793"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14834",
+        "title": "Avoid keeping StreamingTombstoneHistogramBuilder.Spool in memory during the whole compaction",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14834"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14925",
+        "title": "DecimalSerializer.toString() can be used as OOM attack",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14925"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15177",
+        "title": "Reloading of auth caches happens on the calling thread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15177"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15380",
+        "title": "nodetool command help is incorrect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15380"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15703",
+        "title": "When CDC is disabled bootstrapping breaks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15703"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15889",
+        "title": "Debian package fails to download on Arm-based hosts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15889"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15892",
+        "title": "JAVA 8/11: test_resumable_rebuild - rebuild_test.TestRebuild",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15892"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15897",
+        "title": "Dropping compact storage with 2.1-sstables on disk make them unreadable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15897"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15962",
+        "title": "Digest for some queries is different depending whether the data are retrieved from sstable or memtable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15962"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16078",
+        "title": "Performance regression for queries accessing multiple rows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16078"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16201",
+        "title": "Reduce amount of allocations during batch statement execution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16201"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16206",
+        "title": "Eliminate gen-doc template warning and unused (problematic) import",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16206"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16226",
+        "title": "COMPACT STORAGE SSTables created before 3.0 are not correctly skipped by timestamp due to missing primary key liveness info",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16226"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16229",
+        "title": "Flaky jvm-dtest: org.apache.cassandra.distributed.test.ring.NodeNotInRingTest.nodeNotInRingTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16229"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16236",
+        "title": "Fix flaky testTrackMaxDeletionTime",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16236"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16239",
+        "title": "Fix flaky test org.apache.cassandra.distributed.test.NetstatsRepairStreamingTest testWithCompressionDisabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16239"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16261",
+        "title": "Prevent unbounded number of flushing tasks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16261"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16279",
+        "title": "Incorrect check for -Xlog in cassandra-env.sh",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16279"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16283",
+        "title": "Incorrect output in \"nodetool status -r\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16283"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16284",
+        "title": "Too defensive check when picking sstables for preview repair",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16284"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16286",
+        "title": "Make TokenMetadata's ring version increments atomic",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16286"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16295",
+        "title": "upgradesstables/scrub support for 2.x sstables",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16295"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16296",
+        "title": "Join new node to cluster failing on C* version 4",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16296"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16303",
+        "title": "ClassNotFoundException: com.googlecode.concurrenttrees.radix.node.NodeFactory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16303"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16307",
+        "title": "GROUP BY queries with paging can return deleted data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16307"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16317",
+        "title": "Fix flaky test incompleteCommit - org.apache.cassandra.distributed.test.CASTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16317"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16318",
+        "title": "Memtable heap size is severely underestimated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16318"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16350",
+        "title": "Improve compaction param \"provide_overlapping_tombstones\" handling",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16350"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16352",
+        "title": "Fix upgrade python dtest test_crc_check_chance_upgrade - upgrade_crc_check_chance_test.TestCrcCheckChanceUpgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16352"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16353",
+        "title": "Fix client push notifications in protocol v5",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16353"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16355",
+        "title": "Fix flaky test incompletePropose - org.apache.cassandra.distributed.test.CASTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16355"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16358",
+        "title": "Minor Flakiness in ProxyHandlerConnectionsTest#testExpireSomeFromBatch",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16358"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16359",
+        "title": "mvn-install fails if no repo mirror is defined in settings.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16359"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16362",
+        "title": "SSLFactory should initialize SSLContext before setting protocols",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16362"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16365",
+        "title": "Cannot run tests on Java 11 with coverage analysis",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16365"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16372",
+        "title": "Import from csv of empty strings in list fails with a ParseError: Empty values are not allowed,  given up without retries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16372"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16374",
+        "title": "Restore check for consistent native protocol versions for connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16374"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16376",
+        "title": "Response headers to OPTION messages always have Stream ID of zero",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16376"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16381",
+        "title": "nodetool removenode error “Conflicting replica added”",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16381"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16382",
+        "title": "Fix flaky LongSharedExecutorPoolTest.testPromptnessOfExecution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16382"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16384",
+        "title": "test case AuditLoggerTest  fail on aarch64 platform",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16384"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16387",
+        "title": "UpgradeTest sporadically failing on schema updates",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16387"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16392",
+        "title": " Unable to load the library netty_tcnative_linux_aarch_64  when running ant test on aarch64 platform",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16392"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16393",
+        "title": "Update lib/jflex-1.6.0.jar to match upstream jflex-1.6.0.jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16393"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16394",
+        "title": "Fix schema aggreement race conditions in in-JVM dtests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16394"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16396",
+        "title": "Update debian packaging for python3",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16396"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16397",
+        "title": "Running python dtest with --keep-failed-test-dir causes ERROR for SKIP tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16397"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16398",
+        "title": "Add access and datacenters to unreserved keywords",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16398"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16399",
+        "title": "Selecting resource intensive tests is not consistent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16399"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16406",
+        "title": "Debug logging affects repair performance",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16406"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16408",
+        "title": "Unable to bootstrap/join new nodes to existing 4.0 cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16408"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16409",
+        "title": "Bugs in CQLSH tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16409"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16410",
+        "title": "Table Metrics table in \"doc/source/operating/metrics.rst\" cannot be rendered",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16410"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16411",
+        "title": "Fix topology corruption on joining nodes without DC in dtests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16411"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16412",
+        "title": "nodetool status doesn't work without system_traces",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16412"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16415",
+        "title": "Digest mismatches during upgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16415"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16425",
+        "title": "Improve handling of repair sessions during startup/shutdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16425"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16427",
+        "title": "In-JVM dtest paging does not handle Group By correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16427"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16429",
+        "title": "Fix incorrect encoding for strings can be UTF8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16429"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16432",
+        "title": "Fix flaky test mixedModeReadColumnSubsetDigestCheck - org.apache.cassandra.distributed.upgrade.MixedModeReadTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16432"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16433",
+        "title": "Version family is probably broken for Cassandra 2 and 3.11 in dtests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16433"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16435",
+        "title": "Reverse iteration with paging may throw if the page boundary coincides with open tombstone boundary",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16435"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16441",
+        "title": "Snapshot_test.py DTests failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16441"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16443",
+        "title": "Fix flaky test org.apache.cassandra.db.SinglePartitionSliceCommandTest testPartitionDeletionRowDeletionTie",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16443"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16444",
+        "title": "Fix flaky test testMultiExpressionQueriesWhereRowSplitBetweenSSTables - org.apache.cassandra.index.sasi.SASIIndexTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16444"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16446",
+        "title": "Parent repair sessions leak may lead to node long pauses",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16446"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16448",
+        "title": "Fix class loading for UDF in in-jvm dtests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16448"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16450",
+        "title": "MigrationCoordinatorTest#testWeKeepSendingRequests() Failing Sporadically",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16450"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16453",
+        "title": "NPE in Slice#make on RT + partition deletion reconciliation on timestamp tie",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16453"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16457",
+        "title": "Hint messages are incorrectly re-serialized for filtering in in-jvm dtests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16457"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16469",
+        "title": "replication_test.TestReplication.test_network_topology failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16469"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16470",
+        "title": "TestCqlsh.test_protocol_negotiation needs to be updated for v5",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16470"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16472",
+        "title": "Fix flaky TestDynamicEndpointSnitch.test_multidatacenter_local_quorum test",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16472"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16473",
+        "title": "cassandra-stress failed to connect over JMX",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16473"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16474",
+        "title": "Multiple python dtest failures after promoting protocol v5 from beta",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16474"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16478",
+        "title": "Debian packages are broken since py3 migration",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16478"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16479",
+        "title": "Materialized Views: incorrect where clause reported for quoted identifiers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16479"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16480",
+        "title": "cassandra-builds produce deb packages that require python 3.7",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16480"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16482",
+        "title": "CQL schema generated by DESCRIBE KEYSPACE fails to import with custom indexes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16482"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16483",
+        "title": "ColumnFilter::toString doesn't return a valid CQL fragment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16483"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16484",
+        "title": "Audit consumption/removal of ApplicationState padding",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16484"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16489",
+        "title": "Add utest_system_keyspace_directory to CircleCI config template",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16489"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16493",
+        "title": "IPMembershipTest.sameIPFailWithoutReplace fails with timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16493"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16494",
+        "title": " org.apache.cassandra.distributed.test.TopologyChangeTest failing with client timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16494"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16495",
+        "title": "Scheduled (Delayed) Schema Pull Tasks May Run After MIGRATION Stage Shutdown During Decommission",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16495"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16497",
+        "title": "concurrent.LongSharedExecutorPoolTest.testPromptnessOfExecution broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16497"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16498",
+        "title": "Python upgrade DTests fail in CircleCI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16498"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16500",
+        "title": "Missing validation in AbstractType.writeValue():",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16500"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16508",
+        "title": "Running cqlsh against cassandra 3 throws error about beta flag not set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16508"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16511",
+        "title": "Running tests in parallel can sometimes result in port collision",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16511"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16512",
+        "title": "SinglePartitionSliceCommandTest.testPartitionDeletionRangeDeletionTie is flaky",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16512"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16515",
+        "title": "Don't fail all ViewFilteringTest cases because one case timed out",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16515"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16516",
+        "title": "ValueAccessorTest.testSlice is flaky",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16516"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16520",
+        "title": "Apply CASSANDRA-16515 for other view tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16520"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16522",
+        "title": "ClientRequestSizeMetricsTest is flaky",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16522"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16523",
+        "title": "Improve handling of unflushed hint files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16523"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16524",
+        "title": "Upgrading SSL enabled Cassandra cluster from 3.11.10 to 4.0-beta4 failing with javax.net.ssl.SSLException: java.lang.IndexOutOfBoundsException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16524"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16525",
+        "title": "Gossip STATUS can be either missing during upgrade or stale after upgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16525"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16526",
+        "title": "BinLogTest is flaky",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16526"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16527",
+        "title": "Flaky ValidationExecutorTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16527"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16529",
+        "title": "cassandra-stress fails when node with port specified",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16529"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16530",
+        "title": "Fix flaky test_ttl_deletions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16530"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16532",
+        "title": "Fix flaky testSkipScrubCorruptedCounterRowWithTool",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16532"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16533",
+        "title": "The two tests in  NetstatsBootstrapWithEntireSSTablesCompressionStreamingTest are flaky",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16533"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16542",
+        "title": "4.0 node sending a repair prepare message to a 3.x node breaks the connection on 4.0 side",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16542"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16545",
+        "title": "Cluster topology change may produce false unavailable for queries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16545"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16546",
+        "title": "Flaky testRecoverOverflowedExpirationWithSSTableScrub",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16546"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16550",
+        "title": "Improve LICENSE/NOTICE compliance with ASF guidance",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16550"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16554",
+        "title": "Race between secondary index building and active compactions tracking",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16554"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16560",
+        "title": "Update IDE and Eclipse classpaths for tests (after migration to resolver-ant-tasks)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16560"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16563",
+        "title": "When behind a firewall trunk is not buildable, need to allow overriding URLs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16563"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16566",
+        "title": "Fix test testIsrepairedArg - org.apache.cassandra.tools.SSTableRepairedAtSetterTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16566"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16568",
+        "title": "Fix test shouldStreamHintsDuringDecommission - org.apache.cassandra.distributed.test.HintedHandoffAddRemoveNodesTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16568"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16569",
+        "title": "Flaky StorageServiceServerTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16569"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16571",
+        "title": "\"multiple versions of ant detected in path for junit\" printed for every junit test case spawned by \"ant test\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16571"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16572",
+        "title": "j8_dtest_jars_build is broken in CI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16572"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16576",
+        "title": "jflex NPE (StateSetEnumerator.reset(…)) on arm64 and jdk11",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16576"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16577",
+        "title": "Node waits for schema agreement on removed nodes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16577"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16582",
+        "title": "Groupby queries trigger ArrayIndexOutOfBoundsException on mixed version cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16582"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16585",
+        "title": "Periodic failures in *RepairCoordinator*Test caused by race condition with nodetool repair",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16585"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16586",
+        "title": "Fix flaky test testAvailabilityV30ToV4 - org.apache.cassandra.distributed.upgrade.MixedModeAvailabilityV30Test",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16586"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16587",
+        "title": "flaky AntiCompactionBytemanTest.testRedundantTransitions byteman Connection refused",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16587"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16593",
+        "title": "Fix flaky org.apache.cassandra.service.ActiveRepairServiceTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16593"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16601",
+        "title": "Flaky CassandraIndexTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16601"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16602",
+        "title": "Revise the metrics docs in the website",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16602"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16607",
+        "title": "Fix flaky test testRequestResponse – org.apache.cassandra.net.MockMessagingServiceTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16607"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16608",
+        "title": "Nodetool verify fixes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16608"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16616",
+        "title": "Harden internode message resource limit accounting against serialization failures",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16616"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16644",
+        "title": "Flaky TestTransientReplicationRing.test_move_backwards_and_cleanup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16644"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16646",
+        "title": "Fix flaky StreamingMetricsTest.testMetricsWithRebuildAndStreamingToTwoNodes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16646"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16661",
+        "title": "Fix typo: Alterting -> Altering",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16661"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16689",
+        "title": "Flaky LeaveAndBootstrapTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16689"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16692",
+        "title": "Unable to replace node with stale schema",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16692"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15561",
+        "title": "Extract Javadoc into a separate package",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15561"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16162",
+        "title": "Improve empty hint file handling on startup",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16162"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16190",
+        "title": "Add tests for streaming metrics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16190"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16191",
+        "title": "Add tests for Repair metrics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16191"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16221",
+        "title": "Jenkins doesn't run high resource python dtests with novonode so missing some tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16221"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16287",
+        "title": "Make relocate dependencies script less manual",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16287"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16335",
+        "title": "Expose data dirs in ColumnFamilyStoreMBean",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16335"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16385",
+        "title": "Correctly serialize all request responses - CASSANDRA-15946 followup",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16385"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16395",
+        "title": "Increase node start timeout for selected bootstrap and replace node tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16395"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16405",
+        "title": "Handle both TimeoutError and NodeError when expecting node start failure",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16405"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16407",
+        "title": "Add possibility to copy SSTables in SSTableImporter instead of moving them",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16407"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16419",
+        "title": "Cassandra-builds should remove the unused (non-dangling) docker images in Jenkins",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16419"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16422",
+        "title": "Unable to ALTER KEYSPACE while decommissioned/assassinated nodes are in gossip",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16422"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16439",
+        "title": "Reduce new reserved keywords introduced since 3.0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16439"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16462",
+        "title": "Upgrade to Jackson Databind 2.9.10.8 or later fix high vulnerabilities",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16462"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16534",
+        "title": " bin/cqlsh writes unwanted output to stderr while validating python version if python 2.6 is installed as system python",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16534"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16552",
+        "title": "Anticompaction appears to race with Compaction, preventing forward compaction progress after an incremental repair",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16552"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16556",
+        "title": "Updates the versions EOL dates on the Download page",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16556"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16559",
+        "title": "Enable offline builds with resolver-ant-tasks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16559"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16570",
+        "title": "Move the jstack junit task intree to avoid downloading the binary from github",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16570"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16599",
+        "title": "Use source release of python driver from pip rather than GitHub",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16599"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16695",
+        "title": "cqlsh should prefer newer TLS version by default",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16695"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13951",
+        "title": "Release Java and Python drivers and re-enable build.xml driver dep",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13951"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14688",
+        "title": "Update protocol spec and class level doc with protocol checksumming details",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14688"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14973",
+        "title": "Bring protocol v5 out of beta, introduce v6 before 4.0 release is cut",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14973"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15148",
+        "title": "Add in-jvm dtest for Gossip to trunk",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15148"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15579",
+        "title": "4.0 quality testing: Distributed Read/Write Path: Coordination, Replication, and Read Repair",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15579"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15581",
+        "title": "4.0 quality testing: Compaction",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15581"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15584",
+        "title": "4.0 quality testing: Tooling - External Ecosystem",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15584"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15585",
+        "title": "4.0 quality testing: Test Frameworks, Tooling, Infra / Automation",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15585"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15586",
+        "title": "4.0 quality testing: Cluster Setup and Maintenance",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15586"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15587",
+        "title": "4.0 quality testing: Platforms and Runtimes",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15587"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-15762",
+        "title": "Update Bundled Python Driver to the latest release",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-15762"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16083",
+        "title": "Missing JMX objects and attributes upgrading from 3.0 to 4.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16083"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16180",
+        "title": "4.0 Quality: Coordination Test Audit",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16180"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16181",
+        "title": "4.0 Quality: Replication Test Audit",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16181"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16244",
+        "title": "Create a jvm upgrade dtest for mixed versions repairs",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16244"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16321",
+        "title": "4.0 Quality: Python Upgrade dtest Audit",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16321"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16322",
+        "title": "Fix failing python update dtests",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16322"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16371",
+        "title": "JMH Reports in ci-cassandra.apache.org",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16371"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16373",
+        "title": "Deploy testing docker images to hub.docker.com/u/apache/",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16373"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16377",
+        "title": "Add dtest-upgrade and dtest-large-novnode to Jenkins pipeline",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16377"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16383",
+        "title": "Python dtests to use ccm tag instead of the `cassandra-test` branch",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16383"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16391",
+        "title": "Migrate dependency handling from maven-ant-tasks to resolver-ant-tasks",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16391"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16401",
+        "title": "Remove the Jenkins plaintext reports",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16401"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16402",
+        "title": "In Jenkins move and split jvm dtests to 'Distributed Test' stage",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16402"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16414",
+        "title": "Remove Claim of Support for Python2 in 4.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16414"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16428",
+        "title": "Fix selections of JDKs in debian docker images on arm64",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16428"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16440",
+        "title": "DOC - Publish Changelog blog #4 Feb 2021",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16440"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16460",
+        "title": "Document the side-effect of Zero Copy Streaming when in a multiple data directories setup",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16460"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16475",
+        "title": "Add Jenkins arm64 jobs to ci-cassandra.a.o",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16475"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16476",
+        "title": "Update the Compact Storage related docs",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16476"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16477",
+        "title": "Fix centos packaging for arm64",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16477"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16496",
+        "title": "BLOG - Changelog #5 Mar 2021",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16496"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16504",
+        "title": "GSoC Blog Post",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16504"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16505",
+        "title": "Update Python 2 references in docs to point to python 3",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16505"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16506",
+        "title": "Drop unittest2 dependency since we no longer support python < 2.7",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16506"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16509",
+        "title": "Bump cqlsh version to 6.0.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16509"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16514",
+        "title": "Increase driver timeouts for CQL unit tests",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16514"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16519",
+        "title": "Remove ant targets list-jvm-dtests and ant list-jvm-upgrade-dtests",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16519"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16537",
+        "title": "BLOG - World Party 2021",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16537"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16540",
+        "title": "WEBSITE - Publish a new landing page for the 2021 World Party marketing efforts",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16540"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16543",
+        "title": "WEBSITE - Update World Party pages to indicate all times are April 28 UTC",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16543"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16544",
+        "title": "DOC - Update link to DataStax Astra in the Third-party page",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16544"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16558",
+        "title": "Fix rat check (April 2021)",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16558"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16583",
+        "title": "Dont fork jvms in the build",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16583"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16594",
+        "title": "BLOG - Changelog #6 Apr 2021",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16594"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16595",
+        "title": "Remove test parallelism from ant build.xml in all branches",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16595"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16611",
+        "title": "WEBSITE - Publish agenda on World Party landing page",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16611"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16626",
+        "title": "Improve how-to commit docs",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16626"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-16627",
+        "title": "Flaky DirectoriesTest.testSecondaryIndexDirectories",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12349532"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-16627"
+          }
+        }
+      }
+    ]
+  }
+}

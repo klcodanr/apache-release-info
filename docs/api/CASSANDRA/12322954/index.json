@@ -1,0 +1,1807 @@
+{
+  "id": "12322954",
+  "name": "2.0 beta 1",
+  "description": "",
+  "date": "2013-07-12",
+  "version": "1",
+  "module": "2.0 beta",
+  "lastUpdated": 1633055082107,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/CASSANDRA/fixforversion/12322954"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA"
+    }
+  },
+  "releaseNotes": "Release Notes - Cassandra - Version 2.0 beta 1",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "CASSANDRA-3919",
+        "title": "Dropping a column should do more than just remove the definition",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3919"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5441",
+        "title": "Add support for read at CL.SERIAL",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5441"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5442",
+        "title": "Add support for specifying CAS commit CL",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5442"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5443",
+        "title": "Add CAS CQL support",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5443"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5526",
+        "title": "Always promote row tombstones",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5526"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3429",
+        "title": "Fix truncate/compaction race without locking",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3429"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3818",
+        "title": "disabling m-a-t for fun and profit (and other ant stuff)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3818"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4995",
+        "title": "CompactionSerializerTest fails to find jemalloc",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4995"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5074",
+        "title": "Add an official way to disable compaction",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5074"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5123",
+        "title": "Multiget Supercolumns Sometimes Missing Results",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5123"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5125",
+        "title": "Support indexes on composite column components (clustered columns)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5125"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5139",
+        "title": "Drop keyspace argument from forceUserDefinedCompactions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5139"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5149",
+        "title": "Respect slice count even if column expire mid-request",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5149"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5150",
+        "title": "sstable2json doesn't check SIGPIPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5150"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5151",
+        "title": "Implement better way of eliminating compaction left overs.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5151"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5162",
+        "title": "Remove SimpleTransportFactory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5162"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5199",
+        "title": "Avoid serializing to byte[] on commitlog append",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5199"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5222",
+        "title": "OOM Exception during repair session with LeveledCompactionStrategy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5222"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5228",
+        "title": "Track maximum ttl and use to expire entire sstables",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5228"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5371",
+        "title": "Perform size-tiered compactions in L0 (\"hybrid compaction\")",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5371"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5385",
+        "title": "IndexHelper.skipBloomFilters won't skip non-SHA filters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5385"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5393",
+        "title": "Add retry mechanism to OTC for non-droppable_verbs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5393"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5403",
+        "title": "Clean up ColumnFamily, ISortedColumns heirarchy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5403"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5429",
+        "title": "Update scrub and scrubtest for single-pass compaction format",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5429"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5434",
+        "title": "2.0 CommitLogReplayer doesn't read checksum correctly for old commit logs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5434"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5439",
+        "title": "allow STCS options to apply to the L0 compaction performed by LCS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5439"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5440",
+        "title": "ISE during short reads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5440"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5454",
+        "title": "Changing column_index_size_in_kb on different nodes might corrupt files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5454"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5455",
+        "title": "Remove PBSPredictor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5455"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5458",
+        "title": "Avoid serializing keyspace redundantly in RowMutation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5458"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5465",
+        "title": "Shuffle fails to write to system.range_xfers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5465"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5489",
+        "title": "Fix 2.0 key and column aliases serialization and cqlsh DESC SCHEMA",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5489"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5511",
+        "title": "Clean up backwards compatibility complexity for 2.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5511"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5521",
+        "title": "move IndexSummary off heap",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5521"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5532",
+        "title": "Maven package installation broken by recent build changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5532"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5576",
+        "title": "CREATE/DROP TRIGGER in CQL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5576"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5577",
+        "title": "Avoid unnecessary second pass on name-based queries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5577"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5578",
+        "title": "update trigger schema to use Set instead of CDL text",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5578"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5580",
+        "title": "InputStreams not closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5580"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5603",
+        "title": "YamlFileNetworkTopologySnitch doesn't call reconnectViaPreferredAddress in onChange",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5603"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5607",
+        "title": "don't 2xsort data directories if you only have 1 (common case)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5607"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5627",
+        "title": "BlacklistingCompactionTest missing Apache license",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5627"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5660",
+        "title": "Gossiper incorrectly drops AppState for an upgrading node",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5660"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5669",
+        "title": "Connection thrashing in multi-region ec2 during upgrade, due to messaging version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5669"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5675",
+        "title": "cqlsh shouldn't display \"null\" for empty values",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5675"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5688",
+        "title": "Update debian packaging for 2.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5688"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5692",
+        "title": "Race condition in detecting version on a mixed 1.1/1.2 cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5692"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5697",
+        "title": "cqlsh doesn't allow semicolons in BATCH statements",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5697"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5699",
+        "title": "Streaming (2.0) can deadlock",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5699"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5702",
+        "title": "ALTER RENAME is broken in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5702"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5705",
+        "title": "Disallow renaming an indexed column",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5705"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5707",
+        "title": "Compression chunk_length shouldn't be mandatory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5707"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5723",
+        "title": "DateType (timestamp type in CQL3) does not sort pre-'unix epoch' dates correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5723"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5731",
+        "title": "Should use index_interval from already loaded index summary",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5731"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-1311",
+        "title": "Triggers",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-1311"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-2737",
+        "title": "CQL: support IF EXISTS extension for DROP commands (table, keyspace, index)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-2737"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3648",
+        "title": "Repair should validate checksums before streaming",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3648"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3974",
+        "title": "Per-CF TTL",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3974"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4237",
+        "title": "Add back 0.8-style memtable_lifetime feature",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4237"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4415",
+        "title": "Add cursor API/auto paging to the native CQL protocol",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4415"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4554",
+        "title": "Log when a node is down longer than the hint window and we stop saving hints",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4554"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5045",
+        "title": "Add Configuration Loader to DatabaseDescriptor",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5045"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5062",
+        "title": "Support CAS",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5062"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5339",
+        "title": "YAML network topology snitch supporting preferred addresses",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5339"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5400",
+        "title": "Allow multiple ports to gossip from a single IP address",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5400"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5514",
+        "title": "Track min/max clustered values per sstable to optimize reads",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5514"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5636",
+        "title": "Add row count to select output a la psql",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5636"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3237",
+        "title": "refactor super column implmentation to use composite column names instead",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3237"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3430",
+        "title": "Break Big Compaction Lock apart",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3430"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3533",
+        "title": "TimeoutException when there is a firewall issue.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3533"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3534",
+        "title": "Remove memory emergency pressure valve",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3534"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3620",
+        "title": "Proposal for distributed deletes - fully automatic \"Reaper Model\" rather than GCSeconds and manual repairs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3620"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3734",
+        "title": "Support native link w/o JNA in Java7",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3734"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3868",
+        "title": "Remove or nullify replicate_on_write option",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3868"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3961",
+        "title": "Make index_interval configurable per column family",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3961"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3983",
+        "title": "Change order of directory searching for c*.in.sh",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3983"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3997",
+        "title": "Make SerializingCache Memory Pluggable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3997"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4097",
+        "title": "Classes in org.apache.cassandra.deps:avro:1.4.0-cassandra-1 clash with core Avro classes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4097"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4180",
+        "title": "Single-pass compaction for LCR",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4180"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4265",
+        "title": "Limit total open connections (HSHA server)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4265"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4388",
+        "title": "Use MMap for CompressedSegmentFile with Native Checksum",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4388"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4450",
+        "title": "CQL3: Allow preparing the consistency level, timestamp and ttl",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4450"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4495",
+        "title": "Don't tie client side use of AbstractType to JDBC",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4495"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4565",
+        "title": "TTL columns with older then gcgrace do not need to flush",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4565"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4693",
+        "title": "CQL Protocol should allow multiple PreparedStatements to be atomically executed",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4693"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4705",
+        "title": "Speculative execution for reads / eager retries",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4705"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4872",
+        "title": "Move manifest into sstable metadata",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4872"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4885",
+        "title": "Remove or rework per-row bloom filters",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4885"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4917",
+        "title": "Optimize tombstone creation for ExpiringColumns",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4917"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4932",
+        "title": "Agree on a gcbefore/expirebefore value for all replica during validation compaction",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4932"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-4937",
+        "title": "CRAR improvements (object cache + CompressionMetadata chunk offset storage moved off-heap).",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-4937"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5004",
+        "title": "Add a rate limit option to stress",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5004"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5014",
+        "title": "Convert timeout from milli second to micro second.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5014"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5015",
+        "title": "move bloom_filter_fp_chance to compaction options",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5015"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5034",
+        "title": "Refactor to introduce Mutation Container in write path",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5034"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5075",
+        "title": "CQL Add support for AS keyword in select",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5075"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5243",
+        "title": "cassandra-stress aggregate statistics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5243"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5250",
+        "title": "Improve LeveledScanner work estimation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5250"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5269",
+        "title": "Trunk has been throwing background exceptions during ColumnFamilyStoreTest for a while",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5269"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5271",
+        "title": "Create tool to drop sstables to level 0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5271"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5286",
+        "title": "Streaming 2.0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5286"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5306",
+        "title": "Improve Dsnitch Severity",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5306"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5307",
+        "title": "Update Message IDs to be ints instead of strings",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5307"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5317",
+        "title": "upgrade to recent snakeyaml",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5317"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5389",
+        "title": "Deserialize to arrays instead of trees",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5389"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5426",
+        "title": "Redesign repair messages",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5426"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5459",
+        "title": "Remove node from seeds list when it permanently leaves the cluster",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5459"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5495",
+        "title": "Do not hard code current version into BootstrapTest",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5495"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5530",
+        "title": "Switch from THSHAServer to TThreadedSelectorServer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5530"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5537",
+        "title": "Reduce Empty Map allocations in Directory.SSTableLister",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5537"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5538",
+        "title": "Reduce Empty Map allocations in StorageProxy.sendToHintedEndpoints",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5538"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5541",
+        "title": "Reduce Empty Map allocations in RowMutation (modifications)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5541"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5545",
+        "title": "Add SASL authentication to CQL native protocol",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5545"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5557",
+        "title": "Correctly handle interruptions of Thread.sleep()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5557"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5579",
+        "title": "Use range tombstones when dropping cfs/columns from schema",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5579"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5581",
+        "title": "Use System.nanoTime() to measure intervals",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5581"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5582",
+        "title": "Replace CustomHsHaServer with better optimized solution based on LMAX Disruptor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5582"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5595",
+        "title": "Add counters to TRACE for how much CASSANDRA-5514 helped a query",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5595"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5606",
+        "title": "remove some deprecations in use of SnakeYaml",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5606"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5613",
+        "title": "Rename 'Table' class to 'Keyspace' in 2.0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5613"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5619",
+        "title": "CAS UPDATE for a lost race: save round trip by returning column values",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5619"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5625",
+        "title": "Cleanup Tracing class",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5625"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5649",
+        "title": "Move resultset type information into prepare, not execute",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5649"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5650",
+        "title": "Make index_interval visible to CQL3",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5650"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5667",
+        "title": "Change timestamps used in CAS ballot proposals to be more resilient to clock skew",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5667"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5678",
+        "title": "Avoid over reconnecting in EC2MRS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5678"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5681",
+        "title": "Refactor IESCS in Snitches",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5681"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5714",
+        "title": "Allow coordinator failover for cursors",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5714"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5719",
+        "title": "Expire entries out of ThriftSessionManager",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5719"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-3719",
+        "title": "Upgrade thrift to latest release version (0.9.x)",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-3719"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5277",
+        "title": "rename AntiEntropyService",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5277"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5293",
+        "title": "formalize that timestamps are epoch-in-micros in 2.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5293"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5331",
+        "title": "Remove ASSUME from cqlsh",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5331"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5348",
+        "title": "Remove on-heap row cache",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5348"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5349",
+        "title": "Add binary protocol support for bind variables to non-prepared statements",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5349"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5518",
+        "title": "Clean out token range bisection on bootstrap",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5518"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-5585",
+        "title": "Drop CQL2/CQL3-beta support from cqlsh",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12322954"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-5585"
+          }
+        }
+      }
+    ]
+  }
+}

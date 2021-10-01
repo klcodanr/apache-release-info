@@ -1,0 +1,845 @@
+{
+  "id": "12311985",
+  "name": "2.0",
+  "description": "Feature and fix release (Java 6)",
+  "date": "2013-11-11",
+  "version": "2.0",
+  "module": "",
+  "lastUpdated": 1633056389466,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/POOL/fixforversion/12311985"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/POOL"
+    }
+  },
+  "releaseNotes": "Release Notes - Commons Pool - Version 2.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "POOL-82",
+        "title": "2 tests failing on JDK 1.4/1.6 on Linux",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-82"
+          }
+        }
+      },
+      {
+        "issue": "POOL-90",
+        "title": "JavaDoc API for GenericKeyedObjectPool is incorrect for some methods.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-90"
+          }
+        }
+      },
+      {
+        "issue": "POOL-91",
+        "title": "StackObjectPool.borrowObject infinate loop when makeObject returns null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-91"
+          }
+        }
+      },
+      {
+        "issue": "POOL-95",
+        "title": "GenericObjectPool constructor with GenericObjectPool.Config ignores softMinEvictableIdleTimeMillis",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-95"
+          }
+        }
+      },
+      {
+        "issue": "POOL-102",
+        "title": "Thread waiting forever for borrowObject() cannot be interrupted",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-102"
+          }
+        }
+      },
+      {
+        "issue": "POOL-113",
+        "title": "Inconsistent synch in InvalidEvictorLender, GenericKeyedObjectPool, GenericObjectPool",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-113"
+          }
+        }
+      },
+      {
+        "issue": "POOL-142",
+        "title": "Swallowing exceptions throw by factory destroy() methods can hide genuine issues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-142"
+          }
+        }
+      },
+      {
+        "issue": "POOL-148",
+        "title": "borrowObject should return the exception thrown by validateObject when throwing an Exception to let Exceptions be handled at a higher level",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-148"
+          }
+        }
+      },
+      {
+        "issue": "POOL-150",
+        "title": "GenericKeyedObjectPool.preparePool does not throw an exception if supplied factory is null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-150"
+          }
+        }
+      },
+      {
+        "issue": "POOL-161",
+        "title": "ContextClassLoader problems for the Evictor thread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-161"
+          }
+        }
+      },
+      {
+        "issue": "POOL-182",
+        "title": "Issues with org.apache.commons.pool2.performance. PerformanceTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-182"
+          }
+        }
+      },
+      {
+        "issue": "POOL-187",
+        "title": "TestGenericKeyedObjectPool.testMaxTotalLRU method falls in an infinite loops",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-187"
+          }
+        }
+      },
+      {
+        "issue": "POOL-188",
+        "title": "Confusing PoolUtils.ErodingKeyedObjectPool.numIdle(K key) method; bug in ErodingKeyedObjectPool.returnObject(K key, V obj) ?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-188"
+          }
+        }
+      },
+      {
+        "issue": "POOL-193",
+        "title": "It is safer to make org.apache.commons.pool2.impl.GenericObjectPool.evictor volatile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-193"
+          }
+        }
+      },
+      {
+        "issue": "POOL-195",
+        "title": "Generic[Keyed]ObjectPool.startEvictor() is overrideable yet is called from the ctor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-195"
+          }
+        }
+      },
+      {
+        "issue": "POOL-196",
+        "title": "PooledObject.getActiveTimeMillis() does not synch. access to lastReturnTime and lastBorrowTime",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-196"
+          }
+        }
+      },
+      {
+        "issue": "POOL-197",
+        "title": "PooledObject: risky init of lastBorrowTime & lastReturnTime",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-197"
+          }
+        }
+      },
+      {
+        "issue": "POOL-198",
+        "title": "LinkedBlockingDeque has some non-private fields, and a package-protected internal method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-198"
+          }
+        }
+      },
+      {
+        "issue": "POOL-199",
+        "title": "GOP/GKOP evict() method is not synchronised and is not thread-safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-199"
+          }
+        }
+      },
+      {
+        "issue": "POOL-200",
+        "title": "GOP/GKOP don't consistently use getters to access fields",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-200"
+          }
+        }
+      },
+      {
+        "issue": "POOL-201",
+        "title": "Classes Generic[Keyed]ObjectPoolConfig are generic - but why?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-201"
+          }
+        }
+      },
+      {
+        "issue": "POOL-202",
+        "title": "GenericKeyedObjectPool.close() can interfere with evict(); eviction[Key]Iterator is not consistently synched.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-202"
+          }
+        }
+      },
+      {
+        "issue": "POOL-205",
+        "title": "GKOP - inconsistent synchronisation of poolKeyList",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-205"
+          }
+        }
+      },
+      {
+        "issue": "POOL-206",
+        "title": "GOP/GKOP close() - incorrect behaviour with evict() ?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-206"
+          }
+        }
+      },
+      {
+        "issue": "POOL-207",
+        "title": "GenericKeyedObjectPool.clear() has unnecessary null check of objectDequeue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-207"
+          }
+        }
+      },
+      {
+        "issue": "POOL-212",
+        "title": "GenericObjectPool allows maxIdle < minIdle",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-212"
+          }
+        }
+      },
+      {
+        "issue": "POOL-213",
+        "title": "_numActive can go negative",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-213"
+          }
+        }
+      },
+      {
+        "issue": "POOL-214",
+        "title": "GenericObjectPool.evictionPolicy not thread-safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-214"
+          }
+        }
+      },
+      {
+        "issue": "POOL-215",
+        "title": "GenericKeyedObjectPool - multiple mutable fields not published safely",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-215"
+          }
+        }
+      },
+      {
+        "issue": "POOL-219",
+        "title": "Example documentation refers to StackObjectPool which is not present in Pool2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-219"
+          }
+        }
+      },
+      {
+        "issue": "POOL-220",
+        "title": "PooledObject#compareTo() is not guaranteed consistent with equals",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-220"
+          }
+        }
+      },
+      {
+        "issue": "POOL-221",
+        "title": "PooledObject.state does not need to be volatile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-221"
+          }
+        }
+      },
+      {
+        "issue": "POOL-231",
+        "title": "GOP, GKOP invalidateObject is not threadsafe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-231"
+          }
+        }
+      },
+      {
+        "issue": "POOL-100",
+        "title": "Possibiblity to define eviction policies",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-100"
+          }
+        }
+      },
+      {
+        "issue": "POOL-176",
+        "title": "GenericKeyedObjectPool should support softMinEvictableIdleTimeMillis a la GenericObjectPool",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-176"
+          }
+        }
+      },
+      {
+        "issue": "POOL-183",
+        "title": "potential new method for interface ObjectPool<T>: returnAndValidateObject",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-183"
+          }
+        }
+      },
+      {
+        "issue": "POOL-190",
+        "title": "Add API BaseObjectPool.isOpen()",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-190"
+          }
+        }
+      },
+      {
+        "issue": "POOL-229",
+        "title": "Move AbandonedObjectPool from DBCP to POOL",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-229"
+          }
+        }
+      },
+      {
+        "issue": "POOL-62",
+        "title": "[pool] GenericKeyedObjectPool raises exception while destroying invalidated object",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-62"
+          }
+        }
+      },
+      {
+        "issue": "POOL-78",
+        "title": "[pool] maxActive, maxIdle, maxTotal apply to all keys in  a GenericKeyedObjectPool",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-78"
+          }
+        }
+      },
+      {
+        "issue": "POOL-81",
+        "title": "Correct PoolUtils javadoc for pool vs. keyedPool",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-81"
+          }
+        }
+      },
+      {
+        "issue": "POOL-83",
+        "title": "Support Java 1.5 Generics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-83"
+          }
+        }
+      },
+      {
+        "issue": "POOL-88",
+        "title": "Better maintenance of GKOP per-pool activeCount",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-88"
+          }
+        }
+      },
+      {
+        "issue": "POOL-98",
+        "title": "Make GenericObjectPool better extensible",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-98"
+          }
+        }
+      },
+      {
+        "issue": "POOL-103",
+        "title": "Tracing borrowed objects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-103"
+          }
+        }
+      },
+      {
+        "issue": "POOL-121",
+        "title": "Provide thread name for EvcitionTimer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-121"
+          }
+        }
+      },
+      {
+        "issue": "POOL-131",
+        "title": "Make org.apache.commons.pool.impl.GenericObjectPool.returnObject(Object) log errors about passivation/destroying",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-131"
+          }
+        }
+      },
+      {
+        "issue": "POOL-134",
+        "title": "Parameterize the maxWait time to be per borrow call",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-134"
+          }
+        }
+      },
+      {
+        "issue": "POOL-138",
+        "title": "GenericKeyedObjectPoolFactory could be made immutable and thread-safe",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-138"
+          }
+        }
+      },
+      {
+        "issue": "POOL-155",
+        "title": "ObjectPool.invalidateObject(object) should throw an Exception if object is null",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-155"
+          }
+        }
+      },
+      {
+        "issue": "POOL-159",
+        "title": "GenericObjectPool: Add a getNumWaiters() method for monitoring purposes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-159"
+          }
+        }
+      },
+      {
+        "issue": "POOL-172",
+        "title": "Add JMX (MBean) management and monitoring",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-172"
+          }
+        }
+      },
+      {
+        "issue": "POOL-173",
+        "title": "Better config without duplication.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-173"
+          }
+        }
+      },
+      {
+        "issue": "POOL-175",
+        "title": "Add Builders for Configuration classes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-175"
+          }
+        }
+      },
+      {
+        "issue": "POOL-178",
+        "title": "Common interfaces and abstract classes for BOP and BKOP",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-178"
+          }
+        }
+      },
+      {
+        "issue": "POOL-186",
+        "title": "Update the developer documentation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-186"
+          }
+        }
+      },
+      {
+        "issue": "POOL-194",
+        "title": "replace synchronized blocks in PoolUtils with Read/Write locks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-194"
+          }
+        }
+      },
+      {
+        "issue": "POOL-211",
+        "title": "Proxy support for pooled objects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-211"
+          }
+        }
+      },
+      {
+        "issue": "POOL-216",
+        "title": "GenericKeyedObjectPool.ensureMinIdle(K) does not need to check getMinIdlePerKey()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-216"
+          }
+        }
+      },
+      {
+        "issue": "POOL-217",
+        "title": "PoolUtils.MIN_IDLE_TIMER could be provided using an IODH",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-217"
+          }
+        }
+      },
+      {
+        "issue": "POOL-222",
+        "title": "bug in javadoc markup for BaseGenericObjectPool#getLifo()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-222"
+          }
+        }
+      },
+      {
+        "issue": "POOL-181",
+        "title": "Make BaseObjectPool isClosed public",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-181"
+          }
+        }
+      },
+      {
+        "issue": "POOL-140",
+        "title": "Rethink synchronisation strategy",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/POOL/12311985"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/POOL-140"
+          }
+        }
+      }
+    ]
+  }
+}

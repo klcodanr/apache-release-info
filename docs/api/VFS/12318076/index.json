@@ -1,0 +1,2314 @@
+{
+  "id": "12318076",
+  "name": "2.1",
+  "description": "New features and bug fixes (requires Java 6)",
+  "date": "2016-05-18",
+  "version": "2.1",
+  "module": "",
+  "lastUpdated": 1633056525320,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/VFS/fixforversion/12318076"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/VFS"
+    }
+  },
+  "releaseNotes": "Release Notes - Commons VFS - Version 2.1",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "VFS-142",
+        "title": "Clear ThreadData after all streams are closed, fixes a memory leak",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-142"
+          }
+        }
+      },
+      {
+        "issue": "VFS-200",
+        "title": "[SFTP] Failure when files are very large",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-200"
+          }
+        }
+      },
+      {
+        "issue": "VFS-202",
+        "title": "[HTTP] File can't be read if HEAD method is not supported (405 status)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-202"
+          }
+        }
+      },
+      {
+        "issue": "VFS-236",
+        "title": "SmbFileObject throws NPE when used without authentication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-236"
+          }
+        }
+      },
+      {
+        "issue": "VFS-241",
+        "title": "Unable to download file if saved in FTP root directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-241"
+          }
+        }
+      },
+      {
+        "issue": "VFS-258",
+        "title": "[SFTP][RAM] Unsafe casting to AbstractFileObject subclasses in doRename().",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-258"
+          }
+        }
+      },
+      {
+        "issue": "VFS-279",
+        "title": "ClassCastException in LocalFileSystem when using OnCall caching",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-279"
+          }
+        }
+      },
+      {
+        "issue": "VFS-285",
+        "title": "AbstractFileObject.getChildren(): internal structures will be left inconsistent if the excepion is thrown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-285"
+          }
+        }
+      },
+      {
+        "issue": "VFS-296",
+        "title": "[FTP] Socket timeout setting doesn't work if connect hangs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-296"
+          }
+        }
+      },
+      {
+        "issue": "VFS-297",
+        "title": "New instance of SftpFileSystem is created every time due to the bug in FileSystemOptions.compareTo()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-297"
+          }
+        }
+      },
+      {
+        "issue": "VFS-309",
+        "title": "ThreadLocal memory leak in DefaultFileContent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-309"
+          }
+        }
+      },
+      {
+        "issue": "VFS-313",
+        "title": "[FTP] Configuration does not include option for setting socket timeout.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-313"
+          }
+        }
+      },
+      {
+        "issue": "VFS-321",
+        "title": "AbstractFileObject sometimes uses getFileSystem() and sometimes references \"fs\" field directly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-321"
+          }
+        }
+      },
+      {
+        "issue": "VFS-325",
+        "title": "Bad handling of hashs (#) in file names when walking a file tree using findFiles()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-325"
+          }
+        }
+      },
+      {
+        "issue": "VFS-327",
+        "title": "UriParser.canonicalizePath possible NPE for filenameParser",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-327"
+          }
+        }
+      },
+      {
+        "issue": "VFS-335",
+        "title": " MonitorInputStream.read() methods should be synchronised",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-335"
+          }
+        }
+      },
+      {
+        "issue": "VFS-338",
+        "title": "Possible crash in extractWindowsRootPrefix method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-338"
+          }
+        }
+      },
+      {
+        "issue": "VFS-351",
+        "title": "Small patch to not swallow SFTP exception from JSCH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-351"
+          }
+        }
+      },
+      {
+        "issue": "VFS-352",
+        "title": "ZipFileSystem makes improper assumptions about FileCache",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-352"
+          }
+        }
+      },
+      {
+        "issue": "VFS-353",
+        "title": "[FTP] Client should call logout before disconnecting",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-353"
+          }
+        }
+      },
+      {
+        "issue": "VFS-355",
+        "title": "RamFileProvider: ReadingRamFileRandomAccessContent InputStream of file does not return -1 when empty...",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-355"
+          }
+        }
+      },
+      {
+        "issue": "VFS-356",
+        "title": "RamFileRandomAccessContent.seek() allows seeking before file start.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-356"
+          }
+        }
+      },
+      {
+        "issue": "VFS-359",
+        "title": "It is possible to delete a ram://file (RamFileObject) while using a RandomAccessContent.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-359"
+          }
+        }
+      },
+      {
+        "issue": "VFS-364",
+        "title": "WebdavFileObject.isCurrentFile fails if response.getHref returns just the path.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-364"
+          }
+        }
+      },
+      {
+        "issue": "VFS-368",
+        "title": "SFTP documentation implies that \"userDirIsRoot\" defaults to true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-368"
+          }
+        }
+      },
+      {
+        "issue": "VFS-374",
+        "title": "Incorrect lazy initialization of static field org.apache.commons.vfs2.util.Messages.resources in org.apache.commons.vfs2.util.Messages.findMessage(String)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-374"
+          }
+        }
+      },
+      {
+        "issue": "VFS-378",
+        "title": "Tar error message are missing from resource file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-378"
+          }
+        }
+      },
+      {
+        "issue": "VFS-380",
+        "title": "FTP connect.error message used instead of SFTP connect.error message",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-380"
+          }
+        }
+      },
+      {
+        "issue": "VFS-382",
+        "title": "SFTP getChildren() does not fail when called on a file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-382"
+          }
+        }
+      },
+      {
+        "issue": "VFS-395",
+        "title": "[POM] Remove maven-scm-* dependencies.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-395"
+          }
+        }
+      },
+      {
+        "issue": "VFS-406",
+        "title": "[RAM] resize throws ArrayOOBE when shrinking in size.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-406"
+          }
+        }
+      },
+      {
+        "issue": "VFS-407",
+        "title": "[RAM] Reading a RAM FileSystem file fails because it never returns EOF -1.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-407"
+          }
+        }
+      },
+      {
+        "issue": "VFS-408",
+        "title": "CompressedFileFileObject Exception thrown when container file has no extension",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-408"
+          }
+        }
+      },
+      {
+        "issue": "VFS-410",
+        "title": "[SFTP] SftpFileObject getInputStream(long) reads the whole file into memory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-410"
+          }
+        }
+      },
+      {
+        "issue": "VFS-413",
+        "title": "[FTP] No support for FTP servers with non Latin-1 control encoding",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-413"
+          }
+        }
+      },
+      {
+        "issue": "VFS-418",
+        "title": "Update to Apache Commons Compress 1.4.1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-418"
+          }
+        }
+      },
+      {
+        "issue": "VFS-424",
+        "title": "VFS 2.0 class loading breaks in OSGi, regression from 1.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-424"
+          }
+        }
+      },
+      {
+        "issue": "VFS-426",
+        "title": "HTTP URL query string not part of cache key",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-426"
+          }
+        }
+      },
+      {
+        "issue": "VFS-427",
+        "title": "[HTTP] NPE on HttpFileObject.getContent().getContentInfo()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-427"
+          }
+        }
+      },
+      {
+        "issue": "VFS-430",
+        "title": "The SoftRefFilesCache class logs clear text password",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-430"
+          }
+        }
+      },
+      {
+        "issue": "VFS-431",
+        "title": "FileSystemOption does not implement toString()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-431"
+          }
+        }
+      },
+      {
+        "issue": "VFS-432",
+        "title": "[HTTP][WebDAV] Allow HTTP follow redirect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-432"
+          }
+        }
+      },
+      {
+        "issue": "VFS-433",
+        "title": "Message \"vfs.provider.webdav/propfind.error\" is not defined.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-433"
+          }
+        }
+      },
+      {
+        "issue": "VFS-434",
+        "title": "FileSystemException should reuse IOException's chained exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-434"
+          }
+        }
+      },
+      {
+        "issue": "VFS-435",
+        "title": "FileSystemConfigBuilder does not use prefix for some system property lookups.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-435"
+          }
+        }
+      },
+      {
+        "issue": "VFS-437",
+        "title": "[FTP] StackOverFlowError getting the type of a directory with a symbolic link to a parent directory with the same name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-437"
+          }
+        }
+      },
+      {
+        "issue": "VFS-439",
+        "title": "StaticUserAuthenticator usage example wrong",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-439"
+          }
+        }
+      },
+      {
+        "issue": "VFS-447",
+        "title": "Update Apache Commons Net to 3.2 from 3.1.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-447"
+          }
+        }
+      },
+      {
+        "issue": "VFS-449",
+        "title": "HDFS Provider is not removing cached files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-449"
+          }
+        }
+      },
+      {
+        "issue": "VFS-450",
+        "title": "HDFSFileSystem.resolveFile() does not honor CacheStrategy.ON_RESOLVE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-450"
+          }
+        }
+      },
+      {
+        "issue": "VFS-451",
+        "title": "Authentication fails using private key",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-451"
+          }
+        }
+      },
+      {
+        "issue": "VFS-452",
+        "title": "HttpFileObject read/write attributes should reflect underlying FileSystem capabilities",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-452"
+          }
+        }
+      },
+      {
+        "issue": "VFS-458",
+        "title": "FTPS implementation incomplete and buggy compared to FTP",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-458"
+          }
+        }
+      },
+      {
+        "issue": "VFS-460",
+        "title": "commons-compress not optional",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-460"
+          }
+        }
+      },
+      {
+        "issue": "VFS-461",
+        "title": "[FTP/FTPS] Cannot set SoTimeout and Encoding with system properties",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-461"
+          }
+        }
+      },
+      {
+        "issue": "VFS-464",
+        "title": "StaticUserAuthenticator ignores requested authentication types",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-464"
+          }
+        }
+      },
+      {
+        "issue": "VFS-469",
+        "title": "[WebDAV] Dependency javax.jrc:jcr is not used",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-469"
+          }
+        }
+      },
+      {
+        "issue": "VFS-480",
+        "title": "[VFS] SoftRefFilesCache Doesn't Ever Clear Cache",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-480"
+          }
+        }
+      },
+      {
+        "issue": "VFS-482",
+        "title": "Wrong assertion messages in RAM provider test case",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-482"
+          }
+        }
+      },
+      {
+        "issue": "VFS-486",
+        "title": "DefaultFileMonitor sleeps for twice the specified delay when checkPerRun > 0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-486"
+          }
+        }
+      },
+      {
+        "issue": "VFS-487",
+        "title": "File creation events missed when deleted then re-created within poll delay",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-487"
+          }
+        }
+      },
+      {
+        "issue": "VFS-489",
+        "title": "[tests] ProviderWriteTests#testListener does not fail cleanly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-489"
+          }
+        }
+      },
+      {
+        "issue": "VFS-490",
+        "title": "[vfsclassloader] tries to open folders with .zip or .jar extension",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-490"
+          }
+        }
+      },
+      {
+        "issue": "VFS-494",
+        "title": "[SFTP] No support for SFTP servers with non Latin-1 file name encoding",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-494"
+          }
+        }
+      },
+      {
+        "issue": "VFS-496",
+        "title": "Resource translation issues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-496"
+          }
+        }
+      },
+      {
+        "issue": "VFS-498",
+        "title": "OSGI MANIFEST.MF \"Import-Package\" should be \";resolution:=optional\" for Maven \"optional\" dependencies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-498"
+          }
+        }
+      },
+      {
+        "issue": "VFS-502",
+        "title": "Cannot open a sFTP FileObject pointing on  the root directory, create a local FS object instead",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-502"
+          }
+        }
+      },
+      {
+        "issue": "VFS-503",
+        "title": "Equals on URLFileName should use the complete URL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-503"
+          }
+        }
+      },
+      {
+        "issue": "VFS-510",
+        "title": "moveTo fails with SFTPFileObject if CacheStrategy.ON_CALL is set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-510"
+          }
+        }
+      },
+      {
+        "issue": "VFS-513",
+        "title": "$Date in checkstyle.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-513"
+          }
+        }
+      },
+      {
+        "issue": "VFS-514",
+        "title": "[tests] PermissionsTests leaves unclean test directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-514"
+          }
+        }
+      },
+      {
+        "issue": "VFS-519",
+        "title": "Javadoc is wrong in some places",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-519"
+          }
+        }
+      },
+      {
+        "issue": "VFS-520",
+        "title": "Javadoc errors with Java 8 defaults",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-520"
+          }
+        }
+      },
+      {
+        "issue": "VFS-521",
+        "title": "[RAM][tests] Failure with Java 8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-521"
+          }
+        }
+      },
+      {
+        "issue": "VFS-523",
+        "title": "HdfsFileObject equals method returns true for the same path on different hosts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-523"
+          }
+        }
+      },
+      {
+        "issue": "VFS-526",
+        "title": "No Hdfs testing on Windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-526"
+          }
+        }
+      },
+      {
+        "issue": "VFS-529",
+        "title": "[hdfs][tests] Windows build fails if ls.exe is missing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-529"
+          }
+        }
+      },
+      {
+        "issue": "VFS-544",
+        "title": "VirtualFileSystems leak",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-544"
+          }
+        }
+      },
+      {
+        "issue": "VFS-545",
+        "title": "DefaultFilesCache leaks closed filesystems",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-545"
+          }
+        }
+      },
+      {
+        "issue": "VFS-548",
+        "title": "SoftRefReleaseThread might leak",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-548"
+          }
+        }
+      },
+      {
+        "issue": "VFS-551",
+        "title": "BUG - Use of a Broken or Risky Cryptographic Algorithm - DefaultCryptor.java",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-551"
+          }
+        }
+      },
+      {
+        "issue": "VFS-552",
+        "title": "[sandbox] does not contain vfs-provider.xml for automatic registration",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-552"
+          }
+        }
+      },
+      {
+        "issue": "VFS-557",
+        "title": "[webdav][test] leaves undeleted temp directories around",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-557"
+          }
+        }
+      },
+      {
+        "issue": "VFS-558",
+        "title": "java.lang.UnsupportedOperationException in FtpFileObject",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-558"
+          }
+        }
+      },
+      {
+        "issue": "VFS-559",
+        "title": "FTPClientWrapper is not robust against some failures",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-559"
+          }
+        }
+      },
+      {
+        "issue": "VFS-560",
+        "title": "File can't be downloaded if HTTP HEAD on base url fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-560"
+          }
+        }
+      },
+      {
+        "issue": "VFS-564",
+        "title": "FtpFileObject creates Logger instance for each object",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-564"
+          }
+        }
+      },
+      {
+        "issue": "VFS-567",
+        "title": "Timeout in vsFTPd causes exception when executing another command",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-567"
+          }
+        }
+      },
+      {
+        "issue": "VFS-574",
+        "title": "warning about not closed OperationProviders when calling DefaultFilesystemManager.close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-574"
+          }
+        }
+      },
+      {
+        "issue": "VFS-577",
+        "title": "FileOperationsProvider not shut down",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-577"
+          }
+        }
+      },
+      {
+        "issue": "VFS-582",
+        "title": "incompatible naming change for tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-582"
+          }
+        }
+      },
+      {
+        "issue": "VFS-583",
+        "title": "Layered Filesystems are not properly cached when options are used",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-583"
+          }
+        }
+      },
+      {
+        "issue": "VFS-595",
+        "title": "Colon in folder name fire NPE on start up",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-595"
+          }
+        }
+      },
+      {
+        "issue": "VFS-603",
+        "title": "FIx trivial breakages of binary compatibility with commons-vfs-2.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-603"
+          }
+        }
+      },
+      {
+        "issue": "VFS-370",
+        "title": "Add a FileExtensionSelector class",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-370"
+          }
+        }
+      },
+      {
+        "issue": "VFS-371",
+        "title": "Add FileObject API deleteAll()",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-371"
+          }
+        }
+      },
+      {
+        "issue": "VFS-373",
+        "title": "Add FileContent write APIs",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-373"
+          }
+        }
+      },
+      {
+        "issue": "VFS-381",
+        "title": "Iterate over a FileObject using the Java \"foreach\" statement, to provide all descendents of a FileObject.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-381"
+          }
+        }
+      },
+      {
+        "issue": "VFS-389",
+        "title": "Use variable argument lists in FileSystemException instead of Object[]s",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-389"
+          }
+        }
+      },
+      {
+        "issue": "VFS-400",
+        "title": "Add a FileSelector based on regular expressions",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-400"
+          }
+        }
+      },
+      {
+        "issue": "VFS-414",
+        "title": "[FTP] Add config API to set the file type",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-414"
+          }
+        }
+      },
+      {
+        "issue": "VFS-417",
+        "title": "[RAM][Local] Add and implement new API: RandomAccessContent.setLength(long)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-417"
+          }
+        }
+      },
+      {
+        "issue": "VFS-425",
+        "title": "Add API FileObject.isExecutable()",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-425"
+          }
+        }
+      },
+      {
+        "issue": "VFS-442",
+        "title": "Add an HDFS FileSystem Provider",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-442"
+          }
+        }
+      },
+      {
+        "issue": "VFS-445",
+        "title": "Add FileSystemManager.resolveFile(URI) and resolveFile(URL)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-445"
+          }
+        }
+      },
+      {
+        "issue": "VFS-167",
+        "title": "[FTP] Proxy Support (similiar to VFS-84 for SFTP)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-167"
+          }
+        }
+      },
+      {
+        "issue": "VFS-182",
+        "title": "Usage of FTP with heterogeneous FTP server (possibility of using Ascii file type)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-182"
+          }
+        }
+      },
+      {
+        "issue": "VFS-198",
+        "title": "Configurable UserAgent for Http(s) Provider",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-198"
+          }
+        }
+      },
+      {
+        "issue": "VFS-208",
+        "title": "FTP configuration does not include option for setting a timeout on the control connection",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-208"
+          }
+        }
+      },
+      {
+        "issue": "VFS-252",
+        "title": "[SMB] SmbFileObject does not support setLastModifiedTime while jcifs supports it",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-252"
+          }
+        }
+      },
+      {
+        "issue": "VFS-254",
+        "title": "Let FileObject and FileContent extend java.io.Closeable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-254"
+          }
+        }
+      },
+      {
+        "issue": "VFS-283",
+        "title": "SFTP can not use private keys protected by pass phrase",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-283"
+          }
+        }
+      },
+      {
+        "issue": "VFS-341",
+        "title": "SFTP library of commons-vfs should include the logging in underling JSCH library",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-341"
+          }
+        }
+      },
+      {
+        "issue": "VFS-348",
+        "title": "Upgrade to commons-net 2.2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-348"
+          }
+        }
+      },
+      {
+        "issue": "VFS-361",
+        "title": "Migarte to current version of Commons Collection (3.1 -> 3.2.1)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-361"
+          }
+        }
+      },
+      {
+        "issue": "VFS-366",
+        "title": "Can't sort a List of FileObject's, FileObject to implement Comparable<FileObject>",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-366"
+          }
+        }
+      },
+      {
+        "issue": "VFS-367",
+        "title": "Add APIs FileObject isFile(), FileObject isFolder(), and FileName isFile()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-367"
+          }
+        }
+      },
+      {
+        "issue": "VFS-372",
+        "title": "Add constructors FileDepthSelector() and FileDepthSelector(int)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-372"
+          }
+        }
+      },
+      {
+        "issue": "VFS-377",
+        "title": "Replace custom TAR code with Apache Commons Compress 1.3",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-377"
+          }
+        }
+      },
+      {
+        "issue": "VFS-379",
+        "title": "Replace custom BZIP2 code with Apache Commons Compress 1.3.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-379"
+          }
+        }
+      },
+      {
+        "issue": "VFS-385",
+        "title": "Add HTTP status code to HTTP file provider exception messages when available.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-385"
+          }
+        }
+      },
+      {
+        "issue": "VFS-386",
+        "title": "Build tests HTTP file system with an embedded HTTP server (Apache HttpComponent Core)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-386"
+          }
+        }
+      },
+      {
+        "issue": "VFS-387",
+        "title": "Build tests FTP file system with an embedded FTP server (Apache MINA)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-387"
+          }
+        }
+      },
+      {
+        "issue": "VFS-388",
+        "title": "Build tests SFTP file system with an embedded SFTP server (Apache MINA)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-388"
+          }
+        }
+      },
+      {
+        "issue": "VFS-390",
+        "title": "Use variable argument list in org.apache.commons.vfs2.util.Messages instead of Object[]",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-390"
+          }
+        }
+      },
+      {
+        "issue": "VFS-391",
+        "title": "Build tests URL HTTP file system with an embedded HTTP server (Apache HttpComponent Core).",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-391"
+          }
+        }
+      },
+      {
+        "issue": "VFS-392",
+        "title": "Build tests WebDAV file system with an embedded WebDAV server (Apache Jackrabbit).",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-392"
+          }
+        }
+      },
+      {
+        "issue": "VFS-405",
+        "title": "Get/set the file permissions",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-405"
+          }
+        }
+      },
+      {
+        "issue": "VFS-411",
+        "title": "[SFTP] Update Jsch to version 0.1.47 from 0.1.46.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-411"
+          }
+        }
+      },
+      {
+        "issue": "VFS-412",
+        "title": "[FTPS] Support to send execPROT(\"P\")",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-412"
+          }
+        }
+      },
+      {
+        "issue": "VFS-421",
+        "title": "[SFTP] Configure a custom Identity Repository",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-421"
+          }
+        }
+      },
+      {
+        "issue": "VFS-429",
+        "title": "Remove extra FileSystem ivar in AbstractFileObject subclasses with generics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-429"
+          }
+        }
+      },
+      {
+        "issue": "VFS-440",
+        "title": "[SFTP] Stream (e.g. netcat) proxy for Sftp file system (aka ProxyCommand)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-440"
+          }
+        }
+      },
+      {
+        "issue": "VFS-448",
+        "title": "commons-vfs 2.0 JAR has flawed OSGi MANIFEST.MF",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-448"
+          }
+        }
+      },
+      {
+        "issue": "VFS-453",
+        "title": "[VFS] Set socket timeout for HTTP and WebDAV schemes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-453"
+          }
+        }
+      },
+      {
+        "issue": "VFS-459",
+        "title": "Log sent FTP/FTPS commands and received answers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-459"
+          }
+        }
+      },
+      {
+        "issue": "VFS-462",
+        "title": "[FTPS] Use enum instead of String for FtpsType",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-462"
+          }
+        }
+      },
+      {
+        "issue": "VFS-463",
+        "title": "Support system propeties for enum-based configuration values",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-463"
+          }
+        }
+      },
+      {
+        "issue": "VFS-468",
+        "title": "[FTPS] Support client-side certificates",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-468"
+          }
+        }
+      },
+      {
+        "issue": "VFS-475",
+        "title": "Update Apache Commons Net to 3.3 from 3.2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-475"
+          }
+        }
+      },
+      {
+        "issue": "VFS-476",
+        "title": "Update Apache Commons Logging to 1.1.3 from 1.1.2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-476"
+          }
+        }
+      },
+      {
+        "issue": "VFS-484",
+        "title": "[SFTP] Update Jsch to 0.1.50 from 0.1.49.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-484"
+          }
+        }
+      },
+      {
+        "issue": "VFS-501",
+        "title": "Hide passwords from log/console output",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-501"
+          }
+        }
+      },
+      {
+        "issue": "VFS-506",
+        "title": "[Tar][Bzip2] Update Apache Commons Compress to 1.6 from 1.5.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-506"
+          }
+        }
+      },
+      {
+        "issue": "VFS-507",
+        "title": "Update to Apache Commons Collection 4.0 from 3.2.1 and use generics.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-507"
+          }
+        }
+      },
+      {
+        "issue": "VFS-532",
+        "title": "[FTP] Allow configuring remoteVerificationEnabled on FTPClient instances",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-532"
+          }
+        }
+      },
+      {
+        "issue": "VFS-539",
+        "title": "Update Apache Commons Lang from 3.1 to 3.3.2.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-539"
+          }
+        }
+      },
+      {
+        "issue": "VFS-540",
+        "title": "Update Apache Commons Logging from 1.1.3 to 1.2.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-540"
+          }
+        }
+      },
+      {
+        "issue": "VFS-541",
+        "title": "Update Apache Commons Compress from 1.6 to 1.9.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-541"
+          }
+        }
+      },
+      {
+        "issue": "VFS-542",
+        "title": "Update Jsch from 0.1.50 to 0.1.51.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-542"
+          }
+        }
+      },
+      {
+        "issue": "VFS-549",
+        "title": "Replace System.getProperty(\"file|path.separator\") with File.separator|pathSeparator",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-549"
+          }
+        }
+      },
+      {
+        "issue": "VFS-555",
+        "title": "Add ability to specify alternate HDFS configuration file",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-555"
+          }
+        }
+      },
+      {
+        "issue": "VFS-572",
+        "title": "Javadoc of SftpFileSystemConfigBuilder.setKnownHosts is inconsistent",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-572"
+          }
+        }
+      },
+      {
+        "issue": "VFS-578",
+        "title": "Update Apache Commons Compress from 1.9 to 1.10",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-578"
+          }
+        }
+      },
+      {
+        "issue": "VFS-579",
+        "title": "Update JCraft Jsch from 0.1.51 to 0.1.53",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-579"
+          }
+        }
+      },
+      {
+        "issue": "VFS-601",
+        "title": "Update Apache Commons Net from 3.3 to 3.4",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-601"
+          }
+        }
+      },
+      {
+        "issue": "VFS-602",
+        "title": "Update Apache Commons IO from 2.4 to 2.5",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-602"
+          }
+        }
+      },
+      {
+        "issue": "VFS-607",
+        "title": "Update Apache Commons Compress from 1.10 to 1.11",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-607"
+          }
+        }
+      },
+      {
+        "issue": "VFS-608",
+        "title": "Update Apache Commons Net from 3.4 to 3.5",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-608"
+          }
+        }
+      },
+      {
+        "issue": "VFS-194",
+        "title": "Redirect of HTTP url using the header location",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-194"
+          }
+        }
+      },
+      {
+        "issue": "VFS-265",
+        "title": "[FTP] Set user dir as root dir by default",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-265"
+          }
+        }
+      },
+      {
+        "issue": "VFS-518",
+        "title": "Documentation of FileSystemOptions should be more helpful",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-518"
+          }
+        }
+      },
+      {
+        "issue": "VFS-375",
+        "title": "Upgrade to Apache Commons Compress 1.3 from 1.2.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-375"
+          }
+        }
+      },
+      {
+        "issue": "VFS-383",
+        "title": "Update JSch to 0.1.45 from 0.1.42 for the SFTP provider.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-383"
+          }
+        }
+      },
+      {
+        "issue": "VFS-384",
+        "title": "Update Apache Commons Net to 3.0.1 from 2.2 for FTP and SFTP providers.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-384"
+          }
+        }
+      },
+      {
+        "issue": "VFS-401",
+        "title": "Update JSch to 0.1.46 from 0.1.45 for the SFTP provider.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-401"
+          }
+        }
+      },
+      {
+        "issue": "VFS-402",
+        "title": "[WebDAV] Update Apache Jackrabbit 1.5.2 to 1.6.5.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-402"
+          }
+        }
+      },
+      {
+        "issue": "VFS-404",
+        "title": "[FTP][FTPS] Update Apache Commons Net to 3.1 from 3.0.1",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-404"
+          }
+        }
+      },
+      {
+        "issue": "VFS-409",
+        "title": "Update Apache Commons Compress to 1.4 from 1.3",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-409"
+          }
+        }
+      },
+      {
+        "issue": "VFS-415",
+        "title": "Update VFS requirement to Java 1.6",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-415"
+          }
+        }
+      },
+      {
+        "issue": "VFS-416",
+        "title": "[SFTP] Update Jsch to version 0.1.49 from 0.1.47.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-416"
+          }
+        }
+      },
+      {
+        "issue": "VFS-456",
+        "title": "Use bouncycastle dependency for JDK 1.6",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-456"
+          }
+        }
+      },
+      {
+        "issue": "VFS-457",
+        "title": "Update test dependencies",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-457"
+          }
+        }
+      },
+      {
+        "issue": "VFS-471",
+        "title": "Update to Apache Commons Compress 1.5",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-471"
+          }
+        }
+      },
+      {
+        "issue": "VFS-530",
+        "title": "Update HDFS to latest release in prep for VFS 2.1 release",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-530"
+          }
+        }
+      },
+      {
+        "issue": "VFS-597",
+        "title": "Release 2.1",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/VFS/12318076"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/VFS-597"
+          }
+        }
+      }
+    ]
+  }
+}

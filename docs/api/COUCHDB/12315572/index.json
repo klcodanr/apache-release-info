@@ -1,0 +1,2600 @@
+{
+  "id": "12315572",
+  "name": "2.0.0",
+  "description": "Next release with backwards-incompatible changes over 1.3.x. First release to be API compatible with BigCouch, as preparation for the merge.",
+  "date": "2016-09-20",
+  "version": "2.0.0",
+  "module": "",
+  "lastUpdated": 1633056587559,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/COUCHDB/fixforversion/12315572"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/COUCHDB"
+    }
+  },
+  "releaseNotes": "Release Notes - CouchDB - Version 2.0.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "COUCHDB-2026",
+        "title": "JSONP responses should be sent with a \"application/javascript\" Content-type",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2026"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-375",
+        "title": "src/couchdb directory needs reorganising",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-375"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-537",
+        "title": "CouchDB crashes on unknown builtin reduce function string",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-537"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-708",
+        "title": "Newlines in document locations break header parsing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-708"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-998",
+        "title": "aggressive use of encodeURIComponent on view names inside Futon",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-998"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1297",
+        "title": "gen_server:terminate/6 error in couch_index_compactor & couch_index_updater on POST /_restart",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1297"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1356",
+        "title": "POST _session responds with name: null if _admin user and no _users doc present",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1356"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1415",
+        "title": "Re-insering a document silently fails after compact is executed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1415"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1417",
+        "title": "Running individual JS tests at the CLI fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1417"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1447",
+        "title": "X-Couch-Update-NewRev header is missed if custom headers are specified in response of _update handler",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1447"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1592",
+        "title": "Free space check for automatic compaction doesn't follow symlinks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1592"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1637",
+        "title": "The replicator should not worry about case sensitive headers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1637"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1805",
+        "title": "Grouping on reduce views tests for equality rather than ICU equivalence",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1805"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1876",
+        "title": "Duplicate application/json in response Content-Type for show/update functions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1876"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2171",
+        "title": "noAccess page makes no difference between 401 and 403 responses",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2171"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2193",
+        "title": "Invalid pagination when page size equals limit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2193"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2310",
+        "title": "Add a bulk API for revs & open_revs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2310"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2322",
+        "title": "Bugs in process limit counts in couch_proc_manager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2322"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2323",
+        "title": "Deployed Fauxton: ZeroClipboard url is wrong",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2323"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2324",
+        "title": "Fix N in dev/run script",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2324"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2325",
+        "title": "fabric:get_security/2 can return security objects from nodes that are in maintenance mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2325"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2328",
+        "title": "Chttpd _show/_update functions not working",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2328"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2343",
+        "title": "/_config/admins/username fails on master",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2343"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2357",
+        "title": "Logout link disappears from sidebar on browser reload",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2357"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2365",
+        "title": "Failing multipart requests leave dangling couch_stream processes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2365"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2375",
+        "title": "500 error returned if rev query parameter contains -",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2375"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2390",
+        "title": "Fauxton config, admin sections considered dangerous in 2.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2390"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2408",
+        "title": "Support POST requests against database changes feed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2408"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2409",
+        "title": "Respect wildcard in Accept header",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2409"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2425",
+        "title": "Exceptions in couch_proc_manager:new_proc/1 leave dangling couch_query_servers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2425"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2426",
+        "title": "Timeouts in couch_os_process:start_link/1 leave dangling couch_query_servers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2426"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2429",
+        "title": "Stats: _stats endpoint is now on the local nodes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2429"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2461",
+        "title": "_info on a view results in badmatch error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2461"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2463",
+        "title": "Compile Snappy without debug source",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2463"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2510",
+        "title": "Apply system db before_doc_update functions in fabric",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2510"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2518",
+        "title": "CouchDB 2.0 does not support conflicts=true on /_changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2518"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2519",
+        "title": "CouchDB 2.0 does not support attachments=true on /_changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2519"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2524",
+        "title": "clearing out .delete directories in couch_server:init prevents boot of the node",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2524"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2530",
+        "title": "CouchDB 2.0 does not support POST requests to _changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2530"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2531",
+        "title": "CouchDB 2.0: POST to /_revs_diff with no revisions times out",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2531"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2534",
+        "title": "Return forbidden error when authed user tries to access database it doesn't allowed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2534"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2568",
+        "title": "CouchDB 2.0 /_all_docs does not return full attachment data with keys=[\"somekey\"]&attachments=true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2568"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2578",
+        "title": "_all_docs 'keys' parameter not documented",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2578"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2583",
+        "title": "ensure_full_commit requires empty but typed content or it will unexpectedly drops the connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2583"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2588",
+        "title": "dereferencing type-punned pointer will break strict-aliasing rule",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2588"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2591",
+        "title": "Documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2591"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2608",
+        "title": "function_clause on update mango index",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2608"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2609",
+        "title": "function_clause on explain mango index",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2609"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2613",
+        "title": "function_clause on mango find",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2613"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2625",
+        "title": "Make customizable dbname_validator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2625"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2628",
+        "title": "Resolve shard(s)_db naming discrepancies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2628"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2630",
+        "title": "Clustered _users is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2630"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2631",
+        "title": "Ensure that system databases callbacks are adds correctly for shared case",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2631"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2632",
+        "title": "Clustered _replicator is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2632"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2638",
+        "title": "CouchDB should not be writing /etc/couchdb/local.ini",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2638"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2643",
+        "title": "fabric_doc_update:before_doc_update is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2643"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2650",
+        "title": "Etag is 'undefined' when _all_docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2650"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2661",
+        "title": "Gracefully handle not acceptable methods",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2661"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2665",
+        "title": "Regression: /_db_updates lost eventsource feed support",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2665"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2666",
+        "title": "Regression: inproper local database name escape on /_replicate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2666"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2667",
+        "title": "Regression: /_db_updates response format changed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2667"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2668",
+        "title": "Regression: attachment Etag references to document revision, not to digest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2668"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2673",
+        "title": "\"Location\" header in HTTP response should properly encode the document _id",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2673"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2677",
+        "title": "Wrong Expires header weekday",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2677"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2684",
+        "title": "Don't include eunit.ini into release",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2684"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2705",
+        "title": "Cannot enable CORS in dev/run",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2705"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2710",
+        "title": "duplicate fields in users docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2710"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2728",
+        "title": "distinguish replicator http requests clearly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2728"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2729",
+        "title": "End-point /db/_compact/design-doc is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2729"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2738",
+        "title": "Allow views in the auth DB to be accessed by administrators on the clustered interface",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2738"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2742",
+        "title": "div by zero in couch_mrview_compactor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2742"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2743",
+        "title": "Non-existent request body returns 500 for _changes/filter=_doc_ids",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2743"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2756",
+        "title": "Could not upload document: Referer header required.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2756"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2767",
+        "title": "CouchDB 2.X: _changes?feed=longpoll returns an invalid response",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2767"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2772",
+        "title": "Return HTTP 400 rather than HTTP 500 on view compilation error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2772"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2773",
+        "title": "fabric:cleanup_index_files() is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2773"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2774",
+        "title": "COPY request creates a target document with a different revision hash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2774"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2781",
+        "title": "Don't pass CSRF cookie to _replicate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2781"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2797",
+        "title": "Apply CSRF protection only to form submissions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2797"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2803",
+        "title": "Doc ids in the _users db which are not in the format org.couchdb.user:USERNAME break the chttpd_auth_cache changes listener",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2803"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2815",
+        "title": "POST to /{db}/_all_docs with invalid keys should return a 400 error instead of 500",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2815"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2818",
+        "title": "Design documents accept invalid views",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2818"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2819",
+        "title": "Repeated DB creates for same DB unnecessarily spam couch_server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2819"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2824",
+        "title": "group & group_level view parameters override each",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2824"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2833",
+        "title": "Replicator client doesn't handle un-expectedly closed pipelined connections well",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2833"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2834",
+        "title": "Server sends connection: close too early",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2834"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2845",
+        "title": "Malformed open_revs parm results in a 500",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2845"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2848",
+        "title": "EUnit Tests Fail Intermetently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2848"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2849",
+        "title": "[2.0] update_seq option for _all_docs view missing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2849"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2850",
+        "title": "[2.0] List function calls don’t support HTTP OPTIONS request",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2850"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2851",
+        "title": "[2.0] _purge not implemented",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2851"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2857",
+        "title": "Latest=true has no effect on cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2857"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2858",
+        "title": "Last-Event-ID not working on cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2858"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2863",
+        "title": "function_clause on requesting multiple open_revs with lastest=true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2863"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2879",
+        "title": "_security not available",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2879"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2900",
+        "title": "CouchDB 2.0: raw collation order is not respected when a database has multiple shards",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2900"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2932",
+        "title": "View query crashes if the emited key contains hidden characters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2932"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2948",
+        "title": "Internal server error returned instead of 403 Forbidden when cassim is disabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2948"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2949",
+        "title": "Replications which fail to start dump creds into the logs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2949"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2956",
+        "title": "favicon produces a stack trace on February the 29th.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2956"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2963",
+        "title": "Replication manager does not rescan databases on cluster membership change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2963"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2970",
+        "title": "config:set(\"log\",\"level\",...) fails to change lager backend levels",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2970"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2978",
+        "title": "Stale ETags are re-used for _local docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2978"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2986",
+        "title": "chttpd_sup can crash in ensure_auth_ddoc_exists",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2986"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3017",
+        "title": "CouchDB 2.0: passing an invalid ETag to _changes incorrectly returns 304 Not Modified",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3017"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3028",
+        "title": "Should hold db opened for compact/recompact switch",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3028"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3060",
+        "title": "sorted=false is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3060"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3068",
+        "title": "Docs fail to build with Sphinx 1.4+",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3068"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3089",
+        "title": "default.d/local.d directories not consulted in 2.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3089"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3092",
+        "title": "couch_log_writer_file_test failure on Windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3092"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3096",
+        "title": "Fix config listener handler accumulation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3096"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3132",
+        "title": "Invalid chunk when database is deleted while a continuous change request is running",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3132"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3134",
+        "title": "Incorrect format for list ETag",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3134"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3135",
+        "title": "Do not use config subscription in couch_index",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3135"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3141",
+        "title": "Default Mango Query has browser memory leak",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3141"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3143",
+        "title": "Make Mango's MR index default limit match the docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3143"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1145",
+        "title": "As a CouchApp developer, I'd like access to a listing of local-only (_local) docs.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1145"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1775",
+        "title": "Lower I/O priority of compaction",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1775"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1843",
+        "title": "Merge BigCouch",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1843"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2028",
+        "title": "Allow intermediate certificates when using SSL/TLS",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2028"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2270",
+        "title": "Contribute Cloudant Query",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2270"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2725",
+        "title": "Configurable password scheme",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2725"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2752",
+        "title": "Validate Host header",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2752"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-486",
+        "title": "Better separation between httpd and core through api layer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-486"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-523",
+        "title": "View API POST keys to retrieve multiple docs by key could also allow for multiple 'range' queries, i.e. an array of { startkey: .., endkey: ... } params in the POST",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-523"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-604",
+        "title": "_changes feed with ?feed=continuous does not return valid JSON",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-604"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-755",
+        "title": "use exported functions when registering for config changes / db updates to allow hot upgrading",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-755"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-901",
+        "title": "refactor os process management",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-901"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1027",
+        "title": "More efficient implementation of the DB updater BTree functions",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1027"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1042",
+        "title": "make libcurl a soft (optional) dependency",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1042"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1133",
+        "title": "Fix opacity on favicon",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1133"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1437",
+        "title": "Refactor configure.ac",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1437"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1960",
+        "title": "Provide pagination for /_all_dbs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1960"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1963",
+        "title": "Move from etap to eunit",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1963"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1990",
+        "title": "view changes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1990"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1993",
+        "title": "Make fabric work with the refactored view engine",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1993"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1996",
+        "title": "Switch logging for BigCouch",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1996"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2001",
+        "title": "Finish the size calculating changes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2001"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2081",
+        "title": "Support HTTPS in chttpd",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2081"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2092",
+        "title": "Allow _list functions to consume _all_docs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2092"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2093",
+        "title": "Provide _changes feeds using EventSource",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2093"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2094",
+        "title": "Support Last-Event-ID header in EventSource _changes feeds",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2094"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2095",
+        "title": "Ignore epilogues in multipart/related MIME attachments",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2095"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2098",
+        "title": "Support efficient pagination of _all_dbs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2098"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2237",
+        "title": "Add a 'live' sugar for 'continuous'",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2237"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2384",
+        "title": "Provide configuration options for lager",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2384"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2430",
+        "title": "Disable Nagle's algorithm by default",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2430"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2511",
+        "title": "Add IS_OLD_RECORD macro to couch_db.hrl",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2511"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2526",
+        "title": "Add an ability to tell if view was up to date without querying it.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2526"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2561",
+        "title": "Make config API consistent",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2561"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2590",
+        "title": "Drop all etap",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2590"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2615",
+        "title": "Ensure that rebar exists and his version is correct",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2615"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2619",
+        "title": "Make all system databases start with underscore",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2619"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2620",
+        "title": "Rename cassim db to _metadata",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2620"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2644",
+        "title": "total_rows in find API response",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2644"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2652",
+        "title": "Mango - no pagination for index lists possible",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2652"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2678",
+        "title": "Open up require's config.js file to be extended",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2678"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2703",
+        "title": "Convert database sidebar to React",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2703"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2724",
+        "title": "Batch rows in streaming responses to improve throughput",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2724"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2732",
+        "title": "Use thread local storage for couch_ejson_compare NIF",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2732"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2762",
+        "title": "Add CSRF protection",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2762"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2775",
+        "title": "POST Valid json header",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2775"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2777",
+        "title": "Log when authentication fails",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2777"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2779",
+        "title": "To make _view_cleanup endpoint cluster aware",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2779"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2783",
+        "title": "Bind both to IPv4 and IPv6 addresses",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2783"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2792",
+        "title": "Keep histogram of bulk request lengths",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2792"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2821",
+        "title": "Prevent crash if user creates a database with a very long name",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2821"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2825",
+        "title": "Fix crypto deprecation warnings",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2825"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2866",
+        "title": "Explicitly starting lager causes config_tests to fail when used in builds which don't use depend on lager",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2866"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2872",
+        "title": "Don't start unnecessary applications from test_util:start_couch/2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2872"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2873",
+        "title": "Update snappy to 1.1.3",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2873"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2874",
+        "title": "Allow rewrites to be JS function",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2874"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2928",
+        "title": "Make it so a user can search without a selector",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2928"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3016",
+        "title": "Allow secure-by-default option for database security object",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3016"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3067",
+        "title": "Improve couch_log implementation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3067"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2540",
+        "title": "Fix broken tests for couch_replicator app",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2540"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2547",
+        "title": "Fix broken tests for couch app",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2547"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2688",
+        "title": "Manage lager dependencies through test_util:start_apllications",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2688"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2689",
+        "title": "Allow passing options to test_request:post/delete/put",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2689"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2876",
+        "title": "Run javascript tests against cluster",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2876"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1756",
+        "title": "100% compatibility with BigCouch API",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1756"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2071",
+        "title": "Improve new database UI",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2071"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2592",
+        "title": "Migration guides from 1.6 to 2.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2592"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2593",
+        "title": " Double check that we do not delete 1.x databases when starting to use 2.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2593"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2595",
+        "title": "Packaging/Release: tarball",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2595"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2597",
+        "title": "Release: make targets",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2597"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2598",
+        "title": "Finish setup wizard",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2598"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2599",
+        "title": "Just display admin section on backdoor port",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2599"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2600",
+        "title": "Notify user that compaction just works on the backdoor ports",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2600"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2601",
+        "title": "Config section - remove handler from chttpd",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2601"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2623",
+        "title": "Validate default.ini / local.ini config options",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2623"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2707",
+        "title": "Merge couch_replicator fixes from cloudant fork",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2707"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-2944",
+        "title": "migration guides from bigcouch to 2.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-2944"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3040",
+        "title": "Support CouchDB 2.0 release on Windows",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3040"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3369",
+        "title": "Using Fauxton with require_valid_user = true",
+        "type": "Question",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3369"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-1251",
+        "title": "Factor out couch core and hook other compnonents through a module system",
+        "type": "Umbrella",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-1251"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3121",
+        "title": "Updates _changes examples to use the new sequence values",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3121"
+          }
+        }
+      },
+      {
+        "issue": "COUCHDB-3122",
+        "title": "Document sending multiple view queries",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/COUCHDB/12315572"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/COUCHDB-3122"
+          }
+        }
+      }
+    ]
+  }
+}

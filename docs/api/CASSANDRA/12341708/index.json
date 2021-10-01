@@ -1,0 +1,559 @@
+{
+  "id": "12341708",
+  "name": "3.0.16",
+  "description": "",
+  "date": "2018-02-19",
+  "version": "3.0.16",
+  "module": "",
+  "lastUpdated": 1633055293217,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/CASSANDRA/fixforversion/12341708"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/CASSANDRA"
+    }
+  },
+  "releaseNotes": "Release Notes - Cassandra - Version 3.0.16",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "CASSANDRA-9332",
+        "title": "NPE when creating column family via thrift",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-9332"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-9630",
+        "title": "Killing cassandra process results in unclosed connections",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-9630"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-12840",
+        "title": "Cassandra doesn't start on MINGW32 (Windows)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-12840"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13006",
+        "title": "Disable automatic heap dumps on OOM error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13006"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13123",
+        "title": "Draining a node might fail to delete all inactive commitlogs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13123"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13526",
+        "title": "nodetool cleanup on KS with no replicas should remove old data, not silently complete",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13526"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13801",
+        "title": "CompactionManager sometimes wrongly determines that a background compaction is running for a particular table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13801"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13813",
+        "title": "Don't let user drop (or generally break) tables in system_distributed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13813"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13849",
+        "title": "GossipStage blocks because of race in ActiveRepairService",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13849"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13873",
+        "title": "Ref bug in Scrub",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13873"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13933",
+        "title": "Handle mutateRepaired failure in nodetool verify",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13933"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13939",
+        "title": "Mishandling of cells for removed/dropped columns when reading legacy files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13939"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13959",
+        "title": "Add yaml flag for disabling MVs, log warnings on creation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13959"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13964",
+        "title": "Tracing interferes with digest requests when using RandomPartitioner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13964"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13975",
+        "title": "Add a workaround for overly large read repair mutations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13975"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14008",
+        "title": "RTs at index boundaries in 2.x sstables can create unexpected CQL row in 3.x",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14008"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14010",
+        "title": "Fix SStable ordering by max timestamp in SinglePartitionReadCommand",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14010"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14021",
+        "title": "test_pycodestyle_compliance - cqlsh_tests.cqlsh_tests.TestCqlsh code style errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14021"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14057",
+        "title": "The size of a byte is not 2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14057"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14071",
+        "title": "Materialized view on table with TTL issue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14071"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14088",
+        "title": "Forward slash in role name breaks CassandraAuthorizer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14088"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14091",
+        "title": "DynamicSnitch creates a lot of garbage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14091"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14092",
+        "title": "Max ttl of 20 years will overflow localDeletionTime",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14092"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14104",
+        "title": "Index target doesn't correctly recognise non-UTF column names after COMPACT STORAGE drop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14104"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14108",
+        "title": "Improve commit log chain marker updating",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14108"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14112",
+        "title": "The inspectJvmOptions startup check can trigger some Exception on some JRE versions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14112"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14137",
+        "title": "Cassandra crashes on startup.  Crash Problematic frame: # C  [sigar-amd64-winnt.dll+0x14ed4] using JRE version: Java(TM) SE Runtime Environment (9.0+11)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14137"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14154",
+        "title": "`ant javadoc` task broken due to UTF-8 characters in multiple source files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14154"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14175",
+        "title": "Incorrect documentation about CASSANDRA_INCLUDE priority",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14175"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14180",
+        "title": "cassandra.spec needs to require ant-junit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14180"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14181",
+        "title": "RPM package has too many executable files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14181"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14208",
+        "title": "space is 100 percent full on one node and other nodes we have free space",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14208"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14219",
+        "title": "Change to AlterTableStatement logging breaks MView tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14219"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13954",
+        "title": "Provide a JMX call to sync schema with local storage",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13954"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-10857",
+        "title": "Allow dropping COMPACT STORAGE flag from tables in 3.X",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-10857"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13922",
+        "title": "nodetool verify should also verify sstable metadata",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13922"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-13987",
+        "title": "Multithreaded commitlog subtly changed durability",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-13987"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14094",
+        "title": "Avoid pointless calls to ThreadLocalRandom",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14094"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14133",
+        "title": "Log file names of files streamed in to a node",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14133"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14217",
+        "title": "nodetool verify needs to use the correct digest file and reload sstable metadata",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14217"
+          }
+        }
+      },
+      {
+        "issue": "CASSANDRA-14003",
+        "title": "Correct logger message formatting in SSTableLoader",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/CASSANDRA/12341708"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/CASSANDRA-14003"
+          }
+        }
+      }
+    ]
+  }
+}

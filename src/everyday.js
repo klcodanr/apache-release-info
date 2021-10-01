@@ -1,3 +1,4 @@
+const { getAsfProjects } = require("./lib/asf");
 const log = require("./lib/log")();
 const JiraClient = require("./lib/jira");
 const fs = require("fs");
@@ -6,17 +7,19 @@ require("dotenv").config();
 const API_BASE = "https://apis.danklco.com/apache-release-info/";
 const JIRA_BASE_URL = process.env.JIRA_BASE_URL;
 
+let asfProjects;
+
 /**
  * Runs the daily update to grab all public releases and store them to JSON.
  * @param {JiraClient} jira the jira client
  */
 async function run(jira) {
   const projects = await jira.getProjects();
-  for (let project of projects) {
+  asfProjects = await getAsfProjects();
+  for (const project of projects) {
     log.info(`Processing project: ${project.name}`);
-    project = await jira.getProjectDetails(project.id);
 
-    await updateProject(jira, project);
+    await updateProject(jira, await jira.getProjectDetails(project.id));
   }
 }
 
@@ -112,6 +115,9 @@ async function updateProject(jira, project) {
     description: project.description,
     lastUpdated: Date.now(),
     type: "project",
+    category: "",
+    created: "",
+    "programming-language": "",
     _links: {
       self: { href: `${API_BASE}${project.key}` },
       jira: {
@@ -128,6 +134,16 @@ async function updateProject(jira, project) {
       },
     },
   };
+
+  const asfProjectData = asfProjects[project.key];
+  if (asfProjectData) {
+    log.debug("Adding ASF Project data");
+    ["description", "category", "created", "programming-language"].forEach(
+      (k) => {
+        projectData[k] = asfProjectData[k];
+      }
+    );
+  }
 
   indexData._embedded.projects.push(projectData);
   fs.writeFileSync("docs/api/index.json", JSON.stringify(indexData, null, 2));
