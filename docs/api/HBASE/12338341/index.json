@@ -1,0 +1,520 @@
+{
+  "id": "12338341",
+  "name": "1.1.8",
+  "description": "Bug fix release for HBase-1.1 branch",
+  "date": "2016-12-16",
+  "version": "1.1.8",
+  "module": "",
+  "lastUpdated": 1633088776373,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/HBASE/fixforversion/12338341"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/HBASE"
+    }
+  },
+  "releaseNotes": "Release Notes - HBase - Version 1.1.8",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "HBASE-12748",
+        "title": "RegionCoprocessorHost.execOperation creates too many iterator objects",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-12748"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16874",
+        "title": "Fix TestMasterFailoverWithProcedures and ensure single proc-executor for kill/restart tests",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16874"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16970",
+        "title": "Clarify misleading Scan.java comment about caching",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16970"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-15324",
+        "title": "Jitter may cause desiredMaxFileSize overflow in ConstantSizeRegionSplitPolicy and trigger unexpected split",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-15324"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16699",
+        "title": "Overflows in AverageIntervalRateLimiter's refill() and getWaitInterval()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16699"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16701",
+        "title": "TestHRegion and TestHRegionWithInMemoryFlush timing out",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16701"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16721",
+        "title": "Concurrency issue in WAL unflushed seqId tracking",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16721"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16765",
+        "title": "New SteppingRegionSplitPolicy, avoid too aggressive spread of regions for small tables.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16765"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16807",
+        "title": "RegionServer will fail to report new active Hmaster until HMaster/RegionServer failover",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16807"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16815",
+        "title": "Low scan ratio in RPC queue tuning triggers divide by zero exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16815"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16824",
+        "title": "Writer.flush() can be called on already closed streams in WAL roll",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16824"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16830",
+        "title": "RSRpcServices#openRegion() should handle the case where table descriptor is null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16830"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16870",
+        "title": "Add the metrics of replication sources which were transformed from other dead rs to ReplicationLoad",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16870"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16886",
+        "title": "hbase-client: scanner with reversed=true and small=true gets no result",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16886"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16889",
+        "title": "Proc-V2: verifyTables in the IntegrationTestDDLMasterFailover test after each table DDL is incorrect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16889"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16931",
+        "title": "Setting cell's seqId to zero in compaction flow might cause RS down.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16931"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16934",
+        "title": "Revert ITBLL misconfiguration check introduced in HBASE-16562",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16934"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16939",
+        "title": "ExportSnapshot: set owner and permission on right directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16939"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16960",
+        "title": "RegionServer hang when aborting",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16960"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16980",
+        "title": "TestRowProcessorEndpoint failing consistently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16980"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17020",
+        "title": "keylen in midkey() dont computed correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17020"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17022",
+        "title": "TestMasterFailoverWithProcedures#testTruncateWithFailover fails constantly in branch-1.1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17022"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17023",
+        "title": "Region left unassigned due to AM and SSH each thinking others would do the assignment work",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17023"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17039",
+        "title": "SimpleLoadBalancer schedules large amount of invalid region moves",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17039"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17042",
+        "title": "Remove 'public' keyword from MasterObserver interface",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17042"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17044",
+        "title": "Fix merge failed before creating merged region leaves meta inconsistent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17044"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17058",
+        "title": "Lower epsilon used for jitter verification from HBASE-15324",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17058"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17074",
+        "title": "PreCommit job always fails because of OOM",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17074"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17091",
+        "title": "IntegrationTestZKAndFSPermissions failed with 'KeeperException$NoNodeException'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17091"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17112",
+        "title": "Prevent setting timestamp of delta operations the same as previous value's",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17112"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17118",
+        "title": "StoreScanner leaked in KeyValueHeap",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17118"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17127",
+        "title": "Locate region should fail fast if underlying Connection already closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17127"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17206",
+        "title": "FSHLog may roll a new writer successfully with unflushed entries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17206"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16033",
+        "title": "Add more details in logging of responseTooSlow/TooLarge",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16033"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16972",
+        "title": "Log more details for Scan#next request when responseTooSlow",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16972"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17004",
+        "title": "Refactor IntegrationTestManyRegions to use @ClassRule for timing out",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17004"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-17006",
+        "title": "Add names to threads for better debugability of thread dumps",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-17006"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-16749",
+        "title": "HBase root pom.xml contains repo from people.apache.org/~garyh",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12338341"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-16749"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,559 @@
+{
+  "id": "12324790",
+  "name": "0.94.12",
+  "description": "Bug fix release",
+  "date": "2013-09-24",
+  "version": "0.94.12",
+  "module": "",
+  "lastUpdated": 1633088668852,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/HBASE/fixforversion/12324790"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/HBASE"
+    }
+  },
+  "releaseNotes": "Release Notes - HBase - Version 0.94.12",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "HBASE-9277",
+        "title": "REST should use listTableNames to list tables",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9277"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9279",
+        "title": "Thrift should use listTableNames to list tables",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9279"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7709",
+        "title": "Infinite loop possible in Master/Master replication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7709"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7954",
+        "title": "Fix the retrying logic of memstore flushes to avoid extra sleep",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7954"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8760",
+        "title": "possible loss of data in snapshot taken after region split",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8760"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8930",
+        "title": "Filter evaluates KVs outside requested columns",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8930"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9167",
+        "title": "ServerCallable retries just once if timeout is not integer.max",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9167"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9182",
+        "title": "Allow non-admin users to list all table names",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9182"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9195",
+        "title": "Fix TestFSHDFSUtils against java7 test re-ordering",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9195"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9207",
+        "title": "An Offline SplitParent Region can be assigned breaking split references",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9207"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9231",
+        "title": "Multipage book is generated to the wrong location",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9231"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9233",
+        "title": "isTableAvailable() may be stuck if an offline parent was never assigned",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9233"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9252",
+        "title": "HConnectionManager#getZooKeeperWatcher() should be deprecated in 0.94",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9252"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9256",
+        "title": "HBaseClient#setupIOStreams should handle all exceptions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9256"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9266",
+        "title": "Javadoc: Document that HBaseAdmin.flush(...) is synchronous",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9266"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9286",
+        "title": "[0.94] ageOfLastShippedOp replication metric doesn't update if the slave regionserver is stalled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9286"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9301",
+        "title": "Default hbase.dynamic.jars.dir to hbase.rootdir/jars",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9301"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9303",
+        "title": "Snapshot restore of table which splits after snapshot was taken encounters 'Region is not online'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9303"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9326",
+        "title": "ServerName is created using getLocalSocketAddress, breaks binding to the wildcard address. Revert HBASE-8640",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9326"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9329",
+        "title": "SnapshotManager should check for directory existance before throwing a warning.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9329"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9344",
+        "title": "RegionServer not shutting down upon KeeperException in open region",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9344"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9356",
+        "title": "[0.94] SecureServer.INSECURE_VERSIONS is declared incorrectly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9356"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9397",
+        "title": "Snapshots with the same name are allowed to proceed concurrently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9397"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9415",
+        "title": "In rpcServer, replicationQueue is initialized with the max queue size instead of the max queue lenght",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9415"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9428",
+        "title": "Regex filters are at least an order of magnitude slower since 0.94.3",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9428"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9429",
+        "title": "Add back MetaScanner.allTableRegions(Configuration conf,byte[] tablename,boolean offlined) method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9429"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9432",
+        "title": "Backport HBASE-8781 to 0.94",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9432"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9448",
+        "title": "[0.94] Shell needs to fall back after HBASE-9182 if talking to older servers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9448"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9455",
+        "title": "Port HBASE-7113 'TestGzipFilter is flaky with jdk1.7' to 0.94",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9455"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9462",
+        "title": "HBaseAdmin#isTableEnabled() should throw exception for non-existent table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9462"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9468",
+        "title": "Previous active master can still serves RPC request when it is trying recovering expired zk session",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9468"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9482",
+        "title": "Do not enforce secure Hadoop for secure HBase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9482"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9506",
+        "title": "[0.94] Backport HBASE-9309 The links in the backup masters template are bad",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9506"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9534",
+        "title": "Short-Circuit Coprocessor HTable access when on the same server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9534"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9566",
+        "title": "Add back WALEdit#get/setScopes method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9566"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9584",
+        "title": "Short-Circuit Coprocessor doesn't correctly lookup table when on server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9584"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9243",
+        "title": "Add more useful statistics in the HFile tool",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9243"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9314",
+        "title": "Dropping a table always prints a TableInfoMissingException in the master log",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9314"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9287",
+        "title": "TestCatalogTracker depends on the execution order",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9287"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9153",
+        "title": "Introduce/update a script to generate jdiff reports",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9153"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9377",
+        "title": "Backport HBASE- 9208 \"ReplicationLogCleaner slow at large scale\"",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12324790"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9377"
+          }
+        }
+      }
+    ]
+  }
+}

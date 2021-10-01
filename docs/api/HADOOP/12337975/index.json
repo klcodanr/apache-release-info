@@ -1,0 +1,2990 @@
+{
+  "id": "12337975",
+  "name": "3.0.0-alpha2",
+  "description": "",
+  "date": "2017-01-25",
+  "version": "2",
+  "module": "3.0.0-alpha",
+  "lastUpdated": 1633088121246,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/HADOOP/fixforversion/12337975"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/HADOOP"
+    }
+  },
+  "releaseNotes": "Release Notes - Hadoop Common - Version 3.0.0-alpha2",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "HADOOP-10940",
+        "title": "RPC client does no bounds checking of responses",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-10940"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-11601",
+        "title": "Enhance FS spec & tests to mandate FileStatus.getBlocksize() >0 for non-empty files",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-11601"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-11798",
+        "title": "Native raw erasure coder in XOR codes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-11798"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-11804",
+        "title": "Shaded Hadoop client artifacts and minicluster",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-11804"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12705",
+        "title": "Upgrade Jackson 2.2.3 to 2.7.8",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12705"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12774",
+        "title": "s3a should use UGI.getCurrentUser.getShortname() for username",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12774"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12974",
+        "title": "Create a CachingGetSpaceUsed implementation that uses df",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12974"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12977",
+        "title": "s3a to handle delete(\"/\", true) robustly",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12977"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13050",
+        "title": "Upgrade to AWS SDK 1.11.45",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13050"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13061",
+        "title": "Refactor erasure coders",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13061"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13136",
+        "title": "shade protobuf in the hadoop-common jar",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13136"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13218",
+        "title": "Migrate other Hadoop side tests to prepare for removing WritableRPCEngine",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13218"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13257",
+        "title": "Improve Azure Data Lake contract tests.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13257"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13309",
+        "title": "Document S3A known limitations in file ownership and permission model.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13309"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13336",
+        "title": "S3A to support per-bucket configuration",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13336"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13355",
+        "title": "Handle HADOOP_CLIENT_OPTS in a function",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13355"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13356",
+        "title": "Add a function to handle command_subcommand_OPTS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13356"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13357",
+        "title": "Modify common to use hadoop_subcommand_opts",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13357"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13358",
+        "title": "Modify HDFS to use hadoop_subcommand_opts",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13358"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13359",
+        "title": "Modify YARN to use hadoop_subcommand_opts",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13359"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13360",
+        "title": "Documentation for HADOOP_subcommand_OPTS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13360"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13361",
+        "title": "Modify hadoop_verify_user to be consistent with hadoop_subcommand_opts (ie more granularity)",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13361"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13417",
+        "title": "Fix javac and checkstyle warnings in hadoop-auth package",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13417"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13540",
+        "title": "improve section on troubleshooting s3a auth problems",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13540"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13541",
+        "title": "explicitly declare the Joda time version S3A depends on",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13541"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13544",
+        "title": "JDiff reports unncessarily show unannotated APIs and cause confusion while our javadocs only show annotated and public APIs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13544"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13546",
+        "title": "Override equals and hashCode to avoid connection leakage",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13546"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13547",
+        "title": "Optimize IPC client protobuf decoding",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13547"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13549",
+        "title": "Eliminate intermediate buffer for server-side PB encoding",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13549"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13554",
+        "title": "Add an equivalent of hadoop_subcmd_opts for secure opts",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13554"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13560",
+        "title": "S3ABlockOutputStream to support huge (many GB) file writes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13560"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13562",
+        "title": "Change hadoop_subcommand_opts to use only uppercase",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13562"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13563",
+        "title": "hadoop_subcommand_opts should print name not actual content during debug",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13563"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13564",
+        "title": "modify mapred to use hadoop_subcommand_opts",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13564"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13599",
+        "title": "s3a close() to be non-synchronized, so avoid risk of deadlock on shutdown",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13599"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13614",
+        "title": "Purge some superfluous/obsolete S3 FS tests that are slowing test runs down",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13614"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13621",
+        "title": "s3:// should have been fully cut off from trunk",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13621"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13627",
+        "title": "Have an explicit KerberosAuthException for UGI to throw, text from public constants",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13627"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13655",
+        "title": "document object store use with fs shell and distcp",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13655"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13674",
+        "title": "S3A can provide a more detailed error message when accessing a bucket through an incorrect S3 endpoint.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13674"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13678",
+        "title": "Update jackson from 1.9.13 to 2.x in hadoop-tools",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13678"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13680",
+        "title": "fs.s3a.readahead.range to use getLongBytes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13680"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13692",
+        "title": "hadoop-aws should declare explicit dependency on Jackson 2 jars to prevent classpath conflicts.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13692"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13706",
+        "title": "Update jackson from 1.9.13 to 2.x in hadoop-common-project",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13706"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13720",
+        "title": "Add more info to the msgs printed in AbstractDelegationTokenSecretManager for better supportability",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13720"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13727",
+        "title": "S3A: Reduce high number of connections to EC2 Instance Metadata Service caused by InstanceProfileCredentialsProvider.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13727"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13735",
+        "title": "ITestS3AFileContextStatistics.testStatistics() failing",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13735"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13801",
+        "title": "regression: ITestS3AMiniYarnCluster failing",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13801"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13822",
+        "title": "Use GlobalStorageStatistics.INSTANCE.reset() at FileSystem#clearStatistics()",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13822"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13823",
+        "title": "s3a rename: fail if dest file exists",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13823"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13842",
+        "title": "Update jackson from 1.9.13 to 2.x in hadoop-maven-plugins",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13842"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13855",
+        "title": "Fix a couple of the s3a statistic names to be consistent with the rest",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13855"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13857",
+        "title": "S3AUtils.translateException to map (wrapped) InterruptedExceptions to InterruptedIOEs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13857"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13871",
+        "title": "ITestS3AInputStreamPerformance.testTimeToOpenAndReadWholeFileBlocks performance awful",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13871"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-8299",
+        "title": "ViewFileSystem link slash mount point crashes with IndexOutOfBoundsException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-8299"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-8500",
+        "title": "Fix javadoc jars to not contain entire target directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-8500"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-11034",
+        "title": "ViewFileSystem is missing getStatus(Path)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-11034"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-11780",
+        "title": "Prevent IPC reader thread death",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-11780"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12611",
+        "title": "TestZKSignerSecretProvider#testMultipleInit occasionally fail",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12611"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12667",
+        "title": "s3a: Support createNonRecursive API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12667"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12718",
+        "title": "Incorrect error message by fs -put local dir without permission",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12718"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12733",
+        "title": "Remove references to obsolete io.seqfile configuration variables",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12733"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13024",
+        "title": "Distcp with -delete feature on raw data not implemented",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13024"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13164",
+        "title": "Optimize S3AFileSystem::deleteUnnecessaryFakeDirectories",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13164"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13201",
+        "title": "Print the directory paths when ViewFs denies the rename operation on internal dirs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13201"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13236",
+        "title": "truncate will fail when we use viewfilesystem",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13236"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13346",
+        "title": "DelegationTokenAuthenticationHandler writes via closed writer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13346"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13375",
+        "title": "o.a.h.security.TestGroupsCaching.testBackgroundRefreshCounters seems flaky",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13375"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13388",
+        "title": "Clean up TestLocalFileSystemPermission",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13388"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13508",
+        "title": "FsPermission string constructor does not recognize sticky bit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13508"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13558",
+        "title": "UserGroupInformation created from a Subject incorrectly tries to renew the Kerberos ticket",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13558"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13565",
+        "title": "KerberosAuthenticationHandler#authenticate should not rebuild SPN based on client request",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13565"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13587",
+        "title": "distcp.map.bandwidth.mb is overwritten even when -bandwidth flag isn't set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13587"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13588",
+        "title": "ConfServlet should respect Accept request header",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13588"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13601",
+        "title": "Fix typo in a log messages of AbstractDelegationTokenSecretManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13601"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13602",
+        "title": "Fix some warnings by findbugs in hadoop-maven-plugin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13602"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13616",
+        "title": "Broken code snippet area in Hadoop Benchmarking",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13616"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13620",
+        "title": "Mapreduce job failure on submission",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13620"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13626",
+        "title": "Remove distcp dependency on FileStatus serialization",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13626"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13638",
+        "title": "KMS should set UGI's Configuration object properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13638"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13640",
+        "title": "Fix findbugs warning in VersionInfoMojo.java",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13640"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13643",
+        "title": "Math error in AbstractContractDistCpTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13643"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13663",
+        "title": "Index out of range in SysInfoWindows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13663"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13671",
+        "title": "Fix ClassFormatException in trunk build.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13671"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13675",
+        "title": "Bug in return value for delete() calls in WASB",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13675"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13690",
+        "title": "Fix typos in core-default.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13690"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13697",
+        "title": "LogLevel#main throws exception if no arguments provided",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13697"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13699",
+        "title": "Configuration does not substitute multiple references to the same var",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13699"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13700",
+        "title": "Remove unthrown IOException from TrashPolicy#initialize and #getInstance signatures",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13700"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13707",
+        "title": "If kerberos is enabled while HTTP SPNEGO is not configured, some links cannot be accessed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13707"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13721",
+        "title": "Remove stale method ViewFileSystem#getTrashCanLocation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13721"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13723",
+        "title": "AliyunOSSInputStream#read() should update read bytes stat correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13723"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13749",
+        "title": "KMSClientProvider combined with KeyProviderCache can result in wrong UGI being used",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13749"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13763",
+        "title": "KMS REST API Documentation Decrypt URL typo",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13763"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13766",
+        "title": "Fix a typo in the comments of RPC.getProtocolVersion",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13766"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13770",
+        "title": "Shell.checkIsBashSupported swallowed an interrupted exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13770"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13780",
+        "title": "LICENSE/NOTICE are out of date for source artifacts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13780"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13787",
+        "title": "Azure testGlobStatusThrowsExceptionForUnreadableDir fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13787"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13789",
+        "title": "Hadoop Common includes generated test protos in both jar and test-jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13789"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13792",
+        "title": "Stackoverflow for schemeless defaultFS with trailing slash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13792"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13795",
+        "title": "Skip testGlobStatusThrowsExceptionForUnreadableDir in TestFSMainOperationsSwift",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13795"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13797",
+        "title": "Remove hardcoded absolute path for ls",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13797"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13798",
+        "title": "TestHadoopArchives times out",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13798"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13803",
+        "title": "Revert HADOOP-13081 add the ability to create multiple UGIs/subjects from one kerberos login",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13803"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13804",
+        "title": "MutableStat mean loses accuracy if add(long, long) is used",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13804"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13812",
+        "title": "Upgrade Tomcat to 6.0.48",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13812"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13813",
+        "title": "TestDelegationTokenFetcher#testDelegationTokenWithoutRenewer is failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13813"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13814",
+        "title": "Sample configuration of KMS HTTP Authentication signature is misleading",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13814"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13815",
+        "title": "TestKMS#testDelegationTokensOpsSimple and TestKMS#testDelegationTokensOpsKerberized Fails in Trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13815"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13816",
+        "title": "Ambiguous plugin version warning from maven build.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13816"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13820",
+        "title": "Replace ugi.getUsername() with ugi.getShortUserName() in viewFS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13820"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13824",
+        "title": "FsShell can suppress the real error if no error message is present",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13824"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13830",
+        "title": "Intermittent failure of ITestS3NContractRootDir#testRecursiveRootListing: \"Can not create a Path from an empty string\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13830"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13831",
+        "title": "Correct check for error code to detect Azure Storage Throttling and provide retries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13831"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13833",
+        "title": "TestSymlinkHdfsFileSystem#testCreateLinkUsingPartQualPath2 fails after HADOOP13605",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13833"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13838",
+        "title": "KMSTokenRenewer should close providers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13838"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13847",
+        "title": "KMSWebApp should close KeyProviderCryptoExtension",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13847"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13859",
+        "title": "TestConfigurationFieldsBase fails for fields that are DEFAULT values of skipped properties.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13859"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13861",
+        "title": "Spelling errors in logging and exceptions for code",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13861"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13864",
+        "title": "KMS should not require truststore password",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13864"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13867",
+        "title": "FilterFileSystem should override rename(.., options) to take effect of Rename options called via FilterFileSystem implementations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13867"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13883",
+        "title": "Add description of -fs option in generic command usage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13883"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13890",
+        "title": "Maintain HTTP/host as SPNEGO SPN support and fix KerberosName parsing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13890"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13896",
+        "title": "Invoke assembly plugin after building jars",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13896"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13903",
+        "title": "Improvements to KMS logging to help debug authorization errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13903"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13913",
+        "title": "maven issuing pom.version being deprecation warnings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13913"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13922",
+        "title": "Some modules have dependencies on hadoop-client jar removed by HADOOP-11804",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13922"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13928",
+        "title": "TestAdlFileContextMainOperationsLive.testGetFileContext1 runtime error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13928"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13932",
+        "title": "Fix indefinite article in comments",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13932"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13940",
+        "title": "Document the missing envvars commands",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13940"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13942",
+        "title": "Build failure due to errors of javadoc build in hadoop-azure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13942"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13943",
+        "title": "TestCommonConfigurationFields#testCompareXmlAgainstConfigurationClass fails after HADOOP-13863",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13943"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13958",
+        "title": "Bump up release year to 2017",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13958"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13961",
+        "title": "Fix compilation failure from missing hadoop-kms test jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13961"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13964",
+        "title": "Remove vestigal templates directories creation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13964"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13965",
+        "title": "Groups should be consistent in using default group mapping class",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13965"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13976",
+        "title": "Path globbing does not match newlines",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13976"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13996",
+        "title": "Fix some release build issues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13996"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-14001",
+        "title": "Improve delegation token validity checking",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-14001"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-14004",
+        "title": "Missing hadoop-cloud-storage-project module in pom.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-14004"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12756",
+        "title": "Incorporate Aliyun OSS file system implementation",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12756"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13578",
+        "title": "Add Codec for ZStandard Compression",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13578"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13584",
+        "title": "hadoop-aliyun: merge HADOOP-12756 branch back",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13584"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13597",
+        "title": "Switch KMS from Tomcat to Jetty",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13597"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13673",
+        "title": "Update scripts to be smarter when running with privilege",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13673"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13716",
+        "title": "Add LambdaTestUtils class for tests; fix eventual consistency problem in contract test setup",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13716"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13852",
+        "title": "hadoop build to allow hadoop version property to be explicitly set",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13852"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13933",
+        "title": "Add haadmin -getAllServiceState option to get the HA state of all the NameNodes/ResourceManagers",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13933"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-1381",
+        "title": "The distance between sync blocks in SequenceFiles should be configurable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-1381"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-7352",
+        "title": "FileSystem#listStatus should throw IOE upon access error",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-7352"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-10075",
+        "title": "Update jetty dependency to version 9",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-10075"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-10776",
+        "title": "Open up already widely-used APIs for delegation-token fetching & renewal to ecosystem projects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-10776"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-11552",
+        "title": "Allow handoff on the server side for RPC requests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-11552"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-11603",
+        "title": "Metric Snapshot log can be changed #MetricsSystemImpl.java since all the services will be initialized",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-11603"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12082",
+        "title": "Support multiple authentication schemes via AuthenticationFilter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12082"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12453",
+        "title": "Support decoding KMS Delegation Token with its own Identifier",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12453"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-12579",
+        "title": "Deprecate WriteableRPCEngine",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-12579"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13018",
+        "title": "Make Kdiag check whether hadoop.token.files points to existent and valid files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13018"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13037",
+        "title": "Refactor Azure Data Lake Store as an independent FileSystem",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13037"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13150",
+        "title": "Avoid use of toString() in output of HDFS ACL shell commands.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13150"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13166",
+        "title": "add getFileStatus(\"/\") test to AbstractContractGetFileStatusTest",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13166"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13317",
+        "title": "Add logs to KMS server-side to improve supportability",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13317"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13323",
+        "title": "Downgrade stack trace on FS load from Warn to debug",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13323"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13341",
+        "title": "Deprecate HADOOP_SERVERNAME_OPTS; replace with (command)_(subcommand)_OPTS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13341"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13411",
+        "title": "Checkstyle suppression by annotation or comment",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13411"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13412",
+        "title": "Move dev-support/checkstyle/suppressions.xml to hadoop-build-tools",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13412"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13427",
+        "title": "Eliminate needless uses of FileSystem#{exists(), isFile(), isDirectory()}",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13427"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13447",
+        "title": "Refactor S3AFileSystem to support introduction of separate metadata repository and tests.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13447"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13465",
+        "title": "Design Server.Call to be extensible for unified call queue",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13465"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13496",
+        "title": "Include file lengths in Mismatch in length error for distcp",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13496"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13502",
+        "title": "Split fs.contract.is-blobstore flag into more descriptive flags for use by contract tests.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13502"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13506",
+        "title": "Redundant groupid warning in child projects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13506"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13519",
+        "title": "Make Path serializable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13519"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13522",
+        "title": "Add %A and %a formats for fs -stat command to print permissions",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13522"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13537",
+        "title": "Support external calls in the RPC call queue",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13537"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13580",
+        "title": "If user is unauthorized, log \"unauthorized\" instead of \"Invalid signed text:\"",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13580"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13583",
+        "title": "Incorporate checkcompatibility script which runs Java API Compliance Checker",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13583"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13590",
+        "title": "Retry until TGT expires even if the UGI renewal thread encountered exception",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13590"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13598",
+        "title": "Add eol=lf for unix format files in .gitattributes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13598"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13603",
+        "title": "Ignore package line length checkstyle rule",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13603"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13605",
+        "title": "Clean up FileSystem javadocs, logging; improve diagnostics on FS load",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13605"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13606",
+        "title": "swift FS to add a service load metadata file",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13606"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13628",
+        "title": "Support to retrieve specific property from configuration via REST API",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13628"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13641",
+        "title": "Update UGI#spawnAutoRenewalThreadForUserCreds to reduce indentation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13641"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13646",
+        "title": "Remove outdated overview.html",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13646"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13658",
+        "title": "Replace config key literal strings with config key names I: hadoop common",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13658"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13659",
+        "title": "Upgrade jaxb-api version",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13659"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13660",
+        "title": "Upgrade commons-configuration version to 2.1",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13660"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13661",
+        "title": "Upgrade HTrace version",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13661"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13667",
+        "title": "Fix typing mistake of inline document in hadoop-metrics2.properties",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13667"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13669",
+        "title": "KMS Server should log exceptions before throwing",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13669"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13681",
+        "title": "Reduce Kafka dependencies in hadoop-kafka module",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13681"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13684",
+        "title": "Snappy may complain Hadoop is built without snappy if libhadoop is not found.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13684"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13685",
+        "title": "Document -safely option of rm command.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13685"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13687",
+        "title": "Provide a unified dependency artifact that transitively includes the cloud storage modules shipped with Hadoop.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13687"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13688",
+        "title": "Stop bundling HTML source code in javadoc JARs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13688"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13689",
+        "title": "Do not attach javadoc and sources jars during non-dist build",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13689"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13693",
+        "title": "Remove the message about HTTP OPTIONS in SPNEGO initialization message from kms audit log",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13693"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13698",
+        "title": "Document caveat for KeyShell when underlying KeyProvider does not delete a key",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13698"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13702",
+        "title": "Add a new instrumented read-write lock",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13702"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13705",
+        "title": "Revert HADOOP-13534 Remove unused TrashPolicy#getInstance and initialize code",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13705"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13709",
+        "title": "Ability to clean up subprocesses spawned by Shell when the process exits",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13709"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13710",
+        "title": "Supress CachingGetSpaceUsed from logging interrupted exception stacktrace",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13710"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13722",
+        "title": "Code cleanup -- ViewFileSystem and InodeTree",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13722"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13724",
+        "title": "Fix a few typos in site markdown documents",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13724"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13732",
+        "title": "Upgrade OWASP dependency-check plugin version",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13732"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13737",
+        "title": "Cleanup DiskChecker interface",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13737"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13738",
+        "title": "DiskChecker should perform some disk IO",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13738"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13742",
+        "title": "Expose \"NumOpenConnectionsPerUser\" as a metric",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13742"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13782",
+        "title": "Make MutableRates metrics thread-local write, aggregate-on-read",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13782"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13784",
+        "title": "Output javadoc inside the target directory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13784"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13790",
+        "title": "Make qbt script executable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13790"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13800",
+        "title": "Remove unused HADOOP_AUDIT_LOGGER from hadoop-env.sh",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13800"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13802",
+        "title": "Make generic options help more consistent, and aligned",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13802"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13810",
+        "title": "Add a test to verify that Configuration handles &-encoded characters",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13810"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13827",
+        "title": "Add reencryptEncryptedKey interface to KMS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13827"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13863",
+        "title": "Azure: Add a new SAS key mode for WASB.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13863"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13900",
+        "title": "Remove snapshot version of SDK dependency from Azure Data Lake Store File System",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13900"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13911",
+        "title": "Remove TRUSTSTORE_PASSWORD related scripts from KMS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13911"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13953",
+        "title": "Make FTPFileSystem's data connection mode and transfer mode configurable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13953"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13955",
+        "title": "Replace deprecated HttpServer2 and SSLFactory constants",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13955"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13978",
+        "title": "Update project release notes for 3.0.0-alpha2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13978"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13999",
+        "title": "Add -DskipShade maven profile to disable jar shading to reduce compile time",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13999"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13686",
+        "title": "Adding additional unit test for Trash (I)",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13686"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13828",
+        "title": "Implement getFileChecksum(path, length) for ViewFileSystem",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13828"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13835",
+        "title": "Move Google Test Framework code from mapreduce to hadoop-common",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13835"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13840",
+        "title": "Implement getUsed() for ViewFileSystem",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13840"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-13885",
+        "title": "Implement getLinkTarget for ViewFileSystem",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12337975"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-13885"
+          }
+        }
+      }
+    ]
+  }
+}

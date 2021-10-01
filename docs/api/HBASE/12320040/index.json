@@ -1,0 +1,4290 @@
+{
+  "id": "12320040",
+  "name": "0.95.2",
+  "description": "Next in the 0.95 \"Development\" Series of releases.  Serves as \"rough cut\" preview of what is coming in 0.96 which is known as the \"Singularity\", because you will have to start and stop your cluster bringing it up on 0.96.0.  0.96.0 will require Hadoop 1.0.0 at least.  It will be supported on Hadoop 2.0.0 too.  0.96.0 will be all protobufs all the time; all of its serializations to zookeeper, to the filesystem, and over rpc will be protobufs.  It runs on jdk7.  Metrics will be edited and converted to use Hadoop Metrics2.  A preview of HBase Snapshots and PrefixTreeCompression,",
+  "date": "2013-08-15",
+  "version": "0.95.2",
+  "module": "",
+  "lastUpdated": 1633088665990,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/HBASE/fixforversion/12320040"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/HBASE"
+    }
+  },
+  "releaseNotes": "Release Notes - HBase - Version 0.95.2",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "HBASE-7074",
+        "title": "Document Metrics 2",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7074"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8201",
+        "title": "OrderedBytes: an ordered encoding strategy",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8201"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8344",
+        "title": "Improve the assignment when node failures happen to choose the secondary RS as the new primary RS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8344"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8375",
+        "title": "Durability setting per table",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8375"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8408",
+        "title": "Implement namespace",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8408"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8409",
+        "title": "Security support for namespaces",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8409"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8453",
+        "title": "TestImportExport failing again due to configuration issues",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8453"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8661",
+        "title": "[rest] support REST over https",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8661"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8662",
+        "title": "[rest] support impersonation",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8662"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8693",
+        "title": "DataType: provide extensible type API",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8693"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8703",
+        "title": "[WINDOWS] Timed-out processes exit with non-zero code causing HealthChecker to report incorrectly",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8703"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8766",
+        "title": "[WINDOWS] bin/hbase.cmd zkcli is broken",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8766"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8774",
+        "title": "Add BatchSize and Filter to Thrift2",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8774"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8779",
+        "title": "Add mutateRow method support to Thrift2",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8779"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8819",
+        "title": "Port HBASE-5428 to Thrift 2",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8819"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8826",
+        "title": "Ensure HBASE-8695 is covered in Thrift 2",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8826"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8832",
+        "title": "Ensure HBASE-4658  is supported by Thrift 2",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8832"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8838",
+        "title": "[WINDOWS] FileLink assumptions are broken under NTFS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8838"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8876",
+        "title": "Addendum to HBASE-8774 Add BatchSize and Filter to Thrift2 - Add BatchSize Test",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8876"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8890",
+        "title": "Fix Thrift 2 example class location",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8890"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8938",
+        "title": "Thrift2 does not close scanner instance",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8938"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8946",
+        "title": "Add a new function to Thrift 2 to open scanner, get results and close scanner",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8946"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8947",
+        "title": "Thrift 2 : Replace \"bool writeToWAL\" with \"TDurability durability\"",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8947"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8948",
+        "title": "Bound table pool size in Thrift 2 server",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8948"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8977",
+        "title": "Disable TestLogRollAbort",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8977"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8979",
+        "title": "JVMClusterUtil will join forever on a stuck regionserver <--- zombie maker!!!",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8979"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9067",
+        "title": "Temporarily disable a few tests in TestReplicationTrackerZKImpl",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9067"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9071",
+        "title": "Disable TestHCM#testClusterStatus because fails in IDEs, etc.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9071"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9073",
+        "title": "Up retries on TestSnapshotFromMaster; retries only once",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9073"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9078",
+        "title": "Downstream build including hbase-client fails because can't find com.sun.jdmk:jmxtools",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9078"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9091",
+        "title": "Update ByteRange to maintain consumer's position",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9091"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9128",
+        "title": "Drop the '.' prefix from names under hbase.rootdir after namespaces goes in",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9128"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9130",
+        "title": "Invert the name of namespace commands to match the snapshots and replication form",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9130"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9163",
+        "title": "Add timeouts to HBaseAdmin because hanging/zombying",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9163"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9179",
+        "title": "TestSecureLoadIncrementalHFilesSplitRecovery hangs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9179"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9187",
+        "title": "HBaseAdmin#testTableExists can go zombie",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9187"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9191",
+        "title": "Update Loadbalancer method to throw HBaseIOException",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9191"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7325",
+        "title": "Replication reacts slowly on a lightly-loaded cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7325"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7391",
+        "title": "Review/improve HLog compression's memory consumption",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7391"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7401",
+        "title": "Remove warning message about running 'hbase migrate'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7401"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7634",
+        "title": "Replication handling of changes to peer clusters is inefficient",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7634"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7639",
+        "title": "Enable online schema update by default",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7639"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7980",
+        "title": "TestZKInterProcessReadWriteLock fails occasionally in QA test run",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7980"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8018",
+        "title": "Add \"Flaky Testcase Detector\" tool into dev-tools",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8018"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8021",
+        "title": "TestSplitTransactionOnCluster.testShouldThrowIOExceptionIfStoreFileSizeIsEmptyAndShouldSuccessfullyExecuteRollback() fails consistently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8021"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8060",
+        "title": "\"Num compacting KVs\" diverges from \"num compacted KVs\" over time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8060"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8067",
+        "title": "TestHFileArchiving.testArchiveOnTableDelete sometimes fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8067"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8128",
+        "title": "HTable#put improvements",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8128"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8141",
+        "title": "Remove accidental uses of org.mortbay.log.Log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8141"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8192",
+        "title": "Logic errror causes infinite loop in HRegion.bulkLoadHFiles(List)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8192"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8200",
+        "title": "Integration Test classes are not part of the default HBase classpath",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8200"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8204",
+        "title": "Don't use hdfs append during lease recovery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8204"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8212",
+        "title": "Introduce a new separator instead of hyphen('-') for renaming recovered queues' znodes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8212"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8225",
+        "title": "[replication] minor code bug when registering ReplicationLogCleaner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8225"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8226",
+        "title": "HBaseTestingUtility#waitUntilAllRegionsAssigned won't return if it counts \"too many\" regions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8226"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8232",
+        "title": "TestAccessController occasionally fails with IndexOutOfBoundsException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8232"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8241",
+        "title": "Fix the bad dependency on netty from HDFS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8241"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8267",
+        "title": "Add some resources checker for tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8267"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8287",
+        "title": "TestRegionMergeTransactionOnCluster failed in trunk build #4010",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8287"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8413",
+        "title": "Snapshot verify region will always fail if the HFile has been archived",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8413"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8432",
+        "title": "a table with unbalanced regions will balance indefinitely with the 'org.apache.hadoop.hbase.master.DefaultLoadBalancer'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8432"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8433",
+        "title": "CellComparator#compare returns incorrect result for faked KeyValue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8433"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8436",
+        "title": "SeekBefore returns wrong result with PREFIX_TREE Encoding",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8436"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8455",
+        "title": "Update ExportSnapshot to reflect changes in HBASE-7419",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8455"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8476",
+        "title": "locateRegionInMeta should check the cache before doing the prefetch",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8476"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8488",
+        "title": "HBase transitive dependencies not being pulled in when building apps like Flume which depend on HBase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8488"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8494",
+        "title": "TestRemoteAdmin#testClusterStatus should not assume 'requests' does not change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8494"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8501",
+        "title": "The hbase zkcli will connection failure the first and the second ip from ZooKeeperMainServerArg return connection string",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8501"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8516",
+        "title": "FSUtils.create() fail with ViewFS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8516"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8532",
+        "title": "[Webui] Bootstrap based webui compatibility for IE and also fix some page format issues.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8532"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8548",
+        "title": "postOpen hook called twice",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8548"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8579",
+        "title": "TestDelayedRpc falis from time to time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8579"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8586",
+        "title": "Revisit of hbase-8483, \"HConnectionManager can leak ZooKeeper connections when using deleteStaleConnection\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8586"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8615",
+        "title": "HLog Compression may fail due to Hadoop fs input stream returning partial bytes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8615"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8624",
+        "title": "bin/local-{master-backup|regionservers}.sh doesn't take --config arg",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8624"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8627",
+        "title": "HBCK can not fix meta not assigned issue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8627"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8639",
+        "title": "Poor performance of htable#getscanner in multithreaded environment due to DNS.getDefaultHost() being called in ScannerCallable#prepare()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8639"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8640",
+        "title": "ServerName in master may not initialize with the configured ipc address of hbase.master.ipc.address",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8640"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8665",
+        "title": "bad compaction priority behavior in queue can cause store to be blocked",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8665"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8666",
+        "title": "META region isn't fully recovered during master initialization when META region recovery had chained failures",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8666"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8667",
+        "title": "Master and Regionserver not able to communicate if both bound to different network interfaces on the same machine.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8667"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8672",
+        "title": "Create an Integration test for Bulk Loads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8672"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8678",
+        "title": "Wrongly delete cells in some case which can not be deleted",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8678"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8680",
+        "title": "distributedLogReplay performance regression",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8680"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8695",
+        "title": "The HBase thrift service ignores XML configuration",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8695"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8698",
+        "title": "potential thread creation in MetaScanner.metaScan",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8698"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8699",
+        "title": "Parameter to DistributedFileSystem#isFileClosed should be of type Path",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8699"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8700",
+        "title": "IntegrationTestBigLinkedList can fail due to random number collision",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8700"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8705",
+        "title": "RS holding META when restarted in a single node setup may hang infinitely without META assignment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8705"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8706",
+        "title": "Some improvement in snapshot",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8706"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8712",
+        "title": "HFileLinkCleaner (FSUtils.listStatus) logs too much if links do not exists",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8712"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8719",
+        "title": "Fix responseTooSlow formatting",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8719"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8723",
+        "title": "HBase Intgration tests are failing because of new defaults.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8723"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8726",
+        "title": "Create an Integration Test for online schema change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8726"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8729",
+        "title": "distributedLogReplay may hang during chained region server failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8729"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8732",
+        "title": "HFileBlockDefaultEncodingContext isn't thread-safe but is used by all readers, breaks column encoding",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8732"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8733",
+        "title": "Update our hadoop2 in trunk and 0.95 to 2.0.5-alpha (We are currently 2.0.2)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8733"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8742",
+        "title": "HTableDescriptor Properties not preserved when cloning",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8742"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8745",
+        "title": "Fix src assembly so includes top-level src dir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8745"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8749",
+        "title": "Potential race condition between FSUtils.renameAndSetModifyTime() and HFile/LogCleaner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8749"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8750",
+        "title": "MetaServerShutdownHandler stucks if .META. assignment fails in previous attempt",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8750"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8757",
+        "title": "ZK throws IllegalStateException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8757"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8762",
+        "title": "Performance/operational penalty when calling HTable.get with a list of one Get",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8762"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8764",
+        "title": "Some MasterMonitorCallable should retry",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8764"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8776",
+        "title": "tweak retry settings some more (on trunk and 0.94)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8776"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8781",
+        "title": "ImmutableBytesWritable constructor with another IBW as param need to consider the offset of the passed IBW",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8781"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8782",
+        "title": "Thrift2 can not parse values when using framed transport",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8782"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8783",
+        "title": "RSSnapshotManager.ZKProcedureMemberRpcs may be initialized with the wrong server name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8783"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8786",
+        "title": "Creating a table with a Bloom filter on the shell is broken.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8786"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8787",
+        "title": "Merged region endkey is incorrect if one region has null endkey",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8787"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8788",
+        "title": "Edit of .proto files moving classes to better homes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8788"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8789",
+        "title": "Add max RPC version to meta-region-server zk node.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8789"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8790",
+        "title": "NullPointerException thrown when stopping regionserver",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8790"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8791",
+        "title": "Precommit hadoopqa is broke since -r1491656",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8791"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8794",
+        "title": "DependentColumnFilter.toString() throws NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8794"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8795",
+        "title": "bin/hbase zkcli cannot take arguments anymore",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8795"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8797",
+        "title": "Prevent merging regions from moving during online merge",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8797"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8799",
+        "title": "TestAccessController#testBulkLoad failing on trunk/0.95",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8799"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8802",
+        "title": "totalCompactingKVs may overflow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8802"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8811",
+        "title": "REST service ignores misspelled \"check=\" parameter, causing unexpected mutations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8811"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8813",
+        "title": "Fix time b/w recoverLease invocations from HBASE 8449",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8813"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8814",
+        "title": "Possible NPE in split if a region has empty store files.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8814"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8842",
+        "title": "TestTokenAuthentication failing on hadoop2 build with \"IllegalArgumentException: Can't get Kerberos realm\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8842"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8846",
+        "title": "Revert the package name change for TableExistsException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8846"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8853",
+        "title": "The client connection is not cut when receiving the failure notification",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8853"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8854",
+        "title": "TestScannersFromClientSide.testScanBatch failed with 'There should have room before prefetching is submitted'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8854"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8856",
+        "title": "Crash when attempting split with DelimitedKeyPrefixRegionSplitPolicy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8856"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8864",
+        "title": "Fix 2 javadoc warnings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8864"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8867",
+        "title": "HLogUtils#getServerNameFromHLogDirectoryName does not take into account the -splitting extension",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8867"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8869",
+        "title": "incorrect javadoc for CompactionRequest.compareTo()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8869"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8871",
+        "title": "The region server can crash at startup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8871"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8874",
+        "title": "PutCombiner is skipping KeyValues while combining puts of same row during bulkload",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8874"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8875",
+        "title": "incorrect javadoc for EXCLUDE_FROM_MINOR_COMPACTION",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8875"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8877",
+        "title": "Reentrant row locks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8877"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8879",
+        "title": "Client Scanner spams the logs if there are lots of scanners.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8879"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8880",
+        "title": "Integration Tests shouldn't set the number or reties.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8880"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8882",
+        "title": "Create an Integration Test to Test MTTR",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8882"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8883",
+        "title": "TestAdmin.testCloseRegionWhenServerNameIsEmpty failed with ArrayIndexOutOfBoundsException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8883"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8888",
+        "title": "Tweak retry settings some more, *some more*",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8888"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8893",
+        "title": "Verify that HTableDescriptor Properties are preserved when cloning",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8893"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8899",
+        "title": "Could not open a region on a server where it is being closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8899"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8902",
+        "title": "IntegrationTestBulkLoad takes way too long",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8902"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8904",
+        "title": "Clean up IntegrationTestMTTR and add small features.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8904"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8909",
+        "title": "HBASE-6170 broke \"hbase.regionserver.lease.period\" config, we should support it for BC",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8909"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8910",
+        "title": "HMaster.abortNow shouldn't try to become a master again if it was stopped",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8910"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8913",
+        "title": "Remove \".replogs\" reference as we no longer use it",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8913"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8917",
+        "title": "Minor cleanup and fixes for POM",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8917"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8920",
+        "title": "TestZKBasedOpenCloseRegion.testReOpenRegion fails occasionally",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8920"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8924",
+        "title": "Master Can fail to come up after chaos monkey if the sleep time is too short.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8924"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8931",
+        "title": "TestTableLockManager.testTableReadLock fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8931"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8933",
+        "title": "TestSplitTransactionOnCluster fails because \"Region not moved off .META. server\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8933"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8935",
+        "title": "IntegrationTestBigLinkedList fails under load on 0.94 due to some scan issues - add logging",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8935"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8940",
+        "title": "TestRegionMergeTransactionOnCluster#testWholesomeMerge may fail due to race in opening region",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8940"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8952",
+        "title": "Missing error handling can cause RegionServer RPC thread to busy loop forever",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8952"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8955",
+        "title": "TestStochasticLoadBalancer timedout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8955"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8957",
+        "title": "TestDrainingServer. testDrainingServerWithAbort fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8957"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8964",
+        "title": "TestAccessController.testGlobalAuthorizationForNewRegisteredRS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8964"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8965",
+        "title": "TestRemoteAdmin.testClusterStatus fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8965"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8967",
+        "title": "Duplicate call to snapshotManager.stop() in HRegionServer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8967"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8972",
+        "title": "TestCreateTableHandler.testMasterRestartAfterEnablingNodeIsCreated failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8972"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8975",
+        "title": "NPE/HTTP 500 when opening the master's web UI too early",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8975"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8981",
+        "title": "add a check on the ServerName parse",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8981"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8982",
+        "title": "Useless logs in  ipc.RpcClient$Connection(584): Not able to close an output stream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8982"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8983",
+        "title": "HBaseConnection#deleteAllConnections does not always delete",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8983"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8985",
+        "title": "Not enough logging in SplitLogManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8985"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8987",
+        "title": "ProtobufUtil.toException doesn't handle plain RemoteException, gets a NoSuchMethodException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8987"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8988",
+        "title": "Reuse the thread pool in the shell to not run out of threads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8988"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8989",
+        "title": "TestFromClientSideWithCoprocessor.testClientPoolThreadLocal fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8989"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8993",
+        "title": "TestHRegionOnCluster.testDataCorrectnessReplayingRecoveredEdits fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8993"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8996",
+        "title": "TestHCM.testDeleteForZKConnLeak can go zombie",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8996"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8998",
+        "title": "TestSnapshotCloneIndependence.testOnlineSnapshotMetadataChangesIndependent fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8998"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9001",
+        "title": "TestThriftServerCmdLine.testRunThriftServer[0] failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9001"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9006",
+        "title": "RPC code requires cellBlockCodecClass even though one is defined by default",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9006"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9007",
+        "title": "TestReplicationKillSlaveRS.killOneSlaveRS fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9007"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9008",
+        "title": "Reenable TestReplicationKillSlaveRS.killOneSlaveRS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9008"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9009",
+        "title": "Disable TestMultiTableInputFormat",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9009"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9012",
+        "title": "TestBlockReorder.testBlockLocationReorder fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9012"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9018",
+        "title": "Add timeouts on all tests in TestHLogSplit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9018"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9021",
+        "title": "Create a unit test for ReplicationHLogReaderManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9021"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9031",
+        "title": "ImmutableBytesWritable.toString() should downcast the bytes before converting to hex string",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9031"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9034",
+        "title": "hbase-daemon.sh swallows start up errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9034"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9038",
+        "title": "Compaction WALEdit gives NPEs with Replication enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9038"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9041",
+        "title": "TestFlushSnapshotFromClient.testConcurrentSnapshottingAttempts fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9041"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9044",
+        "title": "Merging regions throws NPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9044"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9048",
+        "title": "HCM throws NullPointerException under load",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9048"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9049",
+        "title": "Generalize ServerCallable creation to support custom callables",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9049"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9051",
+        "title": "TestHFileOutputFormat.testExcludeAllFromMinorCompaction fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9051"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9052",
+        "title": "Prevent split/merged region from assigning again",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9052"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9060",
+        "title": "ExportSnapshot job fails if target path contains percentage character",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9060"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9062",
+        "title": "Remove TestReplicationKillRs* tests temporarily",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9062"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9079",
+        "title": "FilterList getNextKeyHint skips rows that should be included in the results",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9079"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9082",
+        "title": "A bunch of tests have client retries only but bulid boxes are contended and overloaded",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9082"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9085",
+        "title": "Integration Tests fails because of bug in teardown phase where the cluster state is not being restored properly.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9085"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9087",
+        "title": "Handlers being blocked during reads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9087"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9088",
+        "title": "TestSplitLogManager.testMultipleResubmits fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9088"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9092",
+        "title": "OpenRegion could be ignored by mistake",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9092"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9093",
+        "title": "Hbase client API: Restore the writeToWal method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9093"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9095",
+        "title": "AssignmentManager's handleRegion should respect the single threaded nature of the processing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9095"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9096",
+        "title": "Disable split during log replay",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9096"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9097",
+        "title": "Set HBASE_CLASSPATH before rest of the classpath",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9097"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9098",
+        "title": "During recovery use ZK as the source of truth for region state",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9098"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9099",
+        "title": "logReplay could trigger double region assignment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9099"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9115",
+        "title": "HTableInterface.append operation may overwrites values",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9115"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9119",
+        "title": "hbase.mapreduce.hfileoutputformat.blocksize should configure with blocksize of a table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9119"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9120",
+        "title": "ClassFinder logs errors that are not",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9120"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9129",
+        "title": "Scanner prefetching leaks scanners.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9129"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9142",
+        "title": "Mutation#getFamilyMap() return type change between HBase 94 and 96 breaks downstream apps",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9142"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9144",
+        "title": "Leases class has contention that's not needed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9144"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9146",
+        "title": "TestHTablePool hangs when run as part of runMediumTests profile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9146"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9152",
+        "title": "Not able to find HMaster and HRegionServer processes with grep by process name on ps result because of large classpath as argument.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9152"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9156",
+        "title": "2000ms timeout for some client calls",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9156"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9158",
+        "title": "Serious bug in cyclic replication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9158"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9164",
+        "title": "Convert List<? extends Cell> anti pattern to List<Cell> pattern.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9164"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9166",
+        "title": "TestSplitTransactionOnCluster broke since HBASE-8408 (Namespaces)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9166"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9170",
+        "title": "TestStoreFileBlockCacheSummary.testBlockCacheSummary broke since HBASE-8408 (Namespaces) in 0.95",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9170"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9173",
+        "title": "replication_admin#get_peer_state(id) in ruby script pointing to undefined method `getPeerState'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9173"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9174",
+        "title": "javac hangs compiling hbase-example module since namespaces went in",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9174"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9177",
+        "title": "Cluster UUID is not properly parsable after rewriting to PB.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9177"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9181",
+        "title": "Fix javadoc warnings introduce by namespaces",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9181"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9182",
+        "title": "Allow non-admin users to list all table names",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9182"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9184",
+        "title": "Ignore zk assign event if region is not known in transition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9184"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9185",
+        "title": "mvn site target fails when building with Maven 3.1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9185"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9189",
+        "title": "IncreasingToUpperBoundRegionSplitPolicy.shouldSplit() should check all the stores before returning.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9189"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9192",
+        "title": "IntegrationTestBigLinkedListWithChaosMonkey never exits if there is an error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9192"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9196",
+        "title": "Remove dead code related to KeyValue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9196"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9197",
+        "title": "TestAdmin#testShouldCloseTheRegionBasedOnTheEncodedRegionName shuts down the namespaces table and never starts it up again",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9197"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9198",
+        "title": "RpcClient#call could hang",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9198"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9199",
+        "title": "Call duration is not accurate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9199"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9200",
+        "title": "HFilePrettyPrinter finds incorrect largest row",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9200"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9205",
+        "title": "fix javadoc warning violation introduced by HBASE-9142",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9205"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9224",
+        "title": "Print out name of the method we do not support rather than throw NPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9224"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9226",
+        "title": "Thrift host and port are hardcoded in thrift2 DemoClient.java",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9226"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9227",
+        "title": "RESTServer should handle the loginUser correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9227"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9232",
+        "title": "Fix javadoc warning and a few findbugs items.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9232"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9238",
+        "title": "bug in Mutation::getFamilyMap",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9238"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9324",
+        "title": "TestProcedureMember#testMemberCommitException, testSimpleRun & testMemberCommitCommsFailure are flaky on Suse OS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9324"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9329",
+        "title": "SnapshotManager should check for directory existance before throwing a warning.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9329"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9344",
+        "title": "RegionServer not shutting down upon KeeperException in open region",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9344"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-4050",
+        "title": "Update HBase metrics framework to metrics2 framework",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-4050"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-5959",
+        "title": "Add other load balancers",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-5959"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-6449",
+        "title": "Dapper like tracing",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-6449"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7826",
+        "title": "Improve Hbase Thrift v1 to return results in sorted order",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7826"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7875",
+        "title": "introduce a compaction switch in HBase Shell",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7875"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8504",
+        "title": "HTable.getRegionsInRange() should provide a non-cached API",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8504"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8663",
+        "title": "a HBase Shell command to list the tables replicated from current cluster",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8663"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8753",
+        "title": "Provide new delete flag which can delete all cells under a column-family which have designated timestamp",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8753"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-4360",
+        "title": "Maintain information on the time a RS went dead",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-4360"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-6295",
+        "title": "Possible performance improvement in client batch operations: presplit and send in background",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-6295"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-6580",
+        "title": "Deprecate HTablePool in favor of HConnection.getTable(...)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-6580"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7183",
+        "title": "print WARN message if hbase.replication.sizeOfLogQueue is too big",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7183"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7902",
+        "title": "deletes may be removed during minor compaction,  in non-standard compaction schemes [rename enums]",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7902"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8001",
+        "title": "Avoid unnecessary lazy seek",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8001"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8093",
+        "title": "Change the .META. table name for file system incompatibility",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8093"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8209",
+        "title": "Improve LoadTest extensibility",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8209"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8322",
+        "title": "Re-enable hbase checksums by default",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8322"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8350",
+        "title": "enable ChaosMonkey to run commands as different users",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8350"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8439",
+        "title": "[replication] Remove ReplicationZookeeper class",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8439"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8446",
+        "title": "Allow parallel snapshot of different tables",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8446"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8599",
+        "title": "HLogs in ZK are not cleaned up when replication lag is minimal",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8599"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8609",
+        "title": "Make the CopyTable support startRow, stopRow options",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8609"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8617",
+        "title": "Introducing a new config to disable writes during recovering",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8617"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8660",
+        "title": "[rest] support secure REST access",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8660"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8669",
+        "title": "change exploring compaction policy to prefer smaller compactions on blocked stores",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8669"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8683",
+        "title": "Add major compaction support in CompactionTool",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8683"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8685",
+        "title": "[REST] Minor fix to XMLSchema.xsd and ScannerModel",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8685"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8690",
+        "title": "Reduce unnecessary getFileStatus hdfs calls in TTL hfile and hlog cleanners",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8690"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8692",
+        "title": "[AccessController] Restrict HTableDescriptor enumeration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8692"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8696",
+        "title": "Fixup for logs that show when running hbase-it tests.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8696"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8702",
+        "title": "Make WALEditCodec pluggable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8702"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8716",
+        "title": "Fixups/Improvements for graceful_stop.sh/region_mover.rb",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8716"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8737",
+        "title": "[replication] Change replication RPC to use cell blocks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8737"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8740",
+        "title": "Generate unique table names in TestAccessController",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8740"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8768",
+        "title": "Improve bulk load performance by moving key value construction from map phase to reduce phase.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8768"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8778",
+        "title": "Region assigments scan table directory making them slow for huge tables",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8778"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8785",
+        "title": "revise zookeeper session timeout setting",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8785"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8800",
+        "title": "Return non-zero exit codes when a region server aborts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8800"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8809",
+        "title": "Include deletes in the scan (setRaw) method does not respect the time range or the filter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8809"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8812",
+        "title": "Avoid a wide line on the HMaster webUI if we have many ZooKeeper servers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8812"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8847",
+        "title": "Filter.transform() always applies unconditionally, even when combined in a FilterList",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8847"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8861",
+        "title": "Remove ReplicationState completely",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8861"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8898",
+        "title": "Minor reformatting of hbase-default.xml and removal of comments that say what the 'default' is (since rarely agrees w/ actual setting)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8898"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8915",
+        "title": "protobuf message style",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8915"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8916",
+        "title": "Optimize usage of Jackson's ObjectMapper",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8916"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8918",
+        "title": "Removes redundant identifiers from interfaces",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8918"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8921",
+        "title": "[thrift2] Add GenericOptionsParser to Thrift 2 server",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8921"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8961",
+        "title": "Make TestReplicationQueueFailover less integration-y by splitting it up",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8961"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8986",
+        "title": "Replace hardcoded special file/dir names with the relative HConstant",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8986"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9033",
+        "title": "Add tracing to ReplicationSource and enable it in tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9033"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9077",
+        "title": "Make Web ui Fluid width",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9077"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9121",
+        "title": "Update HTrace to 2.00 and add new example usage.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9121"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9126",
+        "title": "Make HFile MIN VERSION as 2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9126"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9139",
+        "title": "Independent timeout configuration for rpc channel between cluster nodes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9139"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-7770",
+        "title": "minor integration test framework fixes",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-7770"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8260",
+        "title": "create generic integration test for trunk and 94 that is more deterministic, can be run for longer and is less aggressive",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8260"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8646",
+        "title": "Intermittent TestIOFencing#testFencingAroundCompaction failure due to region getting stuck in compaction",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8646"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8816",
+        "title": "Add support of loading multiple tables into LoadTestTool",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8816"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8845",
+        "title": "Add integration test for split, online merge, and compaction",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8845"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8857",
+        "title": "TestGet#testDynamicFilter fails sometimes",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8857"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8860",
+        "title": "TestTableLockManager#testTableReadLock times out sometimes",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8860"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8907",
+        "title": "TestIOFencing.testFencingAroundCompaction fails sometimes",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8907"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8928",
+        "title": "Make ChaosMonkey & LoadTest tools extensible, to allow addition of more actions and policies.",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8928"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8934",
+        "title": "Fix bunch of flaky tests",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8934"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8941",
+        "title": "TestAccessController.testGlobalPermissionList failed with IndexOutOfBoundsException",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8941"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8954",
+        "title": "TestSplitLogWorker#testPreemptTask failed",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8954"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8984",
+        "title": "Test online snapshots with online merge",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8984"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8994",
+        "title": "Adding log to chaos monkey actions to show what're performed",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8994"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9017",
+        "title": "Consolidate ChaosMonkey's random objects",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9017"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9020",
+        "title": "Make hbase-it HBASE_HOME configurable",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9020"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9090",
+        "title": "cleanup snapshot tests setup/teardown code",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9090"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9106",
+        "title": "Do not fail TestAcidGuarantees for exceptions on table flush",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9106"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9155",
+        "title": "Enhance LoadTestTool to support updates",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9155"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9160",
+        "title": "TestNamespaceUpgrade fails on hadoop 2.1 due to existence of .snapshot directory in tar ball",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9160"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9161",
+        "title": "TestAssignmentManagerOnCluster.testSSHWhenDisablingTableRegionsInOpeningOrPendingOpenState could hang",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9161"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9225",
+        "title": "Enable TRACE logging in TestReplicationBase",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9225"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8219",
+        "title": "Align Offline Merge with Online Merge",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8219"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8224",
+        "title": "Publish hbase build against h1 and h2 adding '-hadoop1' or '-hadoop2' to version string",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8224"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8792",
+        "title": "Organize EventType Java Docs",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8792"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8796",
+        "title": "Add mention of new builds mailing list to site",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8796"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8829",
+        "title": "Improve failed TestMetaScanner assert message so can see where/why failure",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8829"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8895",
+        "title": "Misc: replace hbase.client.retries.number w/ define and remove unused imports",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8895"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8962",
+        "title": "Clean up code and remove regular log splitting",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8962"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8978",
+        "title": "Restore TestLogRollAbort upon review",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8978"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9061",
+        "title": "Put back TestReplicationKillMasterRSCompressed when fixed over in HBASE-8615",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9061"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9111",
+        "title": "Put back TestReplicationKill* except for the MasterRSCompressed one",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9111"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9193",
+        "title": "Make what Chaos monkey actions run configurable per test.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9193"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-9229",
+        "title": "Fix release warning",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-9229"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-6891",
+        "title": "Hadoop 2 unit test failures",
+        "type": "Umbrella",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-6891"
+          }
+        }
+      },
+      {
+        "issue": "HBASE-8629",
+        "title": "More log edits: we log too much",
+        "type": "Umbrella",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HBASE/12320040"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HBASE-8629"
+          }
+        }
+      }
+    ]
+  }
+}

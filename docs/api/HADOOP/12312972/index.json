@@ -1,0 +1,3575 @@
+{
+  "id": "12312972",
+  "name": "0.18.0",
+  "description": "",
+  "date": "2008-08-22",
+  "version": "0.18.0",
+  "module": "",
+  "lastUpdated": 1633088032744,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/HADOOP/fixforversion/12312972"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/HADOOP"
+    }
+  },
+  "releaseNotes": "Release Notes - Hadoop Common - Version 0.18.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "HADOOP-236",
+        "title": "job tracker should refuse connection from a task tracker with a different version number",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-236"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-1318",
+        "title": "Do not fail completed maps on lost tasktrackers if '-reducer NONE' is specified",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-1318"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-1702",
+        "title": "Reduce buffer copies when data is written to DFS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-1702"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2065",
+        "title": "Replication policy for corrupted block",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2065"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2095",
+        "title": "Reducer failed due to Out ofMemory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2095"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2132",
+        "title": "Killing successfully completed jobs moves them to failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2132"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2294",
+        "title": "In hdfs.h , the comment says you release the result of a hdfsListDirectory with a freehdfsFileInfo, but should say hdfsFreeFileInfo",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2294"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2393",
+        "title": "TaskTracker locks up removing job files within a synchronized method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2393"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2427",
+        "title": "Cleanup of mapred.local.dir after maptask is complete",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2427"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2565",
+        "title": "DFSPath cache of FileStatus can become stale",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2565"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2656",
+        "title": "Support for upgrading existing cluster to facilitate appends to HDFS files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2656"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2669",
+        "title": "DFS client lost lease during writing into DFS files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2669"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2703",
+        "title": "New files under lease (before close) still shows up as MISSING files/blocks in fsck",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2703"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2793",
+        "title": "Links for worst performing shuffle tasks are broken in Analyze Job.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2793"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2905",
+        "title": "fsck -move triggers NPE in namenode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2905"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2909",
+        "title": "Improve IPC idle connection management",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2909"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2928",
+        "title": "Remove deprecated methods getContentLength() in ClientProtocol, NameNode, FileSystem, DistributedFileSystem and DFSClient",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2928"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2930",
+        "title": "make {start,stop}-balancer.sh work even if hadoop-daemon.sh isn't in the PATH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2930"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2961",
+        "title": "[HOD] Hod expects port info though external host is not mentioned.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2961"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3035",
+        "title": "Data nodes should inform the name-node about block crc errors.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3035"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3076",
+        "title": "[HOD] If a cluster directory is specified as a relative path, an existing script.exitcode file will not be deleted.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3076"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3085",
+        "title": "pushMetric() method of various metric util classes should catch exceptions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3085"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3101",
+        "title": "'bin/hadoop job' should display the help and silently exit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3101"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3109",
+        "title": "RPC should accepted connections even when rpc queue is full (ie undo part of HADOOP-2910)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3109"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3113",
+        "title": "DFSOututStream.flush() should flush data to real block file on DataNode.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3113"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3119",
+        "title": "Text.getBytes()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3119"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3127",
+        "title": "rm /user/<username>/.Trash/____ only moves it back to .Trash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3127"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3130",
+        "title": "Shuffling takes too long to get the last map output.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3130"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3135",
+        "title": "if the 'mapred.system.dir' in the client jobconf is different from the JobTracker's value job submission fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3135"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3151",
+        "title": "Hod should have better error messages.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3151"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3160",
+        "title": "remove exists() from ClientProtocol and NameNode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3160"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3176",
+        "title": "Change lease record when a open-for-write-file gets renamed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3176"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3203",
+        "title": "TaskTracker::localizeJob doesn't provide the correct size to LocalDirAllocator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3203"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3232",
+        "title": "Datanodes time out",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3232"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3240",
+        "title": "TestJobShell should not create files in the current directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3240"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3248",
+        "title": "Improve Namenode startup performance",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3248"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3259",
+        "title": "Configuration.substituteVars() needs to handle security exceptions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3259"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3265",
+        "title": "Remove deprecated API getFileCacheHints",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3265"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3268",
+        "title": "TestUrlStreamHandler.testFileUrls fails on Windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3268"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3269",
+        "title": "NameNode doesn't startup when restarted after running an MR job",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3269"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3272",
+        "title": "Reduce redundant copy of Block object in BlocksMap.map hash map",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3272"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3282",
+        "title": "TestCheckpoint occasionally fails because of the port issues.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3282"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3296",
+        "title": "Some levels are skipped while creating the task cache in JobInProgress",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3296"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3299",
+        "title": "org.apache.hadoop.mapred.join.CompositeInputFormat does not initialize  TextInput format files with the configuration resulting in an NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3299"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3300",
+        "title": "FindBugs warnings in NetworkTopology",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3300"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3301",
+        "title": "Misleading error message when S3 URI contains hostname containing an underscore",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3301"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3309",
+        "title": "Unit test fails on Windows: org.apache.hadoop.mapred.TestMiniMRDFSSort.unknown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3309"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3313",
+        "title": "RPC::Invoker makes unnecessary calls to System.currentTimeMillis",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3313"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3318",
+        "title": "Hadoop streaming doesn't recognize \"Darwin\" as an OS but Soylatte (OpenJDK port to Mac) reports that rather than \"Mac OS X\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3318"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3320",
+        "title": "NPE in NetworkTopology.getDistance()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3320"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3326",
+        "title": "ReduceTask should not sleep for 200 ms while waiting for merge to finish",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3326"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3329",
+        "title": "DatanodeDescriptor objects stored in FSImage may be out dated.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3329"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3333",
+        "title": "job failing because of reassigning same tasktracker to failing tasks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3333"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3335",
+        "title": "'make clean' in src/c++/libhdfs does 'rm -rf /*'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3335"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3337",
+        "title": "Name-node fails to start because DatanodeInfo format changed.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3337"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3338",
+        "title": "trunk doesn't compile after HADOOP-544 was committed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3338"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3339",
+        "title": "DFS Write pipeline does not detect defective datanode correctly if it times out.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3339"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3340",
+        "title": "hadoop dfs metrics shows 0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3340"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3348",
+        "title": "TestUrlStreamHandler hangs on LINUX",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3348"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3349",
+        "title": "FSNamesystem.changeLease(src, dst) incorrectly updates the paths inside a lease",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3349"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3351",
+        "title": "Fix history viewer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3351"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3363",
+        "title": "HDFS throws a InconsistentFSStateException when the name node starts up on a directory that isnt formatted",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3363"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3365",
+        "title": "SequenceFile.Sorter.MergeQueue.next does an unnecessary copy of the key",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3365"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3371",
+        "title": "MBeanUtil dumps stacktrace from registerMBean",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3371"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3375",
+        "title": "Lease paths are sometimes not removed from LeaseManager.sortedLeasesByPath",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3375"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3376",
+        "title": "[HOD] HOD should have a way to detect and deal with clusters that violate/exceed resource manager limits",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3376"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3381",
+        "title": "INode interlinks can multiply effect of memory leaks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3381"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3388",
+        "title": "TestDatanodeBlockScanner failed while trying to corrupt replicas",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3388"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3391",
+        "title": "HADOOP-3248 introduced a findbugs warning.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3391"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3393",
+        "title": "TestHDFSServerPorts fails on LINUX (NFS mounted directory) and on WINDOWS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3393"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3396",
+        "title": "Unit test TestDatanodeBlockScanner fails on Windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3396"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3399",
+        "title": "Debug log not removed in ipc client",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3399"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3401",
+        "title": "Update FileBench to use the \"work\" directory for SequenceFileOutputFormat",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3401"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3403",
+        "title": "Job tracker's ExpireTackers thread gets NullPointerException if a tasktracker is lost.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3403"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3408",
+        "title": "Change FSNamesytem status metrics to IntValue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3408"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3409",
+        "title": "NameNode should save the root inode into fsimage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3409"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3410",
+        "title": "KFS implementation needs to return file modification time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3410"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3413",
+        "title": "SequenceFile.Reader doesn't use the Serialization framework",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3413"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3417",
+        "title": "JobClient should not have a static configuration for cli parsing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3417"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3418",
+        "title": "NameNode does not restart if parent directory of a \"FileUnderConstruction\" is deleted.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3418"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3419",
+        "title": "TestFsck fails once in a while on WINDOWS/LINUX",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3419"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3424",
+        "title": "the value returned from getPartition should be checked to make sure it is in the range 0..#reduces-1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3424"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3427",
+        "title": "In ReduceTask::fetchOutputs, wait for result can be improved slightly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3427"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3435",
+        "title": "test-patch fail if sh != bash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3435"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3440",
+        "title": "TaskRunner creates a symlink with name 'null' if a file is added to DistributedCache without fragment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3440"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3443",
+        "title": "map outputs should not be renamed between partitions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3443"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3451",
+        "title": "test-libhdfs fails on Linux",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3451"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3453",
+        "title": "ipc.Client.close() throws NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3453"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3454",
+        "title": "Text.find incorrectly searches beyond the end of the buffer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3454"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3463",
+        "title": "hadoop scripts don't change directory to hadoop_home",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3463"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3468",
+        "title": "Compile error: FTPFileSystem.java:26: cannot access org.apache.commons.net.ftp.FTP",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3468"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3471",
+        "title": "TestIndexedSort sometimes fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3471"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3476",
+        "title": "Code cleanup needed in fuse-dfs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3476"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3480",
+        "title": "Need to update Eclipse template to reflect current trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3480"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3483",
+        "title": "[HOD] Improvements with cluster directory handling",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3483"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3486",
+        "title": "Change default for initial block report to 0 sec and document it in hadoop-defaults.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3486"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3487",
+        "title": "Balancer should not allocate a thread per block move",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3487"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3489",
+        "title": "NPE in SafeModeMonitor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3489"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3491",
+        "title": "Name-node shutdown causes InterruptedException in ResolutionMonitor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3491"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3493",
+        "title": "TestStreamingFailure fails.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3493"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3496",
+        "title": "TestHarFileSystem.testArchives fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3496"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3503",
+        "title": "Race condition when client and namenode start block recovery simultaneously",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3503"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3505",
+        "title": "omissions in HOD documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3505"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3509",
+        "title": "FSNamesystem.close() throws NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3509"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3511",
+        "title": "Namenode should not restore the root's quota if the quota was not in the image",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3511"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3513",
+        "title": "Improve NNThroughputBenchmark log messages.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3513"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3516",
+        "title": "TestHarFileSystem.testArchives fails with NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3516"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3517",
+        "title": "The last InMemory merge may be missed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3517"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3519",
+        "title": "NPE in DFS FileSystem rename",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3519"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3520",
+        "title": "Generation stamp upgrade fails TestDFSUpgradeFromImage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3520"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3521",
+        "title": "Hadoop mapreduce task metrics, unable to send metrics data.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3521"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3523",
+        "title": "[HOD] If a job does not exist in Torque's list of jobs, HOD allocate on previously allocated directory fails.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3523"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3528",
+        "title": "Metrics FilesCreated and files_deleted metrics do not match.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3528"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3531",
+        "title": "Hod does not  report job tracker failure on hod client side when job tracker fails to come up",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3531"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3533",
+        "title": "The api to JobTracker and TaskTracker have changed incompatibly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3533"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3534",
+        "title": "The namenode ignores ioexceptions in close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3534"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3537",
+        "title": "Datanode not starting up with  java.lang.StringIndexOutOfBoundsException in NetworkTopology.remove",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3537"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3539",
+        "title": "Cygwin: cygpath displays an error message in running bin/hadoop script",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3539"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3542",
+        "title": "Hadoop archives should not create _logs file in the final archive directory.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3542"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3544",
+        "title": "The command \"archive\" is missing in the example in  docs/hadoop_archives.html (and pdf)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3544"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3545",
+        "title": "archive  is failing with \"Illegal Capacity\" error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3545"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3546",
+        "title": "TaskTracker re-initialization gets stuck in cleaning up",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3546"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3548",
+        "title": "The tools.jar is not included in the distribution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3548"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3552",
+        "title": "forrest doc for hadoop commands",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3552"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3559",
+        "title": "test-libhdfs fails on linux",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3559"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3560",
+        "title": "Archvies sometimes create empty part files.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3560"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3561",
+        "title": "With trash enabled, 'hadoop fs -rmr .' still fully deletes the working dir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3561"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3564",
+        "title": "Sometime after successful  hod allocation datanode fails to come up with java.net.BindException for dfs.datanode.ipc.address",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3564"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3569",
+        "title": "KFS input stream read() returns 4 bytes instead of 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3569"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3571",
+        "title": "ArrayIndexOutOfBoundsException in BlocksMap$BlockInfo.setPrevious",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3571"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3575",
+        "title": "clover target broken after src restructuring",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3575"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3576",
+        "title": "hadoop dfs -mv throws NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3576"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3580",
+        "title": "Using a har file as input for the Sort example fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3580"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3586",
+        "title": "keep combiner backward compatible with earlier versions of hadoop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3586"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3588",
+        "title": "Bug report for archives",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3588"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3590",
+        "title": "Null pointer exception in JobTracker when the task tracker is not yet resolved",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3590"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3593",
+        "title": "Update MapRed tutorial",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3593"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3597",
+        "title": "SortValidator always uses the default file system irrespective of the actual input",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3597"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3598",
+        "title": "Map-Reduce framework needlessly creates temporary _${taskid} directories for Maps",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3598"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3603",
+        "title": "Setting spill threshold to 100% fails to detect spill for records",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3603"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3604",
+        "title": "Reduce stuck at shuffling phase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3604"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3606",
+        "title": "Update streaming documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3606"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3610",
+        "title": "[HOD] HOD does not automatically create a cluster directory for the script option",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3610"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3615",
+        "title": "DatanodeProtocol.versionID should be 16L",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3615"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3630",
+        "title": "CompositeRecordReader: key and values can be in uninitialized state if files being joined have no records",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3630"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3635",
+        "title": "Uncaught exception in DataBlockScanner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3635"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3639",
+        "title": "Exception when closing DFSClient while multiple files are open",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3639"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3645",
+        "title": "MetricsTimeVaryingRate returns wrong value for metric_avg_time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3645"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3647",
+        "title": "Corner-case in IFile leads to failed tasks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3647"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3649",
+        "title": "ArrayIndexOutOfBounds in FSNamesystem.getBlockLocationsInternal",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3649"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3653",
+        "title": "test-patch target not working on hudson.zones.apache.org due to HADOOP-3480",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3653"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3665",
+        "title": "WritableComparator newKey() fails for NullWritable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3665"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3668",
+        "title": "Clean up HOD documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3668"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3670",
+        "title": "JobTracker running out of heap space",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3670"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3673",
+        "title": "Deadlock in Datanode RPC servers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3673"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3677",
+        "title": "Problems with generation stamp upgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3677"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3683",
+        "title": "Hadoop dfs metric FilesListed shows number of files listed instead of operations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3683"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3688",
+        "title": "Fix up HDFS docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3688"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3691",
+        "title": "Fix mapred docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3691"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3692",
+        "title": "Fix documentation for Cluster setup and Quick start guides",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3692"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3693",
+        "title": "Fix documentation for Archives, distcp and native libraries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3693"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3703",
+        "title": "[HOD] logcondense needs to use the new pattern of output in hadoop dfs -lsr",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3703"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3706",
+        "title": "CompositeInputFormat: Unable to wrap custom InputFormats",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3706"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3716",
+        "title": "KFS listStatus() returns NULL on empty directories",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3716"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3718",
+        "title": "KFS: write(int v) API writes out an integer rather than a byte",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3718"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3724",
+        "title": "Namenode does not start due to exception throw while saving Image",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3724"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3737",
+        "title": "CompressedWritable throws OutOfMemoryError",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3737"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3743",
+        "title": "-libjars, -files and -archives options do not work with 0.18",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3743"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3752",
+        "title": "Audit logging fails to record rename",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3752"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3755",
+        "title": "the gridmix scripts do not work with hod 0.4",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3755"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3762",
+        "title": "Task tracker died due to OOM",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3762"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3774",
+        "title": "Typos in shell output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3774"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3776",
+        "title": "NPE in NameNode with unknown blocks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3776"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3794",
+        "title": "KFS implementation needs to return directory modification time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3794"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3798",
+        "title": "compile-core-test fails to compile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3798"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3806",
+        "title": "Remove debug message from Quicksort",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3806"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3827",
+        "title": "Jobs with empty map-outputs and intermediate compression fail",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3827"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3837",
+        "title": "hadop streaming does not use progress reporting to detect hung tasks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3837"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3855",
+        "title": "Fix import of MiniDFSCluster in TestCompressedEmptyMapOutputs.java",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3855"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3865",
+        "title": "SecondaryNameNode runs out of memory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3865"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3884",
+        "title": "eclipse plugin build is broken with current eclipse versions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3884"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3897",
+        "title": "SecondaryNameNode fails with NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3897"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3901",
+        "title": "CLASSPATH in bin/hadoop script is set incorrectly for cygwin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3901"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3947",
+        "title": "TaskTrackers fail to connect back upon a re-init action",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3947"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-930",
+        "title": "Add support for reading regular (non-block-based) files from S3 in S3FileSystem",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-930"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-1328",
+        "title": "Hadoop Streaming needs to provide a way for the stream plugin to update global counters",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-1328"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-1915",
+        "title": "adding counters methods using String (as opposed to Enum)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-1915"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2585",
+        "title": "Automatic namespace recovery from the secondary image.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2585"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2797",
+        "title": "Withdraw CRC upgrade from HDFS",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2797"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3022",
+        "title": "Fast Cluster Restart",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3022"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3061",
+        "title": "Writable for single byte and double",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3061"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3074",
+        "title": "URLStreamHandler for the DFS",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3074"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3187",
+        "title": "Quotas for name space management",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3187"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3188",
+        "title": "compaction utility for directories",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3188"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3221",
+        "title": "Need a \"LineBasedTextInputFormat\"",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3221"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3230",
+        "title": "Add command line access to named counters",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3230"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3246",
+        "title": "FTP client over HDFS",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3246"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3250",
+        "title": "Extend FileSystem API to allow appending to files",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3250"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3283",
+        "title": "Need a mechanism for data nodes to update generation stamps.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3283"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3307",
+        "title": "Archives in Hadoop.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3307"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3310",
+        "title": "Lease recovery for append",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3310"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3336",
+        "title": "Direct a subset of namenode RPC events for audit logging",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3336"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3460",
+        "title": "SequenceFileAsBinaryOutputFormat",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3460"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3502",
+        "title": "Quota API needs documentation in Forrest",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3502"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-4",
+        "title": "tool to mount dfs on linux",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-4"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-544",
+        "title": "Replace the job, tip and task ids with objects.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-544"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2019",
+        "title": "DistributedFileCache should support .tgz files in addition to jars and zip files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2019"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2154",
+        "title": "Non-interleaved checksums would optimize block transfers.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2154"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2181",
+        "title": "Input Split details for maps should be logged",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2181"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2188",
+        "title": "RPC should send a ping rather than use client timeouts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2188"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2461",
+        "title": "Configuration should trim property names and accept decimal, hexadecimal, and octal numbers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2461"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2661",
+        "title": "Replicator log should include block id",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2661"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2762",
+        "title": "Better documentation of controls for memory limits on hadoop daemons and Map-Reduce tasks",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2762"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2799",
+        "title": "Replace org.apache.hadoop.io.Closeable with java.io.Closeable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2799"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2857",
+        "title": "libhdfs: no way to set JVM args other than classpath",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2857"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2865",
+        "title": "FsShell.ls() should print file attributes first then the path name.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2865"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2867",
+        "title": "Add a task's cwd to it's LD_LIBRARY_PATH",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2867"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2910",
+        "title": "Throttle IPC Client/Server during bursts of requests or server slowdown",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2910"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2987",
+        "title": "Keep two generations of fsimage",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2987"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3013",
+        "title": "fsck to show (checksum) corrupted files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3013"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3058",
+        "title": "Hadoop DFS to report more replication metrics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3058"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3095",
+        "title": "Validating input paths and creating splits is slow on S3",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3095"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3096",
+        "title": "Improve documentation about the Task Execution Environment in the Map-Reduce tutorial",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3096"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3144",
+        "title": "better fault tolerance for corrupted text files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3144"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3164",
+        "title": "Use FileChannel.transferTo() when data is read from DataNode.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3164"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3177",
+        "title": "Expose DFSOutputStream.fsync API though the FileSystem interface",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3177"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3184",
+        "title": "HOD gracefully exclude \"bad\" nodes during ring formation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3184"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3193",
+        "title": "Discovery of corrupt block reported in name node log",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3193"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3226",
+        "title": "Run combiner when merging spills from map output",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3226"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3254",
+        "title": "FSNamesystem.gotHeartbeat(..., Object[] xferResults, Object[] deleteList) should not use Object[] as pass-by-reference parameters",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3254"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3270",
+        "title": "Constant DatanodeCommand should be stored in static fianl immutable variables.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3270"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3274",
+        "title": "The default constructor of BytesWritable should not create a 100-byte array.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3274"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3277",
+        "title": "hod should better errors message when deallocate is fired on non allocated directory.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3277"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3295",
+        "title": "Allow TextOutputFormat to use configurable separators",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3295"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3297",
+        "title": "The way in which ReduceTask/TaskTracker gets completion events during shuffle can be improved",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3297"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3308",
+        "title": "Improve QuickSort by excluding values eq the pivot from the partition",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3308"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3317",
+        "title": "add default port for hdfs namenode",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3317"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3332",
+        "title": "improving the logging during shuffling",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3332"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3334",
+        "title": "Move lease handling codes out from FSNamesystem",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3334"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3345",
+        "title": "Enhance the hudson-test-patch target",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3345"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3350",
+        "title": "distcp should permit users to limit the number of maps",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3350"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3355",
+        "title": "Configuration should accept decimal and hexadecimal values",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3355"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3364",
+        "title": "Faster image and log edits loading.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3364"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3366",
+        "title": "Shuffle/Merge improvements",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3366"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3369",
+        "title": "Fast block processing during name-node startup.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3369"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3377",
+        "title": "Use StringUtils#replaceAll instead of",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3377"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3379",
+        "title": "Document the \"stream.non.zero.exit.status.is.failure\" knob for streaming",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3379"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3390",
+        "title": "Remove deprecated ClientProtocol.abandonFileInProgress()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3390"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3398",
+        "title": "ReduceTask::closestPowerOf2 is inefficient",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3398"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3400",
+        "title": "Facilitate creation of temporary files in HDFS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3400"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3405",
+        "title": "Make mapred internal classes package-local",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3405"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3406",
+        "title": "Document controls for profiling maps & reduces",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3406"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3429",
+        "title": "Increase the buffersize for the streaming parent java process's streams",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3429"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3434",
+        "title": "Retain cause of bind failure in Server.bind",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3434"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3448",
+        "title": "Add some more hints of the problem when datanode and namenode don't match",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3448"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3452",
+        "title": "fsck exit code would be better if non-zero when FS corrupt",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3452"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3455",
+        "title": "IPC.Client synchronisation looks weak",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3455"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3459",
+        "title": "Change dfs -ls listing to closely match format on Linux",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3459"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3464",
+        "title": "[HOD] HOD can improve error messages by reporting failures on compute nodes back to hod client",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3464"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3467",
+        "title": "The javadoc for FileSystem.deleteOnExit should have more description",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3467"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3492",
+        "title": "add forrest documentation for user archives",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3492"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3501",
+        "title": "deprecate InMemoryFileSystem",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3501"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3512",
+        "title": "Split map/reduce tools into separate jars",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3512"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3532",
+        "title": "Create build targets to create api change reports using jdiff",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3532"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3535",
+        "title": "IOUtils.close needs better documentation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3535"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3547",
+        "title": "Improve documentation about distributing native libraries via DistributedCache",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3547"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3572",
+        "title": "setQuotas usage interface has some minor bugs.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3572"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3599",
+        "title": "The new setCombineOnceOnly shouldn't take a JobConf, since it is a method on JobConf",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3599"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3808",
+        "title": "[HOD] Include job tracker RPC in notes attribute after job submission",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3808"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3100",
+        "title": "Develop tests to test the DFS command line interface",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3100"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2632",
+        "title": "Discussion of fsck operation in the permissions regime",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2632"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-2984",
+        "title": "Distcp should have forrest documentation",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-2984"
+          }
+        }
+      },
+      {
+        "issue": "HADOOP-3541",
+        "title": "Namespace recovery from the secondary image should be documented.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HADOOP/12312972"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HADOOP-3541"
+          }
+        }
+      }
+    ]
+  }
+}

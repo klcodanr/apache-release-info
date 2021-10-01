@@ -1,0 +1,2429 @@
+{
+  "id": "12320353",
+  "name": "2.0.0-alpha",
+  "description": "hadoop-2.0.0-alpha release",
+  "date": "2012-05-23",
+  "lastUpdated": 1633088200104,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/jira/browse/HDFS/fixforversion/12320353"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/HDFS"
+    }
+  },
+  "releaseNotes": "Release Notes - Hadoop HDFS - Version 2.0.0-alpha",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "HDFS-395",
+        "title": "DFS Scalability: Incremental block reports",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-395"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2018",
+        "title": "1073: Move all journal stream management code into one place",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2018"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2158",
+        "title": "Add JournalSet to manage the set of journals.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2158"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2181",
+        "title": "Separate HDFS Client wire protocol data types",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2181"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2334",
+        "title": "Add Closeable to JournalManager",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2334"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2459",
+        "title": "Separate datatypes for Journal protocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2459"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2476",
+        "title": "More CPU efficient data structure for under-replicated/over-replicated/invalidate blocks",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2476"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2477",
+        "title": "Optimize computing the diff between a block report and the namenode state.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2477"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2479",
+        "title": "HDFS Client Data Types in Protocol Buffers",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2479"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2480",
+        "title": "Separate datatypes for NamenodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2480"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2488",
+        "title": "Separate datatypes for InterDatanodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2488"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2489",
+        "title": "Move commands Finalize and Register out of DatanodeCommand class.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2489"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2495",
+        "title": "Increase granularity of write operations in ReplicationMonitor thus reducing contention for write lock",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2495"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2499",
+        "title": "Fix RPC client creation bug from HDFS-2459",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2499"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2517",
+        "title": "Protobuf - Add protocol service for JournalProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2517"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2518",
+        "title": "Protobuf - Add protobuf service for NamenodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2518"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2519",
+        "title": "Protobuf - Add protobuf service for DatanodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2519"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2520",
+        "title": "Protobuf - Add protobuf service for InterDatanodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2520"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2581",
+        "title": "Implement protobuf service for JournalProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2581"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2597",
+        "title": " ClientNameNodeProtocol in Protocol Buffers",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2597"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2618",
+        "title": "Implement protobuf service for NamenodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2618"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2629",
+        "title": "Implement protobuf service for InterDatanodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2629"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2636",
+        "title": "Implement protobuf service for ClientDatanodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2636"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2642",
+        "title": "Protobuf translators for DatanodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2642"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2647",
+        "title": "Enable protobuf RPC for InterDatanodeProtocol, ClientDatanodeProtocol, JournalProtocol and NamenodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2647"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2651",
+        "title": "ClientNameNodeProtocol Translators for Protocol Buffers",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2651"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2661",
+        "title": "Enable protobuf RPC for DatanodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2661"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2663",
+        "title": "Optional parameters are not handled correctly",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2663"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2666",
+        "title": "TestBackupNode fails",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2666"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2669",
+        "title": "Enable protobuf rpc for ClientNamenodeProtocol",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2669"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2687",
+        "title": "Tests are failing with ClassCastException, due to new protocol changes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2687"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2697",
+        "title": "Move RefreshAuthPolicy, RefreshUserMappings, GetUserMappings protocol to protocol buffers",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2697"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2801",
+        "title": "Provide a method in client side translators to check for a methods supported in underlying protocol.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2801"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2880",
+        "title": "Protocol buffer changes to add support multiple storages",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2880"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2899",
+        "title": "Service protocol change to support multiple storages added in HDFS-2880",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2899"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3082",
+        "title": "Clean up FSDatasetInterface",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3082"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3086",
+        "title": "Change Datanode not to send storage list in registration - it will be sent in block report",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3086"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3088",
+        "title": "Move FSDatasetInterface inner classes to a package",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3088"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3089",
+        "title": "Move FSDatasetInterface and other related classes/interfaces to a package",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3089"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3105",
+        "title": "Add DatanodeStorage information to block recovery",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3105"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3126",
+        "title": "Journal stream from the namenode to backup needs to have a timeout",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3126"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3130",
+        "title": "Move FSDataset implemenation to a package",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3130"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3155",
+        "title": "Clean up FSDataset implemenation related code.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3155"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3187",
+        "title": "Upgrade guava to 11.0.2",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3187"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3211",
+        "title": "JournalProtocol changes required for introducing epoch and fencing",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3211"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3282",
+        "title": "Add HdfsDataInputStream as a public API",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3282"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3298",
+        "title": "Add HdfsDataOutputStream as a public API",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3298"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3322",
+        "title": "Update file context to use HdfsDataInputStream and HdfsDataOutputStream",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3322"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3339",
+        "title": "change INode to package private",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3339"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3363",
+        "title": "blockmanagement should stop using INodeFile & INodeFileUC",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3363"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-891",
+        "title": "DataNode no longer needs to check for dfs.network.script",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-891"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-1765",
+        "title": "Block Replication should respect under-replication block priority",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-1765"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2405",
+        "title": "hadoop dfs command with webhdfs fails on secure hadoop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2405"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2481",
+        "title": "Unknown protocol: org.apache.hadoop.hdfs.protocol.ClientProtocol",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2481"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2497",
+        "title": "Fix TestBackupNode failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2497"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2526",
+        "title": "(Client)NamenodeProtocolTranslatorR23 do not need to keep a reference to rpcProxyWithoutRetry",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2526"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2532",
+        "title": "TestDfsOverAvroRpc timing out in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2532"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2676",
+        "title": "Remove Avro RPC",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2676"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2694",
+        "title": "Removal of Avro broke non-PB NN services",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2694"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2696",
+        "title": "Fix the fuse-fds build",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2696"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2700",
+        "title": "TestDataNodeMultipleRegistrations is failing in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2700"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2739",
+        "title": "SecondaryNameNode doesn't start up",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2739"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2765",
+        "title": "TestNameEditsConfigs is incorrectly swallowing IOE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2765"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2768",
+        "title": "BackupNode stop can not close proxy connections because it is not a proxy instance.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2768"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2799",
+        "title": "Trim fs.checkpoint.dir values",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2799"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2878",
+        "title": "TestBlockRecovery does not compile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2878"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2968",
+        "title": "Protocol translator for BlockRecoveryCommand broken when multiple blocks need recovery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2968"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2995",
+        "title": "start-dfs.sh should only start the 2NN for namenodes with dfs.namenode.secondary.http-address configured",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2995"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3005",
+        "title": "ConcurrentModificationException in FSDataset$FSVolume.getDfsUsed(..)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3005"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3020",
+        "title": "Auto-logSync based on edit log buffer size broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3020"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3026",
+        "title": "HA: Handle failure during HA state transition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3026"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3038",
+        "title": "Add FSEditLog.metrics to findbugs exclude list",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3038"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3057",
+        "title": "httpfs and hdfs launcher scripts should honor CATALINA_HOME and HADOOP_LIBEXEC_DIR",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3057"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3062",
+        "title": "Fail to submit mapred job on a secured-HA-HDFS: logic URI cannot be picked up by job submission.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3062"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3070",
+        "title": "HDFS balancer doesn't ensure that hdfs-site.xml is loaded",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3070"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3083",
+        "title": "Cannot run an MR job with HA and security enabled when second-listed NN active",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3083"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3093",
+        "title": "TestAllowFormat is trying to be interactive",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3093"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3099",
+        "title": "SecondaryNameNode does not properly initialize metrics system",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3099"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3100",
+        "title": "failed to append data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3100"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3109",
+        "title": "Remove hsqldb exclusions from pom.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3109"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3119",
+        "title": "Overreplicated block is not deleted even after the replication factor is reduced after sync follwed by closing that file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3119"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3132",
+        "title": "Findbugs warning on HDFS trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3132"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3142",
+        "title": "TestHDFSCLI.testAll is failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3142"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3143",
+        "title": "TestGetBlocks.testGetBlocks is failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3143"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3156",
+        "title": "TestDFSHAAdmin is failing post HADOOP-8202",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3156"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3181",
+        "title": "testHardLeaseRecoveryAfterNameNodeRestart fails when length before restart is 1 byte less than CRC chunk size",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3181"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3199",
+        "title": "TestValidateConfigurationSettings is failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3199"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3202",
+        "title": "NamespaceInfo PB translation drops build version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3202"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3208",
+        "title": "Bogus entries in hosts files are incorrectly displayed in the report",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3208"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3210",
+        "title": "JsonUtil#toJsonMap for for a DatanodeInfo should use \"ipAddr\" instead of \"name\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3210"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3214",
+        "title": "InterDatanodeProtocolServerSideTranslatorPB doesn't handle null response from initReplicaRecovery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3214"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3222",
+        "title": "DFSInputStream#openInfo should not silently get the length as 0 when locations length is zero for last partial block.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3222"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3234",
+        "title": "Accidentally left log message in GetConf after HDFS-3226",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3234"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3236",
+        "title": "NameNode does not initialize generic conf keys when started with -initializeSharedEditsDir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3236"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3248",
+        "title": "bootstrapstanby repeated twice in hdfs namenode usage message",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3248"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3254",
+        "title": "Branch-2 build broken due to wrong version number in fuse-dfs' pom.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3254"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3255",
+        "title": "HA DFS returns wrong token service",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3255"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3256",
+        "title": "HDFS considers blocks under-replicated if topology script is configured with only 1 rack",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3256"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3260",
+        "title": "TestDatanodeRegistration should set minimum DN version in addition to minimum NN version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3260"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3268",
+        "title": "Hdfs mishandles token service & incompatible with HA",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3268"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3280",
+        "title": "DFSOutputStream.sync should not be synchronized",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3280"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3284",
+        "title": "bootstrapStandby fails in secure cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3284"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3286",
+        "title": "When the threshold value for balancer is 0(zero) ,unexpected output is displayed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3286"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3303",
+        "title": "RemoteEditLogManifest doesn't need to implements Writable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3303"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3305",
+        "title": "GetImageServlet should consider SBN a valid requestor in a secure HA setup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3305"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3309",
+        "title": "HttpFS (Hoop) chmod not supporting octal and sticky bit permissions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3309"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3314",
+        "title": "HttpFS operation for getHomeDirectory is incorrect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3314"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3326",
+        "title": "Append enabled log message uses the wrong variable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3326"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3328",
+        "title": "NPE in DataNode.getIpcPort",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3328"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3330",
+        "title": "If GetImageServlet throws an Error or RTE, response has HTTP \"OK\" status",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3330"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3332",
+        "title": "NullPointerException in DN when directoryscanner is trying to report bad blocks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3332"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3336",
+        "title": "hdfs launcher script will be better off not special casing namenode command with regards to hadoop.security.logger",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3336"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3350",
+        "title": "findbugs warning: INodeFileUnderConstruction doesn't override INodeFile.equals(Object)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3350"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3351",
+        "title": "NameNode#initializeGenericKeys should always set fs.defaultFS regardless of whether HA or Federation is enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3351"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3357",
+        "title": "DataXceiver reads from client socket with incorrect/no timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3357"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3376",
+        "title": "DFSClient fails to make connection to DN if there are many unusable cached sockets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3376"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3395",
+        "title": "NN doesn't start with HA+security enabled and HTTP address set to 0.0.0.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3395"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3396",
+        "title": "FUSE build fails on Ubuntu 12.04",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3396"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-234",
+        "title": "Integration with BookKeeper logging system",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-234"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-1623",
+        "title": "High Availability Framework for HDFS NN",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-1623"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2430",
+        "title": "The number of failed or low-resource volumes the NN can tolerate should be configurable",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2430"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2731",
+        "title": "HA: Autopopulate standby name dirs if they're empty",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2731"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2941",
+        "title": "Add an administrative command to download a copy of the fsimage from the NN",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2941"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3000",
+        "title": "Add a public API for setting quotas",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3000"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3004",
+        "title": "Implement Recovery Mode",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3004"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3102",
+        "title": "Add CLI tool to initialize the shared-edits dir",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3102"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3148",
+        "title": "The client should be able to use multiple local interfaces for data transfer",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3148"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3167",
+        "title": "CLI-based driver for MiniDFSCluster",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3167"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-309",
+        "title": "FSEditLog should log progress during replay",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-309"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-1580",
+        "title": "Add interface for generic Write Ahead Logging mechanisms",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-1580"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2188",
+        "title": "HDFS-1580: Make FSEditLog create its journals from a list of URIs rather than NNStorage",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2188"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2223",
+        "title": "Untangle depencencies between NN components",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2223"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2303",
+        "title": "Unbundle jsvc",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2303"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2337",
+        "title": "DFSClient shouldn't keep multiple RPC proxy references",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2337"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2351",
+        "title": "Change Namenode and Datanode to register each of their protocols seperately",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2351"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2410",
+        "title": "Further clean up hard-coded configuration keys",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2410"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2413",
+        "title": "Add public APIs for safemode",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2413"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2496",
+        "title": "Separate datatypes for DatanodeProtocol",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2496"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2564",
+        "title": "Cleanup unnecessary exceptions thrown and unnecessary casts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2564"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2650",
+        "title": "Replace @inheritDoc with @Override",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2650"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2708",
+        "title": "Stats for the # of blocks per DN",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2708"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2895",
+        "title": "Remove Writable wire protocol related code that is no longer necessary",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2895"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-2983",
+        "title": "Relax the build version check to permit rolling upgrades within a release",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-2983"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3003",
+        "title": "Remove getHostPortString() from NameNode, replace it with NetUtils.getHostPortString()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3003"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3014",
+        "title": "FSEditLogOp and its subclasses should have toString() method",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3014"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3021",
+        "title": "Use generic type to declare FSDatasetInterface",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3021"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3030",
+        "title": "Remove getProtocolVersion and getProtocolSignature from translators",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3030"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3036",
+        "title": "Remove unused method DFSUtil#isDefaultNamenodeAddress",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3036"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3044",
+        "title": "fsck move should be non-destructive by default",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3044"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3050",
+        "title": "rework OEV to share more code with the NameNode",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3050"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3056",
+        "title": "Add an interface for DataBlockScanner logging",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3056"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3071",
+        "title": "haadmin failover command does not provide enough detail for when target NN is not ready to be active",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3071"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3084",
+        "title": "FenceMethod.tryFence() and ShellCommandFencer should pass namenodeId as well as host:port",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3084"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3091",
+        "title": "Update the usage limitations of ReplaceDatanodeOnFailure policy in the config description for the smaller clusters.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3091"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3094",
+        "title": "add -nonInteractive and -force option to namenode -format command",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3094"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3120",
+        "title": "Enable hsync and hflush by default",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3120"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3137",
+        "title": "Bump LAST_UPGRADABLE_LAYOUT_VERSION to -16",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3137"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3138",
+        "title": "Move DatanodeInfo#ipcPort to DatanodeID",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3138"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3144",
+        "title": "Refactor DatanodeID#getName by use",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3144"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3158",
+        "title": "LiveNodes member of NameNodeMXBean should list non-DFS used space and capacity per DN",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3158"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3164",
+        "title": "Move DatanodeInfo#hostName to DatanodeID",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3164"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3169",
+        "title": "TestFsck should test multiple -move operations in a row",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3169"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3171",
+        "title": "The DatanodeID \"name\" field is overloaded",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3171"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3172",
+        "title": "dfs.upgrade.permission is dead code",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3172"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3179",
+        "title": "Improve the error message: DataStreamer throw an exception, \"nodes.length != original.length + 1\" on single datanode cluster",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3179"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3204",
+        "title": "Minor modification to JournalProtocol.proto to make it generic",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3204"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3206",
+        "title": "Miscellaneous xml cleanups for OEV",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3206"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3226",
+        "title": "Allow GetConf tool to print arbitrary keys",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3226"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3238",
+        "title": "ServerCommand and friends don't need to be writables",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3238"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3240",
+        "title": "Drop log level of \"heartbeat: ...\" in BPServiceActor to DEBUG",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3240"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3244",
+        "title": "Remove dead writable code from hdfs/protocol",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3244"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3247",
+        "title": "Improve bootstrapStandby behavior when original NN is not active",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3247"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3249",
+        "title": "Use ToolRunner.confirmPrompt in NameNode",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3249"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3259",
+        "title": "NameNode#initializeSharedEdits should populate shared edits dir with edit log segments",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3259"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3263",
+        "title": "HttpFS should read HDFS config from Hadoop site.xml files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3263"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3279",
+        "title": "One of the FSEditLog constructors should be moved to TestEditLog",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3279"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3294",
+        "title": "Fix indentation in NamenodeWebHdfsMethods and DatanodeWebHdfsMethods",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3294"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3319",
+        "title": "DFSOutputStream should not start a thread in constructors",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3319"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3365",
+        "title": "Enable users to disable socket caching in DFS client configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3365"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3375",
+        "title": "Put client name in DataXceiver thread name for readBlock and keepalive",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3375"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3378",
+        "title": "Remove DFS_NAMENODE_SECONDARY_HTTPS_PORT_KEY and DEFAULT",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3378"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3418",
+        "title": "Rename BlockWithLocationsProto datanodeIDs field to storageIDs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3418"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3129",
+        "title": "NetworkTopology: add test that getLeaf should check for invalid topologies",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3129"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-860",
+        "title": "fuse-dfs truncate behavior causes issues with scp",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-860"
+          }
+        }
+      },
+      {
+        "issue": "HDFS-3111",
+        "title": "Missing license headers in trunk",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/HDFS/12320353"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/HDFS-3111"
+          }
+        }
+      }
+    ]
+  }
+}
