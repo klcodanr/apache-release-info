@@ -17,9 +17,10 @@ const SKIP_PROJECTS = [
   "DORMANT",
   "INCUBATOR",
   "INFRA",
-  "IMFRACLOUD1",
+  "INFRACLOUD1",
   "IMFRATEST3",
   "LABS",
+  "LEGAL"
   "PETRI",
   "PODLINGNAMESEARCH",
   "PRC",
@@ -178,7 +179,9 @@ async function updateProject(jira, project) {
       projectData[k] = asfProjectData[k];
     });
     ["category", "programming-language"].forEach((k) => {
-      projectData[k] = asfProjectData[k].split(/,\s*/);
+      if (asfProjectData[k]) {
+        projectData[k] = asfProjectData[k].split(/,\s*/);
+      }
     });
     if (asfProjectData.implements) {
       asfProjectData.implements.forEach((impl) => {
