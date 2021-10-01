@@ -20,7 +20,7 @@ const SKIP_PROJECTS = [
   "INFRACLOUD1",
   "IMFRATEST3",
   "LABS",
-  "LEGAL"
+  "LEGAL",
   "PETRI",
   "PODLINGNAMESEARCH",
   "PRC",
@@ -40,6 +40,8 @@ let asfProjects;
 async function run(jira) {
   const projects = await jira.getProjects();
   asfProjects = await getAsfProjects();
+
+  fs.rmSync("docs/api/index.json");
   for (const project of projects) {
     if (SKIP_PROJECTS.indexOf(project.key) !== -1) {
       log.debug(`Skipping project: ${project.key}`);

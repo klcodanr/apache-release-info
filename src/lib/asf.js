@@ -1,4 +1,4 @@
-const log = require("./log")();
+
 const fetch = require("node-fetch");
 
 module.exports.getAsfProjects = async function () {
