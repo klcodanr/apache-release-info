@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const log = require("./log")();
 const { parse } = require("node-html-parser");
 const fetch = require("node-fetch");

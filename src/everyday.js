@@ -1,8 +1,9 @@
+require("dotenv").config();
+
 const { getAsfProjects } = require("./lib/asf");
 const log = require("./lib/log")();
 const JiraClient = require("./lib/jira");
 const fs = require("fs");
-require("dotenv").config();
 
 const API_BASE = "https://apis.danklco.com/apache-release-info/";
 const JIRA_BASE_URL = process.env.JIRA_BASE_URL;
