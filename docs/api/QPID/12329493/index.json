@@ -1,0 +1,4329 @@
+{
+  "id": "12329493",
+  "name": "qpid-java-6.0",
+  "description": "First independent java release that follows 0.32",
+  "date": "2015-12-09",
+  "version": "6.0",
+  "module": "qpid-java",
+  "lastUpdated": 1633096016402,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/QPID/fixforversion/12329493"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/QPID"
+    }
+  },
+  "releaseNotes": "Release Notes - Qpid - Version qpid-java-6.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "QPID-5583",
+        "title": "[Java Broker] Changes to managed objects which are driven by protocol interactions should still be processed in the dedicated thread for config changes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-5583"
+          }
+        }
+      },
+      {
+        "issue": "QPID-3521",
+        "title": "failover process for the 0-8 client does not clear the pre-dispatch queue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-3521"
+          }
+        }
+      },
+      {
+        "issue": "QPID-3541",
+        "title": "Broker closes socket immediately after sending 0-8/0-9/0-9-1 ConnectionClose whilst closing ConnectionRegistry",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-3541"
+          }
+        }
+      },
+      {
+        "issue": "QPID-5076",
+        "title": "[Java Broker] Durable auto-delete queues leave behind orphaned bindings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-5076"
+          }
+        }
+      },
+      {
+        "issue": "QPID-5847",
+        "title": "Closing 0-8..0-9-1 messaging connection from management occasionally ends with 409 conflict",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-5847"
+          }
+        }
+      },
+      {
+        "issue": "QPID-5856",
+        "title": "Closing 0-10 messaging connection from management leads to spurious exception and timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-5856"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6094",
+        "title": "[0-8..0-9-1] Java Broker can interleave other frames (for the same channel) amongst content frames",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6094"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6179",
+        "title": "[Java Client] Connection establishment can send invalid frame sequence when retrying",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6179"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6234",
+        "title": "(0-10) Absence of destination argument to the message.subscribe command causes Java Broker to NPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6234"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6283",
+        "title": "FileSystemSpaceChecker can generate java.lang.ArithmeticException / by zero",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6283"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6302",
+        "title": "InitialContextFactory implementations modify the provided environment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6302"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6373",
+        "title": "Change qpid-server.bat default work folder to %APPDATA%\\Qpid",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6373"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6382",
+        "title": "[Java Broker] REST API and Management UI should allow management of objects with '/' in their name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6382"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6385",
+        "title": "[Java Broker] documentation of HTTP management API is out of date, using old API gives misleading output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6385"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6442",
+        "title": "HA: Connection to virtual host fails if virtual host name not explicitly specified in connection url",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6442"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6446",
+        "title": "[Java Broker] Existing virtual host/node derby database is shutdown on attempt to create a virtual host/node with duplicate name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6446"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6451",
+        "title": "ProtocolVersionException exception logged at error as Java Client downgrades from 0-10",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6451"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6452",
+        "title": "[Java Broker] Allow time sensitive filters to be used in queue default filters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6452"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6456",
+        "title": "[AMQP 0-8] Java Broker sends wrong connection close ok method identifier (51 rather than 61)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6456"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6458",
+        "title": "Clients sends channel flow or message stop even if channel is already closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6458"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6460",
+        "title": "JMS ExceptionListener potentially invoked concurrently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6460"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6461",
+        "title": "Closing a connection in a JMS ExceptionListener logs an InterruptedException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6461"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6464",
+        "title": "HA hangs for duration of replica consistency policy timeout if the node changes role whilst recovery is in flight",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6464"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6465",
+        "title": "ArrayIndexOutOfBoundsException is thrown on attempt to authenticate with MD5AuthenticationProvider",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6465"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6466",
+        "title": "Client may send duplicate basic.rejects (or messageRelease) during consumer close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6466"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6469",
+        "title": "Improve AMQProtocolEngine#exception to guard against an exception whilst trying to send response to client from the method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6469"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6478",
+        "title": "[Java Broker] The state of newly created file based user managing authentication providers is set to UNINITIALIZED",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6478"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6487",
+        "title": "[Java Broker] [AMQP 1.0] Deadlock in Java Broker AMQP 1.0 with new IO model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6487"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6488",
+        "title": "[Java Broker] HTTP management may use wrong authentication provider",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6488"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6489",
+        "title": "Test FailoverBehaviourTest.testFlowControlFlagResetOnFailover fails because it manages to send more messages than expected before flow is blocked",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6489"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6495",
+        "title": "Ensure that closing a 0-10 connection from management releases the protocol layer's session resources too",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6495"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6496",
+        "title": "PropertiesFileInitialContextFactory logs properties at INFO which may allow a password to be logged in clear",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6496"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6497",
+        "title": "Web Management Console serves contents of index.html for REST API requests containing double slashes in the REST request URL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6497"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6498",
+        "title": "BDB HA VHN on transition from Master to Replica attempts to save VH in Replica configuration store causing ReplicaWriteException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6498"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6502",
+        "title": "Close connection in response to a CSRE condition rather than sending an execution exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6502"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6503",
+        "title": "IllegalStateException can be reported on Broker shutdown due to an attempt to submit a configuration task into shutdown executor service",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6503"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6506",
+        "title": "PropertiesFileInitialContextFactory pollutes system properties with values that may contain passwords",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6506"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6508",
+        "title": "PropertiesFileInitialContextFactory silences important exceptions and is non-compliant with the InitialContext interface",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6508"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6510",
+        "title": "[0.8/0.9.x/0.10 JMS Client] An instance initializer in org.apache.qpid.filter.PropertyExpression may cause an indefinite loop in HashMap.put() when instances of PropertyExpression are created from different threads at the same time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6510"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6513",
+        "title": "Null Pointer Exception on connection.close() in @PreDestroy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6513"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6531",
+        "title": "[Java AMQP 1-0 Client] Move the legacy AMQP 1.0 Java client from the Java tree",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6531"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6535",
+        "title": "java.lang.OutOfMemoryError: unable to create new native thread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6535"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6536",
+        "title": "[Java Broker] UI tabs should inform user when the underlying object disappears i.e. starts to return 404",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6536"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6539",
+        "title": "[Java Broker] ConcurrentModificationException can occur in StandardEnvironmentFacadeFactory.buildEnvironmentConfiguration on BDB VH start-up causing the ERRORED state of the object",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6539"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6541",
+        "title": "[Java Broker] In rare cases it is possible for newly arrived messages to be enqueued ahead of recovering messages in asynchronous recovery",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6541"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6545",
+        "title": "malformed cyrillic strings that passed as TextMessage's property",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6545"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6547",
+        "title": "[Java Client] Client should not attempt to make explicit bindings against the default exchange",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6547"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6550",
+        "title": "[Java Broker] BrokerStoreUpgraderAndRecoverer incorrectly adds vhostaliases to non-AMQP ports which do not have protocols",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6550"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6555",
+        "title": "Unable to create non-durable queues and exchanges from the web management console",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6555"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6560",
+        "title": "[Java Broker] BDB HA JE environment close on intruder detection might block the execution of VHN children tasks thus causing unnecessary delays in shutdown of ReplicatedEnvironmentFacade executors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6560"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6561",
+        "title": "Create VHN/VH dialogue cancel button causes Javascript error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6561"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6562",
+        "title": "Test BDBHAVirtualHostNodeRestTest.testMutateStateOfOneNode fails sporadically",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6562"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6565",
+        "title": "[Java Broker] On startup the broker makes a directory called config.json rather than a file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6565"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6566",
+        "title": "[Java Broker] Fix issues highlighted by running Joram JMS tests against AMQP 1.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6566"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6570",
+        "title": "Auto delete exchanges are not deleted automatically after the last binding is removed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6570"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6583",
+        "title": "[Java Client] AMQSession_0_10 should use connection task pool rather than a Timer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6583"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6587",
+        "title": "Qpid crash when trying to convert a message",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6587"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6588",
+        "title": "HTTP Management writes JSON responses using the platform's default encoding rather than UTF-8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6588"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6593",
+        "title": "[Java Client] Improve BURL validation to detect illegal names such as \"/a/b/c/d\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6593"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6596",
+        "title": "[Java Broker] Add ability for virtualhost events to be excluded from the Broker log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6596"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6599",
+        "title": "Attempting to actively declare a reserved exchange causes existing exchange to be partially removed from the in memory model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6599"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6607",
+        "title": "Messages causing a runtime selector error may halt the broker",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6607"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6608",
+        "title": "Unexpected exceptions occurring within virtualhost housekeeping thread are not logged and do not cause the Broker to fail",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6608"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6617",
+        "title": "Exceptions in handling of GET requests are reported as internal server error (500)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6617"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6619",
+        "title": "NPEs when creating consumers / queues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6619"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6621",
+        "title": "[Java Broker] Slow performance of Shared Groups message grouping on large queues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6621"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6625",
+        "title": "[Java Broker] Wire up the existing JMX logging interface to the new model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6625"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6634",
+        "title": "Model may signal state change to listeners even though the state change failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6634"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6645",
+        "title": "VHN/VH add dialogue incorrectly defaults visibility file upload widget",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6645"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6647",
+        "title": "Thread Leak when Connection is closed while a MessageConsumer is in a receive()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6647"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6649",
+        "title": "Client initiated connection close can race with Broker shutdown (or VH mastership change) leading to exception and unclosed socket",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6649"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6650",
+        "title": "[Java Broker] RMI and JMX ports do not behave sensibly when configured as port 0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6650"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6656",
+        "title": "Ensure target size is assigned to newly created queues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6656"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6664",
+        "title": "Connection#close may hang awaiting failover to exhaust retries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6664"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6667",
+        "title": "[Java Broker] Unused temporary queues are not deleted on connection disconnect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6667"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6670",
+        "title": "Exchange deletion does not await binding deletion leading to possibility of a IllegalStateException : Task executor is not in ACTIVE state",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6670"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6671",
+        "title": "java.util.NoSuchElementException whilst trying to deregister a connection mbean",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6671"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6672",
+        "title": "Message dispatching after dispatcher close can cause thread to terminate with IllegalStateException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6672"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6677",
+        "title": "Invocation of Connection#stop from MessageListener with 0-10 AMQP client might result in hang of operation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6677"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6678",
+        "title": "Deleting an exchange that is referenced as alternate apparently succeeds but marks the exchange as DELETED",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6678"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6681",
+        "title": "Disallow the changing of an object's type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6681"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6682",
+        "title": "[Java Tests] SSLTest and ExternalAuthenticationTest always use AMQP 0-10 no matter which test profile is used",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6682"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6683",
+        "title": "Jetty thread seemingly spins if many HTTP ports are defined on hosts with large numbers of core",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6683"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6684",
+        "title": "Asynchronous state change exceptions not passed back to caller",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6684"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6685",
+        "title": "ServerScopedRuntimeExceptions occurring during the Broker's initial open phase are ignored,",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6685"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6686",
+        "title": "NPE is thrown on evaluating BrokerFileLogger#logFiles when BrokerFileLogger is in ERRORED state due to attribute value resolution errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6686"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6687",
+        "title": "NPE is thrown on stop of Broker and VirtualHost FileLoggers when Logger is in ERRORED state due to attribute value resolution errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6687"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6688",
+        "title": "[Java Broker] Add port state check in HTTP and JMX management plugins whilst iterating through ports in order to avoid NPE thrown for Ports in ERRORED state having uninitialized protocols",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6688"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6689",
+        "title": "[Java Broker] QpidTurboFilter prevents any log messages from being logged until NameAndLevelFilters are activated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6689"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6690",
+        "title": "[Java Broker] Errors like NoClassDefFoundError do not interrupt ListenableFuture.get() in ACO#doSync(ListenableFuture)  blocking the configuration thread and hanging the Broker on creation of BDB VHN/VH when JE library is not available in classpath",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6690"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6691",
+        "title": "If AccessControlProvider is in errored state we should default to DENY",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6691"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6694",
+        "title": "Ensure that future wiring within async model operations preserves exceptions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6694"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6696",
+        "title": "[Java Broker] Newly added durable preferences provider is not persisted into configuration store for children managing authentication providers Base64MD5PasswordFile and PlainPasswordFile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6696"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6701",
+        "title": "[Regression btw 0.30 - 0.32] If address doesn't resolve an exception is not thrown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6701"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6704",
+        "title": "[Java Broker] Broker fails to start on windows partition mounted with SUBST",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6704"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6707",
+        "title": "Kill the Broker on invocation of store mutation operation ending with ServerScopedRuntimeException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6707"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6708",
+        "title": "Changing LoggingLevel on an existing filter does not always take immediate effect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6708"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6709",
+        "title": "SUB-1001 operation log message for consumers with noLocal/arrivaltime filters contain an object identity",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6709"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6710",
+        "title": "NPE masks IOException on running out of disk space",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6710"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6712",
+        "title": "Queue Runner may observe a message after it has been dequeued/deleted",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6712"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6713",
+        "title": "[Java Broker] A message still being processed by a QueueBrowser or management function should not be removed from the store",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6713"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6719",
+        "title": "qpid-client.properties not loaded by client",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6719"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6720",
+        "title": "Replace calls to o.a.q.t.Logger with direct calls to SLF4J",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6720"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6723",
+        "title": "[Java Broker] Stop caching AMQShortStrings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6723"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6724",
+        "title": "Stop writing all usernames within an external password database to the log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6724"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6726",
+        "title": "Change flow to disk trigger to consider direct memory occupancy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6726"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6731",
+        "title": "HttpManagement operational logging does not log actual port bound when the system-allocated port is used (port=0)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6731"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6733",
+        "title": "[Java Broker] Stop swallowing or ignoring ServerScopeRuntimeException thrown in threads of BDB HA executor services",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6733"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6735",
+        "title": "[Java Broker] Out of memory when consuming messages in very large transaction",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6735"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6741",
+        "title": "ThreadPoolExecutors used for virtual host IO / port IO do not scale above minimum pool size",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6741"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6743",
+        "title": "Java client may log a spurious SSLPeerUnverifiedException warning during SSL connection handshake",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6743"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6744",
+        "title": "Java client 0-8..0-91 sends queue.delete with nowait true but then awaits a reply",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6744"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6751",
+        "title": "[Java Broker] Set adequate JE cache sizes for multiple JE environments created in Broker BDB virtual host nodes and virtual hosts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6751"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6752",
+        "title": "Downgrade \"Average cleaner backlog ..\" from ERROR to INFO",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6752"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6755",
+        "title": "Release tasks for qpid-java-6.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6755"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6758",
+        "title": "Race condition can lead to referenceCount on messages being below zero",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6758"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6759",
+        "title": "Java client 0-8..0-91 sends exchange.delete but then awaits the wrong response (ExchangeDeclareOk)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6759"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6762",
+        "title": "Contrary to the documentation sorted queues put messages without a sorting key at the head of the queue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6762"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6765",
+        "title": "[Java Broker] Java Broker leaks instances of org.apache.qpid.server.virtualhost.AbstractSystemMessageSource.Consumer on 0.10 path",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6765"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6768",
+        "title": "Avoid unnecessary message payload copy during send (0-8...0-91)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6768"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6769",
+        "title": "[Java Broker] Excessive number of instances of NonPooledByteBufferRef is created in destruction tests to exercise memory consumption by persistent messages breaching the limits of max heap and direct memory to start flowing to disk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6769"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6770",
+        "title": "Prevent chains of DirectByteBuffers forming when slicing the thread's cached buffer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6770"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6772",
+        "title": "[Java] logback license is reported as incompatible",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6772"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6775",
+        "title": "[Java Broker] Metadata are being cleaned and immediately reloaded from disk on meesage enqueuing  when flow to disk is enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6775"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6780",
+        "title": "Sessions are not closed when connection drops",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6780"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6782",
+        "title": "[Java Broker] AbstractVirtualHost does not block existing connections when disk usage is over maximum allowed value",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6782"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6784",
+        "title": "Client may send frames that are too large and broker does wrong frame size validation for AMQP 0-91",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6784"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6786",
+        "title": "(0-10) ServerAssembler fails with IndexOutOfBoundsException on receipt of message with large headers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6786"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6788",
+        "title": "NetworkConnection can occupy large amounts of direct memory causing the broker to go OutOfMemory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6788"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6791",
+        "title": "Unsafe usage of WeakHashMap in ACL module can cause the broker to dead lock",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6791"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6795",
+        "title": "Virtual host should close thread pools before transitioning to error state",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6795"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6798",
+        "title": "Broker decompressing a message on behalf of a client who cannot produces stack trace to Broker log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6798"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6800",
+        "title": "Use cached direct buffers for message compression/decompression",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6800"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6810",
+        "title": "[Java Broker] WebSockets plugin needs to work with new IO threading model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6810"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6813",
+        "title": "Consumer tasks may run on the Broker thread leading to deadlock",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6813"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6814",
+        "title": "IO Selector deadlock",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6814"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6820",
+        "title": "[Java Broker] State change listeners on non-acquired messages do not get removed when consumers are closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6820"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6823",
+        "title": "[Java Broker] On failures to open ACL rules file the cause exception is not chained to the thrown IllegalConfigurationException making it is difficult to understand what exactly caused the failure to open ACL file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6823"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6828",
+        "title": "[Java Broker] Consumers on SystemMessageSources are not notified on suspension of message assignment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6828"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6829",
+        "title": "[Java Broker] SystemMessageSources$Consumer needs to implement flush()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6829"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6830",
+        "title": "Ensure QueueConsumerImpl#_stateListener is published safely between threads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6830"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6832",
+        "title": "[Java Broker] AMQP 1.0 implementation leaks direct memory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6832"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6833",
+        "title": "[Java Broker] Operational log message  SUB-1003  is not logged by SuspendedConsumerLoggingTicker causing failures of ConsumerLoggingTest#testSubscriptionSuspend",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6833"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6841",
+        "title": "[Java Broker] Calling recover on a subscription to a Sorted or Priority Queue may cause messages to become stuck",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6841"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6844",
+        "title": "[Java Broker] [AMQP1.0] Link credit not being allocated correctly leading to messages not being sent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6844"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6845",
+        "title": "[Java Broker] [AMQP1.0] Abruptly closing a connection leaves orphaned consumers and acquired messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6845"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6846",
+        "title": "[Java Broker] IdleTimeoutTicker causes I/O network thread spinning on AMQP 1.0 due to unimplemented heartbeating",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6846"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6850",
+        "title": "AMQP 1.0 connections remain associated with virtualhost after connection close.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6850"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6851",
+        "title": "AMQP 1.0 TemporaryQueues not deleted on connection close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6851"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6853",
+        "title": "[Java Broker] Messages in consumerTarget _queue may be deleted before they are sent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6853"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6854",
+        "title": "Fix screen label for Broker#connection_heartBeatDelay attribute (wrong time units)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6854"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6859",
+        "title": "[Java Broker] Web Management console Plain SASL mechanism 'response' request is sent as JSON instead of being encoded as  'application/x-www-form-urlencoded'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6859"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6860",
+        "title": "[Java Broker] Web Management Console for Simple LDAP Authentication provider is not rendered properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6860"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6861",
+        "title": "Avoid unsafe read of AMQPConnection_0_8#_channelMap",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6861"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6862",
+        "title": "IoReceiver thread using CPU even when there are no messages moving",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6862"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6872",
+        "title": "[Java Broker] Configured Objects with the same names under one parent can be created via management interfaces",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6872"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6873",
+        "title": "[Java Broker] Creation of SiteSpecificTrustStore with invalid site url results in broken REST interfaces due to NPE thrown on generation of REST data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6873"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6877",
+        "title": "[Java Broker] In Web Management Console in Edit Broker Dialog the config encryption field is not set to 'None' when config encryption is not used and prevents Edit form from submitting unless explicitly selected",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6877"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6878",
+        "title": "[Java Broker] In web Management Console on BDB VHN tab Edit button is not enabled after VHN stop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6878"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6884",
+        "title": "[Java Broker] Adding a BrokerLogger with a relative path without a slash fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6884"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6885",
+        "title": "[Java Broker] When adding a ConsoleLogger one must explicitly set the target stream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6885"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6887",
+        "title": "[Java Broker] The UI for adding BrokerLogbackSocket is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6887"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6889",
+        "title": "[Java Broker] Entering relative path without parent for JSON VHN store in web UI fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6889"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6898",
+        "title": "[Java Broker] Entering relative path for DERBY VHN in web UI fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6898"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6899",
+        "title": "[Java Broker] Adding AuthenticationProvider with FileSystemPreferences with relative path partially fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6899"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6900",
+        "title": "Address unsafe publication issue in AMQConnection_0_8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6900"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6902",
+        "title": "[Java Broker] In web UI adding a GroupProvider with relative path without parent fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6902"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6903",
+        "title": "[Java Broker] In web UI for queues the label for the alerting threshold for max queue size is wrong",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6903"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6904",
+        "title": "[Java Broker] In web UI in the copy message dialogue the button says \"move message\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6904"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6909",
+        "title": "Durability model attribute should be immutable in all cases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6909"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6911",
+        "title": "Broker is missing from the apidocs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6911"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6914",
+        "title": "[Java Broker] Setting a relative path without a parent for encrypter.key.file leads to NPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6914"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6918",
+        "title": "Creating AutoGeneratedSelfSigned keystore fails on JDK 1.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6918"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6922",
+        "title": "Trying to edit shipped authentication provider 'passwordFile' leads to 404",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6922"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6923",
+        "title": "Make AutoGeneratedSelfSigned default to SHA256WithRSA rather than SHA1WithRSA to help users comply with SHA-1 sunset",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6923"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6926",
+        "title": "[Java Broker] [AMQP 1.0] Detach sent after session ended",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6926"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6928",
+        "title": "[Java Broker] [AMQP 1.0] Broker should not NPE if target address is null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6928"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6936",
+        "title": "[Java Broker] Generation of Java Broker doc book in PDF format fails with exceptions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6936"
+          }
+        }
+      },
+      {
+        "issue": "QPID-7797",
+        "title": "HTTP management authentication occasionally fails with NPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-7797"
+          }
+        }
+      },
+      {
+        "issue": "QPID-8039",
+        "title": "[CVE-2017-15702] [Broker-J] HTTP Ports may be tricked into using the wrong authentication provider",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-8039"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6514",
+        "title": "Implement plugin that warns and/or disconnects a client if the Qpid Client is too old.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6514"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6525",
+        "title": "Allow temporary queue name prefix to be specified by the Broker",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6525"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6591",
+        "title": "[Java Broker] Add ability to generate a virtualhost specific log",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6591"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6630",
+        "title": "Add SyslogLogger for Broker and VirtualHost",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6630"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6643",
+        "title": "Enhance BrokerConsoleLogger to allow logging to stderr",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6643"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6732",
+        "title": "Change performance test framework to use a rate limiter/hill climbing algorithm to determine a sustainable throughput for a given testcase",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6732"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6756",
+        "title": "[Java Client] Allow Client to make connection over a provided Socket",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6756"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6843",
+        "title": "[Java Broker] Implement Broker side heartbeating in 1.0 AMQP implementation",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6843"
+          }
+        }
+      },
+      {
+        "issue": "QPID-2836",
+        "title": "[Java Broker] Use slf4j rather than log4j for logging operations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-2836"
+          }
+        }
+      },
+      {
+        "issue": "QPID-5578",
+        "title": "[Java Broker] Refactor ConfiguredObject managed objects interfaces and implementations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-5578"
+          }
+        }
+      },
+      {
+        "issue": "QPID-5818",
+        "title": "AMQP model mutating actions should use task executors",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-5818"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6262",
+        "title": "Utilise NIO for AMQP in Java Broker",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6262"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6412",
+        "title": "Declare variables as ConcurrentMap not ConcurrentHashMap to avoid issues after compiling on Java 8",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6412"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6423",
+        "title": "[Java Broker] Allow plugin of custom user queue reports using the REST API",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6423"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6425",
+        "title": "[Java Broker] Allow for local and global name equivalence on virtual hosts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6425"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6428",
+        "title": "[Java Broker] Use StoreConfigurationChangeListener to manage storage of all configured objects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6428"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6429",
+        "title": "IO refactoring - use single pooled thread to service each connection",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6429"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6434",
+        "title": "[Java Client] Update existing JMS client documentation for AMQP 0.8/0.9.x to cover the effect of setting maxprefetch to 0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6434"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6436",
+        "title": "[Java Broker] Move ACL functionality scattered over the configured objects into SecurityManager and AbstractConfiguredObjects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6436"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6438",
+        "title": "[Java Broker] Extend REST interfaces to result in errors when object already exist on create and when object does not exist on update",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6438"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6443",
+        "title": "Broker should have a default VHN rather than default VH",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6443"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6449",
+        "title": "[Java Broker] Change REST interfaces to return 422 status code from create/update requests when provided attribute values are invalid or required attributes are missing",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6449"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6450",
+        "title": "[Java Broker] Use separate configuration thread for each virtual host node",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6450"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6453",
+        "title": "[Java Broker] Add documentation Queue attributes for defaultFilters and ensureNondestructiveConsumers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6453"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6454",
+        "title": "[Java Broker] Provide mechanism to view REST API interface definition",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6454"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6457",
+        "title": "[Java Broker] Implement asynchronous commits for Derby/JDBC message stores",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6457"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6477",
+        "title": "Make 0-10 implementation ignore all received frames except ConnectionCloseOk once ConnectionClose is sent",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6477"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6485",
+        "title": "Remove superfluous find/get methods from the Broker configured object",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6485"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6494",
+        "title": "Remove redundant configuration change listener from BrokerAdapter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6494"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6507",
+        "title": "Eliminate HelperServlet from web management console",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6507"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6512",
+        "title": "Exception chaining is handled inconsistently",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6512"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6515",
+        "title": "Eliminate dependencies that require commons-logging (beanutils and collections)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6515"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6516",
+        "title": "Tactically switch Broker from Log4j to Logback",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6516"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6522",
+        "title": "[Java] Remove dependencies on commons-lang, commons-codec",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6522"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6523",
+        "title": "[Java] Update dependency on guava library to latest version",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6523"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6527",
+        "title": "[Java Broker Web management Console] Introduce a management service facade to hide the details of REST communication between console and the broker",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6527"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6528",
+        "title": "Multiple starving suspended consumers on a single session might hold the reference to old deleted queue entry via QueueContext#_lastSeenEntry causing accumulation of deleted queue entries in Broker memory which can eventually lead to OOM",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6528"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6530",
+        "title": "Enable connection close from the Web Management UI",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6530"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6533",
+        "title": "[Java Broker] Store logging configuration within broker config",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6533"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6534",
+        "title": "[Java Client] Add a pooled connection factory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6534"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6538",
+        "title": "[Java Broker] Allow TrustStores to be used to distribute public keys to clients",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6538"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6540",
+        "title": "Add ability to disable one or more of an authentication provider's mechanisms",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6540"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6542",
+        "title": "[Java Broker] Add additional logging when errors occur during management actions",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6542"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6543",
+        "title": "Coalesce multi attribute updates into single store write",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6543"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6546",
+        "title": "EXH-1003 Message should put quotes around the exchange name and routing key",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6546"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6552",
+        "title": "[Java Client] Allow client to use certificate/key files as an alternative to JKS files for keystores/truststores",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6552"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6569",
+        "title": "Begin capturing logback logging events at startup and replay those events once the BrokerLoggers are ready",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6569"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6573",
+        "title": "Add broker connection close guard to protect against a client that does not respond to the connection close command in a timely manner",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6573"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6575",
+        "title": "Log subscription state change message (SUB-1003) only when a subscription has been suspended for an unusually long period of time",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6575"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6576",
+        "title": "[Java Client] Provide easy-to-use mechanism for end-to-end encryption of messages",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6576"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6578",
+        "title": "[Java Broker] Add the ability for logging filters to be added/removed/changed dynamically",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6578"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6579",
+        "title": "[Java Broker] Add the ability to dynamically add and remove broker loggers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6579"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6580",
+        "title": "[Java Broker] Improve fairness between connections (limit the amount of bytes read per thread before yielding)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6580"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6581",
+        "title": "[Java Broker] The binding of the rest servlet to model objects should use meta data",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6581"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6582",
+        "title": "Implement fairness amongst session/consumer on a single connection",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6582"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6584",
+        "title": "Properly clean up after tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6584"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6585",
+        "title": "[Java Broker] Allow omission of SASL layer for AMQP 1.0 where anonymous or external auth is desired",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6585"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6586",
+        "title": "[Java Broker] Allow configured objects to define \"ManagedOperations\" and expose these through the REST api",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6586"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6589",
+        "title": "[Java Broker] Use separate io thread pools for each virtual host",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6589"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6594",
+        "title": "[Java Broker] Remove ConnectionRegistry and move responsibility to the VirtualHost",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6594"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6595",
+        "title": "Allow ConfiguredObject context variables to be resolved in terms of their ancestor's attributes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6595"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6597",
+        "title": "[Java Broker] Port / Connection remodelling",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6597"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6598",
+        "title": "[Java Broker] Allow configuration encryption provider to be updated dynamically",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6598"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6600",
+        "title": "[Java] Refactor and remove unnecessary interfaces/dependencies",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6600"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6601",
+        "title": "CHN messages 1002/1004 are logged for every receive call if prefetch zero is used",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6601"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6603",
+        "title": "Allow model to express that an attribute is immutable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6603"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6604",
+        "title": "[Java Broker] Add new keystore type which generates a self signed certificate on first use",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6604"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6605",
+        "title": "[Java Broker] Add new TrustStore type which trusts the certificate from a given URL",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6605"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6606",
+        "title": "Document the Java Broker's AuthenticationProviders' behaviour regarding authentication mechanisms",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6606"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6609",
+        "title": "[Java Broker] Add into Web Management Console UI to add/edit/delete loggers and filters",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6609"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6612",
+        "title": "[Java Broker] Refactor Connection(Adapter), ProtocolEngine and AMQConnectionModel",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6612"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6613",
+        "title": "Simplify creation of per-test log file using Logback's SiftAppender",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6613"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6614",
+        "title": "[Java Broker] Make BrokerFileLogger implementation expose content of the current file and the names/content of any previously rolled files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6614"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6616",
+        "title": "Rename TypedContent into Content, introduce ContentHeader annotation to mark methods returning values for content headers and move responsibility to write content to the implementations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6616"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6618",
+        "title": "Allow on-line access to the log cached by BrokerMemoryLogger",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6618"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6620",
+        "title": "[Java Broker] Restore the behaviour of the if(LOGGER.isDebugEnabled()) idiom (but restrict its use)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6620"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6622",
+        "title": "[Java Broker] Add statistics to Broker/VhostLoggers to count the number of errors/warnings logged",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6622"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6623",
+        "title": "[Java Broker] Log a warning before creating a new configuration secret key file",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6623"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6624",
+        "title": "[Java Broker] If a port does not support the default protocol reply, it should not error but revert to sending the highest supported version",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6624"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6626",
+        "title": "[Java Broker] Provide a mechanism for the REST API to communicate which versions are supported",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6626"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6627",
+        "title": "[Java Broker] REST API should respond with 404 NOT FOUND when the path to a requested object contains an object name which does not exist",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6627"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6628",
+        "title": "[Java Broker] Update dependency on Jackson JSON library from v1.9 to v2.5",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6628"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6629",
+        "title": "[Java] Remove all deprecated constants from the public API",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6629"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6631",
+        "title": "[Java Broker] Add option to fail the Broker if logging fails",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6631"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6632",
+        "title": "[Java] Refactor AMQException to split out exceptions which carry a protocol error constant",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6632"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6635",
+        "title": "Improve JMS Client functionality around Container JNDI integration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6635"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6636",
+        "title": "Prevent possibility of malicious manipulation of the content-disposition header",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6636"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6637",
+        "title": "Replace gson dependency with jackson in perf test framework",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6637"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6638",
+        "title": "Logging UI improvements",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6638"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6642",
+        "title": "Improve Logging robustness",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6642"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6644",
+        "title": "Add operational logging for creation/deletion of several objects",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6644"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6646",
+        "title": "[Java Broker] Add meta data on ManagedStatistics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6646"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6652",
+        "title": "[Java Broker] Make remaining REST service calls to be model based operations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6652"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6655",
+        "title": "Refactor slow authentication detection to use a Ticker",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6655"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6657",
+        "title": "Add operational message to record a operator initiated connection close",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6657"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6658",
+        "title": "Add derived attribute protocol to Connection model object",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6658"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6662",
+        "title": "Use direct byte buffers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6662"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6663",
+        "title": "Stop using system property amqj.protocol.logging.level to control clients logging [0-8..0-91]",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6663"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6692",
+        "title": "Minor corrections to the Java Broker and JMS client documentation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6692"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6695",
+        "title": "Make model tasks have useful toStrings so that task submit/completion debug logs are useful",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6695"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6697",
+        "title": "Give IO thread pools a minimum/maximum size and provide advice to user to help them select sensible values",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6697"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6705",
+        "title": "Add logging to RestServlet to report URL, method and user of each REST call (at debug)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6705"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6706",
+        "title": "PropertiesFileInitialContextFactory should accept PROVIDER_URLS with schemes other than file:",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6706"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6715",
+        "title": "Model to be versioned by major Qpid release (x.y)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6715"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6716",
+        "title": "Rename LoggerFilter to LogInclusionRule",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6716"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6721",
+        "title": "Produce operation log message for unrecognised AMQP protocol initiations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6721"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6728",
+        "title": "Upgrade SLF4J dependency from 1.6 to 1.7",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6728"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6734",
+        "title": "[Java Broker] [BDB Store] Correctly set cache mode for BDB store to not needlessly store message data",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6734"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6736",
+        "title": "Rewrite 0-8..0-91 connection / session units tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6736"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6737",
+        "title": "Allow message auth to be enabled from context variable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6737"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6739",
+        "title": "Allow setting and overriding Qpid client version suffix in qpid-common.properties",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6739"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6745",
+        "title": "Upgrade Jetty dependency to 8.1.17.v20150415",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6745"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6746",
+        "title": "Default direct memory settings in Java Broker's start scripts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6746"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6747",
+        "title": "Change BRK-1011 operation log message to log direct memory too",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6747"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6749",
+        "title": "[Java Broker] [BDB Store] Log to slf4j loggers with same name as intended jul logger",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6749"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6750",
+        "title": "[Java Broker] Use Guava ListenableFuture rather than invent our own future class for store interaction",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6750"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6760",
+        "title": "Make connection metadata provide useful provider version information",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6760"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6761",
+        "title": "Broken pipe in http management results in alerting error messages in the logs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6761"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6763",
+        "title": "Better representation of errors on login screen of WebManagement",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6763"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6777",
+        "title": "[Java] Change parent pom for qpid-java-build to apache-parent",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6777"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6781",
+        "title": "Replace use of Subject#doAs with calls to AccessController#doPrivileged and cache AccessControlContext",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6781"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6785",
+        "title": "Improve performance of QpidLoggerTurboFilter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6785"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6787",
+        "title": "Prevent unnecessary buffer copies/buffer allocations when storing metadata (0-8..0-91)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6787"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6789",
+        "title": "[Java Broker] Avoid waking up the selector when there is no need to do so",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6789"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6792",
+        "title": "Enqueue path should report flow to disk state change too",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6792"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6794",
+        "title": "[Java Broker] Reduce latency in IO by processing work immediately after select()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6794"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6797",
+        "title": "[Java Broker] Minor performance improvements",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6797"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6801",
+        "title": "Documentation for new Broker's new Logging sub-system",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6801"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6802",
+        "title": "Document how the Broker uses memory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6802"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6806",
+        "title": "Remove configuration for minimum thread pool size for port/virtualhost",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6806"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6807",
+        "title": "Add ability to configure the number of selectors for AMQP ports and virtualhost",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6807"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6816",
+        "title": "[Java Broker] Add warning when a port reaches its maximum connection count",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6816"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6818",
+        "title": "Include ephemeral port number in client logs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6818"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6819",
+        "title": "Schedule socket accepts on the thread pool",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6819"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6824",
+        "title": "Include Broker host/port number in CON-1001 message",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6824"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6831",
+        "title": "Remove logging from constructor of ConnectionScopedRuntimeException",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6831"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6840",
+        "title": "[Java Broker] Interleave calls to processPending with attempts to write outstanding data",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6840"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6848",
+        "title": "Unable to clear acquired messages",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6848"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6871",
+        "title": "Make accepting port socket backlog configurable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6871"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6876",
+        "title": "[Java Broker] Provide easy mechanism to download certificate for auto generated keys",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6876"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6906",
+        "title": "[Java Broker] Allow addition / removal of certificates from ManagedPeerCertificatesTrustStore instances",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6906"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6908",
+        "title": "Add Broker model operation to shutdown the Broker",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6908"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6912",
+        "title": "Enumerate model operations in the auto generated apidocs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6912"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6913",
+        "title": "Remove JMX from default configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6913"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6919",
+        "title": "Limit number of acceptors on HttpPort to avoid Jetty WARNing",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6919"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6520",
+        "title": "[Java Tests] Fix tests which fail on Windows",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6520"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6869",
+        "title": "Add system test that ensures messaging is reliable when the client is disconnected abruptly or killed",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6869"
+          }
+        }
+      },
+      {
+        "issue": "QPID-4446",
+        "title": "Add support for joram JMS tests",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-4446"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6481",
+        "title": "Move java source tree to top-level",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6481"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6556",
+        "title": "Document how to bind JMS client destinations and connection factories into Tomcat JNDI",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6556"
+          }
+        }
+      },
+      {
+        "issue": "QPID-6742",
+        "title": "[Java Broker] Determine heap and direct memory consumption by Java Broker with JDK 1.7/1.8",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPID/12329493"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPID-6742"
+          }
+        }
+      }
+    ]
+  }
+}

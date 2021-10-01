@@ -1,0 +1,208 @@
+{
+  "id": "12338989",
+  "name": "0.21.0",
+  "description": "",
+  "date": "2017-03-14",
+  "version": "0.21.0",
+  "module": "",
+  "lastUpdated": 1633096156596,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/QPIDJMS/fixforversion/12338989"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/QPIDJMS"
+    }
+  },
+  "releaseNotes": "Release Notes - Qpid JMS - Version 0.21.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "QPIDJMS-231",
+        "title": "closing a consumer used since prior commit/rollback holds its prefetched messages until the next commit/rollback",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-231"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-256",
+        "title": "Closing a consumer that was used in a transaction does not stop message dispatching unitl next commit or rollback",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-256"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-257",
+        "title": "Messages delivered from a consume in client acknowledge mode cannot be acknowledged after the consumer is closed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-257"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-266",
+        "title": "Race on session start and message dispatch can deliver messages in wrong order",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-266"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-269",
+        "title": "Performance regression affecting MessageProducer on transacted Sessions.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-269"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-272",
+        "title": "fail fast when attempting connection to a server using unexpected protocol type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-272"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-267",
+        "title": "Support discovery of failover hosts provided in a connection property of the Open frame",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-267"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-244",
+        "title": "Connection close does not wait for acknowledgement of in-flight message delivery with asyncronous auto-ack MessageConsumer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-244"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-258",
+        "title": "Reduce the amount of allocation done in the consumer on async message dispatch",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-258"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-270",
+        "title": "update to proton-j 0.18.0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-270"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-271",
+        "title": "Cache transaction state dispostions for TXN producers and consumers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-271"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-265",
+        "title": "add test verifying failover when connection closes remotely with 'forced'",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-265"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-262",
+        "title": "Update ActiveMQ Dependency to latest 5.14.3",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-262"
+          }
+        }
+      },
+      {
+        "issue": "QPIDJMS-268",
+        "title": "Update Netty to 4.1.8.Final",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/QPIDJMS/12338989"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/QPIDJMS-268"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,4030 @@
+{
+  "id": "12323380",
+  "name": "0.12.0",
+  "description": "This release include several new features such as ASSERT operator, Streaming UDF, new AvroStorage, IN/CASE operator, BigInteger/BigDecimal data type, support for Windows",
+  "date": "2013-10-14",
+  "version": "0.12.0",
+  "module": "",
+  "lastUpdated": 1633095836978,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/PIG/fixforversion/12323380"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/PIG"
+    }
+  },
+  "releaseNotes": "Release Notes - Pig - Version 0.12.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "PIG-2795",
+        "title": "Fix test cases that generate pig scripts with \"load \" + pathStr to encode \"\\\" in the path",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2795"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2796",
+        "title": "Local temporary paths are not always valid HDFS path names.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2796"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2798",
+        "title": "pig streaming tests assume interpreters are auto-resolved",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2798"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2801",
+        "title": "grunt \"sh\" command should invoke the shell implicitly instead of calling exec directly with the command tokens",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2801"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2942",
+        "title": "DevTests, TestLoad has a false failure on Windows",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2942"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2954",
+        "title": " TestParamSubPreproc still depends on \"bash\" to run",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2954"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2955",
+        "title": " Fix bunch of Pig e2e tests on Windows",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2955"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2956",
+        "title": "Invalid cache specification for some streaming statement",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2956"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2957",
+        "title": "TetsScriptUDF fail due to volume prefix in jar",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2957"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2959",
+        "title": "Add a pig.cmd for Pig to run under Windows",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2959"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2960",
+        "title": "Increase the timeout for unit test",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2960"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2966",
+        "title": "Test failures on CentOS 6 because MALLOC_ARENA_MAX is not set",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2966"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2967",
+        "title": "Fix Glob_local test failure for Pig E2E Test Framework",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2967"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2979",
+        "title": "Pig.jar doesn't work with hadoop-2.0.x",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2979"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2998",
+        "title": "Fix TestScriptLanguage and TestMacroExpansion",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2998"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3023",
+        "title": "TestPigContext.testImportList fails with hadoop-2.0.x",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3023"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3024",
+        "title": "TestEmptyInputDir unit test - hadoop version detection logic is brittle",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3024"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3025",
+        "title": "TestPruneColumn unit test - SimpleEchoStreamingCommand perl inline script needs simplification",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3025"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3026",
+        "title": "Pig checked-in baseline comparisons need a pre-filter to address OS-specific newline differences",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3026"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3027",
+        "title": "pigTest unit test needs a newline filter for comparisons of golden multi-line",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3027"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3028",
+        "title": "testGrunt dev test needs some command filters to run correctly without cygwin",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3028"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3052",
+        "title": "TestBZip fail on Windows due to new line character",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3052"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3053",
+        "title": " TestMacroExpansion has some invocations of perl scripts without explicitly invoking perl as the interpreter",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3053"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3054",
+        "title": " TestRegisteredJarVisibility tries to copy a local file to HDFS with the full path name including \":\"",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3054"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3069",
+        "title": "Native Windows Compatibility for Pig E2E Tests and Harness",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3069"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3291",
+        "title": "TestExampleGenerator fails on Windows because of lack of file name escaping",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3291"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3333",
+        "title": "Fix remaining Windows core unit test failures",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3333"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3334",
+        "title": "Fix Windows piggybank unit test failures",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3334"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3337",
+        "title": "Fix remaining Window e2e tests",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3337"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2251",
+        "title": "PIG leaks Zookeeper connections when using HBaseStorage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2251"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2265",
+        "title": "Test case TestSecondarySort failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2265"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2266",
+        "title": "bug with input file joining optimization in Pig",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2266"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2405",
+        "title": "svn tags/release-0.9.1: some unit test case failed with open JDK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2405"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2433",
+        "title": "Jython import module not working if module path is in classpath",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2433"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2470",
+        "title": "Issue with CSVEXcelStorage piggy bank function",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2470"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2507",
+        "title": "Semicolon in parameters for UDF results in parsing error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2507"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2582",
+        "title": "Store size in bytes (not mbytes) in ResourceStatistics",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2582"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2606",
+        "title": "union/ join operations are not accepting same alias as multiple inputs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2606"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2614",
+        "title": "AvroStorage crashes on LOADING a single bad error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2614"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2657",
+        "title": "Print warning if using wrong jython version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2657"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2767",
+        "title": "Pig creates wrong schema after dereferencing nested tuple fields",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2767"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2769",
+        "title": "a simple logic causes very long compiling time on pig 0.10.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2769"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2778",
+        "title": "Add 'matches' operator to predicate pushdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2778"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2788",
+        "title": "improved string interpolation of variables",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2788"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2793",
+        "title": "Make Pig Work on Windows without Cygwin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2793"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2828",
+        "title": "Handle nulls in DataType.compare",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2828"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2832",
+        "title": "org.apache.pig.pigunit.pig.PigServer does not initialize udf.import.list of PigContext",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2832"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2873",
+        "title": "Converting bin/pig shell script to python",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2873"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2878",
+        "title": "Pig current releases lack a UDF equalIgnoreCase.This function returns a Boolean value indicating whether string left is equal to string right. This check is case insensitive.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2878"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2885",
+        "title": "TestJobSumission and TestHBaseStorage don't work with HBase 0.94 and ZK 3.4.3",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2885"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2924",
+        "title": "PigStats should not be assuming all Storage classes to be file-based storage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2924"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2933",
+        "title": "HBaseStorage is using setScannerCaching which is deprecated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2933"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2937",
+        "title": "generated field in nested foreach does not inherit the variable name as the field name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2937"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2941",
+        "title": "Ivy resolvers in pig don't have consistent chaining and don't have a kitchen sink option for novices",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2941"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2970",
+        "title": "Nested foreach getting incorrect schema when having unrelated inner query",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2970"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2989",
+        "title": "Illustrate for Rank Operator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2989"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3002",
+        "title": "Pig client should handle CountersExceededException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3002"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3013",
+        "title": "BinInterSedes improve chararray sort performance",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3013"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3014",
+        "title": "CurrentTime() UDF has undesirable characteristics",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3014"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3017",
+        "title": "Pig's object serialization should use compression",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3017"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3018",
+        "title": "Refactor TestScriptLanguage to remove duplication and write script in different files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3018"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3020",
+        "title": "\"Duplicate uid in schema\" error when joining two relations derived from the same load statement",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3020"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3031",
+        "title": "Update Pig to use a newer version of joda-time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3031"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3033",
+        "title": "test-patch failed with javadoc warnings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3033"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3035",
+        "title": "With latest version of hadoop23 pig does not return the correct exception stack trace from backend",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3035"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3039",
+        "title": "Not possible to use custom version of jackson jars",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3039"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3045",
+        "title": "Specifying sorting field(s) at nightly.conf - fix sortArgs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3045"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3046",
+        "title": "An empty file name in -Dpig.additional.jars throws an error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3046"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3049",
+        "title": "Cannot sort on a bag in nested foreach",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3049"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3050",
+        "title": "Fix FindBugs multithreading warnings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3050"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3051",
+        "title": "java.lang.IndexOutOfBoundsException  failure with LimitOptimizer + ColumnPruning",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3051"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3058",
+        "title": "Upgrade junit to at least 4.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3058"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3060",
+        "title": "FLATTEN in nested foreach fails when the input contains an empty bag",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3060"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3066",
+        "title": "Fix TestPigRunner in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3066"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3070",
+        "title": "PigTest - Patch for PIG-3027 - Pls review to see if trim required after replacing all \"\\r\\n\" with \"\\n\" to avoid additional newline at end of expected string.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3070"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3071",
+        "title": "update hcatalog jar and path to hbase storage handler jar in pig script",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3071"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3072",
+        "title": "Pig job reporting negative progress",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3072"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3073",
+        "title": "POUserFunc creating log spam for large scripts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3073"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3074",
+        "title": "Should check that any UDF returns a Schema of only one Field",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3074"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3078",
+        "title": "Make a UDF that, given a string, returns just the columns prefixed by that string",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3078"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3081",
+        "title": "Pig progress stays at 0% for the first job in hadoop 23",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3081"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3082",
+        "title": "outputSchema of a UDF allows two usages when describing a Tuple schema",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3082"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3084",
+        "title": "Improve exceptions messages in POPackage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3084"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3085",
+        "title": "Errors and lacks in document \"Built In Functions\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3085"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3093",
+        "title": "Self join + realias results in schema errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3093"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3095",
+        "title": "\"which\" is called many, many times for each Pig STREAM statement",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3095"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3096",
+        "title": "Make PigUnit thread safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3096"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3097",
+        "title": "HiveColumnarLoader doesn't correctly load partitioned Hive table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3097"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3098",
+        "title": "Add another test for the self join case",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3098"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3100",
+        "title": "If a .pig_schema file is present, can get an index out of bounds error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3100"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3101",
+        "title": "Increase io.sort.mb in YARN MiniCluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3101"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3105",
+        "title": "Fix TestJobSubmission unit test failure.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3105"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3106",
+        "title": "Missing license header in several java file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3106"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3107",
+        "title": "bin and autocomplete are missing in src release",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3107"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3108",
+        "title": "HBaseStorage returns empty maps when mixing wildcard- with other columns",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3108"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3110",
+        "title": "pig corrupts chararrays with trailing whitespace when converting them to long",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3110"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3112",
+        "title": "Errors and lacks in document \"User Defined Functions\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3112"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3114",
+        "title": "Duplicated macro name error when using pigunit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3114"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3115",
+        "title": "Distinct Build-in Function Doesn't Handle Null Bags",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3115"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3120",
+        "title": "setStoreFuncUDFContextSignature called with null signature",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3120"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3122",
+        "title": "Operators should not implicitly become reserved keywords",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3122"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3135",
+        "title": "HExecutionEngine should look for resources in user passed Properties",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3135"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3137",
+        "title": "fix Piggybank test to not using /tmp dir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3137"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3144",
+        "title": "Erroneous map entry alias resolution leading to \"Duplicate schema alias\" errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3144"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3145",
+        "title": "Parameters in core-site.xml and mapred-site.xml are not correctly substituted",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3145"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3147",
+        "title": "Spill failing with \"java.lang.RuntimeException: InternalCachedBag.spill() should not be called\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3147"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3149",
+        "title": "e2e build.xml still refers to jython 2.5.0 jar even though it's replaced by jython standalone 2.5.2 jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3149"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3150",
+        "title": "e2e Scripting_5 fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3150"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3153",
+        "title": "TestScriptUDF.testJavascriptExampleScript fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3153"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3154",
+        "title": "TestPackage.testOperator fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3154"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3155",
+        "title": "TestTypeCheckingValidatorNewLP.testSortWithInnerPlan3 fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3155"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3156",
+        "title": "TestSchemaTuple fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3156"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3158",
+        "title": "Errors in the document \"Control Structures\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3158"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3161",
+        "title": "Update reserved keywords in Pig docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3161"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3167",
+        "title": "Job stats are printed incorrectly for map-only jobs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3167"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3168",
+        "title": "TestMultiQueryBasic.testMultiQueryWithSplitInMapAndMultiMerge fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3168"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3171",
+        "title": "TestGrunt fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3171"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3172",
+        "title": "Partition filter push down does not happen when there is a non partition key map column filter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3172"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3173",
+        "title": "Partition filter push down does not happen partition keys condition include a AND and OR construct",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3173"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3186",
+        "title": "tar/deb/pkg ant targets should depend on piggybank",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3186"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3189",
+        "title": "Remove ivy/pig.pom and improve build mvn targets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3189"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3191",
+        "title": "MultiStorage output filenames are not sortable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3191"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3192",
+        "title": "Better call to action to download Pig in docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3192"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3193",
+        "title": "Fix \"ant docs\" warnings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3193"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3194",
+        "title": "Changes to ObjectSerializer.java break compatibility with Hadoop 0.20.2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3194"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3198",
+        "title": "Let users use any function from PigType -> PigType as if it were builtlin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3198"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3200",
+        "title": "MiniCluster should delete hadoop-site.xml on shutDown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3200"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3202",
+        "title": "CUBE operator not documented in user docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3202"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3203",
+        "title": "ROLLUP not documented in user docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3203"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3205",
+        "title": "Passing arguments to python script does not work with -f option",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3205"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3206",
+        "title": "HBaseStorage does not work with Oozie pig action and secure HBase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3206"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3208",
+        "title": "[zebra] TFile should not set io.compression.codec.lzo.buffersize",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3208"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3210",
+        "title": "Pig fails to start when it cannot write log to log files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3210"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3212",
+        "title": "Race Conditions in POSort and (Internal)SortedBag during Proactive Spill.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3212"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3223",
+        "title": "AvroStorage does not handle comma separated input paths",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3223"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3239",
+        "title": "Unable to return multiple values from a macro using SPLIT",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3239"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3241",
+        "title": "ConcurrentModificationException in POPartialAgg",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3241"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3243",
+        "title": "Documentation error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3243"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3249",
+        "title": "Pig startup script prints out a wrong version of hadoop when using fat jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3249"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3250",
+        "title": "Pig dryrun generates wrong output in .expanded file for 'SPLIT....OTHERWISE...' command",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3250"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3252",
+        "title": "AvroStorage gives wrong schema for schemas with named records",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3252"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3253",
+        "title": "Misleading comment w.r.t getSplitIndex() method in PigSplit.java",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3253"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3255",
+        "title": "Avoid extra byte array copies in streaming",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3255"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3256",
+        "title": "Upgrade jython to 2.5.3 (legal concern)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3256"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3261",
+        "title": "User set PIG_CLASSPATH entries must be prepended to the CLASSPATH, not appended",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3261"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3262",
+        "title": "Pig contrib 0.11 doesn't compile on certain rpm systems",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3262"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3264",
+        "title": "mvn signanddeploy target broken for pigunit, pigsmoke and piggybank",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3264"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3267",
+        "title": "HCatStorer fail in limit query",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3267"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3270",
+        "title": "Union onschema failing at runtime when merging incompatible types",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3270"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3271",
+        "title": "POSplit ignoring error from input processing giving empty results",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3271"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3286",
+        "title": "TestPigContext.testImportList fails in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3286"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3290",
+        "title": "TestLogicalPlanBuilder.testQuery85 fail in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3290"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3292",
+        "title": "Logical plan invalid state: duplicate uid in schema during self-join to get cross product",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3292"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3297",
+        "title": "Avro files with stringType set to String cannot be read by the AvroStorage LoadFunc",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3297"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3302",
+        "title": "JSONStorage throws NPE if map has null values",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3302"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3303",
+        "title": "add hadoop h2 artifact to publications in ivy.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3303"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3304",
+        "title": "XMLLoader in piggybank does not work with inline closed tags",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3304"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3305",
+        "title": "Infinite loop when input path contains empty partition directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3305"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3310",
+        "title": "ImplicitSplitInserter does not generate new uids for nested schema fields, leading to miscomputations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3310"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3313",
+        "title": "pig job hang if the job tracker is bounced during execution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3313"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3316",
+        "title": "Pig failed to interpret DateTime values in some special cases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3316"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3318",
+        "title": "AVRO: 'default value' not honored when merging schemas on load with AvroStorage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3318"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3319",
+        "title": "Race condition in POStream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3319"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3320",
+        "title": "AVRO: no empty field expressed when loading with AvroStorage using reader schema with extra field that has no default",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3320"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3322",
+        "title": "AVRO: AvroStorage give NPE on reading file with union as top level schema",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3322"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3323",
+        "title": "AVRO: default value not stored in file when given as paramter to AvroStorage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3323"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3324",
+        "title": "STARTSWITH documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3324"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3327",
+        "title": "Pig hits OOM when fetching task Reports",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3327"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3328",
+        "title": "DataBags created with an initial list of tuples don't get registered as spillable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3328"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3329",
+        "title": "RANK operator failed when working with SPLIT",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3329"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3331",
+        "title": "Default values not stored in avro file when using specific schemas during store in AvroStorage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3331"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3335",
+        "title": "TestErrorHandling.tesNegative7 fails on MR2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3335"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3345",
+        "title": "Handle null in DateTime functions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3345"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3349",
+        "title": "Document ToString(Datetime, String) UDF",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3349"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3354",
+        "title": "UDF example does not handle nulls",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3354"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3355",
+        "title": "ColumnMapKeyPrune bug with distinct operator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3355"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3360",
+        "title": "Some intermittent negative e2e tests fail on hadoop 2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3360"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3361",
+        "title": "Improve Hadoop version detection logic for Pig unit test",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3361"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3364",
+        "title": "Case expression fails with an even number of when branches",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3364"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3369",
+        "title": "unit test TestImplicitSplitOnTuple.testImplicitSplitterOnTuple failed when using hadoopversion=23",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3369"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3374",
+        "title": "CASE and IN fail when expression includes dereferencing operator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3374"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3375",
+        "title": "CASE does not preserve the order of when branches",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3375"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3379",
+        "title": "Alias reuse in nested foreach causes PIG script to fail",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3379"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3380",
+        "title": "fix e2e test float precision related test failures when run with -Dpig.exec.mapPartAgg=true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3380"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3384",
+        "title": "Missing negation in UDF doc sample code",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3384"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3385",
+        "title": "DISTINCT no longer uses custom partitioner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3385"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3389",
+        "title": "\"Set job.name\" does not work with dump command",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3389"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3393",
+        "title": "STARTSWITH udf doesn't override outputSchema method",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3393"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3395",
+        "title": "Large filter expression makes Pig hang",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3395"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3405",
+        "title": "Top UDF documentation indicates improper use",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3405"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3410",
+        "title": "LimitOptimizer is applied before PartitionFilterOptimizer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3410"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3412",
+        "title": "jsonstorage breaks when tuple does not have as many columns as schema",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3412"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3414",
+        "title": "QueryParserDriver.parseSchema(String) silently returns a wrong result when a comma is missing in the schema definition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3414"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3420",
+        "title": "Failed to retrieve map values from data loaded by AvroStorage",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3420"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3424",
+        "title": "Package import list should consider class name as is first even if -Dudf.import.list is passed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3424"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3425",
+        "title": "Hive jdo api jar referenced in pig script throws error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3425"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3428",
+        "title": "e2e Jython_Diagnostics_2 and 4 are broken in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3428"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3432",
+        "title": "typo in log message in SchemaTupleFrontend",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3432"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3435",
+        "title": "Custom Partitioner not working with MultiQueryOptimizer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3435"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3455",
+        "title": "Pig 0.11.1 OutOfMemory error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3455"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3458",
+        "title": "ScalarExpression lost with multiquery optimization",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3458"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3461",
+        "title": "Rewrite PartitionFilterOptimizer to make it work for all the cases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3461"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3466",
+        "title": "Race Conditions in InternalDistinctBag during proactive spill",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3466"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3468",
+        "title": "PIG-3123 breaks e2e test Jython_Diagnostics_2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3468"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3479",
+        "title": "Fix BigInt, BigDec, Date serialization. Improve perf of PigNullableWritable deserilization",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3479"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3487",
+        "title": "Fix syntax errors in nightly.conf",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3487"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3491",
+        "title": "Fix e2e failure Jython_Diagnostics_4",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3491"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3494",
+        "title": "Several fixes for e2e tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3494"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3495",
+        "title": "Streaming udf e2e tests failures on Windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3495"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3497",
+        "title": "JobControlCompiler should only do reducer estimation when the job has a reduce phase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3497"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3504",
+        "title": "Fix e2e Describe_cmdline_12",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3504"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3917",
+        "title": " Task process exit with nonzero status of -1. how to solve this?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3917"
+          }
+        }
+      },
+      {
+        "issue": "PIG-4646",
+        "title": "PushUpFilter should not push before nested projection with FILTER operators",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-4646"
+          }
+        }
+      },
+      {
+        "issue": "PIG-1431",
+        "title": "Current DateTime UDFs: ISONOW(), UNIXNOW()",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-1431"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2857",
+        "title": "Add a -tagPath option to PigStorage",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2857"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2881",
+        "title": "Add SUBTRACT eval function",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2881"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2907",
+        "title": "Publish pig 0.23 jars to maven",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2907"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2988",
+        "title": "start deploying pigunit maven artifact part of Pig release process",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2988"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2994",
+        "title": "Grunt shortcuts",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2994"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3065",
+        "title": "pig output format/committer should support recovery for hadoop 0.23",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3065"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3075",
+        "title": "Allow AvroStorage STORE Operations To Use Schema Specified By URI",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3075"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3086",
+        "title": "Allow A Prefix To Be Added To URIs In PigUnit Tests",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3086"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3090",
+        "title": "Introduce a syntax to be able to easily refer to the previously defined relation",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3090"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3142",
+        "title": "Fixed-width load and store functions for the Piggybank",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3142"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3163",
+        "title": "Pig current releases lack a UDF endsWith.This UDF tests if a given string ends with the specified suffix.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3163"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3182",
+        "title": "Pig currently lacks functions to trim the whitespace only on one side",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3182"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3211",
+        "title": "Allow default Load/Store funcs to be configurable",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3211"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3233",
+        "title": "Deploy a Piggybank Jar",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3233"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3247",
+        "title": "Piggybank functions to mimic OVER clause in SQL",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3247"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3268",
+        "title": "Case statement support",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3268"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3269",
+        "title": "In operator support",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3269"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3367",
+        "title": "Add assert keyword (operator) in pig",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3367"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3390",
+        "title": "Make pig working with HBase 0.95",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3390"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3430",
+        "title": "Add xml format for explaining MapReduce Plan.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3430"
+          }
+        }
+      },
+      {
+        "issue": "PIG-1244",
+        "title": "parameter syntax in scripts, add support for ${VAR} (in addition to current $VAR)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-1244"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2325",
+        "title": "Make e2e test directory for data configurable in HDFS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2325"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2362",
+        "title": "Rework Ant build.xml to use macrodef instead of antcall",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2362"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2417",
+        "title": "Streaming UDFs -  allow users to easily write UDFs in scripting languages with no JVM implementation.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2417"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2553",
+        "title": "Pig shouldn't allow attempts to write multiple relations into same directory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2553"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2643",
+        "title": "Use bytecode generation to make a performance replacement for InvokeForLong, InvokeForString, etc",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2643"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2764",
+        "title": "Add a biginteger and bigdecimal type to pig",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2764"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2786",
+        "title": "enhance Pig launcher script wrt. HBase/HCat integration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2786"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2898",
+        "title": "Parallel execution of e2e tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2898"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2990",
+        "title": "the -secretDebugCmd shouldn't be a secret and should just be...a command",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2990"
+          }
+        }
+      },
+      {
+        "issue": "PIG-2997",
+        "title": "Provide a convenience constructor on PigServer that accepts Configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-2997"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3004",
+        "title": "Improve exceptions messages when a RuntimeException is raised in Physical Operators",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3004"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3006",
+        "title": "Modernize a chunk of the tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3006"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3015",
+        "title": "Rewrite of AvroStorage",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3015"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3016",
+        "title": "Modernize more tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3016"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3044",
+        "title": "Trigger POPartialAgg compaction under GC pressure",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3044"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3048",
+        "title": "Add mapreduce workflow information to job configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3048"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3057",
+        "title": "Make PigStorage.readField() protected",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3057"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3062",
+        "title": "Change HBaseStorage to permit overriding pushProjection",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3062"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3091",
+        "title": "Make schema, header and stats file configurable in JsonMetadata",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3091"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3123",
+        "title": "Simplify Logical Plans By Removing Unneccessary Identity Projections",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3123"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3124",
+        "title": "Push FLATTENs After FILTERs If Possible",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3124"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3136",
+        "title": "Introduce a syntax making declared aliases optional",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3136"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3138",
+        "title": "Decouple PigServer.executeBatch() from compilation of batch",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3138"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3141",
+        "title": "Giving CSVExcelStorage an option to handle header rows",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3141"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3148",
+        "title": "OutOfMemory exception while spilling stale DefaultDataBag. Extra option to gc() before spilling large bag.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3148"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3160",
+        "title": "GFCross uses unnecessary loop",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3160"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3169",
+        "title": "Remove intermediate data after a job finishes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3169"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3178",
+        "title": "Print a stacktrace when ExecutableManager hits an OOM",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3178"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3179",
+        "title": "Task Information Header only prints out the first split for each task",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3179"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3180",
+        "title": "Document using shell commands in Pig scripts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3180"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3183",
+        "title": "rm or rmf commands should respect globbing/regex of path",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3183"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3199",
+        "title": "Provide a method to retriever name of loader/storer in PigServer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3199"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3204",
+        "title": "Change script parsing to parse entire script instead of line by line",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3204"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3216",
+        "title": "Groovy UDFs documentation has minor typos",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3216"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3217",
+        "title": "Add support for DateTime type in Groovy UDFs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3217"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3218",
+        "title": "Add support for biginteger/bigdecimal type in Groovy UDFs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3218"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3235",
+        "title": "Add log4j.properties for unit tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3235"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3236",
+        "title": "parametrize snapshot and staging repo id",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3236"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3245",
+        "title": "Documentation about HBaseStorage",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3245"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3248",
+        "title": "Upgrade hadoop-2.0.0-alpha to hadoop-2.0.3-alpha",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3248"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3307",
+        "title": "Refactor physical operators to remove methods parameters that are always null",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3307"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3308",
+        "title": "Storing data in hive columnar rc format",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3308"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3309",
+        "title": "TestJsonLoaderStorage fails with IBM JDK 6/7",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3309"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3311",
+        "title": "add pig-withouthadoop-h2 to mvn-jar",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3311"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3321",
+        "title": "AVRO: Support user specified schema on load",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3321"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3332",
+        "title": "Upgrade Avro dependency to 1.7.4",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3332"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3336",
+        "title": "Change IN operator to use or-expressions instead of EvalFunc",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3336"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3339",
+        "title": "Move pattern compilation in ToDate as a static variable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3339"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3341",
+        "title": "Strict datetime parsing and improve performance of loading datetime values",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3341"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3342",
+        "title": "Allow conditions in case statement",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3342"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3359",
+        "title": "Register Statements and Param Substitution in Macros",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3359"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3387",
+        "title": "Miss spelling in test code \"TestBuiltin.java\"",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3387"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3392",
+        "title": "Document STARTSWITH and ENDSWITH UDFs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3392"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3426",
+        "title": "Add support for removing s3 files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3426"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3431",
+        "title": "Return more information for parsing related exceptions.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3431"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3436",
+        "title": "Make pigmix run with Hadoop2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3436"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3445",
+        "title": "Make Parquet format available out of the box in Pig",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3445"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3454",
+        "title": "Update JsonLoader/JsonStorage.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3454"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3470",
+        "title": "Print configuration variables in grunt",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3470"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3493",
+        "title": "Add max/min for datetime",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3493"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3503",
+        "title": "More document for Pig 0.12 new features",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3503"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3076",
+        "title": "make TestScalarAliases more reliable",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3076"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3077",
+        "title": "TestMultiQueryLocal should not write in /tmp",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3077"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3276",
+        "title": "change the default value for hcat.bin to hcat instead of /usr/local/hcat/bin/hcat",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3276"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3277",
+        "title": "fix the path to the benchmarks file in the print statement",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3277"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3034",
+        "title": "Remove Penny code from Pig repository",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3034"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3128",
+        "title": "Document the BigInteger and BigDecimal data type",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3128"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3129",
+        "title": "Document syntax to refer to previous relation",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3129"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3131",
+        "title": "Document PluckTuple UDF",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3131"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3174",
+        "title": "Remove rpm and deb artifacts from build.xml",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3174"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3280",
+        "title": "Document IN operator and CASE expression",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3280"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3370",
+        "title": "Add New Reserved Keywords To The Pig Docs",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3370"
+          }
+        }
+      },
+      {
+        "issue": "PIG-3483",
+        "title": "Document ASSERT keyword",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PIG/12323380"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PIG-3483"
+          }
+        }
+      }
+    ]
+  }
+}

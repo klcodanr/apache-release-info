@@ -1,0 +1,2613 @@
+{
+  "id": "12340181",
+  "name": "Impala 3.0",
+  "description": "Next compatibility-breaking release of Impala",
+  "date": "2018-05-07",
+  "version": "3.0",
+  "module": "Impala",
+  "lastUpdated": 1633089347913,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/IMPALA/fixforversion/12340181"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/IMPALA"
+    }
+  },
+  "releaseNotes": "Release Notes - IMPALA - Version Impala 3.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "IMPALA-3562",
+        "title": "Extend \"compute stats\" syntax to support a list of columns",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-3562"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4886",
+        "title": "Expose per table partition/files/blocks count in web UI",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4886"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5518",
+        "title": "Allocate KrpcDataStreamRecvr RowBatch tuples from BufferPool",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5518"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5528",
+        "title": "tcmalloc contention much higher with concurrency after KRPC patch",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5528"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6116",
+        "title": "Bound memory usage of KRPC service queue",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6116"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6219",
+        "title": "Use AES-GCM for spill-to-disk encryption when CLMUL instruction is present and performant",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6219"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6314",
+        "title": "Add run time scalar subquery check for uncorrelated subqueries",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6314"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6356",
+        "title": "Excessive synchronous logging in RpczStore::LogTrace causes severe slowdown for exchange operators spanning 2-3 minutes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6356"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6396",
+        "title": "Exchange node should correctly report peak memory in query profile and summary",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6396"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6459",
+        "title": "Doc: TABLESAMPLE for COMPUTE STATS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6459"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6462",
+        "title": "Impala 3 Doc: Update for reserved keywords",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6462"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6463",
+        "title": "Impala 3 Doc: Remove the unused query options from docs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6463"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6464",
+        "title": "Impala 2.12 & 3.0 Docs: Extend \"compute stats\" syntax to support a list of columnss",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6464"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6470",
+        "title": "Impala 3 Doc: Remove all user-facing Llama configuration options",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6470"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6480",
+        "title": "Impala 3.0 Doc: Update DESCRIBE statement to respect column level privileges",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6480"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6482",
+        "title": "Add query option for query time limit",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6482"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6483",
+        "title": "Impala 3.0 & 2.12 Docs: Describe the query option for query time limit",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6483"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6508",
+        "title": "Allow tests to run with Krpc",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6508"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6510",
+        "title": "Impala 2.12 Doc: Remove the refresh_after_connect option from INVALIDATE METADATA statemement",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6510"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6512",
+        "title": "test_exchange_delays does not work with KRPC enabled",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6512"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6514",
+        "title": "Impala 2.12 & 3.0 Docs: Allow Impala Shell to connect directly to impalad when config with proxy load balancer and kerberos",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6514"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6529",
+        "title": "Impala 3 Doc: ROUND function output type change",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6529"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6538",
+        "title": "Fix read path when Parquet min(_value)/max(_value) statistics contain NaN",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6538"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6542",
+        "title": "Fix inconsistent write path of Parquet min/max statistics",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6542"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6546",
+        "title": "Impala 2.12 & 3.0 Docs: Document the new ODBC scalar functions",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6546"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6554",
+        "title": "Check failed: consumption_->current_value() == 0 (126 vs. 0) KrpcDataStreamRecvr",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6554"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6565",
+        "title": "Stress test with KRPC enabled shows inconsistent results for some queries",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6565"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6576",
+        "title": "Add metric for Data Stream Service Queue memory consumption",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6576"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6592",
+        "title": "Fix test gap - no test of handling for invalid/unsupported Parquet codec",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6592"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6609",
+        "title": "Some COUNTER_ADD() in KrpcDataStreamRecvr may lead to use-after-free",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6609"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6624",
+        "title": "Network error: failed to write to TLS socket: error:1409F07F:SSL routines:SSL3_WRITE_PENDING:bad write retry:s3_pkt.c",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6624"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6643",
+        "title": "Add fine-grained REFRESH privilege",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6643"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6647",
+        "title": "Add fine-grained CREATE privilege",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6647"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6649",
+        "title": "Add fine-grained ALTER privilege",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6649"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6650",
+        "title": "Add fine-grained DROP privilege",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6650"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6651",
+        "title": "Impala 2.13 & 3.0 Docs: Fine-grained privileges",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6651"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6666",
+        "title": "Impala 2.12 & 3.0 Docs: Use AES-GCM for spill-to-disk encryption when CLMUL instruction is present and performant",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6666"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6669",
+        "title": "Remove NeedsSeedingForBatchedReading()",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6669"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6685",
+        "title": "Improve profile in KrpcDataStreamRecvr and KrpcDataStreamSender",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6685"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6688",
+        "title": "Impala 2.12 & 3.0 Docs: Change default configuration to --compact_catalog_topic=true",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6688"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6723",
+        "title": "Impala 2.12 & 3.0 Docs: Support insert plan hints for CREATE TABLE AS SELECT",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6723"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6728",
+        "title": "The combination use_kudu_kinit=false and use_krpc=true crashes Impalad",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6728"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6748",
+        "title": "Impala 2.12 & 3.0 Docs: Support more separators between date and time in default timestamp format",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6748"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6800",
+        "title": "Add missing test cases in statements that require ALTER privilege",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6800"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6804",
+        "title": "Allow SELECT and INSERT privileges on SERVER",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6804"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6842",
+        "title": "Impala 3 Doc: Remove  'disable_admission_control' as a startup flag",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6842"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6867",
+        "title": "Impala 2.12 & 3.0 Docs: Provide a query option to not shuffle on distinct exprs",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6867"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6868",
+        "title": "Impala 3.0 Doc: Remove old kinit code for Impala 3",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6868"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6961",
+        "title": "Impala Doc: Doc --enable_minidumps flag",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6961"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-484",
+        "title": "Some functions always return same data type while, according to MSDN, they should return same data type as input data",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-484"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-2567",
+        "title": "KRPC milestone 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-2567"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-3170",
+        "title": "Large literal exponents cause many seconds of delay",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-3170"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-3464",
+        "title": "Show Create Table with Unusual Delimiters Incorrect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-3464"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4319",
+        "title": "Remove unused query options in compat-breaking version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4319"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4371",
+        "title": "Incorrect DCHECK-s in hdfs-parquet-table-writer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4371"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4924",
+        "title": "Make DECIMAL_V2 the default mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4924"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5139",
+        "title": "Make mvn-quiet.sh write its output to a logfile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5139"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5191",
+        "title": "Behavior of GROUP BY, HAVING, ORDER BY with column aliases should be more standard conforming",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5191"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5269",
+        "title": "Comment on Final Line of Query Breaks Parsing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5269"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5293",
+        "title": "Turn insert clustering on by default",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5293"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5747",
+        "title": "Crash with --asm_module_dir set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5747"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5903",
+        "title": "Inconsistent specification of result set and result set metadata",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5903"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5930",
+        "title": "Document that SCAN_NODE_CODEGEN_THRESHOLD has had no effect since 2.7",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5930"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5933",
+        "title": "Compute incremental stats should always return a result set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5933"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6008",
+        "title": "Creating a UDF from a shared library with a .ll extension crashes Impala",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6008"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6062",
+        "title": "Frontend tests need to handle hadoop 3 error messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6062"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6092",
+        "title": "Flaky test: query_test/test_udfs.py still happening",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6092"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6160",
+        "title": "tpcds-q22a.test breaks run-workload.py",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6160"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6215",
+        "title": "Race between lib_cache and java udf class loading",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6215"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6230",
+        "title": "The output type of a round() function should match the input type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6230"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6275",
+        "title": "Successful CTAS logs warning",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6275"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6303",
+        "title": "[DOCS] Incorrect mention of DataNodes in Impala docs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6303"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6322",
+        "title": "Group by expression fails when expression includes a CAST",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6322"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6340",
+        "title": "There is no error when inserting an invalid value into a decimal column under decimal_v2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6340"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6372",
+        "title": "Dataload should execute Hive loads in parallel",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6372"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6392",
+        "title": "Explain format for parquet predicate statistics should be consistent with predicates",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6392"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6397",
+        "title": "IllegalStateException in planning of aggregation with float and decimal literal child expressions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6397"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6405",
+        "title": "There is no error under Decimal v2 when there is an overflow when casting String to Decimal",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6405"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6429",
+        "title": "Decimal division returns an incorrect result",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6429"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6441",
+        "title": "concurrent select binary search explain string pattern match is wrong",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6441"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6447",
+        "title": "Failure in tests.stress.concurrent_select",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6447"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6449",
+        "title": "Use CLOCK_MONOTONIC in ConditonVariable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6449"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6451",
+        "title": "Creating a Kudu table with CTAS fails with AuthorizationException: User 'username' does not have privileges to access: server1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6451"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6454",
+        "title": "CTAS into Kudu fails with mixed-case partition and/pr primary key column names",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6454"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6468",
+        "title": "Round() is inconsistent for Decimal and Double",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6468"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6471",
+        "title": "Incorrect Impala ALTER TABLE statement documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6471"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6472",
+        "title": "Builds broken because test_exprs uses a reserved word",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6472"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6473",
+        "title": "Error in analytic sort with same expr in 'partition by' and 'order by'",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6473"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6488",
+        "title": "Crash in LibCache::GetCacheEntryInternal()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6488"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6489",
+        "title": "ASAN use-after-poison in impala::HdfsScanner::InitTupleFromTemplate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6489"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6495",
+        "title": "targeted-perf tests broken by column alias change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6495"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6498",
+        "title": "test_query_profile_thrift_timestamps causes following tests to fail",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6498"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6500",
+        "title": "Impala crashes under certain hypervisors that return out-of-range CPU IDs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6500"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6511",
+        "title": "Fix event \"Open Finished\" in state machine in FragmentInstanceState::UpdateState()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6511"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6516",
+        "title": "Avoid logging during catalog update if the catalog version didn't change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6516"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6518",
+        "title": "Fix the output type of a decimal union for decimal_v2",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6518"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6526",
+        "title": "Regression: query_test.test_spilling.TestSpillingDebugActionDimensions.test_spilling",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6526"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6527",
+        "title": "NaN values lead to incorrect statistics filtering under certain circumstances",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6527"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6571",
+        "title": "NullPointerException in SHOW CREATE TABLE for HBase tables",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6571"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6577",
+        "title": "TestQueryExpiration::test_concurrent_query_expiration failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6577"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6582",
+        "title": "Flaky test: TestImpalaShellInteractive::test_multiline_queries_in_history",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6582"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6583",
+        "title": "Various tests fail with missing database or table from catalog",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6583"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6584",
+        "title": "TestKuduOperations::test_column_storage_attributes broken on exhaustive build",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6584"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6585",
+        "title": "test_low_mem_limit_q21 flaky under ASAN",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6585"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6586",
+        "title": "FrontendTest.TestGetTablesTypeTable failing on some builds",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6586"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6588",
+        "title": "test_compute_stats_tablesample failing with \"Cancelled\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6588"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6589",
+        "title": "Fuzz test on parquet table crashes impala",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6589"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6595",
+        "title": "Hit crash freeing buffer in NljBuilder::Close()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6595"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6599",
+        "title": "Log spam: ImpaladCatalog.java:525] NativeLibCacheSetNeedsRefresh(hdfs://localhost:20500/test-warehouse/test-udfs.ll) failed.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6599"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6602",
+        "title": "TestQueryExpiration.test_query_expiration fails on Isilon with FINISHED rather than EXCEPTION state",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6602"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6615",
+        "title": "An insert query using a CTE does not show the expected output when executed in Impala-shell",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6615"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6619",
+        "title": "Alter table recover partitions creates unneeded partitions when faces percent sign",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6619"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6670",
+        "title": "Executor-only impalads do not refresh their lib-cache entries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6670"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6683",
+        "title": "Restarting the Catalog without restarting Impalad and SS can block topic updates",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6683"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6690",
+        "title": "Invalid syntax in pip_download.py due to a recent patch",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6690"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6694",
+        "title": "BufferPool appears misaligned in query profile",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6694"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6695",
+        "title": "Builds fail with pkg_resources.VersionConflict",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6695"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6697",
+        "title": "Setuptools 39.0.0 does not work with Python 2.6",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6697"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6715",
+        "title": "stress test is double-counting TPCDS queries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6715"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6716",
+        "title": "ImpalaShell should not rely on global access to parsed command line options",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6716"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6717",
+        "title": "common_query_options are not used in binary search phase of stress test",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6717"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6719",
+        "title": "refresh function case sensitivity",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6719"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6722",
+        "title": "Local build failing due to missing libTestUdfs.so",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6722"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6724",
+        "title": "Allow creating/dropping functions with the same name as built-ins",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6724"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6731",
+        "title": "Build failed with distutils.errors.DistutilsError: Could not find suitable distribution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6731"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6739",
+        "title": "Exception in ALTER TABLE SET statements",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6739"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6752",
+        "title": "import kudu fails in python on Ubuntu 16.04",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6752"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6759",
+        "title": "stress test can't parse explain string with petabyte memory estimates (really)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6759"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6774",
+        "title": "SyntaxError: invalid syntax diagnostics/collect_diagnostics.py",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6774"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6785",
+        "title": "Starting an Impalad on an already running cluster may result in inconsistent cluster subscription",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6785"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6790",
+        "title": "sqlparse needs to be upgraded in the Python environment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6790"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6793",
+        "title": "Metadata doesn't recover after restarting statestore",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6793"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6824",
+        "title": "Crash in RuntimeProfile::EventSequence::AddNewerEvents() when events_ is empty",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6824"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6825",
+        "title": "/share/hadoop/tools/lib/ missing from HADOOP_CLASSPATH when using Hadoop 3, breaking S3 dev support",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6825"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6851",
+        "title": "custom cluster test TestGrantRevoke::test_role_update doesn't clean up restarted impala daemons correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6851"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6862",
+        "title": "Privilege.java needs to support Sentry 1.5.1 and Sentry 2.0.0 API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6862"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6884",
+        "title": "test_misaligned_orc_stripes fails for local fs tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6884"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6887",
+        "title": "Typo in authz-policy.ini.template",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6887"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6889",
+        "title": "test_breakpad.py test_minidump_cleanup_thread failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6889"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6896",
+        "title": "NullPointerException in DESCRIBE FORMATTED on views",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6896"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6898",
+        "title": "Dataload from scratch loads Kudu tables twice",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6898"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6899",
+        "title": "Dataload uses excessive HDFS commands",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6899"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6927",
+        "title": "Crash when click Fragment Instances on web page",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6927"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6934",
+        "title": "Wrong results with EXISTS subquery containing ORDER BY, LIMIT, and OFFSET",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6934"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6962",
+        "title": "Cluster test API unable to (re)start processes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6962"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-7005",
+        "title": "The 3.0 changelog page should mention the previous version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-7005"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-7044",
+        "title": "int32 overflow in HdfsTableSink::CreateNewTmpFile()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-7044"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-7129",
+        "title": "Can't start catalogd in tests under UBSAN",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-7129"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6648",
+        "title": "Add fine-grained privileges to role for Impala",
+        "type": "Epic",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6648"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4167",
+        "title": "Support insert plan hints for CREATE TABLE AS SELECT",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4167"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6537",
+        "title": "Add missing ODBC scalar functions",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6537"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-1803",
+        "title": "Avoid hitting OOM in HdfsTableSink when inserting to Parquet",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-1803"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-2782",
+        "title": "Allow Impala Shell to connect directly to impalad when config with proxy load balancer and kerberos",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-2782"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-2963",
+        "title": "Deprecate query option: disable_cached_reads",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-2963"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4132",
+        "title": "Consider using -fno-omit-frame-pointer in release builds",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4132"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4277",
+        "title": "Impala should build against latest Hadoop components",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4277"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4744",
+        "title": "Apache Impala release should include release tag or hash in version string",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4744"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-4953",
+        "title": "Prevent large statestore updates from head-of-line blocking subsequent updates to different topics",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-4953"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5037",
+        "title": "Change default Parquet array resolution according to Parquet standard.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5037"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5721",
+        "title": "stress test: save profiles during binary search",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5721"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5801",
+        "title": "Clean up codegen GetType() interface",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5801"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5814",
+        "title": "Remove flag to disable admission control",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5814"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6059",
+        "title": "Enhance ltrim() and rtrim() functions to trim any set of characters",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6059"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6075",
+        "title": "Add Impala daemon metric for catalog version",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6075"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6077",
+        "title": "remove  BIT_PACKED encoding for Parquet levels",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6077"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6113",
+        "title": "Skip row groups with predicates on NULL columns",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6113"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6324",
+        "title": "Support reading RLE-encoded boolean values in Parquet scanner",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6324"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6395",
+        "title": "Allow the accumulated row batch size of a data sink to be tunable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6395"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6437",
+        "title": "increase frequency of admission control topic updates",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6437"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6479",
+        "title": "Update DESCRIBE statement to respect column level privileges",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6479"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6497",
+        "title": "Impala should expose when the last row is fetched",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6497"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6519",
+        "title": "Allow atomic allocation of an unreserved buffer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6519"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6551",
+        "title": "Update TPCDS columns from DOUBLE to DECIMAL for Kudu",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6551"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6629",
+        "title": "Clearer and more concise logging during catalog topic updates",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6629"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6641",
+        "title": "Support more separators between date and time in default timestamp format",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6641"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6655",
+        "title": "Set owner information on database creation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6655"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6675",
+        "title": "Change default configuration to --compact_catalog_topic=true",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6675"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6682",
+        "title": "Support hash function other than md5 in pypi download script",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6682"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6779",
+        "title": "Impala Doc: Improve REPLICA_PREFERENCE doc",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6779"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6791",
+        "title": "Create scripts to automate distcc server setup and toolchain updates",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6791"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6805",
+        "title": "Show current database in Impala shell prompt",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6805"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6809",
+        "title": "bootstrap_system.sh does an unconditional git clone to ~/Impala",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6809"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6817",
+        "title": "Clean up Impala privilege model",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6817"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6820",
+        "title": "Remove builtins db from catalogd",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6820"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6822",
+        "title": "Provide a query option to not shuffle on distinct exprs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6822"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6850",
+        "title": "Print the actual error message to the console when Sentry fails",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6850"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6878",
+        "title": "SentryServicePinger should not print stacktrace at every retry",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6878"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-3271",
+        "title": "Remove deprecated command-line options (including Llama)",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-3271"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-3916",
+        "title": "Reserve SQL:2016 keywords",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-3916"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-5893",
+        "title": "Remove old kinit code for Impala 3",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-5893"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6733",
+        "title": "Impala 3.0 Doc: Release Nots",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6733"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6736",
+        "title": "stress test --filter-query-mem-ratio doesn't work",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6736"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6780",
+        "title": "test_recover_paritions.py have always-true asserts",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6780"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6860",
+        "title": "Impala 3.0 Doc: Upgrade Considerations",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6860"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6872",
+        "title": "Impala 3.0 Doc: Update Known Issues",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6872"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6886",
+        "title": "Impala Doc: Remove Impala Cluster Sizing doc",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6886"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6959",
+        "title": "Update HAProxy configuration sample for Impala",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6959"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6176",
+        "title": "Document that SCAN_NODE_CODEGEN_THRESHOLD has no effect",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6176"
+          }
+        }
+      },
+      {
+        "issue": "IMPALA-6415",
+        "title": "Impala 3 Doc: Document breaking change of alias and ordinal substitution",
+        "type": "Documentation",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/IMPALA/12340181"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/IMPALA-6415"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,988 @@
+{
+  "id": "12345194",
+  "name": "0.4.0",
+  "description": "Ratis 0.4.0 Release",
+  "date": "2019-09-20",
+  "version": "0.4.0",
+  "module": "",
+  "lastUpdated": 1633096353993,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/RATIS/fixforversion/12345194"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/RATIS"
+    }
+  },
+  "releaseNotes": "Release Notes - Ratis - Version 0.4.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "RATIS-520",
+        "title": "[Configuration] Unify configuration across client and server code",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-520"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-551",
+        "title": "Expose JVM metrics",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-551"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-593",
+        "title": "Add Graphite container in docker setup for logservice testing",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-593"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-594",
+        "title": "Add HadoopMetrics2Adaptor for dropwizard metrics",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-594"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-597",
+        "title": "Add notifyLeader API in state machine",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-597"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-651",
+        "title": "Add metrics related to leaderElection and HeartBeat",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-651"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-670",
+        "title": "Add a metric to track StateMachine Log apply index",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-670"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-485",
+        "title": "TimeoutScheduler is leaked by gRPC client implementation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-485"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-495",
+        "title": "Leader Election thread might crash if two servers having the same id",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-495"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-497",
+        "title": "IllegalStateException: ILLEGAL TRANSITION: In LogAppender(s4 -> s1), CLOSING -> RUNNING",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-497"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-515",
+        "title": "IllegalStateException while updating matchIndex",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-515"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-523",
+        "title": "DEBUG log too chatty for LogService",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-523"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-524",
+        "title": "JCommander args should have `required=true` when appropriate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-524"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-532",
+        "title": "UnorderedAsync requests should fail instead of retrying the request in case of GroupMismatchException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-532"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-542",
+        "title": "When a server restarts, purge(-1) causes IllegalStateException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-542"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-543",
+        "title": "Ratis GRPC client produces excessive logging while writing data.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-543"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-545",
+        "title": "Leader Election timeout should consider JVM pause interval",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-545"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-558",
+        "title": "GrpcLogAppender doesn't reset the log entries to follower on reply to inconsistent entries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-558"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-559",
+        "title": "LogAppender.getPrevious throws IllegalStateException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-559"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-563",
+        "title": "Purge logs in takeSnapshot only after all the nodes have caught up with the index",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-563"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-566",
+        "title": "OrderedStreamObservers#closeAllExisting should close the streams for a certain group id only",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-566"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-568",
+        "title": "Server sliding window should fail out of order requests on close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-568"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-571",
+        "title": "Client may send first request in sliding window with firstFlag as false",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-571"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-575",
+        "title": "TestWatchRequestWithGrpc#testWatchRequestTimeout fails with NotReplicatedException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-575"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-577",
+        "title": "NPE in LogAppender while creating a new request.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-577"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-578",
+        "title": "Illegal State transition in LeaderElection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-578"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-579",
+        "title": "ExitUtils.terminate results in JVM terminated for peers not part of the group",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-579"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-587",
+        "title": "FinalizeLogSegment should flush the contents of log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-587"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-588",
+        "title": "LogStream StateMachine export",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-588"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-590",
+        "title": "Deadlock in ratis client",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-590"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-592",
+        "title": "One node ratis writes fail forever after first NotLeaderException or LeaderNotReadyException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-592"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-595",
+        "title": "appendEntry future should be completed only after the entry is flushed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-595"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-601",
+        "title": "Fix NotLeaderException handling",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-601"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-604",
+        "title": "OrderedRequestStreamObserver does not cleanup when responding error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-604"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-606",
+        "title": "GrpcService should use SO_REUSEADDR flag",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-606"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-621",
+        "title": "Metrics subproject is not included in the release tar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-621"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-625",
+        "title": "LogSegment#append leaks entryCache when the entries are loaded on a restart.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-625"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-627",
+        "title": "Rpc timeouts and leader election timeout configs are misleading",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-627"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-642",
+        "title": "Bump the copyright year of the NOTICE.txt",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-642"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-653",
+        "title": "Fix LICENSE and NOTICE files for release",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-653"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-654",
+        "title": "Fix generation LICENSE and NOTICE for third-party dependencies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-654"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-658",
+        "title": "ratis-assembly does not include ratis-resource-bundle",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-658"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-659",
+        "title": "StateMachineUpdater#stopAndJoin might not take snapshot due to race condition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-659"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-668",
+        "title": "Fix NOTICE file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-668"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-674",
+        "title": "Wrong ServiceLoader entry for MetricRegistries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-674"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-167",
+        "title": "Implement a high performance OutputStream using async API",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-167"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-498",
+        "title": "Notify Follower to Install Snapshot through state machine",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-498"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-548",
+        "title": "Metric Framework for Ratis",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-548"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-661",
+        "title": "Add call in state machine to handle group removal",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-661"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-243",
+        "title": "Add log purge function after taking snapshot",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-243"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-514",
+        "title": "Check if leader and follower have same configuration for installSnapshot",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-514"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-518",
+        "title": "Add request specific retry policy support",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-518"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-519",
+        "title": "Improvements on README.md and ratis-examples/README.md",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-519"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-527",
+        "title": "Add usability scripts inside of docker container",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-527"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-529",
+        "title": "Leader should limit pending requests to avoid OOM",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-529"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-533",
+        "title": "Set important server config options for logservice",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-533"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-534",
+        "title": "Warn that the netty useCacheForAllThreads feature may cause JVM GC pauses",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-534"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-541",
+        "title": "Add option to verify correctness of batch and mix of batch and single updates data from LogService in VerficiationTool",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-541"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-555",
+        "title": "Move RaftLog and the implementations to separated packages",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-555"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-564",
+        "title": "Add raft group Id to install snapshot notification",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-564"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-565",
+        "title": "Move the ordered async client code to a new class",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-565"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-573",
+        "title": "Handle Raft Log Append Failure",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-573"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-574",
+        "title": "Client should not use configured sleep interval in RetryPolicy when it gets NotLeaderException",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-574"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-600",
+        "title": "Better logging for installSnapshot",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-600"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-605",
+        "title": "Change RaftServerImpl and proto to use RaftGroupMemberId",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-605"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-609",
+        "title": "Change RaftLog to use RaftGroupMemberId",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-609"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-628",
+        "title": "Simplify the code in LogSegment",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-628"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-643",
+        "title": "Allow Ratis to take a configurable snapshot retention policy",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-643"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-655",
+        "title": "Change LeaderState and FollowerState and  to use RaftGroupMemberId",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-655"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-669",
+        "title": "Allow Ratis gRPCTlsConfig to take Java Key/Cert Object in addition to File",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-669"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-681",
+        "title": "Fix non-standard field names in config keys",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-681"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-611",
+        "title": "Add a test for InstallSnapshotNotification with follower restart",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-611"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-480",
+        "title": "Update documentation and scripts with new ratis-example usages",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-480"
+          }
+        }
+      },
+      {
+        "issue": "RATIS-526",
+        "title": "Wrapper script to build docker image",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RATIS/12345194"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RATIS-526"
+          }
+        }
+      }
+    ]
+  }
+}

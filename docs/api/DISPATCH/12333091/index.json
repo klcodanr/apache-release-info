@@ -1,0 +1,1846 @@
+{
+  "id": "12333091",
+  "name": "0.6.0",
+  "description": "Core Update, Waypoints, Balancing",
+  "date": "2016-06-13",
+  "version": "0.6.0",
+  "module": "",
+  "lastUpdated": 1633096103325,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/DISPATCH/fixforversion/12333091"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/DISPATCH"
+    }
+  },
+  "releaseNotes": "Release Notes - Qpid Dispatch - Version 0.6.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "DISPATCH-169",
+        "title": "Add Ingress FIFO for incoming message-routed links",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-169"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-32",
+        "title": "Undeliverable messages should get released.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-32"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-43",
+        "title": "Router control messages delayed by inter-router message traffic",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-43"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-47",
+        "title": "qdrouterd doesn't know where its libraries are",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-47"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-53",
+        "title": "waypoints are not robust if targets not set up in advance.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-53"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-58",
+        "title": "Router/Broker interaction - Unroutable/released messages are continually resent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-58"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-111",
+        "title": "helloworld example hangs when run against a broker via link-routing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-111"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-126",
+        "title": "Link-route behavior doesn't honor the semantics assigned to the address prefix",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-126"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-127",
+        "title": "Messages from waypoints to remote routers are not delivered",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-127"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-155",
+        "title": "Allow multiple connectors to the same broker",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-155"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-156",
+        "title": "[dispatch-tools] qdstat fails to connect to localhost via IPv4",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-156"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-168",
+        "title": "A message sent to $management without a reply-to field causes a crash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-168"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-171",
+        "title": "SSL Domain objects are leaked.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-171"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-172",
+        "title": "QDStat system test never tests SASL EXTERNAL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-172"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-173",
+        "title": "Half-closed connections spin on \"writable\" until they close",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-173"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-174",
+        "title": "Improper use of ref-counted object references in container",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-174"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-175",
+        "title": "Router continues to forward messages to the broker even when the broker is not available",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-175"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-176",
+        "title": "Messages sent got lost when one of the brokers went down",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-176"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-177",
+        "title": "Valgrind finds leaks when running dispatch w/SSL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-177"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-181",
+        "title": "ssl_enabled flag on the config set to true if \"password\" is one of the fields in the config file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-181"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-183",
+        "title": "plaintext sasl password being written to the dispatch router log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-183"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-191",
+        "title": "router not replying to detach frame",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-191"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-196",
+        "title": "Remove endpoint mode from router documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-196"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-198",
+        "title": "Message module doesn't parse AMQP-Value bodies that are strings or symbols",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-198"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-207",
+        "title": "When a message body of [ ] is sent from rhea it is rejected as an invalid body",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-207"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-208",
+        "title": "Closest semantics forwards improperly in multi-router network",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-208"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-215",
+        "title": "The topology diagram initially draws off the bottom of the visible page.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-215"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-218",
+        "title": "Dispatch system tests run very slowly if connected to a VPN",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-218"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-219",
+        "title": "System test security configuration for installed/built tests.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-219"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-222",
+        "title": "For Dispatch 0.6 release move up the minimum required version of qpid proton to 0.12.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-222"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-223",
+        "title": "Unknown connector name is not properly printed in error messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-223"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-225",
+        "title": "Sending UPDATE log request with relative path crashes router",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-225"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-226",
+        "title": "The default role is not applied when creating a connector",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-226"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-231",
+        "title": "Router should not issue credit for unavailable targets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-231"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-234",
+        "title": "undeliverable-here set to true for messages from waypoints if there is no receiver",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-234"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-237",
+        "title": "Dispatch Router overwrites delivery tag for link-routed deliveries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-237"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-238",
+        "title": "Need more documentation for qdstat output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-238"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-240",
+        "title": "qdstat : leading \"/\" character effects a wrong showed address",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-240"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-241",
+        "title": "Bias \"spread\" config with leading \"/\" on address has a \"multicast\" behavior",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-241"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-245",
+        "title": "Various Bugs found by Coverity",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-245"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-247",
+        "title": "Policy gets username from transport",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-247"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-248",
+        "title": "Policy self test uses python features not supported by RHEL 6 (python 2.6)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-248"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-250",
+        "title": "Router crash when deleting connector",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-250"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-254",
+        "title": "Router crash after several management requests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-254"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-255",
+        "title": "Policy miscounts quick socket open/close against total connection limit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-255"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-257",
+        "title": "Policy miscounts sender/receiver links; no link count tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-257"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-259",
+        "title": "qdstat man-page doc is no good",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-259"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-261",
+        "title": "Bind error on one port causes bind error on other ports",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-261"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-262",
+        "title": "oslo.messaging RPC fanout crashes qdrouterd",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-262"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-263",
+        "title": "Router crash when requesting log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-263"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-264",
+        "title": "printf formats for 64-bit quantities need to be 64/32-bit safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-264"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-267",
+        "title": "Policy does not increment denial statistics",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-267"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-268",
+        "title": "Delivery from waypoint queue can stall when messages are released",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-268"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-269",
+        "title": "Policy denial logs at wrong level",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-269"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-270",
+        "title": "Specifying a maxSessions limit of 1 allows unlimited sessions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-270"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-271",
+        "title": "Handle single router",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-271"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-272",
+        "title": "Re-enable the connection cross-section popup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-272"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-273",
+        "title": "The entity view is missing information for some entities",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-273"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-275",
+        "title": "Prevent javascript alert errors when navigating to console from a bookmark",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-275"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-278",
+        "title": "Deleting amqp listener using qdmanage crashes the router",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-278"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-279",
+        "title": "Policy crash when application name is null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-279"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-281",
+        "title": "Hostname not sent in open frame on connectors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-281"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-282",
+        "title": "Prevent topology updates when adding a new router node",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-282"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-283",
+        "title": "Start the overview page with the Router tree node expanded",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-283"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-284",
+        "title": "The management schema no longer exposes a way to associate links with their connections",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-284"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-285",
+        "title": "qdmanage returns an empty list when you QUERY for certain entities",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-285"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-287",
+        "title": "Policy does not allow configuration for unspecified Open hostname",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-287"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-288",
+        "title": "Driver - Wakeup pipe was seen to block on read, deadlocking the driver.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-288"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-289",
+        "title": "Unit tests failing on Solaris",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-289"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-290",
+        "title": "Adapt CMakeLists.txt and code so that qpid-dispatch can be compiled on Solaris",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-290"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-292",
+        "title": "some router.link attributes should be graphable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-292"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-293",
+        "title": "The $ character can't be used inside a prefix for linkRoute",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-293"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-294",
+        "title": "Crash in the core-thread due to an address referencing a link on a closed connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-294"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-295",
+        "title": "Router aborted on assertion failed after socker closing by client",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-295"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-298",
+        "title": "router spinning on shutdown (in qdr_del_connection_ref)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-298"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-299",
+        "title": "After policy rejects a connection queued Begin causes a crash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-299"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-304",
+        "title": "Console PNG images not showing up in documentation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-304"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-309",
+        "title": "Mobile addresses get the wrong distribution when mapped to remote routers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-309"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-310",
+        "title": "Use router.id instead of container.containerName",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-310"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-312",
+        "title": "Closest distribution fails to react to loss of a remote destination",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-312"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-319",
+        "title": "Discrepancy between origin router's path and other routers' valid-origins",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-319"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-320",
+        "title": "SSL enabled connector does not do hostname verification",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-320"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-321",
+        "title": "Dispatch does not send out SASL-OUTCOME frame on sasl failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-321"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-323",
+        "title": "Separate the websockify installation instruction from the usage instructions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-323"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-332",
+        "title": "Heavy message loss happening with 2 interconnected routers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-332"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-334",
+        "title": "Proton sequence error during backpressure with balanced distribution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-334"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-335",
+        "title": "link routes aren't balanced over remote routers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-335"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-338",
+        "title": "Incorrect default distribution for addresses",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-338"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-339",
+        "title": "The change from 'routerId' to 'id' and 'addr' to 'host' configuration option is not backwards compatible",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-339"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-340",
+        "title": "Test inter_router_plain_over_ssl fails to find SSL connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-340"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-342",
+        "title": "qdrouterd.conf doc calls out router.config.{address,linkRoute,autoLink}",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-342"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-343",
+        "title": "Router stops accepting connections after load from parallel senders",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-343"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-356",
+        "title": "Creating and deleting a listener on already listening port causes router to crash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-356"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-368",
+        "title": "Router in bad state in two inter-connected routers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-368"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-371",
+        "title": "qdstat and all other clients stopped connecting to interior router",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-371"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-10",
+        "title": "Add link-cost for route computation",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-10"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-144",
+        "title": "Configurable heartbeats for listeners and connectors",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-144"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-163",
+        "title": "Add username and password for authentication of connectors",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-163"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-200",
+        "title": "Flexible mapping from x.509 certificates to an identity",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-200"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-228",
+        "title": "In ctools, add a variant of DEQ_* to allow membership in multiple lists",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-228"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-253",
+        "title": "Configurable link-capacity",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-253"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-9",
+        "title": "Refactor the routing fast-path to allow the insertion of an asynchronous address lookup",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-9"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-57",
+        "title": "Balance deliveries adaptively across all competing consumers in the network",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-57"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-148",
+        "title": "Strip qpid-dispatch-specific message annotations on ingress/egress",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-148"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-159",
+        "title": "Enhance the address prefix used for link routing to support different patterns",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-159"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-164",
+        "title": "Remove connector state-machine from the server module",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-164"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-165",
+        "title": "Discriminate between sending and receiving links when matching link-route patterns",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-165"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-166",
+        "title": "Use test-controlled SASL configuration for system tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-166"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-170",
+        "title": "qdrouterd should not require a restart after the destination broker restarts",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-170"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-178",
+        "title": "Route proton trace messages to the dispatch router log file instead of console",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-178"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-179",
+        "title": "Refactor Router Core",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-179"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-180",
+        "title": "Add a system test to test the 'linkRoutePattern' attribute of qdrouterd.conf",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-180"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-186",
+        "title": "Schema should list entities that should refer to an annotation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-186"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-188",
+        "title": "Dispatch needs a policy mechanism to limit user connections and activity",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-188"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-190",
+        "title": "Expose the Protocol Family for the configuration of listeners and connectors",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-190"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-193",
+        "title": "Updates to the Container API",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-193"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-194",
+        "title": "Move libqpid-dispatch.so out of /lib",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-194"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-197",
+        "title": "Provide list of current link routing",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-197"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-199",
+        "title": "Add Dockerfiles that launches the dispatch router inside a container for RHEL and Debian based systems",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-199"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-201",
+        "title": "Initial release of management console",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-201"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-203",
+        "title": "Improve loop-prevention to drop messages before they are improperly forwarded",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-203"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-206",
+        "title": "Convert from proton.js javascript binding to rhea.js",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-206"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-217",
+        "title": "Make the UI more consistant with other hawtio plugins",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-217"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-230",
+        "title": "New connection role: route-container",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-230"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-232",
+        "title": "Add capability to delete listeners and connectors via the qdmanage DELETE operation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-232"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-242",
+        "title": "Add options to qdstat to display autoLinks and linkRoutes",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-242"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-256",
+        "title": "Documentation Updates for 0.6",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-256"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-265",
+        "title": "Improvements to Detecting Routers with Duplicate IDs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-265"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-277",
+        "title": "Improve defaults for router configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-277"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-286",
+        "title": "Prefix delimiters:  allow slashes as well as periods",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-286"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-300",
+        "title": "Deprecate the ContainerEntity and move its attributes to RouterEntity",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-300"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-302",
+        "title": "Allow substitutable command line arguments when spawning console proxy",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-302"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-303",
+        "title": "Block all remote access to the \"console\" entity",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-303"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-305",
+        "title": "Don't tie inter-router flow credit to unsettled deliveries",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-305"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-306",
+        "title": "Deprecate addr and routerId attributes in qdrouter schema and replace them with host and id respectively",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-306"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-331",
+        "title": "Allow for a default policy to apply when open.hostname doesn't match an existing policy",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-331"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-372",
+        "title": "qdstat should have a timeout command line argument",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-372"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-236",
+        "title": "Provide thread sanitizer build option",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-236"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-307",
+        "title": "misc fixups for console plugin build",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-307"
+          }
+        }
+      },
+      {
+        "issue": "DISPATCH-308",
+        "title": "console documentation needs updated",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12333091"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/DISPATCH-308"
+          }
+        }
+      }
+    ]
+  }
+}

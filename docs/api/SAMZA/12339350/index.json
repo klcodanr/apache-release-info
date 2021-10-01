@@ -1,0 +1,2288 @@
+{
+  "id": "12339350",
+  "name": "0.13.0",
+  "description": "Preview of High-Level API and Standalone Deployment features",
+  "date": "2017-06-04",
+  "version": "0.13.0",
+  "module": "",
+  "lastUpdated": 1633096452608,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/SAMZA/fixforversion/12339350"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/SAMZA"
+    }
+  },
+  "releaseNotes": "Release Notes - Samza - Version 0.13.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "SAMZA-1026",
+        "title": "HDFS System Producer should not have Kafka dependency",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1026"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1082",
+        "title": "Implement Leader Election using ZK",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1082"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1086",
+        "title": "Implement Simple grouper by container, with support for arbitrary container ids",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1086"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1087",
+        "title": "Implement debounce scheduler",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1087"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1102",
+        "title": "ZkController for communication with the ZK",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1102"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1103",
+        "title": "Barrier for job model update",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1103"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1106",
+        "title": "Create test utils for Zk based Standalone testing",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1106"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1107",
+        "title": "add utils for publishing job model and job model version.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1107"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1115",
+        "title": "create ZK based JobCoordinator",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1115"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1124",
+        "title": "add a time out for ZkVersionUpgradeBarrier",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1124"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1126",
+        "title": "Semantics of ProcessorId in Samza",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1126"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1127",
+        "title": "verify that SamzaContainerController.stop shuts down the container completely.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1127"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1128",
+        "title": "Remove dependency of debounce timer from the CoordinationUtils",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1128"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1134",
+        "title": "simplify ZK barrier for version upgrade.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1134"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1151",
+        "title": "create ZkCoordination service",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1151"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1152",
+        "title": "List integration tests needed for the StandAlone project",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1152"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1210",
+        "title": "Fix ZK path issues + container IDs generation.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1210"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1239",
+        "title": "Website documentation of Standalone architecture",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1239"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1240",
+        "title": "hello-samza tutorial documentation for standalone",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1240"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1251",
+        "title": "Remove DebounceTimer dependency from ZkLeaderElector",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1251"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1258",
+        "title": "HappyPathTesting. Single and multiple processors happy path.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1258"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1284",
+        "title": "HappyPath Testing. Rolling Upgrades.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1284"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1286",
+        "title": "ZkController should close zk connection on stop()",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1286"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1291",
+        "title": "add new StandAlone configs to the configuration doc",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1291"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1298",
+        "title": "if ZkConnect string contains extra path, it needs to be created on the ZK.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1298"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1299",
+        "title": "update samza configs with StandAlone tutorial link, when it is available.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1299"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1305",
+        "title": "Error Testing. ZkUnavailable.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1305"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1306",
+        "title": "Error Testing. Failing processor.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1306"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1309",
+        "title": "add a config for de-bounce time.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1309"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1310",
+        "title": "If LocalAppRunner is used - use ZkJobCoordinator by default.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1310"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1311",
+        "title": "HappyPath Testing. Using local storage.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1311"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1313",
+        "title": "renam StandaloneJobCoordinator to PassthroughJobCoordinator",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1313"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1332",
+        "title": "HappyPathTesting. Verify JM generated only once for multiple added SP",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1332"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1333",
+        "title": "ERror Testing. If all processor die, LAR should shutdown.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1333"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-272",
+        "title": "TestExponentialSleepStrategy failing randomly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-272"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-860",
+        "title": "Expose RocksDB log options via Samza configuration",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-860"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-871",
+        "title": "Implement heart-beat mechanism between JobCoordinator and all running containers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-871"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1057",
+        "title": "Window documentation refers to single-threaded-only execution model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1057"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1067",
+        "title": "Physical execution plan for logic expressions written in fluent API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1067"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1074",
+        "title": "Cannot build hello-samza on various CDH version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1074"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1075",
+        "title": "Refactor SystemAdmin Interface to expose a common method to create streams.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1075"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1076",
+        "title": "getKafkaChangelogEnabledStores() should use StorageConfig.getChangelogStream to get changelog system.stream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1076"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1084",
+        "title": "User thread does not see errors from the processor thread when using the StreamProcessor API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1084"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1090",
+        "title": "Create documentation and tutorial for top-level fluent APIs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1090"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1092",
+        "title": "Updated fluent API to use the refactored StreamSpec class",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1092"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1093",
+        "title": "Instantiate StreamOperatorTask in SamzaContainer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1093"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1094",
+        "title": "Removal of MessageEnvelope class from the top-level API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1094"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1096",
+        "title": "StreamSpec constructors in the ExecutionEnvironments",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1096"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1097",
+        "title": "Update the version in master to 0.13.0-SNAPSHOT",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1097"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1098",
+        "title": "Update samza-hello latest branch to use Samza 0.13.0-SNAPSHOT version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1098"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1100",
+        "title": "Exception when using a stream as both bootstrap and broadcast",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1100"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1108",
+        "title": "Implement core windowing and triggering logic",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1108"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1110",
+        "title": "Use \"equals\" instead of \"==\" in StreamGraphImpl.getInputStream()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1110"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1111",
+        "title": "Design logo for Apache Samza",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1111"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1112",
+        "title": "BrokerProxy does not log fatal errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1112"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1121",
+        "title": "StreamAppender should not propagate exceptions to caller",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1121"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1138",
+        "title": "Yarn capability check is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1138"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1146",
+        "title": "TaskCallbackManager commit fix.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1146"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1147",
+        "title": "ZkJobCoordinator does not honor the interface contract of JobCoordinator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1147"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1150",
+        "title": "Handling Error propagation between ZkJobCoordinator & DebounceTimer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1150"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1155",
+        "title": "Allow configuring window.ms to specify trigger duration",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1155"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1156",
+        "title": "Improve ApplicationRunner method naming and class structure.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1156"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1157",
+        "title": "When throwable is caught in serialization/deserialzation, Samza should propagate the throwable via exception, instead of suppressing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1157"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1167",
+        "title": "New streamId-specific configs do not override equivalent system-scoped configs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1167"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1170",
+        "title": "Integration testing harness for StreamApplications",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1170"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1171",
+        "title": "Rewrite config in ApplicationRunnerMain when creating the application runner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1171"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1172",
+        "title": "Fix for the topological sort to handle single-node loop correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1172"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1175",
+        "title": "Removing CoordinationUtils from JobCoordinationFactory interface",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1175"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1176",
+        "title": "Intermittent TestJoinOperator unit test failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1176"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1177",
+        "title": "Improve upgrade documentation for open source releases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1177"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1181",
+        "title": "Fix AppMaster hang after submitting jobs to Yarn",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1181"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1182",
+        "title": "Apache Samza build status has been failing due to flaky tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1182"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1185",
+        "title": "Document async commit support in configuration table and feature information",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1185"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1187",
+        "title": "TestZkProcessorLatch tests share state causing transient failures in CI builds",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1187"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1188",
+        "title": "Document local store monitor support in configuration table under samza-rest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1188"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1189",
+        "title": "Fix file system closed issue on hdfs system producer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1189"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1191",
+        "title": "Flaky test: TestExponentialSleepStrategy testThreadInterruptInRetryLoop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1191"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1192",
+        "title": "TestJoinOperator tests fail on JDK 1.8.0_05",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1192"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1193",
+        "title": "Fix the flaky test TestZkBarrierForVersionUpgrade.testZkBarrierForVersionUpgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1193"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1194",
+        "title": "Disable Flaky test : TestJmxReporter#testJmxReporter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1194"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1195",
+        "title": "Samza AM not updating AMRM token correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1195"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1196",
+        "title": "Fix TestJmxReporter flaky tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1196"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1198",
+        "title": "disable the flaky test TestZkBarrierForVersionUpgrade.testZkBarrierForVersionUpgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1198"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1200",
+        "title": "Scala compile for samza-core occassionally fails with ambiguous reference error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1200"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1202",
+        "title": "Multiple calls to `graph.getInputStream()` with the same streamId results in non-deterministic behavior",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1202"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1203",
+        "title": "Use ProcessorId instead of Zk node Id in JobModel generation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1203"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1204",
+        "title": "Visualize StreamGraph and ExecutionPlan",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1204"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1205",
+        "title": "Disable Flaky test : TestJmxServer#serverStartsUp",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1205"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1206",
+        "title": "Fix flaky tests in TestJMXServer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1206"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1208",
+        "title": "IllegalFormatConversionException in LocalContainerRunner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1208"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1211",
+        "title": "Remove Thread.sleep() from TestJoinOperator tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1211"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1212",
+        "title": "Refactor interaction between StreamProcessor, JobCoordinator and SamzaContainer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1212"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1213",
+        "title": "StreamProcessorLifeCycleAware interface should not use processorId",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1213"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1214",
+        "title": "Allow users to set a default replication.factor for intermediate topics.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1214"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1215",
+        "title": "Removal of ProcessKiller since we are on JDK8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1215"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1216",
+        "title": "TestZkBarrierForVersionUpdate fails with zk connection timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1216"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1217",
+        "title": "Fix broken build due to TestCheckstyle in trunk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1217"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1220",
+        "title": "Add thread name to SamzaContainer shutdown hook and prevent shutdown deadlock",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1220"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1224",
+        "title": "Revert job coordinator factory config to the old format",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1224"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1228",
+        "title": "StreamProcessor should stop JmxServer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1228"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1229",
+        "title": "Disk space monitor should only count data in use by the container",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1229"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1230",
+        "title": "Document localized resource config",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1230"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1241",
+        "title": "ScheduleAfterDebounceTime thread is not shutdown when ZkJobCoordinator shutsdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1241"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1246",
+        "title": "ApplicatonRunner.stats() should include exception in case of failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1246"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1247",
+        "title": "MessageStreamImpl#merge shouldn't assume that the input collection is mutable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1247"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1248",
+        "title": "Fix StandAlone barrier start list.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1248"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1249",
+        "title": "Fix equality for WindowKey for Non-keyed tumbling windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1249"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1250",
+        "title": "JobRunner.kill doesn't terminate cleanly with YarnJob.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1250"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1253",
+        "title": "MessageStream.merge operator broken for nested types",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1253"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1255",
+        "title": "Fix HdfsSystemAdmin when staging directory is empty",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1255"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1256",
+        "title": "Improve trace logging for troubleshooting the fluent API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1256"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1257",
+        "title": "StandAlone LeaderElector sometimes passes null listener in DataChange subscription.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1257"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1259",
+        "title": "LocalApplicationRunner throws exception when configured with a ProcessorIdGenerator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1259"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1263",
+        "title": "Samza Fluent: NPE is streams.id.samza.system is missing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1263"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1266",
+        "title": "Unable to use MetricsSnapshotReporterFactory with fluent API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1266"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1267",
+        "title": "ApplicationRunner#getLocalRunner returns null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1267"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1272",
+        "title": "ZkCoordinationUtils deletes the entire Zk tree on reset",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1272"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1274",
+        "title": "Update kafka-python and kafka broker version for integration tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1274"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1275",
+        "title": "Kafka throws when users configure replication.factor for Kafka default stream",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1275"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1276",
+        "title": "SamzaContainer does not take into account the custom metrics reporter passed by streamprocessor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1276"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1277",
+        "title": "Add a static merge() operator that takes all streams to merge as input",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1277"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1279",
+        "title": "list of children in onProcessorsChange throws NPE when there an exception in ZK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1279"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1290",
+        "title": "Fix javadoc for ApplicationRuner",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1290"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1295",
+        "title": "Add a script to merge pull requests in the hello-samza project",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1295"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1307",
+        "title": "Fix ZkKeyBuilder null checks for pathPrefix",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1307"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1315",
+        "title": "Rename startup script and fix configurations for wikipedia-zk application",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1315"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1317",
+        "title": "Regression: changelog topics do not allow periods in the topic name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1317"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1320",
+        "title": "Changelog topic configuration should accept streams.<streamId> configurations",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1320"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1326",
+        "title": "StreamProcessor should use ApplicationConfig.getGlobalAppId()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1326"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1063",
+        "title": "Samza Standalone Project",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1063"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1064",
+        "title": "Standalone Samza with Zookeeper for Coordination",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1064"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1073",
+        "title": "Design top-level fluent APIs operators that are capable to be deployed in multi-stage jobs",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1073"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1080",
+        "title": "Standalone Samza with No Coordination",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1080"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1083",
+        "title": "Do not load task stores which are older than delete tombstones during container startup",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1083"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1085",
+        "title": "add a new filesystem for localizing the certificate from CSR in yarn",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1085"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1117",
+        "title": "set up certificate signing request in the context for resource localization",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1117"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1131",
+        "title": "RemoteApplicationRunner for cluster-based Samza applications",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1131"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1132",
+        "title": "LocalApplicationRunner for local exeuction of Samza StreamApplication",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1132"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1140",
+        "title": "Non blocking commit in async runloop",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1140"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1142",
+        "title": "Create documentation for non blocking commit in AsyncRunLoop.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1142"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1143",
+        "title": "Universal config support for localized resource",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1143"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1154",
+        "title": "Tasks endpoint to list the complete details of all tasks related to a job",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1154"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1158",
+        "title": "Adding monitor to clean up stale local stores of tasks.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1158"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1174",
+        "title": "Profiling State Perfromance",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1174"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1226",
+        "title": "Relax the type parameters in user functions in fluent API",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1226"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1234",
+        "title": "Documentation for 0.13.0 release",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1234"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-868",
+        "title": "support elasticsearch version 2.x",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-868"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-984",
+        "title": "Upgrade to RocksDB to 4.8.0",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-984"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1135",
+        "title": "Support Scala 2.12",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1135"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1145",
+        "title": "Provide Ability To Confgure The Default Number Of Changelog Replicas",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1145"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1149",
+        "title": "upgrade mockito from 1.8.4 to 1.10.19",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1149"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1161",
+        "title": "Adding metrics into rocksdb LocalStoreMonitor.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1161"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1209",
+        "title": "Improve error handling in LocalStoreMonitor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1209"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1235",
+        "title": "Documentation for Samza Standalone feature",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1235"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1236",
+        "title": "Hello samza tutorial for fluent API",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1236"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1237",
+        "title": "Hello Samza Tutorial for Samza Standalone feature",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1237"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1238",
+        "title": "Documentation for Samza 0.13.0: Architecture overview",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1238"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1245",
+        "title": "Make stream samza.physical.name config name string public",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1245"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1273",
+        "title": "Make StreamConfig.getStreamIds() public",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1273"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1283",
+        "title": "Expose the buffered-message-size metric from BlockingEnvelopeMap",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1283"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1331",
+        "title": "Optimize Snapshot class constructor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1331"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1089",
+        "title": "JobRunner should support kill and status commands.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1089"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1091",
+        "title": "Implement key-based inner join operator with no time constraints",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1091"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1105",
+        "title": "Upgrade Samza's Kafka client version to 0.10.2.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1105"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1137",
+        "title": "Instantiate ApplicationRunner in SamzaContainer",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1137"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1159",
+        "title": "Move StreamSpec from a public API to an ApplicationRunner internal API",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1159"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1163",
+        "title": "Samza 0.12 build with scala 2.10",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1163"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1178",
+        "title": "Generate JSON for Stream Graph and Execution Plan",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1178"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1179",
+        "title": "Documentation of ApplicationRunner",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1179"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1186",
+        "title": "Rename Processor to Job",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1186"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1219",
+        "title": "Add metrics for operator message received and execution times",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1219"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1231",
+        "title": "Put warning for deprecating yarn.package.path",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1231"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1233",
+        "title": "Fix SamzaTaskProxy system admin instantiation",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1233"
+          }
+        }
+      },
+      {
+        "issue": "SAMZA-1268",
+        "title": "Javadoc cleanup for public APIs for 0.13 release",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/SAMZA/12339350"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/SAMZA-1268"
+          }
+        }
+      }
+    ]
+  }
+}

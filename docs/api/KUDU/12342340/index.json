@@ -1,0 +1,819 @@
+{
+  "id": "12342340",
+  "name": "1.7.0",
+  "description": "",
+  "date": "2018-03-23",
+  "version": "1.7.0",
+  "module": "",
+  "lastUpdated": 1633092411960,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/KUDU/fixforversion/12342340"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/KUDU"
+    }
+  },
+  "releaseNotes": "Release Notes - Kudu - Version 1.7.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "KUDU-869",
+        "title": "Support PRE_VOTER config membership type",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-869"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1097",
+        "title": "Higher availability re-replication support",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1097"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1704",
+        "title": "Add a new read mode to perform bounded staleness snapshot reads",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1704"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1913",
+        "title": "Tablet server runs out of threads when creating lots of tablets",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1913"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1613",
+        "title": "Under certain circumstances, tablet leader does not evict failed replica",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1613"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1927",
+        "title": "Potential race handling ConnectToMaster RPCs during leader transition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1927"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2093",
+        "title": "Document that limit() method in Java scanner builder isn't implemented",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2093"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2115",
+        "title": "Fix rowset compaction selection race",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2115"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2121",
+        "title": "Java Client chooses GSSAPI SASL mechanism when Kerberos credentials are not present",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2121"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2126",
+        "title": "DeleteTablet RPC on an already deleted tablet should be a no-op",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2126"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2148",
+        "title": "'kudu [master|tserver] status' may crash starting Kudu server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2148"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2153",
+        "title": "Servers delete tmp files before obtaining directory lock",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2153"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2157",
+        "title": "1.5 -> 1.4 -> 1.5 downgrade/re-upgrade can result in non-startable tservers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2157"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2166",
+        "title": "Kudu Python package needs refresh from 1.2.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2166"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2202",
+        "title": "Removing a data directory is unsafe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2202"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2208",
+        "title": "Subprocess::Wait should handle EINTR",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2208"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2229",
+        "title": "log spam: Not starting pre-election -- already a leader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2229"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2231",
+        "title": "\"materializing_iterator_do_pushdown=true\" cause simple query slow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2231"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2233",
+        "title": "Check failure during compactions: pv_delete_redo != nullptr",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2233"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2237",
+        "title": "Allows idle server connection detection to be disabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2237"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2238",
+        "title": "Big DMS not flush under memory pressure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2238"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2249",
+        "title": "fix client shut down prematurely in KuduTableInputFormat",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2249"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2251",
+        "title": "rowset size can overflow int in RowSetInfo",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2251"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2253",
+        "title": "Deltafile on-disk size is 3x larger than expected for large-value workloads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2253"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2259",
+        "title": "kudu-spark imports authentication token into client multiple times",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2259"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2262",
+        "title": "Java client does not retry if no master is a leader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2262"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2274",
+        "title": "Race when tombstoned replica gets copied and becomes leader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2274"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2275",
+        "title": "SIGSEGV due to bug in libunwind",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2275"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2295",
+        "title": "nullptr dereference while scanning on already shutdown tablet replica",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2295"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2296",
+        "title": "Kudu RPC cannot deserialize messages larger than 64MB",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2296"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2309",
+        "title": "/masters can show the wrong list of masters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2309"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2312",
+        "title": "Scan predicate application ordering is possibly buggy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2312"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2319",
+        "title": "Follower masters cannot accept authn tokens for verification",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2319"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2320",
+        "title": "Exponential back-off is not applied while retrying tablet replica deletion",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2320"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2325",
+        "title": "tserver crashes in kudu::StackTraceCollector::RevokeSigData",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2325"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2328",
+        "title": "Crash at startup with OpenSSL FIPS mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2328"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2330",
+        "title": "Exceptions thrown by Java client have inappropriate stack traces",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2330"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2334",
+        "title": "OutboundTransfer::TransferStarted() isn't stateful enough with TLS socket",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2334"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2336",
+        "title": "Assert triggered from kudu::server::DiagnosticsLog::RunThread()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2336"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2338",
+        "title": "Java decimal predicates are not coerced to match the column scale",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2338"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2343",
+        "title": "Java client doesn't properly reconnect to leader master when old leader is online",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2343"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-721",
+        "title": "Support for DECIMAL type",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-721"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1676",
+        "title": "Spark DDL needs elegant way to specify range partitioning",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1676"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2279",
+        "title": "Enable metrics logging by default",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2279"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1489",
+        "title": "Use WAL directory for tablet metadata files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1489"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-1737",
+        "title": "Allow KuduContext to create table with column encodings",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-1737"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2061",
+        "title": "Java Client Not Honoring setIgnoreAllDuplicateRows When Inserting Duplicate Values",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2061"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2129",
+        "title": "Improve ksck 'under-replicated' message",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2129"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2256",
+        "title": "Expose inbound call transfer size in RPC context",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2256"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2261",
+        "title": "flush responses' order should match the order we call apply",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2261"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2264",
+        "title": "Java client should re-login from ticket cache when ticket is expiring",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2264"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2265",
+        "title": "A non-leader master uses self-signed server TLS cert if it hasn't ever run as a leader",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2265"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2267",
+        "title": "Client may see negotiation failure when talks to master followers with only self signed cert",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2267"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2268",
+        "title": "Sync client exceptions don't show appropriate call stack",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2268"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2270",
+        "title": "Allow long RPC duration which triggers logging to be configurable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2270"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2281",
+        "title": "Add Primary Key Support For INT128 Columns",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2281"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2291",
+        "title": "Implement a /stacks web page",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2291"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2297",
+        "title": "Expand metrics logging into a general purpose diagnostics log",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2297"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2331",
+        "title": "Use tablet_id filter for 'move_replica' while running ksck-based pre-flight consistency check",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2331"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-3279",
+        "title": "Limit the number of diagnostic files kept",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-3279"
+          }
+        }
+      },
+      {
+        "issue": "KUDU-2228",
+        "title": "Make Messenger options configurable",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KUDU/12342340"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KUDU-2228"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1586 @@
+{
+  "id": "12327581",
+  "name": "4.2.0",
+  "description": "",
+  "date": "",
+  "version": "4.2.0",
+  "module": "",
+  "lastUpdated": 1633095715840,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/PHOENIX/fixforversion/12327581"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/PHOENIX"
+    }
+  },
+  "releaseNotes": "Release Notes - Phoenix - Version 4.2.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "PHOENIX-167",
+        "title": "Support semi/anti-joins",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-167"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-180",
+        "title": "Use stats to guide query parallelization",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-180"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-943",
+        "title": "Handle pushed down post-filters for subquery in joins with limit and non-groupby aggregation",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-943"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-945",
+        "title": "Support correlated subqueries in comparison without ANY/SOME/ALL",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-945"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1085",
+        "title": "Commonize logic for adding salt byte and adding region start key in ParallelIterators",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1085"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1168",
+        "title": "Support non-correlated sub-queries in where clause having a comparison operator with no modifier or a comparison operator modified by ANY, SOME or ALL",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1168"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1170",
+        "title": "Change status of local index during splitting to prevent usage when slower than query through data table",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1170"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1249",
+        "title": "Support local immutable index",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1249"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1259",
+        "title": "Perform partial scan for ANALYZE when table salted or local index",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1259"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1263",
+        "title": "Only cache guideposts on physical PTable",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1263"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1264",
+        "title": "Add StatisticsCollector to existing tables on first connection to cluster",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1264"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1296",
+        "title": "Scan entire region when tenant-specific table is analyzed",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1296"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1309",
+        "title": "Ensure Phoenix table is created for Local index and view index tables to store guideposts against them",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1309"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1320",
+        "title": "Update stats atomically",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1320"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1321",
+        "title": "Cleanup setting of timestamps when collecting and using stats",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1321"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1322",
+        "title": "Add documentation for UPDATE STATISTICS command",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1322"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1328",
+        "title": "Update ANALYZE syntax to collect stats on index tables and all tables",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1328"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1332",
+        "title": "Support correlated subqueries in comparison with ANY/SOME/ALL",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1332"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1333",
+        "title": "Store statistics guideposts as VARBINARY",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1333"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-105",
+        "title": "Remove org.apache.commons.csv source once available in Maven repo",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-105"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-897",
+        "title": "psql command doesn't allow using certain characters in invocation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-897"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-941",
+        "title": "Parallelize within regions to prevent rpc timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-941"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-944",
+        "title": "Support derived tables in FROM clause that needs extra steps of client-side aggregation or other processing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-944"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-973",
+        "title": "Lexer skips unexpected characters",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-973"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1044",
+        "title": "Phoenix-Pig: No results returned unless all used columns are selected",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1044"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1095",
+        "title": "Cannot add column to SYSTEM.CATALOG using Alter Table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1095"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1098",
+        "title": "Support CASCADE option on DROP TABLE that drops all VIEWs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1098"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1107",
+        "title": "Support mutable indexes over replication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1107"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1139",
+        "title": "Failed to disable local index when index update fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1139"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1163",
+        "title": "Intersect min/max range with scan range during compilation when salted",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1163"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1203",
+        "title": "Uable to work for count (distinct col) queries via phoenix table with secondary indexes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1203"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1206",
+        "title": "Decimal serialization broken for negative numbers with more than 19 digits of precision",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1206"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1208",
+        "title": "Check for existence of views doesn't take into account the fact that SYSTEM.CATALOG could be split across regions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1208"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1209",
+        "title": "DROP of system table doesn't correctly look for the right kind of table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1209"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1211",
+        "title": "Use skip scan when row value constructor uses leading row key columns",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1211"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1214",
+        "title": "SYSTEM.CATALOG cannot be created when first connection to cluster is tenant-specific",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1214"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1219",
+        "title": "Salt the SYSTEM.SEQUENCE table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1219"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1225",
+        "title": "Evaluation of OR between columns in PK and not in PK incorrect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1225"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1228",
+        "title": "NPE in \"select max(c1)\" when c1 is a CHAR field",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1228"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1237",
+        "title": "COALESCE Function - type of second parameter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1237"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1238",
+        "title": "Rollback index region split on any split failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1238"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1239",
+        "title": "IN clause (and some others) cannot get moved from HAVING clause to WHERE clause when qualified",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1239"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1242",
+        "title": "ArrayoutofBoundException Phoenix mapping to exisiting Hbase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1242"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1246",
+        "title": "Region server gets aborted with Phoenix exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1246"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1250",
+        "title": "guava dependency out-dated causing NoSuchMethod error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1250"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1251",
+        "title": "Salted queries with range scan become full table scans",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1251"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1252",
+        "title": "Potential lock leak for ungrouped aggregation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1252"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1253",
+        "title": "Invalid PreparedStatement.setXXX call should throw SQLException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1253"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1257",
+        "title": "Upserted data seen by SELECT in UPSERT SELECT execution",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1257"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1258",
+        "title": "RegexpSubstrFunction is not useable with group by query",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1258"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1266",
+        "title": "Disallow setting NOT NULL constraint on non PK columns",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1266"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1268",
+        "title": "Misleading exception when attempting to drop system table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1268"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1271",
+        "title": "Column metadata doesn't hide tenant column on tenant-specific connections.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1271"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1272",
+        "title": "Avoid pulling in unintended HBase dependencies in phoenix-core",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1272"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1273",
+        "title": "Phoenix should provide ILIKE keyword",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1273"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1275",
+        "title": "SYSTEM.STATS table is not created when SYSTEM.CATALOG is already present",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1275"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1278",
+        "title": "Performance degradation for salted tables with guideposts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1278"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1280",
+        "title": "ColumnProjectionFilter creates too many ImmutableBytesPtrs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1280"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1281",
+        "title": "Each MultiKeyValueTuple.setKeyValues creates a new immutable list object",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1281"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1284",
+        "title": "Override config properties for unit tests not making it to server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1284"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1285",
+        "title": "Override default for histogram depth in QueryServicesTestImpl",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1285"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1286",
+        "title": "Remove hadoop2 compat modules",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1286"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1288",
+        "title": "Selecting more than 2 array elements via index fails with ArrayIndexOutOfBoundsException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1288"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1289",
+        "title": "Drop index during upsert may abort RS",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1289"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1298",
+        "title": "Queries on fixed width type columns that have an index declared on them don't use that index",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1298"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1303",
+        "title": "Possible NPE in StatisticCollector#stop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1303"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1305",
+        "title": "create index throws NPE when dataTable has specified default column family",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1305"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1313",
+        "title": "Investigate why LocalIndexIT.testLocalIndexScanAfterRegionSplit() is failing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1313"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1314",
+        "title": "Assertion tripped for skip scan with two unit tests",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1314"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1315",
+        "title": "Optimize query for Pig loader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1315"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1316",
+        "title": "Improve test coverage of stats framework",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1316"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1323",
+        "title": "Use utility method to get HTableInterface for scans from coprocessor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1323"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1324",
+        "title": "Consolidate code that initializes Scan",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1324"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1325",
+        "title": "Pass in instead of calculate if we've crossed a region boundary in ScanRanges intersect methods",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1325"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1327",
+        "title": "Disallow creating arrays of fixed width base type without the max length being specified",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1327"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1330",
+        "title": "Flag VARBINARY VARBINARY ARRAY declaration in DDL as an error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1330"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1337",
+        "title": "Unpadded fixed length tenant ID causes erroneous results",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1337"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1338",
+        "title": "Logic to group together parallel scans is incorrect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1338"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1341",
+        "title": "PhoenixRuntime returns zero exit status on failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1341"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1344",
+        "title": "NTH_VALUE function skips duplicit values in order by",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1344"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1349",
+        "title": "VIEWs do not inherit indexes from their parent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1349"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1353",
+        "title": "CsvBulkLoad doesn't work in secure env",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1353"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1355",
+        "title": "sqlline.py or psql.py may hang if they're not invoked from bin folder",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1355"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1356",
+        "title": "LocalIndexIT.testLocalIndexScanAfterRegionSplit() failed at distributed cluster when getting regions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1356"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1357",
+        "title": "Salt sequence table to prevent same RS from getting all sequence calls",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1357"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1358",
+        "title": "OOB in SchemaUtil.getTableNameFromFullName",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1358"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1359",
+        "title": "Backward compatibility fails with 4.1 client and current 4.0 branch on server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1359"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1360",
+        "title": "NPE in SpoolingResultIterator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1360"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1361",
+        "title": "Sequence value goes backwards if sequence validated before reserved",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1361"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1364",
+        "title": "Close tracing scope to stop excessive tracing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1364"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1365",
+        "title": "Make sequence salt buckets configurable",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1365"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1366",
+        "title": "ORDINAL_POSITION incorrect for multi-tenant table over tenant-specific connection",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1366"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1368",
+        "title": "Persist link from VIEW back to its child VIEW",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1368"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1369",
+        "title": "Add back encode/decode methods as deprecated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1369"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1370",
+        "title": "Allow query timeout to differ from RPC timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1370"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1371",
+        "title": "Excessive non-Phoenix related tracing continually occurs once tracing is enabled",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1371"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1376",
+        "title": "java.lang.NullPointerException occurs in JDBC driver",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1376"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1379",
+        "title": "Wrong MultiIndexWriteFailureException when recovering local index table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1379"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1381",
+        "title": "NPE in CellUtil.matchingFamily() for IndexedKeyValue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1381"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1382",
+        "title": "Phoenix 4.2 RC Issue",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1382"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1385",
+        "title": "Adding, dropping and adding columns fails with NPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1385"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1390",
+        "title": "Stats not updated on client after major compaction",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1390"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1391",
+        "title": "Remove obsolete hint",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1391"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1462",
+        "title": "Create unit test for COUNT DISTINCT using compression",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1462"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1468",
+        "title": "Add org.iq80.snappy to client and server assemblies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1468"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1656",
+        "title": "Add release directory to gitignore",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1656"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1254",
+        "title": "Add REGEXP_SPLIT function",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1254"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-619",
+        "title": "Support DELETE over table with immutable index when possible",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-619"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-852",
+        "title": "Optimize child/parent foreign key joins",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-852"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1030",
+        "title": "Change Expression.isDeterministic() to return a enum of values ALWAYS, PER_STATEMENT, PER_ROW",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1030"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1216",
+        "title": "Making spooling directory location configurable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1216"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1245",
+        "title": "Remove usage of empty KeyValue object BATCH_MARKER from Indexer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1245"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1262",
+        "title": "Generate phoenix-server jar with and without antlr",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1262"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1455",
+        "title": "Replace org.xerial.snappy with org.iq80.snappy pure Java snappy implementation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1455"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1868",
+        "title": "follow phoenix map/reduce sample code encounter cast error",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1868"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-103",
+        "title": "Drop hadoop1.0 specifics from code",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-103"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-761",
+        "title": "Implement getKeyPart for round/ceil/floor of a DECIMAL value",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-761"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-960",
+        "title": "Don't spin mini cluster up and down between tests",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-960"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1297",
+        "title": "Adding utility methods to get primary key information from the optimized query plan",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1297"
+          }
+        }
+      },
+      {
+        "issue": "PHOENIX-1310",
+        "title": "Spill files filling up /tmp on server",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/PHOENIX/12327581"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/PHOENIX-1310"
+          }
+        }
+      }
+    ]
+  }
+}

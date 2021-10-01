@@ -1,0 +1,910 @@
+{
+  "id": "12349965",
+  "name": "3.8.2",
+  "description": "Fixes and non-invasive backports from Maven 4.0.0-alpha-1.",
+  "date": "2021-08-04",
+  "version": "3.8.2",
+  "module": "",
+  "lastUpdated": 1633092947258,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/MNG/fixforversion/12349965"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/MNG"
+    }
+  },
+  "releaseNotes": "Release Notes - Maven - Version 3.8.2",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "MNG-6281",
+        "title": "ArrayIndexOutOfBoundsException caused by pom.xml with invalid/duplicate XML",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6281"
+          }
+        }
+      },
+      {
+        "issue": "MNG-4706",
+        "title": "Multithreaded building can create bad files for downloaded artifacts in local repository",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-4706"
+          }
+        }
+      },
+      {
+        "issue": "MNG-5307",
+        "title": "NPE during resolution of dependencies - parallel mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-5307"
+          }
+        }
+      },
+      {
+        "issue": "MNG-5315",
+        "title": "Artifact resolution sporadically fails in parallel builds",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-5315"
+          }
+        }
+      },
+      {
+        "issue": "MNG-5838",
+        "title": "Maven on No-File-Lock Systems",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-5838"
+          }
+        }
+      },
+      {
+        "issue": "MNG-5868",
+        "title": "Adding serval times the same artifact via MavenProjectHelper (attachArtifact) keep adding to the List duplicate artifacts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-5868"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6071",
+        "title": "GetResource ('/) returns 'null' if build is started with -f",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6071"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6216",
+        "title": "ArrayIndexOutOfBoundsException when parsing POM",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6216"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6239",
+        "title": "Jansi messes up System.err and System.out",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6239"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6380",
+        "title": "Option -Dstyle.color=always doesn't force color output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6380"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6604",
+        "title": "Intermittent failures while downloading GAVs from Nexus",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6604"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6648",
+        "title": "'mavenrc_pre' script does not receive arguments like mavenrc in Bourne shell does",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6648"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6719",
+        "title": "mvn color output escape keys w/ \"| tee xxx.log\" on Win with git/bash",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6719"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6737",
+        "title": "StackOverflowError when version ranges are unsolvable and graph contains a cycle",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6737"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6767",
+        "title": "Plugin with ${project.groupId} resolved improperly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6767"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6819",
+        "title": "NullPointerException for DefaultArtifactDescriptorReader.loadPom",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6819"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6828",
+        "title": "DependencyResolutionException breaks serialization",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6828"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6842",
+        "title": "ProjectBuilderTest uses Guava, but Guava is not defined in dependencies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6842"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6843",
+        "title": "Parallel build fails due to missing JAR artifacts in compilePath",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6843"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6850",
+        "title": "Prevent printing the EXEC_DIR when it's just a disk letter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6850"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6921",
+        "title": "Maven compile with properties ${artifactId} and ${project.build.finalName} occurs java.lang.NullPointerException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6921"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6937",
+        "title": "StringSearchModelInterpolatorTest fails on symlinked paths",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6937"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6964",
+        "title": "Maven version sorting is internally inconsistent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6964"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6983",
+        "title": "Plugin key can get out of sync with artifactId and groupId",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6983"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7000",
+        "title": "metadata.mdo contains invalid link to schema",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7000"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7032",
+        "title": "Option -B still showing formatting when used with --version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7032"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7034",
+        "title": "StackOverflowError thrown if a cycle exists in BOM imports",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7034"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7090",
+        "title": "mvnDebug does not work on Java 11+",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7090"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7127",
+        "title": "NullPointerException in MavenCliTest.testStyleColors in JDK 16",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7127"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7155",
+        "title": "make sources jar reproducible (upgrade maven-source-plugin to 3.2.1)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7155"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7161",
+        "title": "Error thrown during uninstalling of JAnsi",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7161"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7149",
+        "title": "Introduce MAVEN_DEBUG_ADDRESS in mvnDebug scripts",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7149"
+          }
+        }
+      },
+      {
+        "issue": "MNG-2802",
+        "title": "Concurrent-safe access to local Maven repository",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-2802"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6471",
+        "title": "Parallel builder should use  the module name as thread name",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6471"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6754",
+        "title": "Set the same timestamp in multi module builds",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6754"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6810",
+        "title": "Remove profiles in maven-model",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6810"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6811",
+        "title": "Remove unnecessary filtering configuration",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6811"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6816",
+        "title": "Prefer System.lineSeparator() over system properties",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6816"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6827",
+        "title": "Replace deprecated StringUtils#defaultString() from Plexus Utils",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6827"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6837",
+        "title": "Simplify detection of the MAVEN_HOME and make it fully qualified on Windows",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6837"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6844",
+        "title": "Use StandardCharsets and remove outdated @SuppressWarnings",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6844"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6853",
+        "title": "Don't box primitives where it's not needed",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6853"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6859",
+        "title": "Build not easily reproducible when built from source release archive",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6859"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6873",
+        "title": "Inconsistent library versions notice",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6873"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6967",
+        "title": "Improve the command line output from maven-artifact",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6967"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6987",
+        "title": "Reorder groupId before artifactId when writing an exclusion using maven-model",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6987"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7010",
+        "title": "Omit \"NB: JAVA_HOME should point to a JDK not a JRE\" except when that is the problem",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7010"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7064",
+        "title": "Use HTTPS for schema location in global settings.xml",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7064"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7080",
+        "title": "Add a --color option",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7080"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7170",
+        "title": "Allow to associate pomFile/${basedir} with DefaultProjectBuilder.build(ModelSource, ...)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7170"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7180",
+        "title": "Make --color option behave more like BSD/GNU grep's --color option",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7180"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7181",
+        "title": "Make --version support -q",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7181"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7185",
+        "title": "Describe explicit and recommended version for VersionRange.createFromVersionSpec()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7185"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7190",
+        "title": "Load mavenrc from /usr/local/etc also in Bourne shell script",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7190"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6598",
+        "title": "Maven 3.6.0 and Surefire problem",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6598"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6884",
+        "title": "Cleanup POM File after version upgrade",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6884"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7172",
+        "title": "Remove expansion of Jansi native libraries",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7172"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7184",
+        "title": "document .mavenrc/maven_pre.bat|cmd scripts and MAVEN_SKIP_RC environment variable",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7184"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6872",
+        "title": "Found CVEs in your dependencies - plexus-utils (tests)",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6872"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6874",
+        "title": "Upgrade Maven Parent to 34",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6874"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6886",
+        "title": "Upgrade plexus-cipher 1.8",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6886"
+          }
+        }
+      },
+      {
+        "issue": "MNG-6993",
+        "title": "Upgrade SLF4J to 1.7.30",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-6993"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7152",
+        "title": "Upgrade Maven Resolver to 1.6.3",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7152"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7177",
+        "title": "Upgrade Maven Shared Utils to 3.3.4",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7177"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7179",
+        "title": "Upgrade Jansi to 2.3.3",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7179"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7186",
+        "title": "Upgrade Guice to 4.2.2",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7186"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7196",
+        "title": "Upgrade Jansi to 2.3.4",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7196"
+          }
+        }
+      },
+      {
+        "issue": "MNG-7198",
+        "title": "Upgrade SLF4J to 1.7.32",
+        "type": "Dependency upgrade",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/MNG/12349965"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/MNG-7198"
+          }
+        }
+      }
+    ]
+  }
+}

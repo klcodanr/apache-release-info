@@ -1,0 +1,4446 @@
+{
+  "id": "12317244",
+  "name": "0.8.0",
+  "description": "intra-cluster replication support",
+  "date": "2013-12-03",
+  "version": "0.8.0",
+  "module": "",
+  "lastUpdated": 1633092109981,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/KAFKA/fixforversion/12317244"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/KAFKA"
+    }
+  },
+  "releaseNotes": "Release Notes - Kafka - Version 0.8.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "KAFKA-176",
+        "title": "Fix existing perf tools",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-176"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-237",
+        "title": "create/delete ZK path for a topic in an admin tool",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-237"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-239",
+        "title": "Wire existing producer and consumer to use the new ZK data structure",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-239"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-240",
+        "title": "implement new producer and consumer request format",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-240"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-329",
+        "title": "Remove the watches/broker for new topics and partitions and change create topic admin API to send start replica state change to all brokers",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-329"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-335",
+        "title": "Implement an embedded controller",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-335"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-336",
+        "title": "add an admin RPC to communicate state changes between the controller and the broker",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-336"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-337",
+        "title": "upgrade ZKClient to allow conditional updates in ZK",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-337"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-338",
+        "title": "controller failover",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-338"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-339",
+        "title": "using MultiFetch in the follower",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-339"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-342",
+        "title": "revisit the broker startup procedure according to V3 design",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-342"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-343",
+        "title": "revisit the become leader and become follower state change operations using V3 design",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-343"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-344",
+        "title": "migration tool from 0.7 to 0.8",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-344"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-356",
+        "title": "Create a generic Kafka thread class that includes basic boiler plate code of instantiating and shutting down threads cleanly",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-356"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-362",
+        "title": "ZookeeperConsumerConnector needs to connect to new leader after leadership change",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-362"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-369",
+        "title": "remove ZK dependency on producer",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-369"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-458",
+        "title": "remove errorcode from ByteBufferMessageSet",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-458"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-482",
+        "title": "Make producer to run for the entire duration of the System Test",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-482"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-488",
+        "title": "Port Mirroring System Test to this python system test framework",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-488"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-492",
+        "title": "Sometimes the python system test framework doesn't terminate all running processes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-492"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-494",
+        "title": "Relative paths should be used for svg URLs in dashboards html",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-494"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-502",
+        "title": "Simplify setup / initialization in replication_basic_test.py",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-502"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-503",
+        "title": "Support \"testcase_to_run\" or \"testcase_to_skip\"",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-503"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-507",
+        "title": "Shut down ZK last to avoid hanging brokers running processes",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-507"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-513",
+        "title": "Add state change log to Kafka brokers",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-513"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-571",
+        "title": "Add more test cases to System Test",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-571"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-731",
+        "title": "~/ivy2/cache should be a variable in the kafka-run-class bash script",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-731"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-780",
+        "title": "Reassign partitions tool produces NPE in shutdown handler",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-780"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-814",
+        "title": "Controller should not throw exception when a preferred replica is already the leader for a partition",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-814"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-843",
+        "title": "Re-add the release-zip sbt target",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-843"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-15",
+        "title": "SBT release-zip target doesn't include bin and config directories anymore",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-15"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-42",
+        "title": "Support rebalancing the partitions with replication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-42"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-43",
+        "title": "Rebalance to preferred broke with intra-cluster replication support",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-43"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-46",
+        "title": "Commit thread, ReplicaFetcherThread for intra-cluster replication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-46"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-49",
+        "title": "Add acknowledgement to the produce request.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-49"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-81",
+        "title": "wrong path in bin/kafka-run-class.sh",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-81"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-97",
+        "title": "SocketServer.scala refers to Handler-specific variables",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-97"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-171",
+        "title": "Kafka producer should do a single write to send message sets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-171"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-192",
+        "title": "CompressionUtilTest does not run and fails when it does",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-192"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-215",
+        "title": "Improve system tests for the mirroring code",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-215"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-229",
+        "title": "SimpleConsumer is not logging exceptions correctly so detailed stack trace is not coming in the logs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-229"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-233",
+        "title": "The producer's load balancing logic can send requests to dead brokers, when using the async producer option",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-233"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-259",
+        "title": "Give better error message when trying to run shell scripts without having built/downloaded the jars yet",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-259"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-295",
+        "title": "Bug in async producer DefaultEventHandler retry logic",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-295"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-305",
+        "title": "SyncProducer does not correctly timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-305"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-306",
+        "title": "broker failure system test broken on replication branch",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-306"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-351",
+        "title": "Refactor some new components introduced for replication",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-351"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-352",
+        "title": "Throw exception to client if it makes a produce/consume request to a Kafka broker for a topic that hasn't been created",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-352"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-367",
+        "title": "StringEncoder/StringDecoder use platform default character set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-367"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-370",
+        "title": "Exception \"java.util.NoSuchElementException: None.get\" appears inconsistently in Mirror Maker log.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-370"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-371",
+        "title": "Creating topic of empty string puts broker in a bad state",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-371"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-376",
+        "title": "expose different data to fetch requests from the follower replicas and consumer clients",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-376"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-379",
+        "title": "TopicCount.constructTopicCount isn't thread-safe",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-379"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-382",
+        "title": "Write ordering guarantee violated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-382"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-385",
+        "title": "RequestPurgatory enhancements - expire/checkSatisfy issue; add jmx beans",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-385"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-386",
+        "title": "Race condition in accessing ISR",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-386"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-391",
+        "title": "Producer request and response classes should use maps",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-391"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-396",
+        "title": "Mirroring system test fails on 0.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-396"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-412",
+        "title": "deal with empty TopicData list in producer and fetch request",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-412"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-413",
+        "title": "single_host_multi_brokers system test fails on laptop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-413"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-415",
+        "title": "Controller throws NoSuchElementException while marking a broker failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-415"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-416",
+        "title": "Controller tests throw several zookeeper errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-416"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-417",
+        "title": "NullPointerException in ZookeeperConsumerConnector",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-417"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-418",
+        "title": "NullPointerException in ConsumerFetcherManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-418"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-420",
+        "title": "maintain HW correctly with only 1 replica in ISR",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-420"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-422",
+        "title": "LazyInitProducerTest has transient test failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-422"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-424",
+        "title": "Remove invalid mirroring arguments from kafka-server-start.sh",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-424"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-425",
+        "title": "Wrong class name in performance test scripts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-425"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-427",
+        "title": "LogRecoverTest.testHWCheckpointWithFailuresSingleLogSegment has transient failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-427"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-428",
+        "title": "need to update leaderAndISR path in ZK conditionally in ReplicaManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-428"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-431",
+        "title": "LogCorruptionTest.testMessageSizeTooLarge fails occasionally",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-431"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-433",
+        "title": "ensurePartitionLeaderOnThisBroker should not access ZK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-433"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-434",
+        "title": "IllegalMonitorStateException in ReplicaManager.makerFollower",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-434"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-452",
+        "title": "follower replica may need to backoff the fetching if leader is not ready yet",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-452"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-453",
+        "title": "follower replica may need to backoff the fetching if leader is not ready yet",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-453"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-456",
+        "title": "ProducerSendThread calls ListBuffer.size a whole bunch. That is a O(n) operation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-456"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-459",
+        "title": "KafkaController.RequestSendThread can throw exception on broker socket",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-459"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-460",
+        "title": "ControllerChannelManager needs synchronization btw shutdown and add/remove broker",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-460"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-461",
+        "title": "remove support for format for magic byte 0 in 0.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-461"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-463",
+        "title": "log.truncateTo needs to handle targetOffset smaller than the lowest offset in the log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-463"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-464",
+        "title": "KafkaController NPE in SessionExpireListener",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-464"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-466",
+        "title": "Controller tests throw IllegalStateException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-466"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-467",
+        "title": "Controller based leader election failed ERROR messages in LazyInitProducerTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-467"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-468",
+        "title": "String#getBytes is platform dependent",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-468"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-470",
+        "title": "transient unit test failure in RequestPurgatoryTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-470"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-471",
+        "title": "Transient failure in ProducerTest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-471"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-473",
+        "title": "Use getMetadata Api in ZookeeperConsumerConnector",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-473"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-474",
+        "title": "support changing host/port of a broker",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-474"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-481",
+        "title": "Require values in Utils.getTopic* methods to be positive",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-481"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-490",
+        "title": "Check max message size on server instead of producer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-490"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-491",
+        "title": "KafkaRequestHandler needs to handle exceptions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-491"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-495",
+        "title": "Handle topic names with \"/\" on Kafka server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-495"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-497",
+        "title": "recover consumer during unclean leadership change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-497"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-499",
+        "title": "Refactor controller state machine",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-499"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-500",
+        "title": "javaapi support for getTopoicMetaData",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-500"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-501",
+        "title": "getOfffset Api needs to return different latest offset to regular and follower consumers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-501"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-506",
+        "title": "Store logical offset in log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-506"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-508",
+        "title": "split out partiondata from fetchresponse and producerrequest",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-508"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-509",
+        "title": "server should shut down on encountering invalid highwatermark file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-509"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-510",
+        "title": "broker needs to know the replication factor per partition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-510"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-511",
+        "title": "offset returned in Producer response may not be correct",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-511"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-512",
+        "title": "Remove checksum from ByteBufferMessageSet.iterator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-512"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-514",
+        "title": "Replication with Leader Failure Test: Log segment files checksum mismatch",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-514"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-516",
+        "title": "Consider catching all exceptions in ShutdownableThread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-516"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-525",
+        "title": "newly created partitions are not added to ReplicaStateMachine",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-525"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-528",
+        "title": "IndexOutOfBoundsException thrown by kafka.consumer.ConsumerFetcherThread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-528"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-531",
+        "title": "kafka.server.ReplicaManager: java.nio.channels.NonWritableChannelException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-531"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-537",
+        "title": "expose clientId and correlationId in ConsumerConfig",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-537"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-539",
+        "title": "Replica.hw should be initialized to the smaller of checkedpointed HW and log end offset",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-539"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-540",
+        "title": "log.append() should halt on IOException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-540"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-553",
+        "title": "confusing reference to zk.connect in config/producer.properties",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-553"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-556",
+        "title": "Change MessageSet.sizeInBytes to Int",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-556"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-557",
+        "title": "Replica fetch thread doesn't need to recompute message id",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-557"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-562",
+        "title": "Non-failure System Test Log Segment File Checksums mismatched",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-562"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-563",
+        "title": "KafkaScheduler shutdown in ZookeeperConsumerConnector should check for config.autocommit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-563"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-567",
+        "title": "Replication Data Loss in Mirror Maker Bouncing testcase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-567"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-573",
+        "title": "System Test : Leader Failure Log Segment Checksum Mismatched When request-num-acks is 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-573"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-575",
+        "title": "Partition.makeFollower() reads broker info from ZK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-575"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-576",
+        "title": "SimpleConsumer throws UnsupportedOperationException: empty.head",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-576"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-577",
+        "title": "extend DumpLogSegments to verify consistency btw data and index",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-577"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-578",
+        "title": "Leader finder thread in ConsumerFetcherManager needs to handle exceptions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-578"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-579",
+        "title": "remove connection timeout in SyncProducer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-579"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-580",
+        "title": "system test testcase_0122 under replication fails due to large # of data loss",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-580"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-584",
+        "title": "produce/fetch remote time metric not set correctly when num.acks = 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-584"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-586",
+        "title": "system test configs are broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-586"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-591",
+        "title": "Add test cases to test log size retention and more",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-591"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-592",
+        "title": "Register metrics beans at kafka server startup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-592"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-596",
+        "title": "LogSegment.firstAppendTime not reset after truncate to",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-596"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-604",
+        "title": "Add missing metrics in 0.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-604"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-608",
+        "title": "getTopicMetadata does not respect producer config settings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-608"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-612",
+        "title": "move shutting down of fetcher thread out of critical path",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-612"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-613",
+        "title": "MigrationTool should disable shallow iteration in the 0.7 consumer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-613"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-614",
+        "title": "DumpLogSegment offset verification is incorrect for compressed messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-614"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-618",
+        "title": "Deadlock between leader-finder-thread and consumer-fetcher-thread during broker failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-618"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-622",
+        "title": "Create mbeans per client",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-622"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-625",
+        "title": "Improve MessageAndMetadata to expose the partition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-625"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-634",
+        "title": "ConsoleProducer compresses messages and ignores the --compress flag",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-634"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-646",
+        "title": "Provide aggregate stats at the high level Producer and ZookeeperConsumerConnector level",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-646"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-648",
+        "title": "Use uniform convention for naming properties keys",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-648"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-664",
+        "title": "Kafka server threads die due to OOME during long running test",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-664"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-668",
+        "title": "Controlled shutdown admin tool should not require controller JMX url/port to be supplied",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-668"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-669",
+        "title": "Irrecoverable error on leader while rolling to a new segment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-669"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-673",
+        "title": "Broker recovery check logic is reversed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-673"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-680",
+        "title": "ApiUtils#writeShortString uses String length instead of byte length",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-680"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-681",
+        "title": "Unclean shutdown testing - truncateAndStartWithNewOffset is not invoked when it is expected to",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-681"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-684",
+        "title": "ConsoleProducer does not have the queue-size option",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-684"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-690",
+        "title": "TopicMetadataRequest throws exception when no topics are specified",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-690"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-691",
+        "title": "Fault tolerance broken with replication factor 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-691"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-692",
+        "title": "ConsoleConsumer outputs diagnostic message to stdout instead of stderr",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-692"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-693",
+        "title": "Consumer rebalance fails if no leader available for a partition and stops all fetchers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-693"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-695",
+        "title": "Broker shuts down due to attempt to read a closed index file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-695"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-698",
+        "title": "broker may expose uncommitted data to a consumer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-698"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-701",
+        "title": "ConsoleProducer does not exit correctly and fix some config properties following KAFKA-648",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-701"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-702",
+        "title": "Deadlock between request handler/processor threads",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-702"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-708",
+        "title": "ISR becomes empty while marking a partition offline",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-708"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-710",
+        "title": "Some arguments are always set to default in ProducerPerformance",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-710"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-713",
+        "title": "Update Hadoop producer for Kafka 0.8 changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-713"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-718",
+        "title": "kafka-run-class.sh should use reasonable gc settings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-718"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-726",
+        "title": "Add ReplicaFetcherThread name to mbean names",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-726"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-732",
+        "title": "MirrorMaker with shallow.iterator.enable=true produces unreadble messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-732"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-738",
+        "title": "correlationId is not set in FetchRequest in AbstractFetcherThread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-738"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-743",
+        "title": "PreferredReplicaLeaderElectionCommand has command line error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-743"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-748",
+        "title": "Append to index fails due to invalid offset",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-748"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-750",
+        "title": "inconsistent index offset during broker startup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-750"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-751",
+        "title": "Fix windows build script - kafka-run-class.bat",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-751"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-753",
+        "title": "Kafka broker shuts down while loading segments",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-753"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-755",
+        "title": "standardizing json values stored in ZK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-755"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-756",
+        "title": "Processor thread blocks due to infinite loop during fetch response send",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-756"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-757",
+        "title": "System Test Hard Failure cases : \"Fatal error during KafkaServerStable startup\" when hard-failed broker is re-started",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-757"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-758",
+        "title": "startHighWaterMarksCheckPointThread is never called",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-758"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-767",
+        "title": "Message Size check should be done after assigning the offsets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-767"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-768",
+        "title": "broker should exit if hitting exceptions durin startup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-768"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-769",
+        "title": "On startup, a brokers highwatermark for every topic partition gets reset to zero",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-769"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-770",
+        "title": "KafkaConfig properties should be verified in the constructor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-770"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-772",
+        "title": "System Test Transient Failure on testcase_0122",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-772"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-776",
+        "title": "Changing ZK format breaks some tools",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-776"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-779",
+        "title": "Standardize Zk data structures for Re-assign partitions and Preferred replication election",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-779"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-785",
+        "title": "Resolve bugs in PreferredReplicaLeaderElection admin tool",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-785"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-786",
+        "title": "Use \"withRequiredArg\" while parsing jopt options in all tools",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-786"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-793",
+        "title": "Include controllerId in all requests sent by controller",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-793"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-798",
+        "title": "Use biased histograms instead of uniform histograms in KafkaMetricsGroup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-798"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-800",
+        "title": "inSyncReplica in Partition needs some tweaks",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-800"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-801",
+        "title": "Fix MessagesInPerSec mbean to count uncompressed message rate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-801"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-804",
+        "title": "Incorrect index in the log of a follower",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-804"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-807",
+        "title": "LineMessageReader doesn't correctly parse the key separator",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-807"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-809",
+        "title": "Dependency on zkclient 0.1 (redundant) prevents building in IntelliJ",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-809"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-811",
+        "title": "Fix clientId in migration tool",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-811"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-813",
+        "title": "Minor cleanup in Controller",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-813"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-825",
+        "title": "KafkaController.isActive() needs to be synchronized",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-825"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-826",
+        "title": "Make Kafka 0.8 depend on metrics 2.2.0 instead of 3.x",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-826"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-827",
+        "title": "improve list topic output format",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-827"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-828",
+        "title": "Preferred Replica Election does not delete the admin path on controller failover",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-828"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-830",
+        "title": "partition replica assignment map in the controller should be a Set",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-830"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-832",
+        "title": "0.8 Consumer prevents rebalance if consumer thread is blocked or slow",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-832"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-840",
+        "title": "Controller tries to perform preferred replica election on failover before state machines have started up",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-840"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-846",
+        "title": "AbstractFetcherThread should do shallow instead of deep iteration",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-846"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-856",
+        "title": "Correlation id for OffsetFetch request (#2) always responds with 0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-856"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-861",
+        "title": "IndexOutOfBoundsException while fetching data from leader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-861"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-866",
+        "title": "Recover segment does shallow iteration to fix index causing inconsistencies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-866"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-871",
+        "title": "Rename ZkConfig properties",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-871"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-872",
+        "title": "Socket server does not set send/recv buffer sizes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-872"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-876",
+        "title": "Produce request: Leader not local for partition [test,0] on broker 0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-876"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-879",
+        "title": "In system test, read the new leader from zookeeper instead of broker log on completion of become-leader state transition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-879"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-880",
+        "title": "NoLeaderPartitionSet should be cleared before leader finder thread is started up",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-880"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-884",
+        "title": "Get java.lang.NoSuchMethodError: com.yammer.metrics.core.TimerContext.stop()J when stopping kafka brokers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-884"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-895",
+        "title": "Protocol documentation is not clear about requiredAcks = 0.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-895"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-900",
+        "title": "ClosedByInterruptException when high-level consumer shutdown normally",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-900"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-903",
+        "title": "[0.8.0 - windows]  FATAL - [highwatermark-checkpoint-thread1] (Logging.scala:109) - Attempt to swap the new high watermark file with the old one failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-903"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-905",
+        "title": "Logs can have same offsets causing recovery failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-905"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-907",
+        "title": "controller needs to close socket channel to brokers on exception",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-907"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-914",
+        "title": "Deadlock between initial rebalance and watcher-triggered rebalances",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-914"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-916",
+        "title": "Deadlock between fetcher shutdown and handling partitions with error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-916"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-919",
+        "title": "Disabling of auto commit is ignored during consumer group rebalancing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-919"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-920",
+        "title": "zkclient jar 0.2.0 is not compatible with 0.1.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-920"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-921",
+        "title": "Expose max lag mbean for consumers and replica fetchers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-921"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-927",
+        "title": "Integrate controlled shutdown into kafka shutdown hook",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-927"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-937",
+        "title": "ConsumerFetcherThread can deadlock",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-937"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-938",
+        "title": "High CPU usage when more or less idle",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-938"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-939",
+        "title": "./sbt publish-local fails due to invalid javac flags passed to javadoc",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-939"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-940",
+        "title": "Scala match error in javaapi.Implicits",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-940"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-941",
+        "title": "Add Apache 2.0 license to missing code source files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-941"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-942",
+        "title": "the version of the jar should be 0.8.0-beta1 not 0.8.0-SNAPSHOT",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-942"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-944",
+        "title": "the pom output from publish and publish-local is not accurate",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-944"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-946",
+        "title": "Kafka Hadoop Consumer fails when verifying message checksum",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-946"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-947",
+        "title": "isr-expiration-thread may block LeaderAndIsr request for a relatively long period",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-947"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-950",
+        "title": "bytesSinceLastIndexEntry needs to be reset after log segment is truncated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-950"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-951",
+        "title": "Leader election rate may be reported on a non-controller",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-951"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-953",
+        "title": "Remove release-zip from README we are not releasing with it",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-953"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-954",
+        "title": "tidy up README file for better general availability",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-954"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-955",
+        "title": "After a leader change, messages sent with ack=0 are lost",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-955"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-956",
+        "title": "High-level consumer fails to check topic metadata response for errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-956"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-959",
+        "title": "DefaultEventHandler can send more produce requests than necesary",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-959"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-961",
+        "title": "state.change.logger: Error on broker 1 while processing LeaderAndIsr request correlationId 6 received from controller 1 epoch 1 for partition (page_visits,0)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-961"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-963",
+        "title": "when publishing to maven repository central missing signature on everything",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-963"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-964",
+        "title": "Default hadoop-producer configs to request.required.acks = 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-964"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-968",
+        "title": "Typographical Errors in Output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-968"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-969",
+        "title": "Need to prevent failure of rebalance when there are no brokers available when consumer comes up",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-969"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-974",
+        "title": "can't use public release maven repo because of failure of downloaded dependency",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-974"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-978",
+        "title": "kafka pom file has 2 entries for zookeeper (one with exclusion, one without)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-978"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-987",
+        "title": "Avoid checkpointing offsets in Kafka consumer that have not changed since the last commit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-987"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-989",
+        "title": "Race condition shutting down high-level consumer results in spinning background thread",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-989"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-991",
+        "title": "Reduce the queue size in hadoop producer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-991"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-994",
+        "title": "High level consumer doesn't throw an exception when the message it is trying to fetch exceeds the configured fetch size",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-994"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1003",
+        "title": "ConsumerFetcherManager should pass clientId as metricsPrefix to AbstractFetcherManager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1003"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1008",
+        "title": "Unmap before resizing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1008"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1010",
+        "title": "Concurrency issue in getCluster() causes rebalance failure and dead consumer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1010"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1017",
+        "title": "High number of open file handles in 0.8 producer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1017"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1018",
+        "title": "tidy up the POM from what feedback has come from the 0.8 beta and publishing to maven",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1018"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1029",
+        "title": "Zookeeper leader election stuck in ephemeral node retry loop",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1029"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1030",
+        "title": "Addition of partitions requires bouncing all the consumers of that topic",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1030"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1031",
+        "title": "Little modification to the stop script to be able to kill the proper process",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1031"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1035",
+        "title": "Add message-send-max-retries and retry-backoff-ms options to console producer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1035"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1038",
+        "title": "fetch response should use empty messageset instead of null when handling errors",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1038"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1068",
+        "title": "OfflinePartitionCount metrics may be incorrect after the controller failover",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1068"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1069",
+        "title": "MBean kafka.cluster.Partition report wrong UnderReplicated status",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1069"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1071",
+        "title": "The random partition selected in DefaultEventHandler is not random across producer instances",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1071"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1073",
+        "title": "CheckReassignmentStatus is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1073"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1075",
+        "title": "Consumer will not rebalance upon topic partition change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1075"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1076",
+        "title": "system tests in 0.8 are broken due to wrong log4j config",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1076"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1078",
+        "title": "Update System Test to handle controller data returned by ZK",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1078"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1126",
+        "title": "Remove the DISCLAIMER it is left over from incubation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1126"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1133",
+        "title": "LICENSE and NOTICE files need to get into  META-INF when jars are built before they're signed for publishing to maven",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1133"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1267",
+        "title": "Corrupt 2.8.0_0.8.0 artifacts in maven central",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1267"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1283",
+        "title": "Log4jAppender is unable to send the message.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1283"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-50",
+        "title": "kafka intra-cluster replication support",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-50"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-188",
+        "title": "Support multiple data directories",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-188"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-202",
+        "title": "Make the request processing in kafka asynchonous",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-202"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-203",
+        "title": "Improve Kafka internal metrics",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-203"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-235",
+        "title": "Add a 'log.file.age' configuration parameter to force rotation of log files after they've reached a certain age",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-235"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-429",
+        "title": "Expose JMX operation to set logger level dynamically",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-429"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-475",
+        "title": "Time based log segment rollout",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-475"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-545",
+        "title": "Add a Performance Suite for the Log subsystem",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-545"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-546",
+        "title": "Fix commit() in zk consumer for compressed messages",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-546"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-77",
+        "title": "Implement \"group commit\" for kafka logs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-77"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-100",
+        "title": "ProducerShell should use high-level producer instead of SyncProducer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-100"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-133",
+        "title": "Publish kafka jar to a public maven repository",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-133"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-134",
+        "title": "Upgrade Kafka to sbt 0.11.3",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-134"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-139",
+        "title": "cross-compile multiple Scala versions and upgrade to SBT 0.12.1",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-139"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-155",
+        "title": "Support graceful Decommissioning of Broker",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-155"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-165",
+        "title": "Add helper script for zkCli.sh",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-165"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-181",
+        "title": "Log errors for unrecognized config options",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-181"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-187",
+        "title": "Add Snappy Compression as a Codec and refactor CompressionUtil and option on startup to select what the default codec",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-187"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-193",
+        "title": "use by name parameter helper for logging and trait to include lazy logging and refactor code to use the new LogHelper",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-193"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-246",
+        "title": "log configuration values used",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-246"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-253",
+        "title": "Refactor the async producer to have only one queue instead of one queue per broker in a Kafka cluster",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-253"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-258",
+        "title": "Remove broker.id from the broker.list config in the Producer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-258"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-267",
+        "title": "Enhance ProducerPerformance to generate unique random Long value for payload",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-267"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-271",
+        "title": "Modify new FetchResponse object to remove the initial offset field",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-271"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-281",
+        "title": "support multiple root log directories",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-281"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-285",
+        "title": "Increase maximum value of log.retention.size",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-285"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-296",
+        "title": "Update Go Client to new version of Go",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-296"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-311",
+        "title": "Allow KafkaLog4jAppender to take in a configurable producer.type",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-311"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-314",
+        "title": "Go Client Multi-produce",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-314"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-323",
+        "title": "Add the ability to use the async producer in the Log4j appender",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-323"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-324",
+        "title": "enforce broker.id to be a non-negative integer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-324"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-325",
+        "title": "revisit broker config in 0.8",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-325"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-349",
+        "title": "Create individual \"Response\" types for each kind of request and wrap them with \"BoundedByteBufferSend\", remove \"xxResponseSend\" types for all requests except \"FetchRequest\"",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-349"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-365",
+        "title": "change copyright in NOTICE to 2012",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-365"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-366",
+        "title": "add jmx beans in broker to track # bytes in consumer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-366"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-368",
+        "title": "use the pig core jar from maven instead of distributing it",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-368"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-393",
+        "title": "Add constructor for message which takes both byte array offset and length",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-393"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-408",
+        "title": "ProducerPerformance does not work with all producer config options",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-408"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-437",
+        "title": "Unused var statement in ZookeeperConsumerConnectorTest",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-437"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-439",
+        "title": "@returns was used in scala doc when it should have been @return",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-439"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-505",
+        "title": "Remove errorcode from TopicMetaDataResponse",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-505"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-548",
+        "title": "remove partition from ProducerRequestPartitionData and FetchResponsePartitionData",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-548"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-581",
+        "title": "provides windows batch script for starting Kafka/Zookeeper",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-581"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-632",
+        "title": "ProducerRequest should take ByteBufferMessageSet instead of MessageSet",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-632"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-638",
+        "title": "remove ProducerShell",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-638"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-667",
+        "title": "Rename .highwatermark file",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-667"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-675",
+        "title": "Only bind to the interface declared in the 'hostname' config property",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-675"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-699",
+        "title": "Disallow clients to set replicaId in FetchRequest",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-699"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-717",
+        "title": "scala 2.10 build support",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-717"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-733",
+        "title": "Fat jar option for build, or override for ivy cache location",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-733"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-762",
+        "title": "Improve second replica assignment",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-762"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-763",
+        "title": "Add an option to replica from the largest offset during unclean leader election",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-763"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-812",
+        "title": "Support deep iteration in DumpLogSegments tool",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-812"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-850",
+        "title": "add an option to show under replicated partitions in list topic command",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-850"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-923",
+        "title": "Improve controller failover latency",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-923"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-931",
+        "title": "make zookeeper.connect a required property",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-931"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1046",
+        "title": "Added support for Scala 2.10 builds while maintaining compatibility with 2.8.x",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1046"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1131",
+        "title": "copy some more files into the release tar and zip that are needed/desired",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1131"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-1226",
+        "title": "Rack-Aware replica assignment option",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-1226"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-93",
+        "title": "Change code header to follow standard ASF source header",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-93"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-317",
+        "title": "Add support for new wire protocol to Go client",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-317"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-341",
+        "title": "Create a new single host system test to validate all replicas on 0.8 branch",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-341"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-348",
+        "title": "rebase 0.8 branch from trunk",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-348"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-380",
+        "title": "Enhance single_host_multi_brokers test with failure to trigger leader re-election in replication",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-380"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-440",
+        "title": "Create a regression test framework for distributed environment testing",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-440"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-526",
+        "title": "System Test should remove the top level data log directory",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-526"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-594",
+        "title": "Update System Test due to new argument \"--sync\" in ProducerPerformance",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-594"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-605",
+        "title": "System Test - Log Retention Cases should wait longer before getting the common starting offset in replica log segments",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-605"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-688",
+        "title": "System Test - Update all testcase_xxxx_properties.json for properties keys uniform naming convention",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-688"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-737",
+        "title": "System Test : Disable shallow.iterator in Mirror Maker test cases to make compression work correctly",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-737"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-791",
+        "title": "Fix validation bugs in System Test",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-791"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-792",
+        "title": "Update multiple attributes in testcase_xxxx_properties.json",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-792"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-819",
+        "title": "System Test : Add validation of log segment index to offset",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-819"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-883",
+        "title": "System Test - update migration tool testsuite after 0.7 ProducerPerformance sends seq MessageID",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-883"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-922",
+        "title": "System Test - set retry.backoff.ms=300 to testcase_0119",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-922"
+          }
+        }
+      },
+      {
+        "issue": "KAFKA-932",
+        "title": "System Test - set retry.backoff.ms=300 to all test cases",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/KAFKA/12317244"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/KAFKA-932"
+          }
+        }
+      }
+    ]
+  }
+}

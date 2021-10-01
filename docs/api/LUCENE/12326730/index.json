@@ -1,0 +1,3588 @@
+{
+  "id": "12326730",
+  "name": "4.9",
+  "description": "Major release after 4.8",
+  "date": "2014-06-25",
+  "version": "4.9",
+  "module": "",
+  "lastUpdated": 1633092716452,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/LUCENE/fixforversion/12326730"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/LUCENE"
+    }
+  },
+  "releaseNotes": "Release Notes - Lucene - Core - Version 4.9",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "LUCENE-2840",
+        "title": "Multi-Threading in IndexSearcher (after removal of MultiSearcher and ParallelMultiSearcher)",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2840"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3460",
+        "title": "Move handling of query only containing MUST_NOT to QueryParser (and remove QueryUtils.makeQueryable() hack in Solr)",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3460"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4872",
+        "title": "BooleanWeight should decide how to execute minNrShouldMatch",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4872"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5639",
+        "title": "Fix implementation of PositionLengthAttribute in Token.java",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5639"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5640",
+        "title": "Cleanup & deprecate Token class / Improve default AttributeFactory to no longer use reflection",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5640"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5642",
+        "title": "Randomize attributefactory in MockTokenizer, TestRandomChains, etc.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5642"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2154",
+        "title": "Need a clean way for Dir/MultiReader to \"merge\" the AttributeSources of the sub-readers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2154"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2340",
+        "title": "FixedIntBlockIndexOutput encodes unnecessary integers at the end of a list",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2340"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2403",
+        "title": "contrib/HighFreqTerms should use ByteRefs but provide human-readable output",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2403"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2525",
+        "title": "make MultiPhraseQuery's UnionDocsAndPositionsEnum public",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2525"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2527",
+        "title": "FieldCache.getTermsIndex should cache fasterButMoreRAM=true|false to the same cache key",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2527"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2585",
+        "title": "DirectoryReader.isCurrent might fail to see the segments file during concurrent index changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2585"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2684",
+        "title": "it's not possible to access sub-query's freq information if BooleanScorer is use",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2684"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2853",
+        "title": "Improve random seed portability for test cases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2853"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3022",
+        "title": "DictionaryCompoundWordTokenFilter Flag onlyLongestMatch has no affect",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3022"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3120",
+        "title": "span query matches too many docs when two query terms are the same unless inOrder=true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3120"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3150",
+        "title": "Wherever we catch & suppress Throwable we should not suppress ThreadInterruptedException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3150"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3153",
+        "title": "Adding field w/ norms should fail if same field was added w/o norms already",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3153"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3235",
+        "title": "TestDoubleBarrelLRUCache hangs under Java 1.5, 3.x and trunk, likely JVM bug",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3235"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3380",
+        "title": "enable FileSwitchDirectory randomly in tests and fix compound-file/NoSuchDirectoryException bugs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3380"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3411",
+        "title": "TestIndexWriterDelete checkIndex failure",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3411"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3581",
+        "title": "IndexReader#isCurrent() should return true on a NRT reader if no deletes are applied and only deletes are present in IW",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3581"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3840",
+        "title": "Threads leak out from Executors created in LuceneTestCase#newSearcher",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3840"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3990",
+        "title": "TestRandomChains failure caused by incorrect delegation in CharReader/CharFilter/CharStream API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3990"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3994",
+        "title": "some nightly tests take hours",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3994"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4089",
+        "title": "fix or document termsIndexInterval/Divisor for 4.0",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4089"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4382",
+        "title": "Unicode escape no longer works for non-suffix-only wildcard terms",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4382"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4438",
+        "title": "Lucene40StoredFieldsReader's constructor calls close() instead of IOUtils.closeWhileHandlingException in its finally block",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4438"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4526",
+        "title": "Allow runtime settings on Codecs",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4526"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4630",
+        "title": "add a system property to allow testing of suspicious stuff",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4630"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4638",
+        "title": "If IndexWriter is interrupted on close and is using a channel (mmap/nio), it can throw a ClosedByInterruptException and prevent you from opening a new IndexWriter in the same proceses if you are using Native locks.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4638"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4734",
+        "title": "FastVectorHighlighter Overlapping Proximity Queries Do Not Highlight",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4734"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4803",
+        "title": "DrillDownQuery should rewrite to FilteredQuery?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4803"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4813",
+        "title": "Allow DirectSpellchecker to use totalTermFrequency rather than docFrequency",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4813"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4823",
+        "title": "Add a separate \"registration\" singleton for Lucene's SPI, so there is only one central instance to request rescanning of classpath (e.g. from Solr's ResourceLoader)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4823"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4943",
+        "title": "remove 'Changes to Backwards Compatibility Policy' from lucene/CHANGES.txt",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4943"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4950",
+        "title": "AssertingIndexSearcher isn't wrapping the Collector to AssertingCollector",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4950"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4954",
+        "title": "LuceneTestFramework fails to catch temporary FieldCache insanity",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4954"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5024",
+        "title": "Can we reliably detect an incomplete first commit vs index corruption?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5024"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5056",
+        "title": "Indexing non-point shapes close to the poles doesn't scale",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5056"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5351",
+        "title": "DirectoryReader#close can throw AlreadyClosedException if it's and NRT reader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5351"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5381",
+        "title": "Lucene highlighter doesn't honor hl.fragsize; it appends all text for last fragment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5381"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5430",
+        "title": "Suggesters should verify its index before loading it from disk",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5430"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5491",
+        "title": "NPE in Flexible StandardQueryParser on boosting",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5491"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5506",
+        "title": "Ignoring the Return Values Of Immutable Objects",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5506"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5508",
+        "title": "Unnecessary Check and Assgiment at FieldFacetStats",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5508"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5509",
+        "title": "Equals Methods Does Not Consider Null Case",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5509"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5521",
+        "title": "Egothor Stemmer Bug for Optimizing (removing holes in the rows) for the given Trie",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5521"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5561",
+        "title": "NativeUnixDirectory is broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5561"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5599",
+        "title": "HttpReplicator uses a lot of CPU for large files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5599"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5600",
+        "title": "HttpReplicator does not properly handle server failures",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5600"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5603",
+        "title": "fix hunspell to use FST efficiently",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5603"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5612",
+        "title": "LockStressTest fails always with NativeFSLockFactory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5612"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5614",
+        "title": "Add workaround for ANT bug to enable compile with Java 8 on ANT 1.8.3. and 1.8.4",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5614"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5618",
+        "title": "DocValues updates send wrong fieldinfos to codec producers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5618"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5619",
+        "title": "TestBackwardsCompatibility needs updatable docvalues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5619"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5622",
+        "title": "Fail tests if they print over the given limit of bytes to System.out or System.err",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5622"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5624",
+        "title": "nightly 'test-lock-factory' may leak file handles",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5624"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5626",
+        "title": "SimpleFSLockFactory \"access denied\" on windows.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5626"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5628",
+        "title": "SpecialOperations.getFiniteStrings should not recurse",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5628"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5630",
+        "title": "Improve TestAllAnalyzersHaveFactories",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5630"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5635",
+        "title": "Better exception testing for indexwriter",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5635"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5636",
+        "title": "SegmentCommitInfo continues to list unneeded gen'd files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5636"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5638",
+        "title": "Default Attributes are expensive",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5638"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5641",
+        "title": "SimpleRateLimiter is too simple",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5641"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5644",
+        "title": "ThreadAffinityDocumentsWriterThreadPool should clear the bindings on flush",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5644"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5646",
+        "title": "stored fields bulk merging doesn't quite work right",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5646"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5651",
+        "title": "Remove remaining Token usage in Lucene",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5651"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5653",
+        "title": "JoinUtil - ArrayIndexOutOfBoundsException: 256",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5653"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5654",
+        "title": "CompoundFileWriter.close suppresses OOME",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5654"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5656",
+        "title": "IndexWriter leaks CFS handles in some exceptional cases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5656"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5659",
+        "title": "SpecialOperations.isFinite hits StackOverflowError on automaton accepting long strings",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5659"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5662",
+        "title": "Missing Field null checks can result in aborted segments",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5662"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5668",
+        "title": "Off-by-1 error in TieredMergePolicy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5668"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5671",
+        "title": "Upgrade ICU version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5671"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5673",
+        "title": "MMapDirectory shouldn't pass along OOM wrapped as IOException",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5673"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5677",
+        "title": "Simplify position handling in DefaultIndexingChain",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5677"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5682",
+        "title": "NPE in QueryRescorer when Scorer is null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5682"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5689",
+        "title": "FieldInfo.setDocValuesGen should not be public.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5689"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5691",
+        "title": "DocTermsOrds lookupTerm is wrong in some cases",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5691"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5694",
+        "title": "Fix Disjunction*Scorer not to score unless you ask it to",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5694"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5700",
+        "title": "Add 'accountable' interface for various ramBytesUsed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5700"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5704",
+        "title": "Compile error in various DocValues formats with Java 8u20",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5704"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5705",
+        "title": "ConcurrentMergeScheduler/maxMergeCount default is too low",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5705"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5708",
+        "title": "Remove IndexWriterConfig.clone",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5708"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5722",
+        "title": "Speed up MMapDirectory.seek()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5722"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5724",
+        "title": "CompoundFileWriter loses the IOContext sometimes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5724"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5727",
+        "title": "Remove IndexOutput.seek",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5727"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5731",
+        "title": "split direct packed ints from in-ram ones",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5731"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5738",
+        "title": "NativeLock is release if Lock is closed after obtain failed",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5738"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5747",
+        "title": "Eclipse settings - prevent automatic code reformatting on save",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5747"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5750",
+        "title": "Speed up monotonic address access in BINARY/SORTED_SET",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5750"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5757",
+        "title": "Move RAMUsageEstimator \"reflector\" to test-framework",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5757"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5761",
+        "title": "Remove DiskDocValuesFormat",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5761"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5762",
+        "title": "Disable old codecs as much as possible",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5762"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5768",
+        "title": "hunspell condition check is buggy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5768"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5772",
+        "title": "SortingAtomicReader should implement getSortedNumericDocValues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5772"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5775",
+        "title": "JaspellTernarySearchTrie.ramBytesUsed hits StackOverflowError",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5775"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5777",
+        "title": "double escaping of dash in hunspell conditions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5777"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1823",
+        "title": "QueryParser with new features for Lucene 3",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1823"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2025",
+        "title": "Ability to turn off the store for an index",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2025"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2125",
+        "title": "Ability to store and retrieve attributes in the inverted index",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2125"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2460",
+        "title": "Search Results Filtering Based on Bitwise Operations on Integer Fields",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2460"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2522",
+        "title": "add simple japanese tokenizer, based on tinysegmenter",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2522"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2886",
+        "title": "Adaptive Frame Of Reference",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2886"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2997",
+        "title": "PayloadQueryParser addition",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2997"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3392",
+        "title": "Combining analyzers output",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3392"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4042",
+        "title": "New snowball stemmers (Irish gaelic and Czech)",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4042"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4731",
+        "title": "New ReplicatingDirectory mirrors index files to HDFS",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4731"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5288",
+        "title": "Add ProxBooleanTermQuery, like BooleanQuery but boosting when term occur \"close\" together (in proximity) in each document",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5288"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5350",
+        "title": "Add Context Aware Suggester",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5350"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5417",
+        "title": "Solr function query supports reading multiple values from a field.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5417"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5629",
+        "title": "Comparing the Version of Lucene , the Analyzer and the similarity function that are being used for indexing and searching.",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5629"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5675",
+        "title": "\"ID postings format\"",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5675"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5680",
+        "title": "Allow updating multiple DocValues fields atomically",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5680"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5701",
+        "title": "Move core closed listeners to AtomicReader",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5701"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5709",
+        "title": "NorwegianPhoneticFilter",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5709"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5743",
+        "title": "new 4.9 norms format",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5743"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5748",
+        "title": "SORTED_NUMERIC dv type",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5748"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-831",
+        "title": "Complete overhaul of FieldCache API/Implementation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-831"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-989",
+        "title": "Statistics from ValueSourceQuery",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-989"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1000",
+        "title": "queryparsersyntax.html escaping section needs beefed up",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1000"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1361",
+        "title": "QueryParser should have a setDateFormat(DateFormat) method",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1361"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1560",
+        "title": "maxDocBytesToAnalyze should be required arg up front",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1560"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1574",
+        "title": "PooledSegmentReader, pools SegmentReader underlying byte arrays",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1574"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1650",
+        "title": "Small fix in CustomScoreQuery JavaDoc",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1650"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1743",
+        "title": "MMapDirectory should only mmap large files, small files should be opened using SimpleFS/NIOFS",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1743"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1785",
+        "title": "Simple FieldCache merging",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1785"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1820",
+        "title": "WildcardQueryNode to expose the positions of the wildcard characters, for easier use in processors and builders",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1820"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1909",
+        "title": "Make IndexReader.DEFAULT_TERMS_INDEX_DIVISOR public",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1909"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2018",
+        "title": "Reconsider boolean max clause exception",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2018"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2023",
+        "title": "Improve performance of SmartChineseAnalyzer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2023"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2026",
+        "title": "Refactoring of IndexWriter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2026"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2047",
+        "title": "IndexWriter should immediately resolve deleted docs to docID in near-real-time mode",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2047"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2082",
+        "title": "Performance improvement for merging posting lists",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2082"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2099",
+        "title": "Revise PositionIncrement in StopFilter / QueryParser",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2099"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2101",
+        "title": "Default Stopwords should use specific Version in CharArraySet construtor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2101"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2122",
+        "title": "Use JUnit4 capabilites for more thorough Locale testing for classes deriving from LocalizedTestCase",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2122"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2171",
+        "title": "Over synchronization for read-only index readers in SegmentTermDocs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2171"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2187",
+        "title": "improve lucene's similarity algorithm defaults",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2187"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2262",
+        "title": "QueryParser should now allow leading '?' wildcards",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2262"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2271",
+        "title": "Function queries producing scores of -inf or NaN (e.g. 1/x) return incorrect results with TopScoreDocCollector",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2271"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2296",
+        "title": "Include UML diagrams in javadocs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2296"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2335",
+        "title": "optimization: when sorting by field, if index has one segment and field values are not needed, do not load String[] into field cache",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2335"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2394",
+        "title": "Factories for cache creation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2394"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2407",
+        "title": "make CharTokenizer.MAX_WORD_LEN parametrizable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2407"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2408",
+        "title": "Add Document.set/getSourceID, as an optional hint to IndexWriter to improve indexing performance",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2408"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2457",
+        "title": "QueryNode implementors should override equals method",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2457"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2471",
+        "title": "Supporting bulk copies in Directory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2471"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2483",
+        "title": "When loading FieldCache terms index, make terms data optional",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2483"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2485",
+        "title": "IndexWriter should also warm flushed segments",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2485"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2535",
+        "title": "update FieldSelectorResult with a BREAK only result option. consolidate some of the state for break/load",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2535"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2539",
+        "title": "add initial capacity based Document constructor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2539"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2540",
+        "title": "Document. add get(i) and addAll to make interacting with fieldables and documents easier/faster and more readable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2540"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2543",
+        "title": "expose position information in SegmentReader, add method getPosition(term)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2543"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2545",
+        "title": "improve uses of StringHelper.intern in Field,AbstractField, NumericField etc.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2545"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2661",
+        "title": "fold in test cases from Lucene in Action 2nd edition",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2661"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2679",
+        "title": "IndexWriter.deleteDocuments should have option to not apply to docs indexed in the current IW session",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2679"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2735",
+        "title": "First Cut at GroupVarInt with FixedIntBlockIndexInput / Output",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2735"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2765",
+        "title": "Optimize scanning in DocsEnum",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2765"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2780",
+        "title": "optimize spantermquery",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2780"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2832",
+        "title": "on Windows 64-bit, maybe we should default to a better maxBBufSize in MMapDirectory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2832"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2841",
+        "title": "CommonGramsFilter improvements",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2841"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2971",
+        "title": "Auto Generate our LICENSE.txt and NOTICE.txt files",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2971"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3034",
+        "title": "If you vary a setting per round and that setting is a long string, the report padding/columns break down.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3034"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3056",
+        "title": "Support Query Rewriting Caching",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3056"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3060",
+        "title": "Revise ThreadAffinityDocumentsWriterThreadPool queue handling",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3060"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3122",
+        "title": "Cascaded grouping",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3122"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3133",
+        "title": "Fix QueryParser to handle nested fields",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3133"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3145",
+        "title": "FST APIs should support CharsRef too",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3145"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3151",
+        "title": "Make all of Analysis completely independent from Lucene Core",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3151"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3236",
+        "title": "Make LowerCaseFilter and StopFilter keyword aware, similar to PorterStemFilter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3236"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3266",
+        "title": "Improve FileLocking based on Java 1.6",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3266"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3333",
+        "title": "Specialize DisjunctionScorer if all clauses are TermQueries",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3333"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3424",
+        "title": "Return sequence ids from IW update/delete/add/commit to allow total ordering outside of IW",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3424"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3425",
+        "title": "NRT Caching Dir to allow for exact memory usage, better buffer allocation and \"global\" cross indices control",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3425"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3614",
+        "title": "Add a JUL/SLF4J example InfoStream implementation so IndexWriter can log to JUL/SLF4J",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3614"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3664",
+        "title": "Speed up SegementDocsAndPositionsEnum by making it more friendly for JIT optimizations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3664"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3689",
+        "title": "DocValuesConsumer should implement closeable and release resource in close instead of during finish / flush",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3689"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3797",
+        "title": "3xCodec should throw UOE if a DocValuesConsumer is pulled",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3797"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3843",
+        "title": "implement PositionLengthAttribute for all tokenstreams where its appropriate",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3843"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3888",
+        "title": "split off the spell check word and surface form in spell check dictionary",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3888"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3912",
+        "title": "Improved the checked-in tiny line file docs",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3912"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3954",
+        "title": "prepare-release should put changesToHtml and KEYS output in dist/",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3954"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3960",
+        "title": "improve build -projecthelp as far as building jars and such",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3960"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3961",
+        "title": "don't build and rebuild jar files for dependencies in tests",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3961"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3968",
+        "title": "Factor MockGraphTokenFilter into LookaheadTokenFilter + random tokens",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3968"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3978",
+        "title": "redo how our download redirect pages work",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3978"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4057",
+        "title": "Add Codec.merge()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4057"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4126",
+        "title": "Remove FieldType copy constructor",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4126"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4236",
+        "title": "clean up booleanquery conjunction optimizations a bit",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4236"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4251",
+        "title": "Port Solr's ValueSourceRangeFilter to Lucene query module",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4251"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4281",
+        "title": "Delegate to default thread factory in NamedThreadFactory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4281"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4386",
+        "title": "Query parser should generate FieldValueFilter for pure wildcard terms to boost query performance",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4386"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4491",
+        "title": "Make analyzing suggester more flexible",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4491"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4545",
+        "title": "Better error reporting StemmerOverrideFilterFactory",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4545"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4688",
+        "title": "Reuse TermsEnum in BlockTreeTermsReader",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4688"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4722",
+        "title": "Can we move SortField.Type.SCORE/DOC to singleton SortField instances instead...?",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4722"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4746",
+        "title": "Create a move method in Directory.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4746"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4835",
+        "title": "Raise maxClauseCount in BooleanQuery to Integer.MAX_VALUE",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4835"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5093",
+        "title": "nightly-smoke should run some fail fast checks before doing the full smoke tester",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5093"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5130",
+        "title": "fail the build on compilation warnings",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5130"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5199",
+        "title": "Improve LuceneTestCase.defaultCodecSupportsDocsWithField to check the actual DocValuesFormat used per-field",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5199"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5310",
+        "title": "Merge Threads unnecessarily block on SerialMergeScheduler",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5310"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5326",
+        "title": "Add enum facet method to Lucene facet module",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5326"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5402",
+        "title": "Add support for index-time pruning in Document*Dictionary (Suggester)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5402"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5406",
+        "title": "ShingleAnalyzerWrapper should expose the delegated analyzer as a public final",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5406"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5442",
+        "title": "Build system should sanity check transative 3rd party dependencies",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5442"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5591",
+        "title": "ReaderAndUpdates should create a proper IOContext when writing DV updates",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5591"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5609",
+        "title": "Should we revisit the default numeric precision step?",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5609"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5610",
+        "title": "Add Terms min/max",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5610"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5611",
+        "title": "Simplify the default indexing chain",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5611"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5621",
+        "title": "remove IndexOutput.flush()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5621"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5632",
+        "title": "transition Version constants from LUCENE_MN to LUCENE_M_N",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5632"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5633",
+        "title": "NoMergePolicy should have one singleton - NoMergePolicy.INSTANCE",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5633"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5634",
+        "title": "Reuse TokenStream instances in Field",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5634"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5665",
+        "title": "Remove/deprecate SerialMergeScheduler",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5665"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5667",
+        "title": "Optimize common-prefix across all terms in a field",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5667"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5669",
+        "title": "Make it easier to index a full binary term",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5669"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5670",
+        "title": "org.apache.lucene.util.fst.FST should skip over outputs it is not interested in",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5670"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5679",
+        "title": "Consolidate IndexWriter.deleteDocuments()",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5679"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5683",
+        "title": "Improve SegmentReader.getXXXDocValues",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5683"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5684",
+        "title": "Add best effort detection when index is removed & recreated before openIfChanged",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5684"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5686",
+        "title": "Fail smoketester if there is LUCENE_XXXX or SOLR_XXXX in Changes.txt",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5686"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5687",
+        "title": "Split off SinkTokenStream from TeeSinkTokenFilter (was add PrefillTokenStream ...)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5687"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5690",
+        "title": "expose sub-Terms from MultiTerms",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5690"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5703",
+        "title": "Don't allocate/copy bytes all the time in binary DV producers",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5703"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5706",
+        "title": "Don't allow unsetting values through DocValues updates",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5706"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5710",
+        "title": "DefaultIndexingChain swallows useful information from MaxBytesLengthExceededException",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5710"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5711",
+        "title": "Pass IW to MergePolicy",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5711"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5712",
+        "title": "Remove Similarity.queryNorm",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5712"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5717",
+        "title": "Postings highlighter support for multi term queries within filtered and constant score queries",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5717"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5720",
+        "title": "Optimize on disk packed integers part 2",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5720"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5725",
+        "title": "More Like This: necessary improvement to run mlt on multi-field values.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5725"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5730",
+        "title": "FSDirectory.open should return mmap for 64-bit OS X",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5730"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5733",
+        "title": "Minor PackedInts API cleanups",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5733"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5751",
+        "title": "Bring MemoryDocValues up to speed",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5751"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5754",
+        "title": "Allow \"$\" in expression variables",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5754"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5756",
+        "title": "Implement Accountable from IndexWriter",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5756"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5759",
+        "title": "Add PackedInts.unsignedBitsRequired",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5759"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5760",
+        "title": "Speed up BufferedIndexInput.randomAccessSlice",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5760"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5767",
+        "title": "OrdinalMap optimizations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5767"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5769",
+        "title": "SingletonSortedSet should extend RandomAccessOrds",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5769"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2264",
+        "title": "Add missing tests for PayloadXxxQuery",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2264"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2338",
+        "title": "Some tests catch Exceptions in separate threads and just print a stack trace - the test does not fail",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2338"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2726",
+        "title": "simulate disk fulls in copyBytes",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2726"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2738",
+        "title": "improve test coverage for omitNorms and omitTFAP",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2738"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2798",
+        "title": "Randomize indexed collation key testing",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2798"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3116",
+        "title": "pendingCommit in IndexWriter is not thoroughly tested",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3116"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3489",
+        "title": "Refactor test classes that use assumeFalse(codec != SimpleText, Memory) to use new annotation and move the expensive methods to separate classes",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3489"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3813",
+        "title": "add tests for JaSpell/TST/HighFrequencyDictionary to the suggest module",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3813"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5067",
+        "title": "add a BaseDirectoryTestCase",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5067"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5649",
+        "title": "tests should sometime disable bulk merges for segments",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5649"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5764",
+        "title": "Add tests to DocIdSet.ramBytesUsed",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5764"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5765",
+        "title": "Add tests to OrdinalMap.ramBytesUsed",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5765"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5773",
+        "title": "Test SegmentReader.ramBytesUsed",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5773"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2345",
+        "title": "Make it possible to subclass SegmentReader",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2345"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4492",
+        "title": "Immutable Suggester impls. should be immutable",
+        "type": "Wish",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4492"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-1698",
+        "title": "Change backwards-compatibility policy",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-1698"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2073",
+        "title": "Document issues involved in building your index with one jdk version and then searching/updating with another",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2073"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2227",
+        "title": "separate chararrayset interface from impl",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2227"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2859",
+        "title": "Move Multi* and SlowMultiReaderWrapper to contrib",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2859"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-2929",
+        "title": "all postings enums must explicitly declare what they need up-front.",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-2929"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3109",
+        "title": "Rename FieldsConsumer to InvertedFieldsConsumer",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3109"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3161",
+        "title": "consider warnings from the source compilation",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3161"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3792",
+        "title": "Remove StringField",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3792"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3799",
+        "title": "improve IndexSearcher javadocs: TotalHitCountCollector and paging",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3799"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3844",
+        "title": "Deprecate Token class and remove in trunk",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3844"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3917",
+        "title": "Port pruning module to trunk apis",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3917"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-3997",
+        "title": "join module should not depend on grouping module",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-3997"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4276",
+        "title": "refuse to execute on broken corrupting jvms",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4276"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-4371",
+        "title": "consider refactoring slicer to indexinput.slice",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-4371"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5678",
+        "title": "Investigate to use FileoutputStream instead of RandomAccessFile in FSIndexOutput",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5678"
+          }
+        }
+      },
+      {
+        "issue": "LUCENE-5715",
+        "title": "Upgrade direct dependencies known to be older than transitive dependencies",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/LUCENE/12326730"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/LUCENE-5715"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,4225 @@
+{
+  "id": "12328973",
+  "name": "0.5.0",
+  "description": "Release 0.5.0",
+  "date": "2015-06-10",
+  "version": "0.5.0",
+  "module": "",
+  "lastUpdated": 1633096325112,
+  "type": "release",
+  "_links": {
+    "self": {
+      "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+    },
+    "jira": {
+      "href": "https://issues.apache.org/jira/browse/RANGER/fixforversion/12328973"
+    },
+    "project": {
+      "href": "https://apis.danklco.com/apache-release-info/RANGER"
+    }
+  },
+  "releaseNotes": "Release Notes - Ranger - Version 0.5.0",
+  "_embedded": {
+    "issues": [
+      {
+        "issue": "RANGER-221",
+        "title": "enhance usersync setup.sh to support new config properties introduced by RANGER-212",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-221"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-241",
+        "title": "ServiceStore implementation to support persistence in RDBMS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-241"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-257",
+        "title": "Create KMS module within Apache Ranger to run KMS using hadoop-common KMS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-257"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-258",
+        "title": "Create KeyProvider that works across multiple instances of KMS instances",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-258"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-259",
+        "title": "Create a utility to import JavaKeyStore Provider .jks file keys into RANGER keystorage",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-259"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-262",
+        "title": "Implement Kafka Provider for Ranger Audit",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-262"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-267",
+        "title": "Implement Solr Ranger Audit Provider",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-267"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-268",
+        "title": "Implement DAO to access Solr",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-268"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-286",
+        "title": "service validations: make components either completely stateless or stateful by moving ctor arguments around",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-286"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-291",
+        "title": "make NameNodeURL non mandatory while creating HDFS repository",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-291"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-292",
+        "title": "Allow updating a service's and policy's name and enforce name-uniqueness during their create/update",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-292"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-299",
+        "title": "Service def validation: create/update/delete of service def should be validated.",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-299"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-304",
+        "title": "All validations: review various string comparisons and change those that should be done in a case insensitive manner",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-304"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-305",
+        "title": "Service: validate the recursiveSupported and excludesSupported values",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-305"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-308",
+        "title": "Provide Auditing of policy updates in new Service Model",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-308"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-354",
+        "title": "Policy validation: Prevent creation/update of policies for the same resource",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-354"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-359",
+        "title": "Policy validation: resource uniqueness: store resource signature of a policy in database for faster check",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-359"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-365",
+        "title": "Policy validation: only users with admin role should be able to create excludes policies",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-365"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-376",
+        "title": "Develop a pluggable authorization API for KMS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-376"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-412",
+        "title": "Packaging changes for Ranger KMS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-412"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-417",
+        "title": "UI support for Ranger KMS",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-417"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-419",
+        "title": "Policy validation: Assign generated name to a policy if one isn't specified before policy validation logic",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-419"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-437",
+        "title": "Policy validation: Creation of hive UDF policy fails",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-437"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-444",
+        "title": "Service-def validation: Detect and flag illegal resource hierarchies",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-444"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-459",
+        "title": "Service def: Resource or Config list that is empty or contains duplicates",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-459"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-462",
+        "title": "Policy validation: policy resource conflict signature check should be intra-service",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-462"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-585",
+        "title": "Support single-value/multi-line UI input for policy condition values",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-585"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-605",
+        "title": "Create a default tag policy for 'EXPIRES_ON' tag name when a new tag service is created",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-605"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-610",
+        "title": "Update Audit page to add 'Tags' column",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-610"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-737",
+        "title": "Need to update the current implementation for recent changes in Kafka",
+        "type": "Sub-task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-737"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-82",
+        "title": "Add pom.xml exclusions",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-82"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-99",
+        "title": "enabling argus hive agent should set doAs=false in hive-site.xml",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-99"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-140",
+        "title": "Clean up for FindBugs reported issue - Set 1",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-140"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-141",
+        "title": "Argus Wiki link returns \"Not Found\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-141"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-145",
+        "title": "Static analysis problems reported related to null pointer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-145"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-160",
+        "title": "Add junits for HDFS URLBasedAuthDB - audit log enabled check",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-160"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-167",
+        "title": "Add junits for HDFS URLBasedAuthDB - grant access check",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-167"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-177",
+        "title": "usersync process should be modified to run as ranger just like policy admin tool",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-177"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-181",
+        "title": "Move Argus Project documentation to be under the Argus REPO",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-181"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-185",
+        "title": "Optimize database transaction usage in admin web application",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-185"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-186",
+        "title": "Improve failure handling in usersync service",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-186"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-187",
+        "title": "Script parsing install.properties fails if there is space in the name value pair.  It should be resilient to such user errors.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-187"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-188",
+        "title": "Add LSB headers to Ranger init.d scripts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-188"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-192",
+        "title": "User Detail Page hangs if user has many groups",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-192"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-193",
+        "title": "Allow user to be created without group association",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-193"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-195",
+        "title": "Need to update Wiki link in Ranger web page",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-195"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-196",
+        "title": "Rename project name from ARGUS to RANGER in  podlings.xml (http://incubator.apache.org/)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-196"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-198",
+        "title": "XaAccessControlListsTest.java  missing Apache copyright",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-198"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-200",
+        "title": "Implement pagination on Analytics page",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-200"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-203",
+        "title": "Framework to extend Ranger security to new components in a pluggable way",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-203"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-206",
+        "title": "Rename argus with ranger in .project file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-206"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-207",
+        "title": "Few files are still containing the term Argus in exceptions for output messages",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-207"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-210",
+        "title": "Ranger service should tell it's Software verison",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-210"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-214",
+        "title": "Fix init.d restart",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-214"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-215",
+        "title": "ranger virtual package dependency broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-215"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-220",
+        "title": "Mismatched Comment in VXPolicy class",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-220"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-223",
+        "title": "Ranger admin can not access to mysql?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-223"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-224",
+        "title": "Ranger admin can not access to mysql?",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-224"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-225",
+        "title": "Ranger-LookupResource and ValidateConfig implementation for all components in the new pluggable model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-225"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-230",
+        "title": "Change hbase plugin to use the new framework",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-230"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-231",
+        "title": "Wiki Documentation of Update policy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-231"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-232",
+        "title": "Change Knox plugin to use the new framework",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-232"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-234",
+        "title": "WIndows Unit Tests are failing due to crypto filepath error",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-234"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-236",
+        "title": "Remove winpkg from apache code base",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-236"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-238",
+        "title": "Range Hive plugin needs update for changes in HiveAuthorizer interface",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-238"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-239",
+        "title": "Support JDBC based SQL invocation for setup process",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-239"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-240",
+        "title": "Change Storm plugin to use the new framework",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-240"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-243",
+        "title": "AsyncAuditProvider thread should exit without delay on shutdown",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-243"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-244",
+        "title": "Provide support to Show/Hide Users",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-244"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-256",
+        "title": "Enable pluggable way to add context data to request",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-256"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-260",
+        "title": "Remove all eclipse settings files from repo",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-260"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-264",
+        "title": "Ranger Admin login page requests fail with 404",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-264"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-265",
+        "title": "If Hive repository's connection is setup incorrectly then it can make policy manager unresponsive.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-265"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-275",
+        "title": "UI Enhancements for 0.5 release",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-275"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-277",
+        "title": "Ranger Public API changes to use Service Model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-277"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-279",
+        "title": "Update stack model to support UI input validation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-279"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-280",
+        "title": "Add color scheme for \"Http Response Code\" under Audit --> Agents",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-280"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-283",
+        "title": "Dirty form confirmation popup should have option to \"Proceed Anyway\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-283"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-284",
+        "title": "Replace \"Agents\" with \"Plugins\" in Ranger Admin UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-284"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-287",
+        "title": "Plugin policy download audit log shows empty \"Agent Id\" field",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-287"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-288",
+        "title": "Replace references to \"Agent\" with \"Plugin\" in UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-288"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-289",
+        "title": "Remove unused class ServiceStoreFactory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-289"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-294",
+        "title": "Update CredentialShell usage to support non-interactive mode",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-294"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-295",
+        "title": "Update Ranger HDFS plugin for recent changes in FSPermissionChecker",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-295"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-296",
+        "title": "Plugin installation fails with NoClassDefFoundError: org/apache/commons/io/Charsets",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-296"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-297",
+        "title": "Assemble ranger-admin to have Service model ranger plugins jar for lookup and validate functionality",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-297"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-300",
+        "title": "Provide migration patch to migrate old db data to new Pluggable Service Model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-300"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-302",
+        "title": "DBA Privilege separation in Ranger Installation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-302"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-306",
+        "title": "Grant/revoke does not generate audit log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-306"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-309",
+        "title": "HBase repository config missing \"Common Name for Certificate\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-309"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-312",
+        "title": "Validation: Enhancements, improvements, deferred items",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-312"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-313",
+        "title": "Ranger Admin to load plugin classes in a child class-loader to avoid potential library conflicts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-313"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-315",
+        "title": "Need to provide backward compatibility of ranger-admin start/stop to previous version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-315"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-316",
+        "title": "Find alternative for pNotify plugin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-316"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-318",
+        "title": "Not able to add user with only numbers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-318"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-319",
+        "title": "Replace setVersion.sh bash script with platform independent python script",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-319"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-320",
+        "title": "Usersync NPE when object does not have userNameAttribute",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-320"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-322",
+        "title": "RangerResource class rename, utility methods addition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-322"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-323",
+        "title": "Policy evaluation optimization: cache results of resource-match in policy",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-323"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-326",
+        "title": "Display a RO view of policy from the Audit page",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-326"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-328",
+        "title": "Ranger HDFS plugin fails with NPE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-328"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-329",
+        "title": "Agent Plugin is not copying db driver jar files",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-329"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-330",
+        "title": "Show audit of policy updates for new Service Model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-330"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-331",
+        "title": "Fix static code analyzer issues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-331"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-333",
+        "title": "Update plugins to load config from earlier version, when new version configs are not available",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-333"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-334",
+        "title": "KMS configuration files are stored with incorrect permission",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-334"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-335",
+        "title": "High Impact defects uncovered by static analysis of code by Coverity",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-335"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-336",
+        "title": "Audit log timestamp needs update to take tz offset into account",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-336"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-337",
+        "title": "Allow using of hyphen or space in first/last name field",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-337"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-338",
+        "title": "Potential NPE problems in admin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-338"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-339",
+        "title": "Several dead-code, potential NPE and incorrect use of iterator issues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-339"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-340",
+        "title": "Remove zookeeper library added by ranger",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-340"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-342",
+        "title": "Bust JS cache during version change to fetch new files from server",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-342"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-343",
+        "title": "parameterized storm version",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-343"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-344",
+        "title": "Cleanup/fixes to comply with best practices",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-344"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-345",
+        "title": "enable-agent.sh isn't a file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-345"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-346",
+        "title": "Service-def files update to use map for *Options fields, instead of a string with custom format",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-346"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-347",
+        "title": "YARN Resource  Lookup in Ranger Admin UI get stuck with spinner and doesn't bring result",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-347"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-348",
+        "title": "Allow ranger admin install with JDK 1.8",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-348"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-353",
+        "title": "Ranger installation should support multiple platforms",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-353"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-355",
+        "title": "Test connection fails with SSL error when setting up knox repository",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-355"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-357",
+        "title": "Update Ranger HDFS plugin to use HDFS Authorization API",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-357"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-358",
+        "title": "Show previous/next version of policy in Policy View popup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-358"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-360",
+        "title": "Add delegated admin logic to new Service Model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-360"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-361",
+        "title": "Enabling SSL in ranger admin service should rely on SSLEnabled flag instead of SSL port number",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-361"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-362",
+        "title": "hbase agent bundles httpclient and httpcore jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-362"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-363",
+        "title": "hdfs agent bundles httpclient and httpcore jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-363"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-364",
+        "title": "hive agent bundles httpclient and httpcore jar",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-364"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-366",
+        "title": "Grant/revoke should authorize based on grantor's user-groups",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-366"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-367",
+        "title": "hadoop-common now relies on the apache-htrace during runtime, the deployment fails with class not found",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-367"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-369",
+        "title": "ranger agent connection to ssl enabled ranger admin fails",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-369"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-370",
+        "title": "Default policy created for a new HDFS service should have isRecursive=true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-370"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-371",
+        "title": "Policy search does not filter based on resource values",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-371"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-372",
+        "title": "Provide a set of REST APIs to access, modify and create Ranger Service Definitions, Services and Policies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-372"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-373",
+        "title": "Hive grant/revoke fails to generate audit log",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-373"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-375",
+        "title": "Show better error messages during failed logins",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-375"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-377",
+        "title": "Build breaks when JAVA LIBRARY_PATH has spaces in the directory",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-377"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-378",
+        "title": "Update Policy call failing to update",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-378"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-379",
+        "title": "Ranger 0.5.0 Build fails due to changes in HIVE API parameters - HIVE-10223",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-379"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-380",
+        "title": "PublicAPI should support search for service and policy with non case sensitive serviceType",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-380"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-383",
+        "title": "Add new column to track resource signature in policy table",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-383"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-384",
+        "title": "Ranger hive lookup and test connection issue due to hive-jdbc.jar wrong version in ranger admin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-384"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-385",
+        "title": "Fixes and enhancements to Permissions Model",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-385"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-386",
+        "title": "Update HBase plugin for recent changes in HBase (build fix)",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-386"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-387",
+        "title": "gettter/setter inconsistent names - RangerServiceDef - setType()/getName()",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-387"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-388",
+        "title": "Add Postgres 8 support to Ranger Admin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-388"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-389",
+        "title": "Redirect to login page on session timeout",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-389"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-390",
+        "title": "Merge RangerPolicyDb implementation with RangerPolicyEngine",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-390"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-391",
+        "title": "ServiceDBStore to preserve the order of resources/users/groups",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-391"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-392",
+        "title": "Provide Update/Delete for ServiceDef Object",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-392"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-393",
+        "title": "Getting Blank page after adding a new group",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-393"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-394",
+        "title": "Resource Lookup classes are not being available as part of CLASSPATH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-394"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-395",
+        "title": "ranger-usersync - unable to start ranger authentication process due to incorrect unix permission",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-395"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-396",
+        "title": "Policy create/update/delete fail to update service.policyVersion field",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-396"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-399",
+        "title": "Testing connection at a Kerberized cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-399"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-400",
+        "title": "isRecursive match does not work correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-400"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-402",
+        "title": "Ranger Admin install fails if 'java' not in PATH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-402"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-403",
+        "title": "Repo version not getting set in some of the objects",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-403"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-404",
+        "title": "HDFS plugin does not generate audit for failure in mkdir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-404"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-405",
+        "title": "Hbase: access by super users are is not audited",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-405"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-407",
+        "title": "Policy Creation should set both Delegate Admin and Admin permission for Hbase when Admin Permission is true  during policy creation",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-407"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-408",
+        "title": "Website needs Incubator logo and disclaimer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-408"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-410",
+        "title": "Default audit handler set in BasePlugIn is lost after policy refresh",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-410"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-421",
+        "title": "Streamline usersync process",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-421"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-424",
+        "title": "YARN plugin packaging to be reviewed for list of included libraries",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-424"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-425",
+        "title": "Junit failures: Two UserMgr tests are broken",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-425"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-426",
+        "title": "Ranger KMS policy not matching the right resource name",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-426"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-427",
+        "title": "UserSync Process didn't sync the group when groups are  added to the user at later time",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-427"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-429",
+        "title": "Add new role (KEY_ADMIN) for KMS permissions in Ranger Admin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-429"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-430",
+        "title": "Need additional database columns to support log aggregation at source",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-430"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-432",
+        "title": "Rename RangerAuditHandler to RangerAccessResultProcessor",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-432"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-433",
+        "title": "Hbase plugin: Update coprocessor classes in anticipation of changes to hbase MasterObserver interface",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-433"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-434",
+        "title": "HBase revoke does not remove 'delegateAdmin' flag",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-434"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-435",
+        "title": "Policy validation messes up the order of resources",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-435"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-436",
+        "title": "Policy validation: policy item with empty accesses list is valid if delegated admin is true",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-436"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-438",
+        "title": "Fix Ranger KMS installation after ranger-site changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-438"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-439",
+        "title": "Ranger usersync installation script is failing with latest python script",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-439"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-440",
+        "title": "Add credential updater file for updating credentials",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-440"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-442",
+        "title": "KMS installation script not copying connector jar properly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-442"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-445",
+        "title": "java.lang.IncompatibleClassChangeError during ranger kms startup",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-445"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-446",
+        "title": "Update earlier version public API to skip new service-types and their policies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-446"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-447",
+        "title": "Ranger UserSync Process - startup is not sending the credential for keystore on subsequent setup ...",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-447"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-448",
+        "title": "HBase fix for scan tables issue, HBASE-13482, should be applied in Ranger HBase plugin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-448"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-449",
+        "title": "Policy update via previous version public API fails for HBase/Hive/Knox/Storm",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-449"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-450",
+        "title": "ranger_install.py needs to be updated for latest ranger-admin-site.xml changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-450"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-451",
+        "title": "Multiple user module bug fixes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-451"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-452",
+        "title": "Ranger KMS config folder changes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-452"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-453",
+        "title": "Change db flavor input parameter value from SQLSERVER to MSSQL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-453"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-454",
+        "title": "Default policy created for a new KMS service should grant access to public group",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-454"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-455",
+        "title": "Resource match should be case-sensitive for HDFS/HBase/Knox/Storm/YARN",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-455"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-457",
+        "title": "Active Directory Authentication should authenticate on sAMAccountName attribute",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-457"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-460",
+        "title": "Users / Groups Get and Set Visibility rest api should be allowed only for users with admin role.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-460"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-461",
+        "title": "Fix source files without having Apache License headers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-461"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-464",
+        "title": "Make hbase.rpc.protection value to be lower case",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-464"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-465",
+        "title": "Fix Ranger config migration script",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-465"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-466",
+        "title": "PolicyRefresher should timeout when Ranger Admin is non responsive and should use local cache for policy enforcement if present.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-466"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-468",
+        "title": "Audit logs should use \"ranger-acl\" as enforcer instead of \"xasecure-acl\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-468"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-469",
+        "title": "HiveServer2 configuration directory needs to be updated",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-469"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-470",
+        "title": "Rename attribute \"id\" of *Def objects to \"itemId\" - to avoid confusion with DB object id",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-470"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-471",
+        "title": "Credential helper script should be bundled with plugins",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-471"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-472",
+        "title": "KMS enhancements",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-472"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-473",
+        "title": "usersync setup process - JAVA_HOME/bin should be part of PATH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-473"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-474",
+        "title": "Ranger usersync should instantiate the right class  based on SYNC_SOURCE",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-474"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-475",
+        "title": "HBase Agent : Potential Concurrent Data Access, Null Pointer Exception, API usage errors, and other miscellaneous defects found by static analysis of codebase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-475"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-476",
+        "title": "ServiceName should be used in Lookup Connection cache in Connection Manager instead of ServiceType as we can have multiple Services for same service type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-476"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-477",
+        "title": "HiveAgent:  Potential Concurrent Data Access, Null Pointer Exception, API usage errors, and other miscellaneous defects found by static analysis of codebase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-477"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-478",
+        "title": "Audit logs for grant/revoke do not have IP address",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-478"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-479",
+        "title": "PolicyEngine interface to be trimmed for better abstraction; cleanup ServiceStore hierarchy to remove  move predicate util methods",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-479"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-481",
+        "title": "Credential helper script should use java from defined JAVA_HOME",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-481"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-482",
+        "title": "HDFS plugin denies access even when policy exists to allow the access",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-482"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-484",
+        "title": "Provide ability to have LDAP attribute \"referral\" in config",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-484"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-486",
+        "title": "Add index for the new column `resource_signature` in table `x_policy`.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-486"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-487",
+        "title": "Fix pagination issues in analytics page",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-487"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-489",
+        "title": "Revise Ranger Menu UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-489"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-490",
+        "title": "Revise Ranger Menu UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-490"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-491",
+        "title": "Revise Ranger Menu UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-491"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-492",
+        "title": "New LDAP/AD properties should be available during install in windows",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-492"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-493",
+        "title": "Fix KMS dba script to work from non-install dir",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-493"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-494",
+        "title": "Coverity scan issue about toString returning null",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-494"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-495",
+        "title": "Coverity Scan for Apache Ranger : - Null pointer issue on KnoxClient lookup manager",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-495"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-496",
+        "title": "Fix build failure due to Kafka API change",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-496"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-497",
+        "title": "Caught `Null Pointer Exception` while reading service-def without logged in.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-497"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-498",
+        "title": "Ranger KMS needs credential_help.py during setup process - which is missing",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-498"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-499",
+        "title": "Ranger-KMS policy creation fail's with User 'keyadmin' does not have delegated-admin privilege on given resources when installed manually",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-499"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-501",
+        "title": "Need solr audit connectivity properties on the rangeradmin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-501"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-502",
+        "title": "To support easier extension/enhancement, provide abstract implementation for interfaces ConditionEvaluator/ContextEnricher/ResourceMatcher; also should support parameterless init",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-502"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-503",
+        "title": "Ranger admin start failed on Suse 11",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-503"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-504",
+        "title": "KMS repo URL needs to handle multiple KMS instances",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-504"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-505",
+        "title": "Fix column length for Service def config field",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-505"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-506",
+        "title": "Update password script should update the right config file",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-506"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-507",
+        "title": "Resource-match logic to be moved out of policy-evaluator for reuse",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-507"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-508",
+        "title": "Knox server can't come up after Ranger plugin is installed due to jar conflicts",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-508"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-509",
+        "title": "KMS keys listing throws authentication required error in secure cluster",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-509"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-510",
+        "title": "Client IP not getting populated for KMS in audit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-510"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-511",
+        "title": "Client IP not getting populated for KMS in audit",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-511"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-512",
+        "title": "Policy creation should fail if any user/group specified does not exist in Ranger",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-512"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-514",
+        "title": "Solr audit not working in KMS plugin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-514"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-515",
+        "title": "Policy Listing/Permission Listing page doesn't show groups for users/groups when the user belongs to large number of groups",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-515"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-516",
+        "title": "Implement Scope and Restriction of users having KEY_ADMIN Role",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-516"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-517",
+        "title": "When login into Policy Admin Tool using Unix User Credential, it is not working",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-517"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-518",
+        "title": "[rolling downgrade] - disable SHA256 hashing of password to provide a way to test rolling downgrade of ranger admin downgrade",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-518"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-519",
+        "title": "Access Audit filtering does not work for servicename",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-519"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-520",
+        "title": "When getting Keys from a clustered kms servers, stale key list is returned",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-520"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-521",
+        "title": "RangerAccessReqest.getAsString() and isLeafName() to be updated to not require serviceDef argument",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-521"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-522",
+        "title": "Update YARN service-def to remove ip-custom-condition",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-522"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-523",
+        "title": "Update embedded service-def creation sequence and other misc fixes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-523"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-525",
+        "title": "Use JDK class for Key Protection instead of having own classes",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-525"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-527",
+        "title": "System should preserve Service-def ID if it's given at the time of creating",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-527"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-528",
+        "title": "System should preserve Service-def ID if it's given at the time of creating",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-528"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-530",
+        "title": "Access-type \"all\" should imply rest of the permissions in Hive",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-530"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-531",
+        "title": "Legacy plugins unable to download policies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-531"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-532",
+        "title": "Storm Plugin Installation failed with error NoClassDefFoundError",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-532"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-534",
+        "title": "Upgrade does not migrate some policies",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-534"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-537",
+        "title": "service-def create fails when ID is not specified",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-537"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-538",
+        "title": "Error messages shown in Ranger Admin lack details",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-538"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-540",
+        "title": "Disable JPA cache to support ranger-admin in HA deployment",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-540"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-543",
+        "title": "RangerTimeOfDayMatcher condition to support time ranges that span across midnight",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-543"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-546",
+        "title": "Custom condition evaluation issues",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-546"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-549",
+        "title": "updateService() via public API fails with error \"another service already exists\"",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-549"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-557",
+        "title": "Ranger Storm authorizer to be consistent with default authorizer",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-557"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-559",
+        "title": "Fix ID preservation for MSSQL",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-559"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-561",
+        "title": "Ranger YARN plugin should fallback to YARN ACL, instead of creating grants in Ranger",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-561"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-562",
+        "title": "Policy migration stops if a policy exists with incorrect permission type",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-562"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-563",
+        "title": "Upgrade: permissions are duplicated in some policyItems",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-563"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-568",
+        "title": "RangerTimeOfDayMatcher condition does not handle 12am/12pm correctly",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-568"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-574",
+        "title": "Knox,Storm and KMS plugin audit failed to log into hdfs because of missing  libraries in class path",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-574"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-576",
+        "title": "Storm audit not showing access type in the Ranger Admin Audit UI",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-576"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-581",
+        "title": "Document extensibility Hooks provided by Ranger to customize existing plugins via condition evaluators and context enrichers",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-581"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-583",
+        "title": "Eliminate warnings emitted by maven build during test phase",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-583"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-590",
+        "title": "Escape spaces in the user and group names which are part of rest call uri in UserSync process",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-590"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-591",
+        "title": "UserSync process performance issue due to user group cache inconsistency",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-591"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-620",
+        "title": "Ability to use database when connecting to it via HiveServer2 without policy authorizing it",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-620"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-659",
+        "title": "Package commons-io, which is a required dependency, as part of storm plugin",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-659"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-687",
+        "title": "after each 30 seconds audit is getting updated in plugin tab",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-687"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-705",
+        "title": "Ranger Usersync should provide summary logs on the sync progress instead of not loggin any details after 2000 users.",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-705"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-713",
+        "title": "Knox-plugin failed to enable after plugin modification for not to add dependent libraries to component's CLASSPATH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-713"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-715",
+        "title": "Fix issues reported by coverity test in Ranger Plugin ClassLoader",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-715"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-717",
+        "title": "Hive and Hbase ranger plugin  Audit to DB failed to log after plugin modification for not to add dependent libraries to component's CLASSPATH",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-717"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-719",
+        "title": "Audit in RangerAdmin doesn't show latest audits in UI if server is on different timezone",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-719"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-766",
+        "title": "Yarn Plugin Config hadoop.security.authentication should be non-mandatory with default value",
+        "type": "Bug",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-766"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-178",
+        "title": "Ranger to support authorization and auditing for Apache Solr",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-178"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-179",
+        "title": "Argus/Ranger to support authorization and auditing for Apache Kafka",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-179"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-194",
+        "title": "Rename packages from xasecure to apache ranger",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-194"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-202",
+        "title": "Ranger hbase authorization at namespace level",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-202"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-246",
+        "title": "Add support for Authorization and Auditing of Apache Kafka",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-246"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-247",
+        "title": "Provide scalable/HA Hadoop KMS to support Hadoop TDE",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-247"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-248",
+        "title": "Add support for Authorization and Auditing of YARN resources",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-248"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-250",
+        "title": "Create permission model to allow/disallow functionality within ranger-admin UI",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-250"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-252",
+        "title": "Support HA of Ranger UI",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-252"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-278",
+        "title": "REST, Store: validation of policy/service/service-def",
+        "type": "New Feature",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-278"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-189",
+        "title": "Fix mail aliases on website",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-189"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-190",
+        "title": "Can you fix your 0.4.0 release?",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-190"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-212",
+        "title": "Ranger should support computing user group memberships by searching for users and groups",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-212"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-213",
+        "title": "Implement init.d status",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-213"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-226",
+        "title": "Support JDBC based SQL invocation for setup process",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-226"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-237",
+        "title": "Ranger to work with HA enabled WebHDFS with automatic failover",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-237"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-272",
+        "title": "Make the timeout interval and size of executor used by TimedEventUtil configurable",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-272"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-273",
+        "title": "Use HDFS authorization plugin interface to enforce ranger policies",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-273"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-276",
+        "title": "Add support for aggregating audit logs at source",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-276"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-281",
+        "title": "Support Postgres database for storing ranger policy information",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-281"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-282",
+        "title": "Support MS-SQLServer database for storing ranger policy information",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-282"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-293",
+        "title": "add server side checks for HDFS Repo connection properties",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-293"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-307",
+        "title": "Policy evaluation optimization: reorder policies and short-circuit evaluation",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-307"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-314",
+        "title": "Remove custom class loader used by ranger admin for resource lookup",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-314"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-327",
+        "title": "Modify pom.xml to ensure that no hard-coded versions for maven dependencies and  library",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-327"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-374",
+        "title": "ranger admin need to support AJP connector to work behind SSL enabled Apache Load Balancer",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-374"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-382",
+        "title": "0.5.0 release - Code Cleanup to add/modify license headers and unwanted comments",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-382"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-397",
+        "title": "Implement reliable streaming audits to configurable destinations",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-397"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-418",
+        "title": "Upgrade script from earlier version (0.4.*)  to the current version (0.5.0)",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-418"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-431",
+        "title": "consolidate all configurations into ranger-<component>-site.xml",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-431"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-441",
+        "title": "Add ranger-util module to be part of Ranger on all platform",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-441"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-483",
+        "title": "Store user credential in SHA256 hashed value instead of MD5",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-483"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-485",
+        "title": "Provide user friendly text for HTTP response code in Audit->Plugins",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-485"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-488",
+        "title": "Prior to 0.5.0 release - update ranger pom.xml with appropriate (dependent component) release versions.",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-488"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-579",
+        "title": "Fix SSL handshake exception poping every minute",
+        "type": "Improvement",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-579"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-245",
+        "title": "Strom plugin test connection failed",
+        "type": "Test",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-245"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-233",
+        "title": "Update the version number on the pom.xml to be 0.5.0",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-233"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-242",
+        "title": "Ranger config migration script",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-242"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-317",
+        "title": "ranger-usersync setup fails with NoClassDefFoundError",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-317"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-351",
+        "title": "Update HBase plugin to use HBase version 1.1 (from  0.99.2)",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-351"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-352",
+        "title": "To facilitate update of service-def, add ID attribute to contained objects",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-352"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-480",
+        "title": "Need access control on REST API based on permission model",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-480"
+          }
+        }
+      },
+      {
+        "issue": "RANGER-649",
+        "title": "Documentation for the new public API to get/create/update/delete Ranger Service-Definitions, Services and Policies",
+        "type": "Task",
+        "_links": {
+          "release": {
+            "href": "https://apis.danklco.com/apache-release-info/RANGER/12328973"
+          },
+          "jira": {
+            "href": "https://issues.apache.org/jira/browse/RANGER-649"
+          }
+        }
+      }
+    ]
+  }
+}
