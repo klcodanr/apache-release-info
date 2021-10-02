@@ -42,14 +42,16 @@ async function run(jira) {
   asfProjects = await getAsfProjects();
 
   fs.rmSync("docs/api/index.json");
+  let idx = 1;
   for (const project of projects) {
     if (SKIP_PROJECTS.indexOf(project.key) !== -1) {
       log.debug(`Skipping project: ${project.key}`);
       continue;
     }
-    log.info(`Processing project: ${project.name}`);
+    log.info(`Processing project: ${project.name} (${idx}/${projects.length})`);
 
     await updateProject(jira, await jira.getProjectDetails(project.id));
+    idx++;
   }
 }
 
@@ -78,7 +80,7 @@ async function handleRelease(jira, project, release) {
   };
   fs.mkdirSync(`docs/api/${project.key}`, { recursive: true });
   if (!fs.existsSync(`docs/api/${project.key}/${release.id}/index.json`)) {
-    log.debug("Creating release document");
+    log.debug(`Creating release ${release.name}`);
 
     const releaseNote = await jira.getReleaseNotes(project.id, release);
 
@@ -107,7 +109,7 @@ async function handleRelease(jira, project, release) {
       JSON.stringify(releaseData, null, 2)
     );
   } else {
-    log.debug("Reusing existing release file");
+    log.debug(`Reusing existing release file for ${release.name}`);
   }
   return releaseData;
 }
@@ -234,9 +236,11 @@ async function updateProject(jira, project) {
 
 (async () => {
   try {
+    const start = Date.now();
     await run(new JiraClient(process.env));
+    log.info(`Updated releases in ${Date.now() / 1000 - start / 1000}sec`);
   } catch (e) {
-    log.error("Failed to get sling release info", e);
+    log.error("Failed to get apache release info", e);
     console.error(e);
   }
 })().then(
