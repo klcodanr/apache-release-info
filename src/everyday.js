@@ -182,11 +182,13 @@ async function updateProject(jira, project) {
     ["description", "created"].forEach((k) => {
       projectData[k] = asfProjectData[k];
     });
-    ["category", "programming-language"].forEach((k) => {
-      if (asfProjectData[k]) {
-        projectData[k] = asfProjectData[k].split(/,\s*/);
-      }
-    });
+    if (asfProjectData.category) {
+      projectData.category = asfProjectData.category.split(/,\s*/);
+    }
+    if (asfProjectData["programming-language"]) {
+      projectData.programmingLanguage =
+        asfProjectData["programming-language"].split(/,\s*/);
+    }
     if (asfProjectData.implements) {
       asfProjectData.implements.forEach((impl) => {
         projectData.category.push(`${impl.body}: ${impl.id}`);
