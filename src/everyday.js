@@ -209,9 +209,9 @@ async function updateProject(jira, project) {
   };
   fs.mkdirSync("docs/api/", { recursive: true });
   if (fs.existsSync("docs/api/index.json")) {
-    indexData._embedded['int:projects'] = JSON.parse(
+    indexData._embedded["int:projects"] = JSON.parse(
       fs.readFileSync("docs/api/index.json")
-    )._embedded['int:projects'].filter((proj) => proj.id !== project.id);
+    )._embedded["int:projects"].filter((proj) => proj.id !== project.id);
   }
 
   log.debug("Generating project data");
@@ -315,6 +315,7 @@ async function updateProject(jira, project) {
   } catch (e) {
     log.error("Failed to get apache release info", e);
     console.error(e);
+    process.exit(1);
   }
 })().then(
   () => process.exit(0),

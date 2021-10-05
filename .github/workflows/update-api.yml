@@ -33,6 +33,7 @@ jobs:
           MODE: ${{ github.event.inputs.MODE }}
           JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+          JIRA_BASE_URL: https://issues.apache.org/jira
       - name: Commit Updates
         run: |
           git add -A
