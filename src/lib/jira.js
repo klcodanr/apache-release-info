@@ -23,24 +23,19 @@ class JiraClient {
    */
   getProjects = async function () {
     //https://issues.apache.org/jira/rest/api/2/project
-    
+
     log.debug(`Getting projects`);
-    const res = await fetch(
-      `${this.config.JIRA_BASE_URL}/rest/api/2/project`,
-      {
-        headers: {
-          Authorization: `Basic ${Buffer.from(
-            this.config.JIRA_USERNAME + ":" + this.config.JIRA_PASSWORD
-          ).toString("base64")}`,
-        },
-      }
-    );
+    const res = await fetch(`${this.config.JIRA_BASE_URL}/rest/api/2/project`, {
+      headers: {
+        Authorization: `Basic ${Buffer.from(
+          this.config.JIRA_USERNAME + ":" + this.config.JIRA_PASSWORD
+        ).toString("base64")}`,
+      },
+    });
     if (res.ok) {
       return res.json();
     }
-    throw new Error(
-      `Recieved invalid response from JIRA: ${JSON.stringify(res)}`
-    );
+    this.handleResponseError(res);
   };
 
   /**
@@ -63,9 +58,7 @@ class JiraClient {
     if (res.ok) {
       return res.json();
     }
-    throw new Error(
-      `Recieved invalid response from JIRA: ${JSON.stringify(res)}`
-    );
+    this.handleResponseError(res);
   };
 
   /**
@@ -93,9 +86,7 @@ class JiraClient {
       const noteStr = parse(html).querySelector("textarea").text;
       return this.parseReleaseNotes(noteStr);
     }
-    throw new Error(
-      `Recieved invalid response from JIRA: ${JSON.stringify(res)}`
-    );
+    this.handleResponseError(res);
   };
 
   /**
@@ -143,10 +134,24 @@ class JiraClient {
       });
       return releases;
     }
-    throw new Error(
-      `Recieved invalid response from JIRA: ${JSON.stringify(res)}`
-    );
+    this.handleResponseError(res);
   };
+
+  /**
+   * Throws an exception with the details of the failed response
+   * @param {Response} res the response
+   */
+  handleResponseError(res) {
+    throw new Error(
+      `Recieved invalid response requesting: ${res.url}: ${res.status}: ${
+        res.statusText
+      } \n\nBody:\n${JSON.stringify(res)}\n\nHeaders:${JSON.stringify(
+        res.headers.raw(),
+        null,
+        2
+      )}`
+    );
+  }
 
   /**
    * Parses the release notes into a usable object
