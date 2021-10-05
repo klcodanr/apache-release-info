@@ -4,8 +4,27 @@ const { getAsfProjects } = require("./lib/asf");
 const log = require("./lib/log")();
 const JiraClient = require("./lib/jira");
 const fs = require("fs");
+const { kStringMaxLength } = require("buffer");
 
 const API_BASE = "https://apis.danklco.com/apache-release-info/";
+const curies = [
+  {
+    name: "int",
+    href: "https://www.danklco.com/api-docs/rels.html#{rel}",
+    templated: true,
+  },
+  {
+    name: "jira",
+    href: "https://www.danklco.com/api-docs/rels.html#{rel}",
+    templated: true,
+  },
+  {
+    name: "proj",
+    href: "https://www.danklco.com/api-docs/rels.html#{rel}",
+    templated: true,
+  },
+];
+
 const JIRA_BASE_URL = process.env.JIRA_BASE_URL;
 const SKIP_PROJECTS = [
   "AAR",
@@ -38,10 +57,19 @@ let asfProjects;
  * @param {JiraClient} jira the jira client
  */
 async function run(jira) {
+  if (process.env.MODE === "RECREATE" && fs.existsSync("docs/api/")) {
+    log.info("Deleting existing API files");
+    fs.rmSync("docs/api/", { recursive: true });
+  }
+
+  if (fs.existsSync("docs/api/index.json")) {
+    log.debug("Removing existing index");
+    fs.rmSync("docs/api/index.json");
+  }
+
   const projects = await jira.getProjects();
   asfProjects = await getAsfProjects();
 
-  fs.rmSync("docs/api/index.json");
   let idx = 1;
   for (const project of projects) {
     if (SKIP_PROJECTS.indexOf(project.key) !== -1) {
@@ -53,6 +81,14 @@ async function run(jira) {
     await updateProject(jira, await jira.getProjectDetails(project.id));
     idx++;
   }
+
+  log.debug("Sorting projects by name");
+  const index = JSON.parse(fs.readFileSync("docs/api/index.json"));
+  index._embedded["int:projects"] = index._embedded["int:projects"].sort(
+    a,
+    (b) => a.name - b.name
+  );
+  fs.writeFileSync("docs/api/index.json", JSON.stringify(index, null, 2));
 }
 
 /**
@@ -73,9 +109,24 @@ async function handleRelease(jira, project, release) {
     lastUpdated: Date.now(),
     type: "release",
     _links: {
+      curies,
       self: { href: `${API_BASE}${project.key}/${release.id}` },
-      jira: { href: `${JIRA_BASE_URL}${release.url.replace("jira/", "")}` },
-      project: { href: `${API_BASE}${project.key}` },
+      "int:project": {
+        title: "The project containing this release",
+        href: `${API_BASE}${project.key}`,
+      },
+      "int:root": {
+        title: "The root of this API",
+        href: `${API_BASE}`,
+      },
+      "jira:release": {
+        title: "The release in ASF Jira",
+        href: `${JIRA_BASE_URL}${release.url.replace("jira/", "")}`,
+      },
+      "jira:project": {
+        title: "The project containing this release in ASF Jira",
+        href: `${JIRA_BASE_URL}/projects/${project.key}`,
+      },
     },
   };
   fs.mkdirSync(`docs/api/${project.key}`, { recursive: true });
@@ -87,17 +138,36 @@ async function handleRelease(jira, project, release) {
     log.debug("Adding issues");
     releaseNote.issues.forEach((issue) => {
       issue._links = {
-        release: {
+        curies,
+        "int:release": {
+          title: "The release containing this issue",
           href: `${API_BASE}${project.key}/${release.id}`,
         },
-        jira: {
+        "int:project": {
+          title: "The project containing this issue",
+          href: `${API_BASE}${project.key}`,
+        },
+        "int:root": {
+          title: "The root of this API",
+          href: `${API_BASE}`,
+        },
+        "jira:issue": {
+          title: "The issue in ASF Jira",
           href: `${JIRA_BASE_URL}/browse/${issue.issue}`,
+        },
+        "jira:release": {
+          title: "The release containing this issue in ASF Jira",
+          href: `${JIRA_BASE_URL}${release.url.replace("jira/", "")}`,
+        },
+        "jira:project": {
+          title: "The project containing this issue in ASF Jira",
+          href: `${JIRA_BASE_URL}/projects/${project.key}`,
         },
       };
     });
     releaseData.releaseNotes = releaseNote.description;
     releaseData._embedded = {
-      issues: releaseNote.issues,
+      "int:issues": releaseNote.issues,
     };
 
     log.debug("Saving release");
@@ -132,19 +202,16 @@ async function updateProject(jira, project) {
     type: "index",
     _links: {
       self: { href: `${API_BASE}` },
-      documentation: {
-        href: `https://www.danklco.com/api-docs/apache-release-info.html`,
-      },
     },
     _embedded: {
-      projects: [],
+      "int:projects": [],
     },
   };
   fs.mkdirSync("docs/api/", { recursive: true });
   if (fs.existsSync("docs/api/index.json")) {
-    indexData._embedded.projects = JSON.parse(
+    indexData._embedded['int:projects'] = JSON.parse(
       fs.readFileSync("docs/api/index.json")
-    )._embedded.projects.filter((proj) => proj.id !== project.id);
+    )._embedded['int:projects'].filter((proj) => proj.id !== project.id);
   }
 
   log.debug("Generating project data");
@@ -161,16 +228,20 @@ async function updateProject(jira, project) {
     programmingLanguage: [],
     _links: {
       self: { href: `${API_BASE}${project.key}` },
-      jira: {
-        href: `${JIRA_BASE_URL}/projects/${project.key}`,
-      },
-      avatar: {
-        href: project.avatarUrls["48x48"],
-      },
-      root: {
+      "int:root": {
+        title: "The root of this API",
         href: API_BASE,
       },
-      homepage: {
+      "jira:project": {
+        title: "The project in ASF Jira",
+        href: `${JIRA_BASE_URL}/projects/${project.key}`,
+      },
+      "proj:logo": {
+        title: "The logo for this project",
+        href: project.avatarUrls["48x48"],
+      },
+      "proj:homepage": {
+        title: "The homepage of this project",
         href: project.url,
       },
     },
@@ -212,18 +283,18 @@ async function updateProject(jira, project) {
   }
 
   log.debug("Updating index");
-  indexData._embedded.projects.push(projectData);
+  indexData._embedded["int:projects"].push(projectData);
   fs.writeFileSync("docs/api/index.json", JSON.stringify(indexData, null, 2));
 
   log.debug("Processing releases");
   projectData._embedded = {
-    releases: [],
+    "int:releases": [],
   };
   for (const release of releases) {
     const releaseData = await handleRelease(jira, project, release);
     delete releaseData._embedded;
     delete releaseData.releaseNote;
-    projectData._embedded.releases.push(releaseData);
+    projectData._embedded["int:releases"].push(releaseData);
   }
 
   log.debug("Updating project");

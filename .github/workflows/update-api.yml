@@ -1,0 +1,44 @@
+name: Update API
+on:
+  workflow_dispatch:
+    inputs:
+      LOG_LEVEL:
+        description: "Log Level"
+        default: "info"
+      MODE:
+        description: "Mode (UPDATE or RECREATE)"
+        default: "UPDATE"
+  schedule:
+    - cron: "0 1 * * *"
+jobs:
+  sling:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PROJECT_ID: 12310710
+      PROJECT_NAME: SLING
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Get Current Time
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y.%m.%d-%H%M')"
+      - run: npm install
+      - name: Run Update Script
+        run: node src/everyday.js
+        env:
+          LOG_LEVEL: ${{ github.event.inputs.LOG_LEVEL }}
+          MODE: ${{ github.event.inputs.MODE }}
+          JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+      - name: Commit Updates
+        run: |
+          git add -A
+          git commit -m "Daily Update on ${RELEASE}"
+          git push origin main
+        env:
+          token: ${{ secrets.GH_PAT }}
+          RELEASE: ${{ steps.date.outputs.date }}
