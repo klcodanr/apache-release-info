@@ -5,32 +5,94 @@
   "date": "2014-07-31",
   "version": "3.0.1",
   "module": "",
-  "lastUpdated": 1633056797796,
+  "lastUpdated": 1633495332339,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/CXFXJC/12327161"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/CXFXJC"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/CXFXJC/fixforversion/12327161"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/CXFXJC"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/CXFXJC"
     }
   },
   "releaseNotes": "Release Notes - CXF XJC Utils - Version 3.0.1",
   "_embedded": {
-    "issues": [
+    "int:issues": [
       {
         "issue": "CXFXJC-7",
         "title": "cxf-xjc-dv generates code that cannot be compiled",
         "type": "Bug",
         "_links": {
-          "release": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
+          "int:release": {
+            "title": "The release containing this issue",
             "href": "https://apis.danklco.com/apache-release-info/CXFXJC/12327161"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this issue",
+            "href": "https://apis.danklco.com/apache-release-info/CXFXJC"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:issue": {
+            "title": "The issue in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/CXFXJC-7"
+          },
+          "jira:release": {
+            "title": "The release containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/browse/CXFXJC/fixforversion/12327161"
+          },
+          "jira:project": {
+            "title": "The project containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/CXFXJC"
           }
         }
       }

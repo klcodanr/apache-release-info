@@ -5,32 +5,94 @@
   "date": "2011-06-06",
   "version": "3.0.1",
   "module": "",
-  "lastUpdated": 1633056308982,
+  "lastUpdated": 1633494801522,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/NET/12316459"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/NET"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/NET/fixforversion/12316459"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/NET"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/NET"
     }
   },
   "releaseNotes": "Release Notes - Commons Net - Version 3.0.1",
   "_embedded": {
-    "issues": [
+    "int:issues": [
       {
         "issue": "NET-409",
         "title": "FTPClient truncates file (storeFile method)",
         "type": "Bug",
         "_links": {
-          "release": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
+          "int:release": {
+            "title": "The release containing this issue",
             "href": "https://apis.danklco.com/apache-release-info/NET/12316459"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this issue",
+            "href": "https://apis.danklco.com/apache-release-info/NET"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:issue": {
+            "title": "The issue in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/NET-409"
+          },
+          "jira:release": {
+            "title": "The release containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/browse/NET/fixforversion/12316459"
+          },
+          "jira:project": {
+            "title": "The project containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/NET"
           }
         }
       }

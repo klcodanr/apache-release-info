@@ -3,32 +3,94 @@
   "name": "2.0.6-alpha",
   "description": "2.0-alpha bug-fix release",
   "date": "2013-08-22",
-  "lastUpdated": 1633088467542,
+  "lastUpdated": 1633499045110,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/YARN/12324882"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/YARN"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/YARN/fixforversion/12324882"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/YARN"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/YARN"
     }
   },
   "releaseNotes": "Release Notes - Hadoop YARN - Version 2.0.6-alpha",
   "_embedded": {
-    "issues": [
+    "int:issues": [
       {
         "issue": "YARN-854",
         "title": "App submission fails on secure deploy",
         "type": "Bug",
         "_links": {
-          "release": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
+          "int:release": {
+            "title": "The release containing this issue",
             "href": "https://apis.danklco.com/apache-release-info/YARN/12324882"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this issue",
+            "href": "https://apis.danklco.com/apache-release-info/YARN"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:issue": {
+            "title": "The issue in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/YARN-854"
+          },
+          "jira:release": {
+            "title": "The release containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/browse/YARN/fixforversion/12324882"
+          },
+          "jira:project": {
+            "title": "The project containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/YARN"
           }
         }
       }

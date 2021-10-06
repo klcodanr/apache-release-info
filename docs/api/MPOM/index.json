@@ -3,7 +3,7 @@
   "id": "12311250",
   "key": "MPOM",
   "description": "This JIRA project is for issues regarding the parent POMs used by Apache projects (component: asf) and Maven itself (components: maven, maven-plugins and maven-shared-components). It is also used to track issues for the resource bundle used by Apache projects (component: apache-jar-resource-bundle).",
-  "lastUpdated": 1633184400344,
+  "lastUpdated": 1633504228174,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MPOM"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/MPOM"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311250&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MPOM"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311250&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://maven.apache.org/pom/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12323460",
         "name": "MAVEN-24",
@@ -35,19 +39,47 @@
         "date": "2014-03-27",
         "version": "24",
         "module": "MAVEN",
-        "lastUpdated": 1633184400348,
+        "lastUpdated": 1633504228181,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12323460"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12323460"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-24"
       },
       {
         "id": "12324417",
@@ -56,19 +88,47 @@
         "date": "2014-03-27",
         "version": "20",
         "module": "MAVEN-SHARED",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504230074,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12324417"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12324417"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-SHARED-20"
       },
       {
         "id": "12326548",
@@ -77,19 +137,47 @@
         "date": "2014-03-27",
         "version": "9",
         "module": "MAVEN-SKINS",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504231348,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12326548"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12326548"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-SKINS-9"
       },
       {
         "id": "12326716",
@@ -98,19 +186,47 @@
         "date": "2014-10-22",
         "version": "25",
         "module": "MAVEN",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504233005,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12326716"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12326716"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-25"
       },
       {
         "id": "12326717",
@@ -119,19 +235,47 @@
         "date": "2014-10-22",
         "version": "26",
         "module": "MAVEN-PLUGINS",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504235297,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12326717"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12326717"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-PLUGINS-26"
       },
       {
         "id": "12326718",
@@ -140,19 +284,47 @@
         "date": "2014-10-22",
         "version": "21",
         "module": "MAVEN-SHARED",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504236643,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12326718"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12326718"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-SHARED-21"
       },
       {
         "id": "12326719",
@@ -161,19 +333,47 @@
         "date": "2014-10-22",
         "version": "10",
         "module": "MAVEN-SKINS",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504238410,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12326719"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12326719"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-SKINS-10"
       },
       {
         "id": "12328739",
@@ -182,19 +382,47 @@
         "date": "2014-11-13",
         "version": "16",
         "module": "ASF",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504240262,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12328739"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12328739"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-16"
       },
       {
         "id": "12328928",
@@ -203,19 +431,47 @@
         "date": "2014-11-13",
         "version": "26",
         "module": "MAVEN",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504241797,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12328928"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12328928"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-26"
       },
       {
         "id": "12328929",
@@ -224,19 +480,47 @@
         "date": "2014-11-13",
         "version": "27",
         "module": "MAVEN-PLUGINS",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504243405,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12328929"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12328929"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-PLUGINS-27"
       },
       {
         "id": "12329009",
@@ -245,19 +529,47 @@
         "date": "2015-04-24",
         "version": "17",
         "module": "ASF",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504244968,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12329009"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12329009"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-17"
       },
       {
         "id": "12329010",
@@ -266,19 +578,47 @@
         "date": "2015-09-24",
         "version": "27",
         "module": "MAVEN",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504246432,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12329010"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12329010"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-27"
       },
       {
         "id": "12329011",
@@ -287,19 +627,47 @@
         "date": "2015-11-03",
         "version": "28",
         "module": "MAVEN-PLUGINS",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504248249,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12329011"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12329011"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-PLUGINS-28"
       },
       {
         "id": "12328931",
@@ -308,19 +676,47 @@
         "date": "2015-11-03",
         "version": "22",
         "module": "MAVEN-SHARED",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504250802,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12328931"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12328931"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-SHARED-22"
       },
       {
         "id": "12332150",
@@ -329,19 +725,47 @@
         "date": "2016-05-18",
         "version": "18",
         "module": "ASF",
-        "lastUpdated": 1633184400351,
+        "lastUpdated": 1633504252345,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12332150"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12332150"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-18"
       },
       {
         "id": "12333644",
@@ -350,19 +774,47 @@
         "date": "2016-05-26",
         "version": "30",
         "module": "MAVEN",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504253918,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12333644"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12333644"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-30"
       },
       {
         "id": "12335768",
@@ -371,19 +823,47 @@
         "date": "2018-01-24",
         "version": "19",
         "module": "ASF",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504255776,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12335768"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12335768"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-19"
       },
       {
         "id": "12335846",
@@ -392,19 +872,47 @@
         "date": "2018-02-05",
         "version": "31",
         "module": "MAVEN",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504257417,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12335846"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12335846"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-31"
       },
       {
         "id": "12341294",
@@ -413,19 +921,47 @@
         "date": "2018-07-07",
         "version": "20",
         "module": "ASF",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504259052,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12341294"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12341294"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-20"
       },
       {
         "id": "12342723",
@@ -434,19 +970,47 @@
         "date": "2018-07-18",
         "version": "32",
         "module": "MAVEN",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504260401,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12342723"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12342723"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-32"
       },
       {
         "id": "12343562",
@@ -455,19 +1019,47 @@
         "date": "2018-08-22",
         "version": "21",
         "module": "ASF",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504261880,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12343562"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12343562"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-21"
       },
       {
         "id": "12343766",
@@ -476,19 +1068,47 @@
         "date": "2018-09-11",
         "version": "33",
         "module": "MAVEN",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504263222,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12343766"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12343766"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-33"
       },
       {
         "id": "12343925",
@@ -497,19 +1117,47 @@
         "date": "2020-01-08",
         "version": "22",
         "module": "ASF",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504264790,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12343925"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12343925"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-22"
       },
       {
         "id": "12346503",
@@ -518,19 +1166,47 @@
         "date": "2020-01-25",
         "version": "23",
         "module": "ASF",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504266228,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12346503"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12346503"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-23"
       },
       {
         "id": "12344077",
@@ -539,19 +1215,47 @@
         "date": "2020-01-30",
         "version": "34",
         "module": "MAVEN",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504268058,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12344077"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12344077"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version MAVEN-34"
       },
       {
         "id": "12346845",
@@ -560,19 +1264,47 @@
         "date": "2021-07-14",
         "version": "24",
         "module": "ASF",
-        "lastUpdated": 1633184400352,
+        "lastUpdated": 1633504270528,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPOM/12346845"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPOM/fixforversion/12346845"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPOM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPOM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven POMs - Version ASF-24"
       }
     ]
   }

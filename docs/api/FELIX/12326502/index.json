@@ -5,32 +5,94 @@
   "date": "2015-01-09",
   "version": "1.9.10",
   "module": "scr annotations",
-  "lastUpdated": 1633057930458,
+  "lastUpdated": 1633496591975,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/FELIX/12326502"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/FELIX"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/FELIX/fixforversion/12326502"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/FELIX"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/FELIX"
     }
   },
   "releaseNotes": "Release Notes - Felix - Version scr annotations 1.9.10",
   "_embedded": {
-    "issues": [
+    "int:issues": [
       {
         "issue": "FELIX-4648",
         "title": "SlingAnnotationProcessor.processSlingFilter cannot deal with multiple scopes",
         "type": "Bug",
         "_links": {
-          "release": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
+          "int:release": {
+            "title": "The release containing this issue",
             "href": "https://apis.danklco.com/apache-release-info/FELIX/12326502"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this issue",
+            "href": "https://apis.danklco.com/apache-release-info/FELIX"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:issue": {
+            "title": "The issue in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/FELIX-4648"
+          },
+          "jira:release": {
+            "title": "The release containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/browse/FELIX/fixforversion/12326502"
+          },
+          "jira:project": {
+            "title": "The project containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/FELIX"
           }
         }
       }

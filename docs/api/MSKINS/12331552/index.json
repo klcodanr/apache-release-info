@@ -5,21 +5,48 @@
   "date": "2006-05-07",
   "version": "1.0",
   "module": "default",
-  "lastUpdated": 1633094110348,
+  "lastUpdated": 1633504864121,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MSKINS/12331552"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MSKINS"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MSKINS/fixforversion/12331552"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MSKINS"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MSKINS"
     }
   },
   "releaseNotes": "Release Notes - Maven Skins - Version default-1.0",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

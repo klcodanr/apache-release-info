@@ -5,32 +5,94 @@
   "date": "2014-10-03",
   "version": "2.0",
   "module": "",
-  "lastUpdated": 1633106017064,
+  "lastUpdated": 1633516330227,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/XGC/12332396"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/XGC"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/XGC/fixforversion/12332396"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/XGC"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/XGC"
     }
   },
   "releaseNotes": "Release Notes - XMLGraphicsCommons - Version 2.0",
   "_embedded": {
-    "issues": [
+    "int:issues": [
       {
         "issue": "XGC-24",
         "title": "No links to file hashes or KEYS on download page",
         "type": "Improvement",
         "_links": {
-          "release": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
+          "int:release": {
+            "title": "The release containing this issue",
             "href": "https://apis.danklco.com/apache-release-info/XGC/12332396"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this issue",
+            "href": "https://apis.danklco.com/apache-release-info/XGC"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:issue": {
+            "title": "The issue in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/XGC-24"
+          },
+          "jira:release": {
+            "title": "The release containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/browse/XGC/fixforversion/12332396"
+          },
+          "jira:project": {
+            "title": "The project containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/XGC"
           }
         }
       }

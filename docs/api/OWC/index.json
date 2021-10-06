@@ -3,7 +3,7 @@
   "id": "12320636",
   "key": "OWC",
   "description": "",
-  "lastUpdated": 1633184549655,
+  "lastUpdated": 1633506375725,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,19 +13,24 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/OWC"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/OWC"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12320636&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {}
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/OWC"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12320636&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project"
+    }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12338402",
         "name": "0.1.0",
@@ -33,19 +38,47 @@
         "date": "2016-11-03",
         "version": "0.1.0",
         "module": "",
-        "lastUpdated": 1633184549662,
+        "lastUpdated": 1633506375731,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/OWC/12338402"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/OWC"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/OWC/fixforversion/12338402"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/OWC"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/OWC"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - ODE Web Console - Version 0.1.0"
       }
     ]
   }

@@ -5,21 +5,48 @@
   "date": "2003-04-15",
   "version": "0.2",
   "module": "",
-  "lastUpdated": 1633056004044,
+  "lastUpdated": 1633494498058,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/DISCOVERY/12312155"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/DISCOVERY"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/DISCOVERY/fixforversion/12312155"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/DISCOVERY"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/DISCOVERY"
     }
   },
   "releaseNotes": "Release Notes - Commons Discovery - Version 0.2",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

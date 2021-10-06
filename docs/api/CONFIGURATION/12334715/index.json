@@ -5,21 +5,48 @@
   "date": "2015-06-19",
   "version": "1",
   "module": "2.0-beta",
-  "lastUpdated": 1633055828992,
+  "lastUpdated": 1633494309026,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/CONFIGURATION/12334715"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/CONFIGURATION"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/CONFIGURATION/fixforversion/12334715"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/CONFIGURATION"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/CONFIGURATION"
     }
   },
   "releaseNotes": "Release Notes - Commons Configuration - Version 2.0-beta1",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

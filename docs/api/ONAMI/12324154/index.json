@@ -5,21 +5,48 @@
   "date": "2013-05-28",
   "version": "4",
   "module": "parent",
-  "lastUpdated": 1633052907507,
+  "lastUpdated": 1633485907700,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/ONAMI/12324154"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/ONAMI"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/ONAMI/fixforversion/12324154"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/ONAMI"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/ONAMI"
     }
   },
   "releaseNotes": "Release Notes - Apache Onami - Version parent-4",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

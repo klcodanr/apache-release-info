@@ -5,21 +5,48 @@
   "date": "",
   "version": "4",
   "module": "1.0-alpha",
-  "lastUpdated": 1633094238487,
+  "lastUpdated": 1633505053695,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/WAGON/12331764"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/WAGON"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/WAGON/fixforversion/12331764"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/WAGON"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/WAGON"
     }
   },
   "releaseNotes": "Release Notes - Maven Wagon - Version 1.0-alpha-4",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

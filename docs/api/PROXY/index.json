@@ -3,7 +3,7 @@
   "id": "12310731",
   "key": "PROXY",
   "description": "",
-  "lastUpdated": 1633183912404,
+  "lastUpdated": 1633494926992,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/PROXY"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/PROXY"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310731&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/PROXY"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310731&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://commons.apache.org/proxy/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12312826",
         "name": "1.0",
@@ -35,19 +39,47 @@
         "date": "2008-03-06",
         "version": "1.0",
         "module": "",
-        "lastUpdated": 1633183912406,
+        "lastUpdated": 1633494926996,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/PROXY/12312826"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/PROXY"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/PROXY/fixforversion/12312826"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/PROXY"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/PROXY"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Commons Proxy - Version 1.0"
       }
     ]
   }

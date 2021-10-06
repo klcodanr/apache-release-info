@@ -5,21 +5,48 @@
   "date": "2002-09-30",
   "version": "2",
   "module": "1.0-rc",
-  "lastUpdated": 1633053992175,
+  "lastUpdated": 1633486914952,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/AXIS/10468"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/AXIS"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/AXIS/fixforversion/10468"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/AXIS"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/AXIS"
     }
   },
   "releaseNotes": "Release Notes - Axis - Version 1.0-rc2",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

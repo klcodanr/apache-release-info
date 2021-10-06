@@ -3,7 +3,7 @@
   "id": "12310845",
   "key": "STONEHENGE",
   "description": "",
-  "lastUpdated": 1633184745034,
+  "lastUpdated": 1633514151033,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/STONEHENGE"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/STONEHENGE"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310845&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/STONEHENGE"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310845&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://incubator.apache.org/stonehenge"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12313878",
         "name": "M1",
@@ -35,19 +39,47 @@
         "date": "2009-06-05",
         "version": "1",
         "module": "M",
-        "lastUpdated": 1633184745039,
+        "lastUpdated": 1633514151042,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/STONEHENGE/12313878"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/STONEHENGE"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/STONEHENGE/fixforversion/12313878"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/STONEHENGE"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/STONEHENGE"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Stonehenge - Version M1"
       }
     ]
   }

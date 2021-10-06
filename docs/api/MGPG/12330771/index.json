@@ -5,21 +5,48 @@
   "date": "2006-12-13",
   "version": "1",
   "module": "1.0-alpha",
-  "lastUpdated": 1633093386871,
+  "lastUpdated": 1633503811463,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MGPG/12330771"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MGPG"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MGPG/fixforversion/12330771"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MGPG"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MGPG"
     }
   },
   "releaseNotes": "Release Notes - Maven GPG Plugin - Version 1.0-alpha-1",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

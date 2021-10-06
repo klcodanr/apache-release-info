@@ -5,32 +5,94 @@
   "date": "2016-01-09",
   "version": "0.4.3",
   "module": "",
-  "lastUpdated": 1633052598579,
+  "lastUpdated": 1633485619205,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/CLOWNFISH/12329021"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/jira/browse/CLOWNFISH/fixforversion/12329021"
-    },
-    "project": {
+    "int:project": {
+      "title": "The project containing this release",
       "href": "https://apis.danklco.com/apache-release-info/CLOWNFISH"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
+      "href": "https://issues.apache.org/jira/browse/CLOWNFISH/fixforversion/12329021"
+    },
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/CLOWNFISH"
     }
   },
   "releaseNotes": "Release Notes - Apache Lucy-Clownfish - Version 0.4.3",
   "_embedded": {
-    "issues": [
+    "int:issues": [
       {
         "issue": "CLOWNFISH-33",
         "title": "Duplicate hash entries",
         "type": "Bug",
         "_links": {
-          "release": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
+          "int:release": {
+            "title": "The release containing this issue",
             "href": "https://apis.danklco.com/apache-release-info/CLOWNFISH/12329021"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this issue",
+            "href": "https://apis.danklco.com/apache-release-info/CLOWNFISH"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:issue": {
+            "title": "The issue in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/CLOWNFISH-33"
+          },
+          "jira:release": {
+            "title": "The release containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/browse/CLOWNFISH/fixforversion/12329021"
+          },
+          "jira:project": {
+            "title": "The project containing this issue in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/CLOWNFISH"
           }
         }
       }

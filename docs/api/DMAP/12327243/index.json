@@ -3,21 +3,48 @@
   "name": "1.0.0 Data",
   "description": "Initial Data release",
   "date": "2014-07-23",
-  "lastUpdated": 1633057047165,
+  "lastUpdated": 1633495622043,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/DMAP/12327243"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/DMAP"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/DMAP/fixforversion/12327243"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/DMAP"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/DMAP"
     }
   },
   "releaseNotes": "Release Notes - DeviceMap - Version 1.0.0 Data",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

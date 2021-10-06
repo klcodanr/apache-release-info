@@ -3,7 +3,7 @@
   "id": "12310990",
   "key": "JDKIM",
   "description": "",
-  "lastUpdated": 1633184194489,
+  "lastUpdated": 1633501458901,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/JDKIM"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/JDKIM"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310990&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/JDKIM"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310990&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://james.apache.org/jdkim"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12314300",
         "name": "0.2",
@@ -35,19 +39,47 @@
         "date": "2011-07-30",
         "version": "0.2",
         "module": "",
-        "lastUpdated": 1633184194493,
+        "lastUpdated": 1633501458907,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/JDKIM/12314300"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/JDKIM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/JDKIM/fixforversion/12314300"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/JDKIM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/JDKIM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - James jDKIM - Version 0.2"
       }
     ]
   }

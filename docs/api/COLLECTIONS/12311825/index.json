@@ -5,21 +5,48 @@
   "date": "2002-04-05",
   "version": "2.0",
   "module": "",
-  "lastUpdated": 1633055729582,
+  "lastUpdated": 1633494206368,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/COLLECTIONS/12311825"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/COLLECTIONS"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/COLLECTIONS/fixforversion/12311825"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/COLLECTIONS"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/COLLECTIONS"
     }
   },
   "releaseNotes": "Release Notes - Commons Collections - Version 2.0",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

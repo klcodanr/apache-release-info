@@ -5,21 +5,48 @@
   "date": "",
   "version": "3",
   "module": "2.0-beta",
-  "lastUpdated": 1633093744376,
+  "lastUpdated": 1633504327842,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MRELEASE/12331193"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MRELEASE"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MRELEASE/fixforversion/12331193"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MRELEASE"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MRELEASE"
     }
   },
   "releaseNotes": "Release Notes - Maven Release Plugin - Version 2.0-beta-3",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

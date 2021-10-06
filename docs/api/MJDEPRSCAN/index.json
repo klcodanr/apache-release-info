@@ -3,7 +3,7 @@
   "id": "12321621",
   "key": "MJDEPRSCAN",
   "description": "",
-  "lastUpdated": 1633184375123,
+  "lastUpdated": 1633504027273,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,19 +13,24 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MJDEPRSCAN"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/MJDEPRSCAN"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12321621&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {}
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MJDEPRSCAN"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12321621&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project"
+    }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12342193",
         "name": "3.0.0-alpha-1",
@@ -33,19 +38,47 @@
         "date": "2017-11-15",
         "version": "1",
         "module": "3.0.0-alpha",
-        "lastUpdated": 1633184375126,
+        "lastUpdated": 1633504027280,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MJDEPRSCAN/12342193"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MJDEPRSCAN"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MJDEPRSCAN/fixforversion/12342193"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MJDEPRSCAN"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MJDEPRSCAN"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven JDeprScan Plugin - Version 3.0.0-alpha-1"
       }
     ]
   }

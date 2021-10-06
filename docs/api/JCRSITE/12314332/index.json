@@ -5,21 +5,48 @@
   "date": "2009-10-23",
   "version": "5",
   "module": "parent",
-  "lastUpdated": 1633091793399,
+  "lastUpdated": 1633501439238,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/JCRSITE/12314332"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/jira/browse/JCRSITE/fixforversion/12314332"
-    },
-    "project": {
+    "int:project": {
+      "title": "The project containing this release",
       "href": "https://apis.danklco.com/apache-release-info/JCRSITE"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
+      "href": "https://issues.apache.org/jira/browse/JCRSITE/fixforversion/12314332"
+    },
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/JCRSITE"
     }
   },
   "releaseNotes": "Release Notes - Jackrabbit Site - Version parent 5",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

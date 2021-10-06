@@ -5,21 +5,48 @@
   "date": "2011-09-08",
   "version": "8",
   "module": "1.0.0-M",
-  "lastUpdated": 1633057148908,
+  "lastUpdated": 1633495751992,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/DIRAPI/12317852"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/DIRAPI"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/DIRAPI/fixforversion/12317852"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/DIRAPI"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/DIRAPI"
     }
   },
   "releaseNotes": "Release Notes - Directory Client API - Version 1.0.0-M8",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

@@ -3,7 +3,7 @@
   "id": "12311200",
   "key": "ACL",
   "description": "ActiveCluster is an API for writing cluster-based distributed systems",
-  "lastUpdated": 1633183443471,
+  "lastUpdated": 1633492589609,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/ACL"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/ACL"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311200&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/ACL"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311200&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://activecluster.codehaus.org/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12315587",
         "name": "1.0",
@@ -35,17 +39,44 @@
         "date": "",
         "version": "1.0",
         "module": "",
-        "lastUpdated": 1633183443472,
+        "lastUpdated": 1633492589610,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/ACL/12315587"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/ACL"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/ACL/fixforversion/12315587"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/ACL"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/ACL"
           }
         }
       }

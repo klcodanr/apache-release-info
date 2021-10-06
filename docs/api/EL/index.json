@@ -3,7 +3,7 @@
   "id": "12310473",
   "key": "EL",
   "description": "",
-  "lastUpdated": 1633183859285,
+  "lastUpdated": 1633494507172,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/EL"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/EL"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310473&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/EL"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310473&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://commons.apache.org/el/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12311689",
         "name": "1.0",
@@ -35,19 +39,47 @@
         "date": "2003-06-20",
         "version": "1.0",
         "module": "",
-        "lastUpdated": 1633183859288,
+        "lastUpdated": 1633494507176,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/EL/12311689"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/EL"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/EL/fixforversion/12311689"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/EL"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/EL"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Commons EL - Version 1.0"
       }
     ]
   }

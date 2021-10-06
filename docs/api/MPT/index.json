@@ -3,7 +3,7 @@
   "id": "12310847",
   "key": "MPT",
   "description": "Apache James Mail Protocol Tester (MPT) is a functional testing framework especially suitable for the ASCII line based protocols common in mail.",
-  "lastUpdated": 1633184208277,
+  "lastUpdated": 1633501508054,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MPT"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/MPT"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310847&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MPT"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310847&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://james.apache.org/mpt"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12313541",
         "name": "0.1",
@@ -35,19 +39,47 @@
         "date": "2009-07-06",
         "version": "0.1",
         "module": "",
-        "lastUpdated": 1633184208283,
+        "lastUpdated": 1633501508059,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MPT/12313541"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MPT"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MPT/fixforversion/12313541"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MPT"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MPT"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - James MPT - Version 0.1"
       }
     ]
   }

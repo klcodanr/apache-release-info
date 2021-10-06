@@ -3,7 +3,7 @@
   "id": "12310489",
   "key": "PRIMITIVES",
   "description": "<h4>RELEASE PLAN</h4>\n\n<ul>\n<li>Project considered to be dormant - no release planned. </li>\n</ul>",
-  "lastUpdated": 1633183910010,
+  "lastUpdated": 1633494922946,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/PRIMITIVES"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/PRIMITIVES"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310489&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/PRIMITIVES"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310489&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://commons.apache.org/dormant/commons-primitives/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12311854",
         "name": "1.0",
@@ -35,19 +39,47 @@
         "date": "2003-11-05",
         "version": "1.0",
         "module": "",
-        "lastUpdated": 1633183910013,
+        "lastUpdated": 1633494922950,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/PRIMITIVES/12311854"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/PRIMITIVES"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/PRIMITIVES/fixforversion/12311854"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/PRIMITIVES"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/PRIMITIVES"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Commons Primitives - Version 1.0"
       }
     ]
   }

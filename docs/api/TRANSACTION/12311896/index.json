@@ -5,21 +5,48 @@
   "date": "2004-12-15",
   "version": "1.0",
   "module": "",
-  "lastUpdated": 1633056487591,
+  "lastUpdated": 1633494991277,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/TRANSACTION/12311896"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/TRANSACTION"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/TRANSACTION/fixforversion/12311896"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/TRANSACTION"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/TRANSACTION"
     }
   },
   "releaseNotes": "Release Notes - Commons Transaction - Version 1.0",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

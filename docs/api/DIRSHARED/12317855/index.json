@@ -5,21 +5,48 @@
   "date": "2011-09-08",
   "version": "8",
   "module": "1.0.0-M",
-  "lastUpdated": 1633057282225,
+  "lastUpdated": 1633495903734,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/DIRSHARED/12317855"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/DIRSHARED"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/DIRSHARED/fixforversion/12317855"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/DIRSHARED"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/DIRSHARED"
     }
   },
   "releaseNotes": "Release Notes - Directory Shared (Please use DIRAPI instead) - Version 1.0.0-M8",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

@@ -5,21 +5,48 @@
   "date": "1999-06-01",
   "version": "2616",
   "module": "RFC",
-  "lastUpdated": 1633092477355,
+  "lastUpdated": 1633502420056,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/HTTPDRAFT/12312872"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/HTTPDRAFT"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/HTTPDRAFT/fixforversion/12312872"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/HTTPDRAFT"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/HTTPDRAFT"
     }
   },
   "releaseNotes": "Release Notes - Labs WebArch draft-fielding-http (Retired) - Version RFC2616",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

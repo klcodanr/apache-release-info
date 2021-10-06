@@ -5,21 +5,48 @@
   "date": "2009-11-01",
   "version": "1.0",
   "module": "",
-  "lastUpdated": 1633094223508,
+  "lastUpdated": 1633505031759,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MTOOLCHAINS/12331740"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MTOOLCHAINS"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MTOOLCHAINS/fixforversion/12331740"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MTOOLCHAINS"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MTOOLCHAINS"
     }
   },
   "releaseNotes": "Release Notes - Maven Toolchains Plugin - Version 1.0",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

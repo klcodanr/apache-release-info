@@ -5,21 +5,48 @@
   "date": "2014-01-13",
   "version": "0.1",
   "module": "",
-  "lastUpdated": 1633096097200,
+  "lastUpdated": 1633507713841,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/DISPATCH/12326161"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/DISPATCH"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/DISPATCH/fixforversion/12326161"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/DISPATCH"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/DISPATCH"
     }
   },
   "releaseNotes": "Release Notes - Qpid Dispatch - Version 0.1",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

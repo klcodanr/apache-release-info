@@ -3,7 +3,7 @@
   "id": "12321824",
   "key": "CHAINSAW",
   "description": "Chainsaw is an Apache Logging Services companion GUI to Log4j for receiving, parsing, viewing, and filtering logs.",
-  "lastUpdated": 1633183511381,
+  "lastUpdated": 1633492689806,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/CHAINSAW"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/CHAINSAW"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?avatarId=34033"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/CHAINSAW"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?avatarId=34033"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "https://logging.apache.org/chainsaw/2.x/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12342897",
         "name": "2.0",
@@ -35,17 +39,44 @@
         "date": "2018-01-22",
         "version": "2.0",
         "module": "",
-        "lastUpdated": 1633183511382,
+        "lastUpdated": 1633492689809,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/CHAINSAW/12342897"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/CHAINSAW"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/CHAINSAW/fixforversion/12342897"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/CHAINSAW"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/CHAINSAW"
           }
         }
       }

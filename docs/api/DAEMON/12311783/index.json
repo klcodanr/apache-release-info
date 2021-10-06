@@ -3,21 +3,48 @@
   "name": "1.0 Alpha",
   "description": "",
   "date": "2003-10-23",
-  "lastUpdated": 1633055884855,
+  "lastUpdated": 1633494370322,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/DAEMON/12311783"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/DAEMON"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/DAEMON/fixforversion/12311783"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/DAEMON"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/DAEMON"
     }
   },
   "releaseNotes": "Release Notes - Commons Daemon - Version 1.0 Alpha",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

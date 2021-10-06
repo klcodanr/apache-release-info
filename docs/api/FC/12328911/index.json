@@ -5,21 +5,48 @@
   "date": "2014-07-05",
   "version": "38",
   "module": "1.0-RC",
-  "lastUpdated": 1633058924447,
+  "lastUpdated": 1633497589901,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/FC/12328911"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/FC"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/FC/fixforversion/12328911"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/FC"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/FC"
     }
   },
   "releaseNotes": "Release Notes - FORTRESS - Version 1.0-RC38",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

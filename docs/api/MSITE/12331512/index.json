@@ -5,21 +5,48 @@
   "date": "",
   "version": "4",
   "module": "2.0-beta",
-  "lastUpdated": 1633094073190,
+  "lastUpdated": 1633504808793,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MSITE/12331512"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MSITE"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MSITE/fixforversion/12331512"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MSITE"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MSITE"
     }
   },
   "releaseNotes": "Release Notes - Maven Site Plugin - Version 2.0-beta-4",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

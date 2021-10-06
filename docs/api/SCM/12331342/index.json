@@ -5,21 +5,48 @@
   "date": "2005-10-06",
   "version": "3",
   "module": "1.0-alpha",
-  "lastUpdated": 1633093855834,
+  "lastUpdated": 1633504490497,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/SCM/12331342"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/SCM"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/SCM/fixforversion/12331342"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/SCM"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/SCM"
     }
   },
   "releaseNotes": "Release Notes - Maven SCM - Version 1.0-alpha-3",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

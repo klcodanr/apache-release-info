@@ -5,21 +5,48 @@
   "date": "2005-10-15",
   "version": "2.0",
   "module": "",
-  "lastUpdated": 1633093473683,
+  "lastUpdated": 1633503931259,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MJAR/12330829"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MJAR"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MJAR/fixforversion/12330829"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MJAR"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MJAR"
     }
   },
   "releaseNotes": "Release Notes - Maven JAR Plugin - Version 2.0",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

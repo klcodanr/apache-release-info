@@ -3,7 +3,7 @@
   "id": "12322823",
   "key": "MSCRIPTING",
   "description": "",
-  "lastUpdated": 1633184426776,
+  "lastUpdated": 1633504556681,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MSCRIPTING"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/MSCRIPTING"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12322823&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MSCRIPTING"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12322823&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "https://maven.apache.org/plugins/maven-scripting-plugin"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12349673",
         "name": "3.0.0",
@@ -35,19 +39,47 @@
         "date": "2021-03-01",
         "version": "3.0.0",
         "module": "",
-        "lastUpdated": 1633184426781,
+        "lastUpdated": 1633504556689,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/MSCRIPTING/12349673"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/MSCRIPTING"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/MSCRIPTING/fixforversion/12349673"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/MSCRIPTING"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/MSCRIPTING"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Maven Scripting - Version 3.0.0"
       }
     ]
   }

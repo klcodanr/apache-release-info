@@ -3,7 +3,7 @@
   "id": "12311820",
   "key": "GIRAPH",
   "description": "Apache Giraph is an iterative graph processing system built for high scalability. For example, it is currently used at Facebook to analyze the social graph formed by users and their connections. ",
-  "lastUpdated": 1633184072281,
+  "lastUpdated": 1633497850870,
   "type": "project",
   "category": [
     "big-data"
@@ -17,21 +17,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/GIRAPH"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/GIRAPH"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311820&avatarId=14838"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/GIRAPH"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311820&avatarId=14838"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://giraph.apache.org/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12336955",
         "name": "1.2.0",
@@ -39,19 +43,47 @@
         "date": "2016-10-21",
         "version": "1.2.0",
         "module": "",
-        "lastUpdated": 1633184072285,
+        "lastUpdated": 1633497850876,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/GIRAPH/12336955"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/GIRAPH"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/GIRAPH/fixforversion/12336955"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/GIRAPH"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/GIRAPH"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Giraph - Version 1.2.0"
       }
     ]
   }

@@ -3,7 +3,7 @@
   "id": "12311000",
   "key": "HISE",
   "description": "",
-  "lastUpdated": 1633184119213,
+  "lastUpdated": 1633499733773,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/HISE"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/HISE"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311000&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/HISE"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12311000&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://incubator.apache.org/hise"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12314465",
         "name": "0.1.0",
@@ -35,19 +39,47 @@
         "date": "2010-03-02",
         "version": "0.1.0",
         "module": "",
-        "lastUpdated": 1633184119217,
+        "lastUpdated": 1633499733776,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/HISE/12314465"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/HISE"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/HISE/fixforversion/12314465"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/HISE"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/HISE"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - HISE - Version 0.1.0"
       }
     ]
   }

@@ -3,7 +3,7 @@
   "id": "12310932",
   "key": "OCM",
   "description": "",
-  "lastUpdated": 1633184185532,
+  "lastUpdated": 1633501430588,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,19 +13,24 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/OCM"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/OCM"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310932&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {}
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/OCM"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12310932&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project"
+    }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12321640",
         "name": "2.0.0",
@@ -33,19 +38,47 @@
         "date": "2012-07-10",
         "version": "2.0.0",
         "module": "",
-        "lastUpdated": 1633184185537,
+        "lastUpdated": 1633501430595,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/OCM/12321640"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/OCM"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/OCM/fixforversion/12321640"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/OCM"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/OCM"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Jackrabbit OCM - Version 2.0.0"
       }
     ]
   }

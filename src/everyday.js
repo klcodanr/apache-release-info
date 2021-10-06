@@ -85,8 +85,7 @@ async function run(jira) {
   log.debug("Sorting projects by name");
   const index = JSON.parse(fs.readFileSync("docs/api/index.json"));
   index._embedded["int:projects"] = index._embedded["int:projects"].sort(
-    a,
-    (b) => a.name - b.name
+    (a, b) => a.name - b.name
   );
   fs.writeFileSync("docs/api/index.json", JSON.stringify(index, null, 2));
 }

@@ -3,7 +3,7 @@
   "id": "12319020",
   "key": "RYA",
   "description": "",
-  "lastUpdated": 1633184660205,
+  "lastUpdated": 1633508240257,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,19 +13,24 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/RYA"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/RYA"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12319020&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {}
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/RYA"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12319020&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project"
+    }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12341289",
         "name": "4.0.0",
@@ -33,19 +38,47 @@
         "date": "2019-07-16",
         "version": "4.0.0",
         "module": "",
-        "lastUpdated": 1633184660211,
+        "lastUpdated": 1633508240267,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/RYA/12341289"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/RYA"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/RYA/fixforversion/12341289"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/RYA"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/RYA"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Rya - Version 4.0.0"
       }
     ]
   }

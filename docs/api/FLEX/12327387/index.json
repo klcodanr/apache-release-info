@@ -5,21 +5,48 @@
   "date": "2011-06-20",
   "version": "0.6",
   "module": "Squiggly",
-  "lastUpdated": 1633045749078,
+  "lastUpdated": 1633485138562,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/FLEX/12327387"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/FLEX"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/FLEX/fixforversion/12327387"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/FLEX"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/FLEX"
     }
   },
   "releaseNotes": "Release Notes - Apache Flex - Version Squiggly 0.6",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

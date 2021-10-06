@@ -3,7 +3,7 @@
   "id": "12320320",
   "key": "PIRK",
   "description": "<strong> This project is retired!</strong><br />\nApache Pirk is a framework for scalable Private Information Retrieval.",
-  "lastUpdated": 1633184606083,
+  "lastUpdated": 1633507372472,
   "type": "project",
   "category": [
     "retired"
@@ -15,21 +15,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/PIRK"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/PIRK"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12320320&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/PIRK"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12320320&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://pirk.incubator.apache.org"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12338109",
         "name": "0.1.0",
@@ -37,19 +41,47 @@
         "date": "2016-08-29",
         "version": "0.1.0",
         "module": "",
-        "lastUpdated": 1633184606088,
+        "lastUpdated": 1633507372479,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/PIRK/12338109"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/PIRK"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/PIRK/fixforversion/12338109"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/PIRK"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/PIRK"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - PIRK - Version 0.1.0"
       }
     ]
   }

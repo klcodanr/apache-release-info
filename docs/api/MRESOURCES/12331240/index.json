@@ -5,21 +5,48 @@
   "date": "2005-10-25",
   "version": "2.1",
   "module": "",
-  "lastUpdated": 1633093833356,
+  "lastUpdated": 1633504459614,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MRESOURCES/12331240"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MRESOURCES"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MRESOURCES/fixforversion/12331240"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MRESOURCES"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MRESOURCES"
     }
   },
   "releaseNotes": "Release Notes - Maven Resources Plugin - Version 2.1",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

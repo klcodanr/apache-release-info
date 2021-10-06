@@ -5,21 +5,48 @@
   "date": "2005-10-15",
   "version": "2.0",
   "module": "",
-  "lastUpdated": 1633093737253,
+  "lastUpdated": 1633504317273,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/MRAR/12331187"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/MRAR"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/MRAR/fixforversion/12331187"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/MRAR"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/MRAR"
     }
   },
   "releaseNotes": "Release Notes - Maven Rar Plugin - Version 2.0",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

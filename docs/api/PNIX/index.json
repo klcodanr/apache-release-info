@@ -3,7 +3,7 @@
   "id": "10081",
   "key": "PNIX",
   "description": "Discontinued part of avalon. See website for details.",
-  "lastUpdated": 1633183733104,
+  "lastUpdated": 1633492978538,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/PNIX"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/PNIX"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=10081&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/PNIX"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=10081&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://avalon.apache.org/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "10080",
         "name": "4.0.3",
@@ -35,17 +39,44 @@
         "date": "",
         "version": "4.0.3",
         "module": "",
-        "lastUpdated": 1633183733106,
+        "lastUpdated": 1633492978541,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/PNIX/10080"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/PNIX"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/PNIX/fixforversion/10080"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/PNIX"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/PNIX"
           }
         }
       }

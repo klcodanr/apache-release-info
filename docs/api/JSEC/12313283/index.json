@@ -5,21 +5,48 @@
   "date": "2008-08-03",
   "version": "1",
   "module": "0.9-RC",
-  "lastUpdated": 1633092002178,
+  "lastUpdated": 1633501743689,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/JSEC/12313283"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/JSEC"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/JSEC/fixforversion/12313283"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/JSEC"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/JSEC"
     }
   },
   "releaseNotes": "Release Notes - JSecurity - Version 0.9-RC1",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

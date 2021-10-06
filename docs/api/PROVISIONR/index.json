@@ -3,7 +3,7 @@
   "id": "12314423",
   "key": "PROVISIONR",
   "description": "<h3><a name=\"WelcomeToApacheProvisionr\"></a>Welcome to Apache Provisionr (incubating)</h3>\n\n<p>Provisionr is an effort to develop a service that can be used to create and manage pools of virtual machines on multiple clouds. Our focus is on semi-automated workflows, cloud portability and on providing a robust foundation for configuration and higher level management.</p>\n\n<h4><a name=\"Objectives\"></a>Objectives</h4>\n\n<p>Provisionr solves the problem of cloud portability by hiding completely the APIs and only focusing on building a cluster that matches the same set of assumptions on all clouds, assumptions like: a specific OS,  pre-installed packages and binaries, sane dns settings, ssh & vpn access etc. - think a solid foundation for configuration.</p>\n\n<p>As a secondary goal Provisionr will also provide primitives for building automatic or semi-automatic workflows for configuring and monitoring services, workflows that assume that all the machines share a common set of characteristics as described above.</p>\n\n<h4><a name=\"StayInTouch\"></a>How to stay in touch?</h4>\n\n<p>Right now the best way is to subscribe to the development mailing list by sending <br />an email to <a href=\"mailto:dev-subscribe@provisionr.incubator.apache.org\">dev-subscribe@provisionr.incubator.apache.org</a>.</p>\n\n<h4><a name=\"GetTheCode\"></a>How to get the code?</h4>\n\n<p>\n<code>git clone https://git-wip-us.apache.org/repos/asf/incubator-provisionr.git</code></p>\n<br />",
-  "lastUpdated": 1633184625637,
+  "lastUpdated": 1633507550602,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,39 +13,71 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/PROVISIONR"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/PROVISIONR"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12314423&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/PROVISIONR"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=12314423&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://provisionr.incubator.apache.org/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "12324250",
         "name": "0.4.0-incubating",
         "description": "First release as an Incubator project focused on ASF compliance",
         "date": "2013-07-02",
-        "lastUpdated": 1633184625642,
+        "lastUpdated": 1633507550612,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/PROVISIONR/12324250"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/PROVISIONR"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/PROVISIONR/fixforversion/12324250"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/PROVISIONR"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/PROVISIONR"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Provisionr - Version 0.4.0-incubating"
       }
     ]
   }

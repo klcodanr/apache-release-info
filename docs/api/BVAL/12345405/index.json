@@ -5,21 +5,48 @@
   "date": "",
   "version": "2.0.2",
   "module": "",
-  "lastUpdated": 1633054369927,
+  "lastUpdated": 1633489488860,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/BVAL/12345405"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/BVAL"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/BVAL/fixforversion/12345405"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/BVAL"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/BVAL"
     }
   },
   "releaseNotes": "Release Notes - BVal - Version 2.0.2",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

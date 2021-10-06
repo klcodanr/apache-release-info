@@ -3,21 +3,48 @@
   "name": "Codeplex",
   "description": "A bin for issues that where fixed while on Codplex - but where we don't know the fix version.",
   "date": "2010-09-10",
-  "lastUpdated": 1633095119786,
+  "lastUpdated": 1633506323898,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/NPANDAY/12316310"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/NPANDAY"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/NPANDAY/fixforversion/12316310"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/NPANDAY"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/NPANDAY"
     }
   },
   "releaseNotes": "Release Notes - NPanday - Version Codeplex",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }

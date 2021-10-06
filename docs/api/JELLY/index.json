@@ -3,7 +3,7 @@
   "id": "10012",
   "key": "JELLY",
   "description": "",
-  "lastUpdated": 1633183882657,
+  "lastUpdated": 1633494635905,
   "type": "project",
   "category": [],
   "created": "",
@@ -13,21 +13,25 @@
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/JELLY"
     },
-    "jira": {
-      "href": "https://issues.apache.org/jira/projects/JELLY"
-    },
-    "avatar": {
-      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=10012&avatarId=10011"
-    },
-    "root": {
+    "int:root": {
+      "title": "The root of this API",
       "href": "https://apis.danklco.com/apache-release-info/"
     },
-    "homepage": {
+    "jira:project": {
+      "title": "The project in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/JELLY"
+    },
+    "proj:logo": {
+      "title": "The logo for this project",
+      "href": "https://issues.apache.org/jira/secure/projectavatar?pid=10012&avatarId=10011"
+    },
+    "proj:homepage": {
+      "title": "The homepage of this project",
       "href": "http://commons.apache.org/jelly/"
     }
   },
   "_embedded": {
-    "releases": [
+    "int:releases": [
       {
         "id": "10215",
         "name": "1.0-beta-4",
@@ -35,19 +39,47 @@
         "date": "",
         "version": "4",
         "module": "1.0-beta",
-        "lastUpdated": 1633183882659,
+        "lastUpdated": 1633494635909,
         "type": "release",
         "_links": {
+          "curies": [
+            {
+              "name": "int",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "jira",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            },
+            {
+              "name": "proj",
+              "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+              "templated": true
+            }
+          ],
           "self": {
             "href": "https://apis.danklco.com/apache-release-info/JELLY/10215"
           },
-          "jira": {
+          "int:project": {
+            "title": "The project containing this release",
+            "href": "https://apis.danklco.com/apache-release-info/JELLY"
+          },
+          "int:root": {
+            "title": "The root of this API",
+            "href": "https://apis.danklco.com/apache-release-info/"
+          },
+          "jira:release": {
+            "title": "The release in ASF Jira",
             "href": "https://issues.apache.org/jira/browse/JELLY/fixforversion/10215"
           },
-          "project": {
-            "href": "https://apis.danklco.com/apache-release-info/JELLY"
+          "jira:project": {
+            "title": "The project containing this release in ASF Jira",
+            "href": "https://issues.apache.org/jira/projects/JELLY"
           }
-        }
+        },
+        "releaseNotes": "Release Notes - Commons Jelly - Version 1.0-beta-4"
       }
     ]
   }

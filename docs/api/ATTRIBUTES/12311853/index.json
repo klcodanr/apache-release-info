@@ -5,21 +5,48 @@
   "date": "2004-08-15",
   "version": "2.1",
   "module": "",
-  "lastUpdated": 1633055602137,
+  "lastUpdated": 1633494077235,
   "type": "release",
   "_links": {
+    "curies": [
+      {
+        "name": "int",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "jira",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      },
+      {
+        "name": "proj",
+        "href": "https://www.danklco.com/api-docs/rels.html#{rel}",
+        "templated": true
+      }
+    ],
     "self": {
       "href": "https://apis.danklco.com/apache-release-info/ATTRIBUTES/12311853"
     },
-    "jira": {
+    "int:project": {
+      "title": "The project containing this release",
+      "href": "https://apis.danklco.com/apache-release-info/ATTRIBUTES"
+    },
+    "int:root": {
+      "title": "The root of this API",
+      "href": "https://apis.danklco.com/apache-release-info/"
+    },
+    "jira:release": {
+      "title": "The release in ASF Jira",
       "href": "https://issues.apache.org/jira/browse/ATTRIBUTES/fixforversion/12311853"
     },
-    "project": {
-      "href": "https://apis.danklco.com/apache-release-info/ATTRIBUTES"
+    "jira:project": {
+      "title": "The project containing this release in ASF Jira",
+      "href": "https://issues.apache.org/jira/projects/ATTRIBUTES"
     }
   },
   "releaseNotes": "Release Notes - Commons Attributes - Version 2.1",
   "_embedded": {
-    "issues": []
+    "int:issues": []
   }
 }
