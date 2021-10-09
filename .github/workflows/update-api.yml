@@ -21,6 +21,10 @@ jobs:
       - name: Get Current Time
         id: date
         run: echo "::set-output name=date::$(date +'%Y.%m.%d-%H%M')"
+      - name: Setup Git
+        run: |
+          git config user.name "Github Actions"
+          git config user.email github-actions@github.com
       - run: npm install
       - name: Run Update Script
         run: node src/everyday.js
