@@ -70,6 +70,7 @@ async function run(jira) {
   const projects = await jira.getProjects();
   asfProjects = await getAsfProjects();
 
+  let releases = [];
   let idx = 1;
   for (const project of projects) {
     if (SKIP_PROJECTS.indexOf(project.key) !== -1) {
@@ -78,12 +79,38 @@ async function run(jira) {
     }
     log.info(`Processing project: ${project.name} (${idx}/${projects.length})`);
 
-    await updateProject(jira, await jira.getProjectDetails(project.id));
+    await updateProject(
+      jira,
+      await jira.getProjectDetails(project.id),
+      releases
+    );
+
+    releases = releases
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 25);
     idx++;
   }
 
+  fs.mkdirSync("docs/api/latest", { recursive: true });
+  fs.writeFileSync(
+    "docs/api/latest/index.json",
+    JSON.stringify(
+      {
+        _embedded: {
+          releases,
+        },
+      },
+      null,
+      2
+    )
+  );
+
   log.debug("Sorting projects by name");
   const index = JSON.parse(fs.readFileSync("docs/api/index.json"));
+  index._links["int:latest"] = {
+    title: "Latest Releases",
+    href: `${API_BASE}/latest`,
+  };
   index._embedded["int:projects"] = index._embedded["int:projects"].sort(
     (a, b) => a.name - b.name
   );
@@ -187,8 +214,9 @@ async function handleRelease(jira, project, release) {
  * Runs the daily update to grab all public releases and store them to JSON.
  * @param {JiraClient} jira the jira client
  * @param {*} project the project to update
+ * @param {Array} allReleases the releases
  */
-async function updateProject(jira, project) {
+async function updateProject(jira, project, allReleases) {
   const releases = (await jira.getReleases(project)).sort((a, b) =>
     a.releaseDate.iso.localeCompare(b.releaseDate.iso)
   );
@@ -200,6 +228,7 @@ async function updateProject(jira, project) {
     lastUpdated: Date.now(),
     type: "index",
     _links: {
+      curies,
       self: { href: `${API_BASE}` },
     },
     _embedded: {
@@ -226,6 +255,7 @@ async function updateProject(jira, project) {
     releaseCount: releases.length,
     programmingLanguage: [],
     _links: {
+      curies,
       self: { href: `${API_BASE}${project.key}` },
       "int:root": {
         title: "The root of this API",
@@ -293,6 +323,7 @@ async function updateProject(jira, project) {
     const releaseData = await handleRelease(jira, project, release);
     delete releaseData._embedded;
     delete releaseData.releaseNote;
+    allReleases.push(releaseData);
     projectData._embedded["int:releases"].push(releaseData);
   }
 
